@@ -56,7 +56,7 @@ Namespace My
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("10542")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("COM4")>  _
         Public Property IncomingCOMPort() As String
             Get
                 Return CType(Me("IncomingCOMPort"),String)
@@ -243,6 +243,90 @@ Namespace My
             End Get
             Set
                 Me("UDP4Port") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("7124")>  _
+        Public Property UDPListenPort() As String
+            Get
+                Return CType(Me("UDPListenPort"),String)
+            End Get
+            Set
+                Me("UDPListenPort") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("False")>  _
+        Public Property UDPListenEnabled() As Boolean
+            Get
+                Return CType(Me("UDPListenEnabled"),Boolean)
+            End Get
+            Set
+                Me("UDPListenEnabled") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("False")>  _
+        Public Property COMPortEnabled() As Boolean
+            Get
+                Return CType(Me("COMPortEnabled"),Boolean)
+            End Get
+            Set
+                Me("COMPortEnabled") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("False")>  _
+        Public Property SourceCOM() As Boolean
+            Get
+                Return CType(Me("SourceCOM"),Boolean)
+            End Get
+            Set
+                Me("SourceCOM") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("False")>  _
+        Public Property SourceUDP() As Boolean
+            Get
+                Return CType(Me("SourceUDP"),Boolean)
+            End Get
+            Set
+                Me("SourceUDP") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("False")>  _
+        Public Property SourceTestClock() As Boolean
+            Get
+                Return CType(Me("SourceTestClock"),Boolean)
+            End Get
+            Set
+                Me("SourceTestClock") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("False")>  _
+        Public Property SourceTestTimer() As Boolean
+            Get
+                Return CType(Me("SourceTestTimer"),Boolean)
+            End Get
+            Set
+                Me("SourceTestTimer") = value
             End Set
         End Property
     End Class

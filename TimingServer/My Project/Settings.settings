@@ -3,7 +3,7 @@
   <Profiles />
   <Settings>
     <Setting Name="IncomingCOMPort" Type="System.String" Scope="User">
-      <Value Profile="(Default)">10542</Value>
+      <Value Profile="(Default)">COM4</Value>
     </Setting>
     <Setting Name="UDP1" Type="System.String" Scope="User">
       <Value Profile="(Default)">10.0.0.255</Value>
@@ -49,6 +49,27 @@
     </Setting>
     <Setting Name="UDP4Port" Type="System.String" Scope="User">
       <Value Profile="(Default)">10542</Value>
+    </Setting>
+    <Setting Name="UDPListenPort" Type="System.String" Scope="User">
+      <Value Profile="(Default)">7124</Value>
+    </Setting>
+    <Setting Name="UDPListenEnabled" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="COMPortEnabled" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="SourceCOM" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="SourceUDP" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="SourceTestClock" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="SourceTestTimer" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
     </Setting>
   </Settings>
 </SettingsFile>
