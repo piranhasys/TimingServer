@@ -20,14 +20,27 @@ Public Class Form1
     Private UDPConnected3 As Boolean = False
     Private UDPConnected4 As Boolean = False
     Private UDPConnectedIncoming As Boolean = False
+    Private COMConnected As Boolean = False
     Public RemoteIpEndPoint As New IPEndPoint(IPAddress.Any, 0)
     Private Shared thdUdp As Thread
     Private Loading As Boolean = True
+    Private WithEvents SerialOmega As New clsSerial
+    Private currentOmegaTime As String = ""
+    Private currentOmegaStatus As String = ""
+    Private lastTX As Date = Now
+    Private ClockRunning As Boolean = False
 
     Private Sub Form1_FormClosing(sender As Object, e As FormClosingEventArgs) Handles Me.FormClosing
         If UDPConnectedIncoming Then
-            thdUdp.Abort()
-            udpClientIncoming.Close()
+            Try
+                thdUdp.Abort()
+                udpClientIncoming.Close()
+            Catch ex As Exception
+
+            End Try
+        End If
+        If My.Settings.COMPortEnabled Then
+            SerialOmega.Disconnect()
         End If
     End Sub
 
@@ -36,6 +49,7 @@ Public Class Form1
         Me.Text = "Piranha Timing Server v." & Application.ProductVersion
         Setup()
         SetupOutput()
+        ShowRunningStatus()
         Loading = False
     End Sub
     Private Sub GetUDPData()
@@ -55,10 +69,131 @@ Public Class Form1
         ShowIncomingUDP(incomingString)
         If My.Settings.SourceUDP Then
             OutgoingString = incomingString
-            Broadcast()
+            Broadcast(True)
         End If
     End Sub
+
+    Private Sub SocketM_ClientData(ByVal message As String) Handles SerialOmega.DataArrival
+        ProcessOmegaClock(message)
+    End Sub
+    Sub ProcessOmegaClock(ByVal thisData As String)
+        'can arrive 10 per second
+        'should already be filtered by Serial class
+        'logger.Debug(thisData)
+        Dim sendClock As Boolean = False
+        If thisData.StartsWith("D") Then
+            If thisData.Length > 18 Then
+                Dim extractedTime As String = thisData.Substring(1, 5)
+                'omega use only 1 leading zero for minutes eg ' 0:44'
+
+                If (extractedTime.Substring(0, 1) = " ") Then
+                    extractedTime = extractedTime.Replace(" ", "0")
+                End If
+
+                Dim extractedStatus As String = thisData.Substring(18, 1)
+                If extractedTime <> currentOmegaTime Then
+                    currentOmegaTime = extractedTime
+                    sendClock = True
+                    'AddToLog("Omega Time", currentOmegaTime)
+                ElseIf DateDiff(DateInterval.Second, lastTX, Now) > 0 Then
+                    sendClock = True 'use as heartbeat and sync if any client has gone offline
+                End If
+                If extractedStatus <> currentOmegaStatus Then
+                    'may not have changed time, but started
+                    currentOmegaStatus = extractedStatus
+                    sendClock = True
+                End If
+                If sendClock Then
+                    ShowIncomingOmega(currentOmegaTime)
+                    Select Case currentOmegaStatus
+                        'not sure of status when counting down - 2, 3 don't seem to appear
+                        Case "0", "2"
+                            If ClockRunning Then
+                                '## change of status
+                            End If
+                            ClockRunning = False
+                        Case "1", "3"
+                            If Not (ClockRunning) Then
+                                '## change of status
+                            End If
+                            ClockRunning = True
+                    End Select
+                    ShowRunningStatus()
+                    If My.Settings.SourceCOM Then
+                        OutgoingString = My.Settings.LocationCode & "|" & currentOmegaTime & "|" & currentOmegaStatus & "|"
+                        lastTX = Now
+                        Broadcast(True)
+                    End If
+
+                End If
+            End If
+        End If
+        ShowOmegaOK()
+    End Sub
+    Delegate Sub ShowRunningStatusCallback()
+    Sub ShowRunningStatus()
+        If lablRunning.InvokeRequired Then
+            Dim d As New ShowRunningStatusCallback(AddressOf ShowRunningStatus)
+            Me.Invoke(d, New Object() {})
+        Else
+            If ClockRunning Then
+                lablRunning.Text = "RUNNING"
+                lablRunning.BackColor = Color.DarkGreen
+                lablRunning.ForeColor = Color.White
+            Else
+                lablRunning.Text = "STOPPED"
+                lablRunning.BackColor = Color.DarkRed
+                lablRunning.ForeColor = Color.White
+            End If
+        End If
+    End Sub
+
+    Delegate Sub ShowOmegaOKCallback()
+    Sub ShowOmegaOK()
+        Try
+            If Me.lablOmega.InvokeRequired Then
+                Dim d As New ShowOmegaOKCallback(AddressOf ShowOmegaOK)
+                Me.Invoke(d, New Object() {})
+            Else
+                Me.lablOmega.Visible = True
+                Me.lablRunning.Visible = True
+                Me.TimerOmega.Enabled = False
+                Me.TimerOmega.Enabled = True  'clear OK after 1 second
+            End If
+        Catch ex As Exception
+            'MessageBox.Show(ex.Message)
+        End Try
+    End Sub
+
+
     Sub Setup()
+        If My.Settings.COMPortEnabled Then
+            Try
+                With SerialOmega
+                    .PortName = My.Settings.IncomingCOMPort
+                    .BaudRate = 9600
+                    .DataBits = 8
+                    .Parity = Ports.Parity.None
+                    .StopBits = Ports.StopBits.One
+                    .HandShaking = Ports.Handshake.None
+
+                    .Connect()
+                    If .Connected = True Then
+                        COMConnected = True
+                        lablCOMError.Visible = False
+                        lablCOMOK.Visible = True
+                    Else
+                        COMConnected = False
+                        lablCOMError.Visible = True
+                        lablCOMOK.Visible = False
+                    End If
+                End With
+            Catch ex As Exception
+                COMConnected = False
+                lablCOMError.Visible = False
+                lablCOMOK.Visible = False
+            End Try
+        End If
 
         If My.Settings.UDPListenEnabled Then
             If Val(My.Settings.UDPListenPort) > 0 Then
@@ -162,33 +297,44 @@ Public Class Form1
             lablIncomingUDP.Text = textString
         End If
     End Sub
-    Sub Broadcast()
-        If OutgoingString <> lastOutput Then
+    Delegate Sub ShowIncomingOmegaCallback(textString As String)
+    Private Sub ShowIncomingOmega(textString As String)
+        If lablOmega.InvokeRequired Then
+            Dim d As New ShowIncomingOmegaCallback(AddressOf ShowIncomingOmega)
+            Me.Invoke(d, New Object() {textString})
+        Else
+            lablOmega.Text = textString
+        End If
+    End Sub
+    Sub Broadcast(forceSend As Boolean)
+        If ((OutgoingString <> lastOutput) Or (forceSend)) Then
             ShowOutgoing()
-            lastOutput = OutgoingString
             Try
                 bteSendData = Encoding.ASCII.GetBytes(OutgoingString)
                 If UDPConnected1 Then
                     udpClient1.Send(bteSendData, bteSendData.Length)
+                    Console.WriteLine("Sent to UDP1: " & OutgoingString)
                 End If
                 If UDPConnected2 Then
                     udpClient2.Send(bteSendData, bteSendData.Length)
+                    Console.WriteLine("Sent to UDP2: " & OutgoingString)
                 End If
                 If UDPConnected3 Then
                     udpClient3.Send(bteSendData, bteSendData.Length)
+                    Console.WriteLine("Sent to UDP3: " & OutgoingString)
                 End If
                 If UDPConnected4 Then
                     udpClient4.Send(bteSendData, bteSendData.Length)
+                    Console.WriteLine("Sent to UDP4: " & OutgoingString)
                 End If
-
+                lastOutput = OutgoingString
             Catch ex As Exception
                 Console.WriteLine(ex.Message)
             End Try
-
         End If
     End Sub
 
-    Private Sub btnTestClock_Click(sender As Object, e As EventArgs) Handles btnTestClockTimer.Click
+    Private Sub btnTestClock_Click(sender As Object, e As EventArgs)
         TimerClock.Stop()
         TimerTimer.Stop()
         startTicks = Now.Ticks
@@ -198,12 +344,12 @@ Public Class Form1
     Private Sub TimerClock_Tick(sender As Object, e As EventArgs) Handles TimerClock.Tick
         If My.Settings.SourceTestClock Then
             elapsedTime = Date.Now
-            OutgoingString = My.Settings.LocationCode & "|" & elapsedTime.ToString(My.Settings.TestClockFormat)
-            Broadcast()
+            OutgoingString = My.Settings.LocationCode & "|" & elapsedTime.ToString(My.Settings.TestClockFormat) & "||"
+            Broadcast(False)
         End If
     End Sub
 
-    Private Sub btnTestTimer_Click(sender As Object, e As EventArgs) Handles btnTestTimer.Click
+    Private Sub btnTestTimer_Click(sender As Object, e As EventArgs)
         TimerClock.Stop()
         TimerTimer.Stop()
 
@@ -214,12 +360,12 @@ Public Class Form1
         If My.Settings.SourceTestTimer Then
             currentTicks = Now.Ticks - startTicks
             elapsedTime = New Date(currentTicks)
-            OutgoingString = My.Settings.LocationCode & "|" & elapsedTime.ToString(My.Settings.TestTimerFormat)
-            Broadcast()
+            OutgoingString = My.Settings.LocationCode & "|" & elapsedTime.ToString(My.Settings.TestTimerFormat) & "||"
+            Broadcast(False)
         End If
     End Sub
 
-    Private Sub btnBroadcastUDP_Click(sender As Object, e As EventArgs) Handles btnBroadcastUDP.Click
+    Private Sub btnBroadcastUDP_Click(sender As Object, e As EventArgs)
         TimerClock.Stop()
         TimerTimer.Stop()
 
@@ -248,8 +394,21 @@ Public Class Form1
         If My.Settings.SourceTestTimer Then
             currentTicks = 0
             elapsedTime = New Date(currentTicks)
-            OutgoingString = My.Settings.LocationCode & "|" & elapsedTime.ToString(My.Settings.TestTimerFormat)
-            Broadcast()
+            OutgoingString = My.Settings.LocationCode & "|" & elapsedTime.ToString(My.Settings.TestTimerFormat) & "||"
+            Broadcast(True)
         End If
+    End Sub
+
+    Private Sub TimerOmega_Tick(sender As Object, e As EventArgs) Handles TimerOmega.Tick
+        Me.lablOmega.Visible = False 'constant flow of data keeps visible
+        Me.lablRunning.Visible = False
+    End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        ProcessOmegaClock("D 0:00 00000000000000000000000000000000000")
+    End Sub
+
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        ProcessOmegaClock("D 0:19 00000000000100000000000000000000000")
     End Sub
 End Class

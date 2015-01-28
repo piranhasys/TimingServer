@@ -29,13 +29,9 @@ Partial Class Form1
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
-        Me.btnTestTimer = New System.Windows.Forms.Button()
-        Me.btnBroadcastClock = New System.Windows.Forms.Button()
         Me.lablOutgoing = New System.Windows.Forms.Label()
-        Me.lablIncomingClock = New System.Windows.Forms.Label()
+        Me.lablOmega = New System.Windows.Forms.Label()
         Me.Label8 = New System.Windows.Forms.Label()
-        Me.Label9 = New System.Windows.Forms.Label()
-        Me.btnTestClockTimer = New System.Windows.Forms.Button()
         Me.TimerClock = New System.Windows.Forms.Timer(Me.components)
         Me.TimerTimer = New System.Windows.Forms.Timer(Me.components)
         Me.lablError1 = New System.Windows.Forms.Label()
@@ -44,7 +40,6 @@ Partial Class Form1
         Me.lablError4 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.lablIncomingUDP = New System.Windows.Forms.Label()
-        Me.btnBroadcastUDP = New System.Windows.Forms.Button()
         Me.lablUDPIncomingError = New System.Windows.Forms.Label()
         Me.lablListenAddresses = New System.Windows.Forms.Label()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
@@ -81,12 +76,17 @@ Partial Class Form1
         Me.RadioButton2 = New System.Windows.Forms.RadioButton()
         Me.RadioButton1 = New System.Windows.Forms.RadioButton()
         Me.GroupBox4 = New System.Windows.Forms.GroupBox()
+        Me.btnTimerReset = New System.Windows.Forms.Button()
+        Me.btnTimerStart = New System.Windows.Forms.Button()
         Me.Label13 = New System.Windows.Forms.Label()
         Me.Label12 = New System.Windows.Forms.Label()
         Me.TextBox8 = New System.Windows.Forms.TextBox()
         Me.TextBox7 = New System.Windows.Forms.TextBox()
-        Me.btnTimerStart = New System.Windows.Forms.Button()
-        Me.btnTimerReset = New System.Windows.Forms.Button()
+        Me.lablOmegaError = New System.Windows.Forms.Label()
+        Me.TimerOmega = New System.Windows.Forms.Timer(Me.components)
+        Me.lablRunning = New System.Windows.Forms.Label()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.Button2 = New System.Windows.Forms.Button()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.GroupBox3.SuspendLayout()
@@ -159,55 +159,30 @@ Partial Class Form1
         Me.Label6.TabIndex = 11
         Me.Label6.Text = "IP Address 4:"
         '
-        'btnTestTimer
-        '
-        Me.btnTestTimer.BackColor = System.Drawing.Color.DarkGreen
-        Me.btnTestTimer.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnTestTimer.ForeColor = System.Drawing.Color.White
-        Me.btnTestTimer.Location = New System.Drawing.Point(621, 607)
-        Me.btnTestTimer.Name = "btnTestTimer"
-        Me.btnTestTimer.Size = New System.Drawing.Size(140, 42)
-        Me.btnTestTimer.TabIndex = 16
-        Me.btnTestTimer.Text = "Test Broadcast Clock"
-        Me.btnTestTimer.UseVisualStyleBackColor = False
-        '
-        'btnBroadcastClock
-        '
-        Me.btnBroadcastClock.BackColor = System.Drawing.Color.DarkGreen
-        Me.btnBroadcastClock.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnBroadcastClock.ForeColor = System.Drawing.Color.White
-        Me.btnBroadcastClock.Location = New System.Drawing.Point(319, 592)
-        Me.btnBroadcastClock.Name = "btnBroadcastClock"
-        Me.btnBroadcastClock.Size = New System.Drawing.Size(140, 42)
-        Me.btnBroadcastClock.TabIndex = 17
-        Me.btnBroadcastClock.Text = "Broadcast Clock"
-        Me.btnBroadcastClock.UseVisualStyleBackColor = False
-        '
         'lablOutgoing
         '
         Me.lablOutgoing.BackColor = System.Drawing.Color.Black
         Me.lablOutgoing.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lablOutgoing.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lablOutgoing.ForeColor = System.Drawing.Color.White
-        Me.lablOutgoing.Location = New System.Drawing.Point(120, 54)
+        Me.lablOutgoing.Location = New System.Drawing.Point(203, 35)
         Me.lablOutgoing.Name = "lablOutgoing"
         Me.lablOutgoing.Size = New System.Drawing.Size(255, 32)
         Me.lablOutgoing.TabIndex = 18
         Me.lablOutgoing.Text = "ABC|01:02:03.04"
         Me.lablOutgoing.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
-        'lablIncomingClock
+        'lablOmega
         '
-        Me.lablIncomingClock.BackColor = System.Drawing.Color.Black
-        Me.lablIncomingClock.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lablIncomingClock.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lablIncomingClock.ForeColor = System.Drawing.Color.White
-        Me.lablIncomingClock.Location = New System.Drawing.Point(106, 96)
-        Me.lablIncomingClock.Name = "lablIncomingClock"
-        Me.lablIncomingClock.Size = New System.Drawing.Size(255, 32)
-        Me.lablIncomingClock.TabIndex = 19
-        Me.lablIncomingClock.Text = "ABC|01:02:03.04"
-        Me.lablIncomingClock.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.lablOmega.BackColor = System.Drawing.Color.Black
+        Me.lablOmega.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lablOmega.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lablOmega.ForeColor = System.Drawing.Color.White
+        Me.lablOmega.Location = New System.Drawing.Point(106, 96)
+        Me.lablOmega.Name = "lablOmega"
+        Me.lablOmega.Size = New System.Drawing.Size(190, 32)
+        Me.lablOmega.TabIndex = 19
+        Me.lablOmega.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'Label8
         '
@@ -219,29 +194,6 @@ Partial Class Form1
         Me.Label8.Size = New System.Drawing.Size(74, 18)
         Me.Label8.TabIndex = 20
         Me.Label8.Text = "Incoming:"
-        '
-        'Label9
-        '
-        Me.Label9.AutoSize = True
-        Me.Label9.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label9.ForeColor = System.Drawing.Color.White
-        Me.Label9.Location = New System.Drawing.Point(42, 62)
-        Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(75, 18)
-        Me.Label9.TabIndex = 21
-        Me.Label9.Text = "Outgoing:"
-        '
-        'btnTestClockTimer
-        '
-        Me.btnTestClockTimer.BackColor = System.Drawing.Color.DarkGreen
-        Me.btnTestClockTimer.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnTestClockTimer.ForeColor = System.Drawing.Color.White
-        Me.btnTestClockTimer.Location = New System.Drawing.Point(635, 665)
-        Me.btnTestClockTimer.Name = "btnTestClockTimer"
-        Me.btnTestClockTimer.Size = New System.Drawing.Size(140, 42)
-        Me.btnTestClockTimer.TabIndex = 22
-        Me.btnTestClockTimer.Text = "Test Broadcast Timer"
-        Me.btnTestClockTimer.UseVisualStyleBackColor = False
         '
         'TimerClock
         '
@@ -328,20 +280,7 @@ Partial Class Form1
         Me.lablIncomingUDP.Name = "lablIncomingUDP"
         Me.lablIncomingUDP.Size = New System.Drawing.Size(255, 32)
         Me.lablIncomingUDP.TabIndex = 38
-        Me.lablIncomingUDP.Text = "ABC|01:02:03.04"
         Me.lablIncomingUDP.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        '
-        'btnBroadcastUDP
-        '
-        Me.btnBroadcastUDP.BackColor = System.Drawing.Color.DarkGreen
-        Me.btnBroadcastUDP.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnBroadcastUDP.ForeColor = System.Drawing.Color.White
-        Me.btnBroadcastUDP.Location = New System.Drawing.Point(319, 713)
-        Me.btnBroadcastUDP.Name = "btnBroadcastUDP"
-        Me.btnBroadcastUDP.Size = New System.Drawing.Size(140, 42)
-        Me.btnBroadcastUDP.TabIndex = 37
-        Me.btnBroadcastUDP.Text = "Broadcast UPD"
-        Me.btnBroadcastUDP.UseVisualStyleBackColor = False
         '
         'lablUDPIncomingError
         '
@@ -349,7 +288,7 @@ Partial Class Form1
         Me.lablUDPIncomingError.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lablUDPIncomingError.Font = New System.Drawing.Font("Arial", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lablUDPIncomingError.ForeColor = System.Drawing.Color.White
-        Me.lablUDPIncomingError.Location = New System.Drawing.Point(301, 168)
+        Me.lablUDPIncomingError.Location = New System.Drawing.Point(312, 168)
         Me.lablUDPIncomingError.Name = "lablUDPIncomingError"
         Me.lablUDPIncomingError.Size = New System.Drawing.Size(112, 29)
         Me.lablUDPIncomingError.TabIndex = 40
@@ -364,12 +303,12 @@ Partial Class Form1
         Me.lablListenAddresses.ForeColor = System.Drawing.Color.White
         Me.lablListenAddresses.Location = New System.Drawing.Point(103, 202)
         Me.lablListenAddresses.Name = "lablListenAddresses"
-        Me.lablListenAddresses.Size = New System.Drawing.Size(68, 18)
+        Me.lablListenAddresses.Size = New System.Drawing.Size(0, 18)
         Me.lablListenAddresses.TabIndex = 41
-        Me.lablListenAddresses.Text = "111, 222"
         '
         'GroupBox1
         '
+        Me.GroupBox1.Controls.Add(Me.lablRunning)
         Me.GroupBox1.Controls.Add(Me.Label11)
         Me.GroupBox1.Controls.Add(Me.lablUDPIncomingOK)
         Me.GroupBox1.Controls.Add(Me.Label10)
@@ -386,8 +325,9 @@ Partial Class Form1
         Me.GroupBox1.Controls.Add(Me.CheckBox5)
         Me.GroupBox1.Controls.Add(Me.Label7)
         Me.GroupBox1.Controls.Add(Me.CheckBox6)
-        Me.GroupBox1.Controls.Add(Me.lablIncomingClock)
+        Me.GroupBox1.Controls.Add(Me.lablOmega)
         Me.GroupBox1.Controls.Add(Me.Label8)
+        Me.GroupBox1.Controls.Add(Me.lablOmegaError)
         Me.GroupBox1.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox1.ForeColor = System.Drawing.Color.White
         Me.GroupBox1.Location = New System.Drawing.Point(13, 12)
@@ -414,7 +354,7 @@ Partial Class Form1
         Me.lablUDPIncomingOK.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lablUDPIncomingOK.Font = New System.Drawing.Font("Arial", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lablUDPIncomingOK.ForeColor = System.Drawing.Color.Black
-        Me.lablUDPIncomingOK.Location = New System.Drawing.Point(301, 168)
+        Me.lablUDPIncomingOK.Location = New System.Drawing.Point(312, 168)
         Me.lablUDPIncomingOK.Name = "lablUDPIncomingOK"
         Me.lablUDPIncomingOK.Size = New System.Drawing.Size(112, 29)
         Me.lablUDPIncomingOK.TabIndex = 46
@@ -439,7 +379,7 @@ Partial Class Form1
         Me.lablCOMOK.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lablCOMOK.Font = New System.Drawing.Font("Arial", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lablCOMOK.ForeColor = System.Drawing.Color.Black
-        Me.lablCOMOK.Location = New System.Drawing.Point(301, 25)
+        Me.lablCOMOK.Location = New System.Drawing.Point(312, 25)
         Me.lablCOMOK.Name = "lablCOMOK"
         Me.lablCOMOK.Size = New System.Drawing.Size(112, 29)
         Me.lablCOMOK.TabIndex = 45
@@ -463,7 +403,7 @@ Partial Class Form1
         Me.lablCOMError.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lablCOMError.Font = New System.Drawing.Font("Arial", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lablCOMError.ForeColor = System.Drawing.Color.White
-        Me.lablCOMError.Location = New System.Drawing.Point(301, 24)
+        Me.lablCOMError.Location = New System.Drawing.Point(312, 24)
         Me.lablCOMError.Name = "lablCOMError"
         Me.lablCOMError.Size = New System.Drawing.Size(112, 29)
         Me.lablCOMError.TabIndex = 42
@@ -753,7 +693,6 @@ Partial Class Form1
         Me.GroupBox3.Controls.Add(Me.RadioButton2)
         Me.GroupBox3.Controls.Add(Me.RadioButton1)
         Me.GroupBox3.Controls.Add(Me.lablOutgoing)
-        Me.GroupBox3.Controls.Add(Me.Label9)
         Me.GroupBox3.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox3.ForeColor = System.Drawing.Color.White
         Me.GroupBox3.Location = New System.Drawing.Point(465, 190)
@@ -768,7 +707,7 @@ Partial Class Form1
         Me.RadioButton4.AutoSize = True
         Me.RadioButton4.Checked = Global.TimingServer.My.MySettings.Default.SourceTestClock
         Me.RadioButton4.DataBindings.Add(New System.Windows.Forms.Binding("Checked", Global.TimingServer.My.MySettings.Default, "SourceTestClock", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.RadioButton4.Location = New System.Drawing.Point(389, 24)
+        Me.RadioButton4.Location = New System.Drawing.Point(547, 58)
         Me.RadioButton4.Name = "RadioButton4"
         Me.RadioButton4.Size = New System.Drawing.Size(87, 20)
         Me.RadioButton4.TabIndex = 25
@@ -781,7 +720,7 @@ Partial Class Form1
         Me.RadioButton3.AutoSize = True
         Me.RadioButton3.Checked = Global.TimingServer.My.MySettings.Default.SourceTestTimer
         Me.RadioButton3.DataBindings.Add(New System.Windows.Forms.Binding("Checked", Global.TimingServer.My.MySettings.Default, "SourceTestTimer", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.RadioButton3.Location = New System.Drawing.Point(274, 24)
+        Me.RadioButton3.Location = New System.Drawing.Point(547, 28)
         Me.RadioButton3.Name = "RadioButton3"
         Me.RadioButton3.Size = New System.Drawing.Size(86, 20)
         Me.RadioButton3.TabIndex = 24
@@ -794,9 +733,10 @@ Partial Class Form1
         Me.RadioButton2.AutoSize = True
         Me.RadioButton2.Checked = Global.TimingServer.My.MySettings.Default.SourceUDP
         Me.RadioButton2.DataBindings.Add(New System.Windows.Forms.Binding("Checked", Global.TimingServer.My.MySettings.Default, "SourceUDP", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.RadioButton2.Location = New System.Drawing.Point(190, 24)
+        Me.RadioButton2.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.RadioButton2.Location = New System.Drawing.Point(19, 58)
         Me.RadioButton2.Name = "RadioButton2"
-        Me.RadioButton2.Size = New System.Drawing.Size(53, 20)
+        Me.RadioButton2.Size = New System.Drawing.Size(60, 22)
         Me.RadioButton2.TabIndex = 23
         Me.RadioButton2.TabStop = True
         Me.RadioButton2.Text = "UDP"
@@ -807,9 +747,10 @@ Partial Class Form1
         Me.RadioButton1.AutoSize = True
         Me.RadioButton1.Checked = Global.TimingServer.My.MySettings.Default.SourceCOM
         Me.RadioButton1.DataBindings.Add(New System.Windows.Forms.Binding("Checked", Global.TimingServer.My.MySettings.Default, "SourceCOM", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.RadioButton1.Location = New System.Drawing.Point(28, 24)
+        Me.RadioButton1.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.RadioButton1.Location = New System.Drawing.Point(19, 28)
         Me.RadioButton1.Name = "RadioButton1"
-        Me.RadioButton1.Size = New System.Drawing.Size(140, 20)
+        Me.RadioButton1.Size = New System.Drawing.Size(162, 22)
         Me.RadioButton1.TabIndex = 22
         Me.RadioButton1.TabStop = True
         Me.RadioButton1.Text = "Swiss Timing Clock"
@@ -817,6 +758,8 @@ Partial Class Form1
         '
         'GroupBox4
         '
+        Me.GroupBox4.Controls.Add(Me.Button2)
+        Me.GroupBox4.Controls.Add(Me.Button1)
         Me.GroupBox4.Controls.Add(Me.btnTimerReset)
         Me.GroupBox4.Controls.Add(Me.btnTimerStart)
         Me.GroupBox4.Controls.Add(Me.Label13)
@@ -827,10 +770,36 @@ Partial Class Form1
         Me.GroupBox4.ForeColor = System.Drawing.Color.White
         Me.GroupBox4.Location = New System.Drawing.Point(13, 287)
         Me.GroupBox4.Name = "GroupBox4"
-        Me.GroupBox4.Size = New System.Drawing.Size(446, 100)
+        Me.GroupBox4.Size = New System.Drawing.Size(446, 153)
         Me.GroupBox4.TabIndex = 45
         Me.GroupBox4.TabStop = False
         Me.GroupBox4.Text = "Test"
+        '
+        'btnTimerReset
+        '
+        Me.btnTimerReset.BackColor = System.Drawing.Color.DarkRed
+        Me.btnTimerReset.Enabled = False
+        Me.btnTimerReset.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnTimerReset.ForeColor = System.Drawing.Color.White
+        Me.btnTimerReset.Location = New System.Drawing.Point(358, 24)
+        Me.btnTimerReset.Name = "btnTimerReset"
+        Me.btnTimerReset.Size = New System.Drawing.Size(78, 29)
+        Me.btnTimerReset.TabIndex = 40
+        Me.btnTimerReset.Text = "Reset"
+        Me.btnTimerReset.UseVisualStyleBackColor = False
+        '
+        'btnTimerStart
+        '
+        Me.btnTimerStart.BackColor = System.Drawing.Color.DarkGreen
+        Me.btnTimerStart.Enabled = False
+        Me.btnTimerStart.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnTimerStart.ForeColor = System.Drawing.Color.White
+        Me.btnTimerStart.Location = New System.Drawing.Point(274, 24)
+        Me.btnTimerStart.Name = "btnTimerStart"
+        Me.btnTimerStart.Size = New System.Drawing.Size(78, 29)
+        Me.btnTimerStart.TabIndex = 39
+        Me.btnTimerStart.Text = "Start"
+        Me.btnTimerStart.UseVisualStyleBackColor = False
         '
         'Label13
         '
@@ -874,46 +843,71 @@ Partial Class Form1
         Me.TextBox7.TabIndex = 23
         Me.TextBox7.Text = Global.TimingServer.My.MySettings.Default.TestTimerFormat
         '
-        'btnTimerStart
+        'lablOmegaError
         '
-        Me.btnTimerStart.BackColor = System.Drawing.Color.DarkGreen
-        Me.btnTimerStart.Enabled = False
-        Me.btnTimerStart.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnTimerStart.ForeColor = System.Drawing.Color.White
-        Me.btnTimerStart.Location = New System.Drawing.Point(274, 24)
-        Me.btnTimerStart.Name = "btnTimerStart"
-        Me.btnTimerStart.Size = New System.Drawing.Size(78, 29)
-        Me.btnTimerStart.TabIndex = 39
-        Me.btnTimerStart.Text = "Start"
-        Me.btnTimerStart.UseVisualStyleBackColor = False
+        Me.lablOmegaError.BackColor = System.Drawing.Color.Red
+        Me.lablOmegaError.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lablOmegaError.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lablOmegaError.ForeColor = System.Drawing.Color.White
+        Me.lablOmegaError.Location = New System.Drawing.Point(106, 96)
+        Me.lablOmegaError.Name = "lablOmegaError"
+        Me.lablOmegaError.Size = New System.Drawing.Size(190, 32)
+        Me.lablOmegaError.TabIndex = 48
+        Me.lablOmegaError.Text = "NO OMEGA DATA"
+        Me.lablOmegaError.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
-        'btnTimerReset
+        'TimerOmega
         '
-        Me.btnTimerReset.BackColor = System.Drawing.Color.DarkRed
-        Me.btnTimerReset.Enabled = False
-        Me.btnTimerReset.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnTimerReset.ForeColor = System.Drawing.Color.White
-        Me.btnTimerReset.Location = New System.Drawing.Point(358, 24)
-        Me.btnTimerReset.Name = "btnTimerReset"
-        Me.btnTimerReset.Size = New System.Drawing.Size(78, 29)
-        Me.btnTimerReset.TabIndex = 40
-        Me.btnTimerReset.Text = "Reset"
-        Me.btnTimerReset.UseVisualStyleBackColor = False
+        Me.TimerOmega.Interval = 1000
+        '
+        'lablRunning
+        '
+        Me.lablRunning.BackColor = System.Drawing.Color.LimeGreen
+        Me.lablRunning.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lablRunning.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lablRunning.ForeColor = System.Drawing.Color.Black
+        Me.lablRunning.Location = New System.Drawing.Point(312, 97)
+        Me.lablRunning.Name = "lablRunning"
+        Me.lablRunning.Size = New System.Drawing.Size(112, 29)
+        Me.lablRunning.TabIndex = 49
+        Me.lablRunning.Text = "Running"
+        Me.lablRunning.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.lablRunning.Visible = False
+        '
+        'Button1
+        '
+        Me.Button1.BackColor = System.Drawing.Color.Orange
+        Me.Button1.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button1.ForeColor = System.Drawing.Color.Black
+        Me.Button1.Location = New System.Drawing.Point(119, 103)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(99, 41)
+        Me.Button1.TabIndex = 46
+        Me.Button1.Text = "Test Omega" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Stop"
+        Me.Button1.UseVisualStyleBackColor = False
+        '
+        'Button2
+        '
+        Me.Button2.BackColor = System.Drawing.Color.Orange
+        Me.Button2.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button2.ForeColor = System.Drawing.Color.Black
+        Me.Button2.Location = New System.Drawing.Point(224, 103)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(99, 41)
+        Me.Button2.TabIndex = 47
+        Me.Button2.Text = "Test Omega" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Start"
+        Me.Button2.UseVisualStyleBackColor = False
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Navy
-        Me.ClientSize = New System.Drawing.Size(1467, 871)
+        Me.ClientSize = New System.Drawing.Size(1147, 452)
         Me.Controls.Add(Me.GroupBox4)
-        Me.Controls.Add(Me.btnTestClockTimer)
-        Me.Controls.Add(Me.btnTestTimer)
         Me.Controls.Add(Me.GroupBox3)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
-        Me.Controls.Add(Me.btnBroadcastUDP)
-        Me.Controls.Add(Me.btnBroadcastClock)
         Me.Name = "Form1"
         Me.Text = "Form1"
         Me.GroupBox1.ResumeLayout(False)
@@ -943,13 +937,9 @@ Partial Class Form1
     Friend WithEvents CheckBox2 As System.Windows.Forms.CheckBox
     Friend WithEvents CheckBox3 As System.Windows.Forms.CheckBox
     Friend WithEvents CheckBox4 As System.Windows.Forms.CheckBox
-    Friend WithEvents btnTestTimer As System.Windows.Forms.Button
-    Friend WithEvents btnBroadcastClock As System.Windows.Forms.Button
     Friend WithEvents lablOutgoing As System.Windows.Forms.Label
-    Friend WithEvents lablIncomingClock As System.Windows.Forms.Label
+    Friend WithEvents lablOmega As System.Windows.Forms.Label
     Friend WithEvents Label8 As System.Windows.Forms.Label
-    Friend WithEvents Label9 As System.Windows.Forms.Label
-    Friend WithEvents btnTestClockTimer As System.Windows.Forms.Button
     Friend WithEvents TimerClock As System.Windows.Forms.Timer
     Friend WithEvents TextBox7 As System.Windows.Forms.TextBox
     Friend WithEvents TextBox8 As System.Windows.Forms.TextBox
@@ -967,7 +957,6 @@ Partial Class Form1
     Friend WithEvents CheckBox6 As System.Windows.Forms.CheckBox
     Friend WithEvents Label7 As System.Windows.Forms.Label
     Friend WithEvents lablIncomingUDP As System.Windows.Forms.Label
-    Friend WithEvents btnBroadcastUDP As System.Windows.Forms.Button
     Friend WithEvents lablUDPIncomingError As System.Windows.Forms.Label
     Friend WithEvents lablListenAddresses As System.Windows.Forms.Label
     Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
@@ -991,5 +980,10 @@ Partial Class Form1
     Friend WithEvents RadioButton1 As System.Windows.Forms.RadioButton
     Friend WithEvents btnTimerReset As System.Windows.Forms.Button
     Friend WithEvents btnTimerStart As System.Windows.Forms.Button
+    Friend WithEvents lablOmegaError As System.Windows.Forms.Label
+    Friend WithEvents TimerOmega As System.Windows.Forms.Timer
+    Friend WithEvents lablRunning As System.Windows.Forms.Label
+    Friend WithEvents Button1 As System.Windows.Forms.Button
+    Friend WithEvents Button2 As System.Windows.Forms.Button
 
 End Class
