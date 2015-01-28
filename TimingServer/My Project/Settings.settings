@@ -1,7 +1,54 @@
 ﻿<?xml version='1.0' encoding='utf-8'?>
-<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" UseMySettingsClassName="true">
-  <Profiles>
-    <Profile Name="(Default)" />
-  </Profiles>
-  <Settings />
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="My" GeneratedClassName="MySettings" UseMySettingsClassName="true">
+  <Profiles />
+  <Settings>
+    <Setting Name="IncomingCOMPort" Type="System.String" Scope="User">
+      <Value Profile="(Default)">10542</Value>
+    </Setting>
+    <Setting Name="UDP1" Type="System.String" Scope="User">
+      <Value Profile="(Default)">10.0.0.255</Value>
+    </Setting>
+    <Setting Name="UDP2" Type="System.String" Scope="User">
+      <Value Profile="(Default)">192.168.0.255</Value>
+    </Setting>
+    <Setting Name="UDP3" Type="System.String" Scope="User">
+      <Value Profile="(Default)">10.10.10.255</Value>
+    </Setting>
+    <Setting Name="UDP4" Type="System.String" Scope="User">
+      <Value Profile="(Default)">192.168.255.255</Value>
+    </Setting>
+    <Setting Name="LocationCode" Type="System.String" Scope="User">
+      <Value Profile="(Default)">ABC</Value>
+    </Setting>
+    <Setting Name="UDP1Enabled" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="UDP2Enabled" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="UDP3Enabled" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="UDP4Enabled" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="TestTimerFormat" Type="System.String" Scope="User">
+      <Value Profile="(Default)">m:ss.ff</Value>
+    </Setting>
+    <Setting Name="TestClockFormat" Type="System.String" Scope="User">
+      <Value Profile="(Default)">hh:mm:ss</Value>
+    </Setting>
+    <Setting Name="UDP1Port" Type="System.String" Scope="User">
+      <Value Profile="(Default)">10542</Value>
+    </Setting>
+    <Setting Name="UDP2Port" Type="System.String" Scope="User">
+      <Value Profile="(Default)">10542</Value>
+    </Setting>
+    <Setting Name="UDP3Port" Type="System.String" Scope="User">
+      <Value Profile="(Default)">10542</Value>
+    </Setting>
+    <Setting Name="UDP4Port" Type="System.String" Scope="User">
+      <Value Profile="(Default)">10542</Value>
+    </Setting>
+  </Settings>
 </SettingsFile>
