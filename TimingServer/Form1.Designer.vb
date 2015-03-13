@@ -23,6 +23,7 @@ Partial Class Form1
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
@@ -43,6 +44,7 @@ Partial Class Form1
         Me.lablUDPIncomingError = New System.Windows.Forms.Label()
         Me.lablListenAddresses = New System.Windows.Forms.Label()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.lablRunning = New System.Windows.Forms.Label()
         Me.Label11 = New System.Windows.Forms.Label()
         Me.lablUDPIncomingOK = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
@@ -53,6 +55,7 @@ Partial Class Form1
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.CheckBox5 = New System.Windows.Forms.CheckBox()
         Me.CheckBox6 = New System.Windows.Forms.CheckBox()
+        Me.lablOmegaError = New System.Windows.Forms.Label()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.lablOK4 = New System.Windows.Forms.Label()
         Me.lablOK3 = New System.Windows.Forms.Label()
@@ -76,17 +79,18 @@ Partial Class Form1
         Me.RadioButton2 = New System.Windows.Forms.RadioButton()
         Me.RadioButton1 = New System.Windows.Forms.RadioButton()
         Me.GroupBox4 = New System.Windows.Forms.GroupBox()
+        Me.btnTimerStop = New System.Windows.Forms.Button()
+        Me.Button2 = New System.Windows.Forms.Button()
+        Me.Button1 = New System.Windows.Forms.Button()
         Me.btnTimerReset = New System.Windows.Forms.Button()
         Me.btnTimerStart = New System.Windows.Forms.Button()
         Me.Label13 = New System.Windows.Forms.Label()
         Me.Label12 = New System.Windows.Forms.Label()
         Me.TextBox8 = New System.Windows.Forms.TextBox()
         Me.TextBox7 = New System.Windows.Forms.TextBox()
-        Me.lablOmegaError = New System.Windows.Forms.Label()
         Me.TimerOmega = New System.Windows.Forms.Timer(Me.components)
-        Me.lablRunning = New System.Windows.Forms.Label()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
+        Me.TimerHeartbeat = New System.Windows.Forms.Timer(Me.components)
+        Me.btnReset = New System.Windows.Forms.Button()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.GroupBox3.SuspendLayout()
@@ -337,6 +341,20 @@ Partial Class Form1
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Incoming"
         '
+        'lablRunning
+        '
+        Me.lablRunning.BackColor = System.Drawing.Color.LimeGreen
+        Me.lablRunning.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lablRunning.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lablRunning.ForeColor = System.Drawing.Color.Black
+        Me.lablRunning.Location = New System.Drawing.Point(312, 97)
+        Me.lablRunning.Name = "lablRunning"
+        Me.lablRunning.Size = New System.Drawing.Size(112, 29)
+        Me.lablRunning.TabIndex = 49
+        Me.lablRunning.Text = "Running"
+        Me.lablRunning.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.lablRunning.Visible = False
+        '
         'Label11
         '
         Me.Label11.AutoSize = True
@@ -459,6 +477,19 @@ Partial Class Form1
         Me.CheckBox6.Text = "Enabled"
         Me.CheckBox6.UseVisualStyleBackColor = True
         '
+        'lablOmegaError
+        '
+        Me.lablOmegaError.BackColor = System.Drawing.Color.Red
+        Me.lablOmegaError.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lablOmegaError.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lablOmegaError.ForeColor = System.Drawing.Color.White
+        Me.lablOmegaError.Location = New System.Drawing.Point(106, 96)
+        Me.lablOmegaError.Name = "lablOmegaError"
+        Me.lablOmegaError.Size = New System.Drawing.Size(190, 32)
+        Me.lablOmegaError.TabIndex = 48
+        Me.lablOmegaError.Text = "NO OMEGA DATA"
+        Me.lablOmegaError.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
         'GroupBox2
         '
         Me.GroupBox2.Controls.Add(Me.lablOK4)
@@ -492,7 +523,7 @@ Partial Class Form1
         Me.GroupBox2.Size = New System.Drawing.Size(655, 176)
         Me.GroupBox2.TabIndex = 43
         Me.GroupBox2.TabStop = False
-        Me.GroupBox2.Text = "Outgoing"
+        Me.GroupBox2.Text = "Outgoing UDP"
         '
         'lablOK4
         '
@@ -750,14 +781,15 @@ Partial Class Form1
         Me.RadioButton1.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.RadioButton1.Location = New System.Drawing.Point(19, 28)
         Me.RadioButton1.Name = "RadioButton1"
-        Me.RadioButton1.Size = New System.Drawing.Size(162, 22)
+        Me.RadioButton1.Size = New System.Drawing.Size(122, 22)
         Me.RadioButton1.TabIndex = 22
         Me.RadioButton1.TabStop = True
-        Me.RadioButton1.Text = "Swiss Timing Clock"
+        Me.RadioButton1.Text = "Omega Clock"
         Me.RadioButton1.UseVisualStyleBackColor = True
         '
         'GroupBox4
         '
+        Me.GroupBox4.Controls.Add(Me.btnTimerStop)
         Me.GroupBox4.Controls.Add(Me.Button2)
         Me.GroupBox4.Controls.Add(Me.Button1)
         Me.GroupBox4.Controls.Add(Me.btnTimerReset)
@@ -775,15 +807,52 @@ Partial Class Form1
         Me.GroupBox4.TabStop = False
         Me.GroupBox4.Text = "Test"
         '
+        'btnTimerStop
+        '
+        Me.btnTimerStop.BackColor = System.Drawing.Color.DarkRed
+        Me.btnTimerStop.Enabled = False
+        Me.btnTimerStop.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnTimerStop.ForeColor = System.Drawing.Color.White
+        Me.btnTimerStop.Location = New System.Drawing.Point(329, 24)
+        Me.btnTimerStop.Name = "btnTimerStop"
+        Me.btnTimerStop.Size = New System.Drawing.Size(49, 29)
+        Me.btnTimerStop.TabIndex = 48
+        Me.btnTimerStop.Text = "Stop"
+        Me.btnTimerStop.UseVisualStyleBackColor = False
+        '
+        'Button2
+        '
+        Me.Button2.BackColor = System.Drawing.Color.Orange
+        Me.Button2.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button2.ForeColor = System.Drawing.Color.Black
+        Me.Button2.Location = New System.Drawing.Point(224, 103)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(99, 41)
+        Me.Button2.TabIndex = 47
+        Me.Button2.Text = "Test Omega" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Start"
+        Me.Button2.UseVisualStyleBackColor = False
+        '
+        'Button1
+        '
+        Me.Button1.BackColor = System.Drawing.Color.Orange
+        Me.Button1.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button1.ForeColor = System.Drawing.Color.Black
+        Me.Button1.Location = New System.Drawing.Point(119, 103)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(99, 41)
+        Me.Button1.TabIndex = 46
+        Me.Button1.Text = "Test Omega" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Stop"
+        Me.Button1.UseVisualStyleBackColor = False
+        '
         'btnTimerReset
         '
         Me.btnTimerReset.BackColor = System.Drawing.Color.DarkRed
         Me.btnTimerReset.Enabled = False
-        Me.btnTimerReset.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnTimerReset.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnTimerReset.ForeColor = System.Drawing.Color.White
-        Me.btnTimerReset.Location = New System.Drawing.Point(358, 24)
+        Me.btnTimerReset.Location = New System.Drawing.Point(384, 24)
         Me.btnTimerReset.Name = "btnTimerReset"
-        Me.btnTimerReset.Size = New System.Drawing.Size(78, 29)
+        Me.btnTimerReset.Size = New System.Drawing.Size(49, 29)
         Me.btnTimerReset.TabIndex = 40
         Me.btnTimerReset.Text = "Reset"
         Me.btnTimerReset.UseVisualStyleBackColor = False
@@ -792,11 +861,11 @@ Partial Class Form1
         '
         Me.btnTimerStart.BackColor = System.Drawing.Color.DarkGreen
         Me.btnTimerStart.Enabled = False
-        Me.btnTimerStart.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnTimerStart.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnTimerStart.ForeColor = System.Drawing.Color.White
         Me.btnTimerStart.Location = New System.Drawing.Point(274, 24)
         Me.btnTimerStart.Name = "btnTimerStart"
-        Me.btnTimerStart.Size = New System.Drawing.Size(78, 29)
+        Me.btnTimerStart.Size = New System.Drawing.Size(49, 29)
         Me.btnTimerStart.TabIndex = 39
         Me.btnTimerStart.Text = "Start"
         Me.btnTimerStart.UseVisualStyleBackColor = False
@@ -843,60 +912,25 @@ Partial Class Form1
         Me.TextBox7.TabIndex = 23
         Me.TextBox7.Text = Global.TimingServer.My.MySettings.Default.TestTimerFormat
         '
-        'lablOmegaError
-        '
-        Me.lablOmegaError.BackColor = System.Drawing.Color.Red
-        Me.lablOmegaError.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lablOmegaError.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lablOmegaError.ForeColor = System.Drawing.Color.White
-        Me.lablOmegaError.Location = New System.Drawing.Point(106, 96)
-        Me.lablOmegaError.Name = "lablOmegaError"
-        Me.lablOmegaError.Size = New System.Drawing.Size(190, 32)
-        Me.lablOmegaError.TabIndex = 48
-        Me.lablOmegaError.Text = "NO OMEGA DATA"
-        Me.lablOmegaError.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        '
         'TimerOmega
         '
         Me.TimerOmega.Interval = 1000
         '
-        'lablRunning
+        'TimerHeartbeat
         '
-        Me.lablRunning.BackColor = System.Drawing.Color.LimeGreen
-        Me.lablRunning.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lablRunning.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lablRunning.ForeColor = System.Drawing.Color.Black
-        Me.lablRunning.Location = New System.Drawing.Point(312, 97)
-        Me.lablRunning.Name = "lablRunning"
-        Me.lablRunning.Size = New System.Drawing.Size(112, 29)
-        Me.lablRunning.TabIndex = 49
-        Me.lablRunning.Text = "Running"
-        Me.lablRunning.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.lablRunning.Visible = False
+        Me.TimerHeartbeat.Interval = 10000
         '
-        'Button1
+        'btnReset
         '
-        Me.Button1.BackColor = System.Drawing.Color.Orange
-        Me.Button1.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.ForeColor = System.Drawing.Color.Black
-        Me.Button1.Location = New System.Drawing.Point(119, 103)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(99, 41)
-        Me.Button1.TabIndex = 46
-        Me.Button1.Text = "Test Omega" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Stop"
-        Me.Button1.UseVisualStyleBackColor = False
-        '
-        'Button2
-        '
-        Me.Button2.BackColor = System.Drawing.Color.Orange
-        Me.Button2.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.ForeColor = System.Drawing.Color.Black
-        Me.Button2.Location = New System.Drawing.Point(224, 103)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(99, 41)
-        Me.Button2.TabIndex = 47
-        Me.Button2.Text = "Test Omega" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Start"
-        Me.Button2.UseVisualStyleBackColor = False
+        Me.btnReset.BackColor = System.Drawing.Color.Orange
+        Me.btnReset.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnReset.ForeColor = System.Drawing.Color.Black
+        Me.btnReset.Location = New System.Drawing.Point(960, 390)
+        Me.btnReset.Name = "btnReset"
+        Me.btnReset.Size = New System.Drawing.Size(160, 41)
+        Me.btnReset.TabIndex = 48
+        Me.btnReset.Text = "Reset Connections"
+        Me.btnReset.UseVisualStyleBackColor = False
         '
         'Form1
         '
@@ -904,10 +938,12 @@ Partial Class Form1
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Navy
         Me.ClientSize = New System.Drawing.Size(1147, 452)
+        Me.Controls.Add(Me.btnReset)
         Me.Controls.Add(Me.GroupBox4)
         Me.Controls.Add(Me.GroupBox3)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Form1"
         Me.Text = "Form1"
         Me.GroupBox1.ResumeLayout(False)
@@ -985,5 +1021,8 @@ Partial Class Form1
     Friend WithEvents lablRunning As System.Windows.Forms.Label
     Friend WithEvents Button1 As System.Windows.Forms.Button
     Friend WithEvents Button2 As System.Windows.Forms.Button
+    Friend WithEvents TimerHeartbeat As System.Windows.Forms.Timer
+    Friend WithEvents btnTimerStop As System.Windows.Forms.Button
+    Friend WithEvents btnReset As System.Windows.Forms.Button
 
 End Class

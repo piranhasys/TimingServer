@@ -28,6 +28,7 @@ Public Class Form1
     Private currentOmegaTime As String = ""
     Private currentOmegaStatus As String = ""
     Private lastTX As Date = Now
+    Private lastBroadcastTimestamp As Date = Now
     Private ClockRunning As Boolean = False
 
     Private Sub Form1_FormClosing(sender As Object, e As FormClosingEventArgs) Handles Me.FormClosing
@@ -50,6 +51,7 @@ Public Class Form1
         Setup()
         SetupOutput()
         ShowRunningStatus()
+        TimerHeartbeat.Start()
         Loading = False
     End Sub
     Private Sub GetUDPData()
@@ -120,7 +122,7 @@ Public Class Form1
                     End Select
                     ShowRunningStatus()
                     If My.Settings.SourceCOM Then
-                        OutgoingString = My.Settings.LocationCode & "|" & currentOmegaTime & "|" & currentOmegaStatus & "|"
+                        OutgoingString = "TS|" & My.Settings.LocationCode & "|" & currentOmegaTime & "|" & currentOmegaStatus & "|"
                         lastTX = Now
                         Broadcast(True)
                     End If
@@ -165,7 +167,38 @@ Public Class Form1
         End Try
     End Sub
 
-
+    Sub CloseConnections()
+        If SerialOmega.Connected Then
+            SerialOmega.Disconnect()
+        End If
+        If UDPConnectedIncoming Then
+            udpClientIncoming.Close()
+        End If
+        If UDPConnected1 Then
+            udpClient1.Close()
+        End If
+        If UDPConnected2 Then
+            udpClient2.Close()
+        End If
+        If UDPConnected3 Then
+            udpClient3.Close()
+        End If
+        If UDPConnected4 Then
+            udpClient4.Close()
+        End If
+        lablCOMError.Visible = False
+        lablCOMOK.Visible = False
+        lablUDPIncomingError.Visible = False
+        lablUDPIncomingOK.Visible = False
+        lablError1.Visible = False
+        lablOK1.Visible = False
+        lablError2.Visible = False
+        lablOK2.Visible = False
+        lablError3.Visible = False
+        lablOK3.Visible = False
+        lablError4.Visible = False
+        lablOK4.Visible = False
+    End Sub
     Sub Setup()
         If My.Settings.COMPortEnabled Then
             Try
@@ -328,6 +361,7 @@ Public Class Form1
                     Console.WriteLine("Sent to UDP4: " & OutgoingString)
                 End If
                 lastOutput = OutgoingString
+                lastBroadcastTimestamp = Now
             Catch ex As Exception
                 Console.WriteLine(ex.Message)
             End Try
@@ -344,7 +378,7 @@ Public Class Form1
     Private Sub TimerClock_Tick(sender As Object, e As EventArgs) Handles TimerClock.Tick
         If My.Settings.SourceTestClock Then
             elapsedTime = Date.Now
-            OutgoingString = My.Settings.LocationCode & "|" & elapsedTime.ToString(My.Settings.TestClockFormat) & "||"
+            OutgoingString = "TS|" & My.Settings.LocationCode & "|" & elapsedTime.ToString(My.Settings.TestClockFormat) & "||"
             Broadcast(False)
         End If
     End Sub
@@ -360,7 +394,7 @@ Public Class Form1
         If My.Settings.SourceTestTimer Then
             currentTicks = Now.Ticks - startTicks
             elapsedTime = New Date(currentTicks)
-            OutgoingString = My.Settings.LocationCode & "|" & elapsedTime.ToString(My.Settings.TestTimerFormat) & "||"
+            OutgoingString = "TS|" & My.Settings.LocationCode & "|" & elapsedTime.ToString(My.Settings.TestTimerFormat) & "|1|"
             Broadcast(False)
         End If
     End Sub
@@ -381,6 +415,7 @@ Public Class Form1
         TimerTimer.Stop()
         btnTimerReset.Enabled = My.Settings.SourceTestTimer
         btnTimerStart.Enabled = My.Settings.SourceTestTimer
+        btnTimerStop.Enabled = My.Settings.SourceTestTimer
         TimerClock.Enabled = My.Settings.SourceTestClock
     End Sub
 
@@ -389,12 +424,21 @@ Public Class Form1
         TimerTimer.Start()
     End Sub
 
+    Private Sub btnTimerStop_Click(sender As Object, e As EventArgs) Handles btnTimerStop.Click
+        TimerTimer.Stop()
+        If My.Settings.SourceTestTimer Then
+            elapsedTime = New Date(currentTicks)
+            OutgoingString = "TS|" & My.Settings.LocationCode & "|" & elapsedTime.ToString(My.Settings.TestTimerFormat) & "|0|"
+            Broadcast(True)
+        End If
+
+    End Sub
     Private Sub btnTimerReset_Click(sender As Object, e As EventArgs) Handles btnTimerReset.Click
         TimerTimer.Stop()
         If My.Settings.SourceTestTimer Then
             currentTicks = 0
             elapsedTime = New Date(currentTicks)
-            OutgoingString = My.Settings.LocationCode & "|" & elapsedTime.ToString(My.Settings.TestTimerFormat) & "||"
+            OutgoingString = "TS|" & My.Settings.LocationCode & "|" & elapsedTime.ToString(My.Settings.TestTimerFormat) & "|0|"
             Broadcast(True)
         End If
     End Sub
@@ -410,5 +454,17 @@ Public Class Form1
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
         ProcessOmegaClock("D 0:19 00000000000100000000000000000000000")
+    End Sub
+
+    Private Sub TimerHeartbeat_Tick(sender As Object, e As EventArgs) Handles TimerHeartbeat.Tick
+        If DateDiff(DateInterval.Second, lastBroadcastTimestamp, Now) > 9 Then
+            OutgoingString = "TS|" & My.Settings.LocationCode & "|HBT " & Now.ToLongTimeString & "|-1|"
+            Broadcast(False)
+        End If
+    End Sub
+
+    Private Sub btnReset_Click(sender As Object, e As EventArgs) Handles btnReset.Click
+        CloseConnections()
+        Setup()
     End Sub
 End Class
