@@ -918,7 +918,7 @@ Partial Class Form1
         '
         'TimerHeartbeat
         '
-        Me.TimerHeartbeat.Interval = 10000
+        Me.TimerHeartbeat.Interval = 1000
         '
         'btnReset
         '
