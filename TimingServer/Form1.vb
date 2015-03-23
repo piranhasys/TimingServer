@@ -14,11 +14,19 @@ Public Class Form1
     Private udpClient2 As New UdpClient()
     Private udpClient3 As New UdpClient()
     Private udpClient4 As New UdpClient()
+    Private udpClient5 As New UdpClient()
+    Private udpClient6 As New UdpClient()
+    Private udpClient7 As New UdpClient()
+    Private udpClient8 As New UdpClient()
     Dim bteSendData() As Byte
     Private UDPConnected1 As Boolean = False
     Private UDPConnected2 As Boolean = False
     Private UDPConnected3 As Boolean = False
     Private UDPConnected4 As Boolean = False
+    Private UDPConnected5 As Boolean = False
+    Private UDPConnected6 As Boolean = False
+    Private UDPConnected7 As Boolean = False
+    Private UDPConnected8 As Boolean = False
     Private UDPConnectedIncoming As Boolean = False
     Private COMConnected As Boolean = False
     Public RemoteIpEndPoint As New IPEndPoint(IPAddress.Any, 0)
@@ -186,6 +194,18 @@ Public Class Form1
         If UDPConnected4 Then
             udpClient4.Close()
         End If
+        If UDPConnected5 Then
+            udpClient5.Close()
+        End If
+        If UDPConnected6 Then
+            udpClient6.Close()
+        End If
+        If UDPConnected7 Then
+            udpClient7.Close()
+        End If
+        If UDPConnected8 Then
+            udpClient8.Close()
+        End If
         lablCOMError.Visible = False
         lablCOMOK.Visible = False
         lablUDPIncomingError.Visible = False
@@ -198,6 +218,14 @@ Public Class Form1
         lablOK3.Visible = False
         lablError4.Visible = False
         lablOK4.Visible = False
+        lablError5.Visible = False
+        lablOK5.Visible = False
+        lablError6.Visible = False
+        lablOK6.Visible = False
+        lablError7.Visible = False
+        lablOK7.Visible = False
+        lablError8.Visible = False
+        lablOK8.Visible = False
     End Sub
     Sub Setup()
         If My.Settings.COMPortEnabled Then
@@ -309,6 +337,54 @@ Public Class Form1
                 lablOK4.Visible = False
             End Try
         End If
+        If My.Settings.UDP5Enabled Then
+            Try
+                udpClient5.Connect(My.Settings.UDP5, My.Settings.UDP5Port)
+                UDPConnected5 = True
+                lablerror5.Visible = False
+                lablOK5.Visible = True
+            Catch ex As Exception
+                UDPConnected5 = False
+                lablerror5.Visible = True
+                lablOK5.Visible = False
+            End Try
+        End If
+        If My.Settings.UDP6Enabled Then
+            Try
+                udpClient6.Connect(My.Settings.UDP6, My.Settings.UDP6Port)
+                UDPConnected6 = True
+                lablError6.Visible = False
+                lablOK6.Visible = True
+            Catch ex As Exception
+                UDPConnected6 = False
+                lablError6.Visible = True
+                lablOK6.Visible = False
+            End Try
+        End If
+        If My.Settings.UDP7Enabled Then
+            Try
+                udpClient7.Connect(My.Settings.UDP7, My.Settings.UDP7Port)
+                UDPConnected7 = True
+                lablError7.Visible = False
+                lablOK7.Visible = True
+            Catch ex As Exception
+                UDPConnected7 = False
+                lablError7.Visible = True
+                lablOK7.Visible = False
+            End Try
+        End If
+        If My.Settings.UDP8Enabled Then
+            Try
+                udpClient8.Connect(My.Settings.UDP8, My.Settings.UDP8Port)
+                UDPConnected8 = True
+                lablError8.Visible = False
+                lablOK8.Visible = True
+            Catch ex As Exception
+                UDPConnected8 = False
+                lablError8.Visible = True
+                lablOK8.Visible = False
+            End Try
+        End If
 
     End Sub
 
@@ -359,6 +435,22 @@ Public Class Form1
                 If UDPConnected4 Then
                     udpClient4.Send(bteSendData, bteSendData.Length)
                     Console.WriteLine("Sent to UDP4: " & OutgoingString)
+                End If
+                If UDPConnected5 Then
+                    udpClient5.Send(bteSendData, bteSendData.Length)
+                    Console.WriteLine("Sent to UDP5: " & OutgoingString)
+                End If
+                If UDPConnected6 Then
+                    udpClient6.Send(bteSendData, bteSendData.Length)
+                    Console.WriteLine("Sent to UDP6: " & OutgoingString)
+                End If
+                If UDPConnected7 Then
+                    udpClient7.Send(bteSendData, bteSendData.Length)
+                    Console.WriteLine("Sent to UDP7: " & OutgoingString)
+                End If
+                If UDPConnected8 Then
+                    udpClient8.Send(bteSendData, bteSendData.Length)
+                    Console.WriteLine("Sent to UDP8: " & OutgoingString)
                 End If
                 lastOutput = OutgoingString
                 lastBroadcastTimestamp = Now

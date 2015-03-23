@@ -71,5 +71,41 @@
     <Setting Name="SourceTestTimer" Type="System.Boolean" Scope="User">
       <Value Profile="(Default)">False</Value>
     </Setting>
+    <Setting Name="UDP5" Type="System.String" Scope="User">
+      <Value Profile="(Default)">55</Value>
+    </Setting>
+    <Setting Name="UDP6" Type="System.String" Scope="User">
+      <Value Profile="(Default)">66</Value>
+    </Setting>
+    <Setting Name="UDP7" Type="System.String" Scope="User">
+      <Value Profile="(Default)">77</Value>
+    </Setting>
+    <Setting Name="UDP8" Type="System.String" Scope="User">
+      <Value Profile="(Default)">88</Value>
+    </Setting>
+    <Setting Name="UDP5Port" Type="System.String" Scope="User">
+      <Value Profile="(Default)">555</Value>
+    </Setting>
+    <Setting Name="UDP6Port" Type="System.String" Scope="User">
+      <Value Profile="(Default)">666</Value>
+    </Setting>
+    <Setting Name="UDP7Port" Type="System.String" Scope="User">
+      <Value Profile="(Default)">777</Value>
+    </Setting>
+    <Setting Name="UDP8Port" Type="System.String" Scope="User">
+      <Value Profile="(Default)">888</Value>
+    </Setting>
+    <Setting Name="UDP5Enabled" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="UDP6Enabled" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="UDP7Enabled" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="UDP8Enabled" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
   </Settings>
 </SettingsFile>
