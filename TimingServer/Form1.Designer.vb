@@ -49,62 +49,44 @@ Partial Class Form1
         Me.lablUDPIncomingOK = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.lablCOMOK = New System.Windows.Forms.Label()
+        Me.TextBox6 = New System.Windows.Forms.TextBox()
         Me.lablCOMError = New System.Windows.Forms.Label()
+        Me.TextBox13 = New System.Windows.Forms.TextBox()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.CheckBox5 = New System.Windows.Forms.CheckBox()
+        Me.CheckBox6 = New System.Windows.Forms.CheckBox()
         Me.lablOmegaError = New System.Windows.Forms.Label()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.lablOK8 = New System.Windows.Forms.Label()
         Me.Label23 = New System.Windows.Forms.Label()
-        Me.lablDestination8 = New System.Windows.Forms.Label()
-        Me.lablOK7 = New System.Windows.Forms.Label()
-        Me.Label20 = New System.Windows.Forms.Label()
-        Me.lablDestination7 = New System.Windows.Forms.Label()
-        Me.lablOK6 = New System.Windows.Forms.Label()
-        Me.Label17 = New System.Windows.Forms.Label()
-        Me.lablDestination6 = New System.Windows.Forms.Label()
-        Me.lablOK5 = New System.Windows.Forms.Label()
-        Me.Label14 = New System.Windows.Forms.Label()
-        Me.lablDestination5 = New System.Windows.Forms.Label()
-        Me.lablOK4 = New System.Windows.Forms.Label()
-        Me.lablOK3 = New System.Windows.Forms.Label()
-        Me.lablOK2 = New System.Windows.Forms.Label()
-        Me.lablOK1 = New System.Windows.Forms.Label()
-        Me.lablerror5 = New System.Windows.Forms.Label()
-        Me.lablError6 = New System.Windows.Forms.Label()
-        Me.lablError7 = New System.Windows.Forms.Label()
-        Me.lablError8 = New System.Windows.Forms.Label()
-        Me.GroupBox3 = New System.Windows.Forms.GroupBox()
-        Me.GroupBox4 = New System.Windows.Forms.GroupBox()
-        Me.btnTimerStop = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.btnTimerReset = New System.Windows.Forms.Button()
-        Me.btnTimerStart = New System.Windows.Forms.Button()
-        Me.Label13 = New System.Windows.Forms.Label()
-        Me.Label12 = New System.Windows.Forms.Label()
-        Me.TimerOmega = New System.Windows.Forms.Timer(Me.components)
-        Me.TimerHeartbeat = New System.Windows.Forms.Timer(Me.components)
-        Me.btnReset = New System.Windows.Forms.Button()
-        Me.btnLoadConnections = New System.Windows.Forms.Button()
-        Me.TextBox8 = New System.Windows.Forms.TextBox()
-        Me.TextBox7 = New System.Windows.Forms.TextBox()
-        Me.RadioButton4 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton3 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton2 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton1 = New System.Windows.Forms.RadioButton()
         Me.TextBox20 = New System.Windows.Forms.TextBox()
         Me.TextBox21 = New System.Windows.Forms.TextBox()
+        Me.lablDestination8 = New System.Windows.Forms.Label()
         Me.CheckBox10 = New System.Windows.Forms.CheckBox()
+        Me.lablOK7 = New System.Windows.Forms.Label()
+        Me.Label20 = New System.Windows.Forms.Label()
         Me.TextBox18 = New System.Windows.Forms.TextBox()
         Me.TextBox19 = New System.Windows.Forms.TextBox()
+        Me.lablDestination7 = New System.Windows.Forms.Label()
         Me.CheckBox9 = New System.Windows.Forms.CheckBox()
+        Me.lablOK6 = New System.Windows.Forms.Label()
+        Me.Label17 = New System.Windows.Forms.Label()
         Me.TextBox16 = New System.Windows.Forms.TextBox()
         Me.TextBox17 = New System.Windows.Forms.TextBox()
+        Me.lablDestination6 = New System.Windows.Forms.Label()
         Me.CheckBox8 = New System.Windows.Forms.CheckBox()
+        Me.lablOK5 = New System.Windows.Forms.Label()
+        Me.Label14 = New System.Windows.Forms.Label()
         Me.TextBox14 = New System.Windows.Forms.TextBox()
         Me.TextBox15 = New System.Windows.Forms.TextBox()
+        Me.lablDestination5 = New System.Windows.Forms.Label()
         Me.CheckBox7 = New System.Windows.Forms.CheckBox()
+        Me.lablOK4 = New System.Windows.Forms.Label()
+        Me.lablOK3 = New System.Windows.Forms.Label()
         Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.lablOK2 = New System.Windows.Forms.Label()
         Me.TextBox3 = New System.Windows.Forms.TextBox()
+        Me.lablOK1 = New System.Windows.Forms.Label()
         Me.TextBox4 = New System.Windows.Forms.TextBox()
         Me.TextBox5 = New System.Windows.Forms.TextBox()
         Me.TextBox12 = New System.Windows.Forms.TextBox()
@@ -115,11 +97,29 @@ Partial Class Form1
         Me.TextBox9 = New System.Windows.Forms.TextBox()
         Me.CheckBox3 = New System.Windows.Forms.CheckBox()
         Me.CheckBox4 = New System.Windows.Forms.CheckBox()
-        Me.TextBox6 = New System.Windows.Forms.TextBox()
-        Me.TextBox13 = New System.Windows.Forms.TextBox()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.CheckBox5 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox6 = New System.Windows.Forms.CheckBox()
+        Me.lablerror5 = New System.Windows.Forms.Label()
+        Me.lablError6 = New System.Windows.Forms.Label()
+        Me.lablError7 = New System.Windows.Forms.Label()
+        Me.lablError8 = New System.Windows.Forms.Label()
+        Me.GroupBox3 = New System.Windows.Forms.GroupBox()
+        Me.RadioButton4 = New System.Windows.Forms.RadioButton()
+        Me.RadioButton3 = New System.Windows.Forms.RadioButton()
+        Me.RadioButton2 = New System.Windows.Forms.RadioButton()
+        Me.RadioButton1 = New System.Windows.Forms.RadioButton()
+        Me.GroupBox4 = New System.Windows.Forms.GroupBox()
+        Me.btnTimerStop = New System.Windows.Forms.Button()
+        Me.Button2 = New System.Windows.Forms.Button()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.btnTimerReset = New System.Windows.Forms.Button()
+        Me.btnTimerStart = New System.Windows.Forms.Button()
+        Me.Label13 = New System.Windows.Forms.Label()
+        Me.Label12 = New System.Windows.Forms.Label()
+        Me.TextBox8 = New System.Windows.Forms.TextBox()
+        Me.TextBox7 = New System.Windows.Forms.TextBox()
+        Me.TimerOmega = New System.Windows.Forms.Timer(Me.components)
+        Me.TimerHeartbeat = New System.Windows.Forms.Timer(Me.components)
+        Me.btnReset = New System.Windows.Forms.Button()
+        Me.btnLoadConnections = New System.Windows.Forms.Button()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.GroupBox3.SuspendLayout()
@@ -202,7 +202,7 @@ Partial Class Form1
         Me.lablOutgoing.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lablOutgoing.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lablOutgoing.ForeColor = System.Drawing.Color.White
-        Me.lablOutgoing.Location = New System.Drawing.Point(203, 35)
+        Me.lablOutgoing.Location = New System.Drawing.Point(203, 31)
         Me.lablOutgoing.Name = "lablOutgoing"
         Me.lablOutgoing.Size = New System.Drawing.Size(255, 32)
         Me.lablOutgoing.TabIndex = 18
@@ -438,6 +438,16 @@ Partial Class Form1
         Me.lablCOMOK.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.lablCOMOK.Visible = False
         '
+        'TextBox6
+        '
+        Me.TextBox6.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.TimingServer.My.MySettings.Default, "LocationCode", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.TextBox6.Font = New System.Drawing.Font("Arial", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox6.Location = New System.Drawing.Point(106, 60)
+        Me.TextBox6.Name = "TextBox6"
+        Me.TextBox6.Size = New System.Drawing.Size(89, 29)
+        Me.TextBox6.TabIndex = 5
+        Me.TextBox6.Text = Global.TimingServer.My.MySettings.Default.LocationCode
+        '
         'lablCOMError
         '
         Me.lablCOMError.BackColor = System.Drawing.Color.Red
@@ -451,6 +461,54 @@ Partial Class Form1
         Me.lablCOMError.Text = "ERROR"
         Me.lablCOMError.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.lablCOMError.Visible = False
+        '
+        'TextBox13
+        '
+        Me.TextBox13.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.TimingServer.My.MySettings.Default, "UDPListenPort", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.TextBox13.Font = New System.Drawing.Font("Arial", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox13.Location = New System.Drawing.Point(106, 168)
+        Me.TextBox13.Name = "TextBox13"
+        Me.TextBox13.Size = New System.Drawing.Size(89, 29)
+        Me.TextBox13.TabIndex = 33
+        Me.TextBox13.Text = Global.TimingServer.My.MySettings.Default.UDPListenPort
+        '
+        'TextBox1
+        '
+        Me.TextBox1.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.TimingServer.My.MySettings.Default, "IncomingCOMPort", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.TextBox1.Font = New System.Drawing.Font("Arial", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox1.Location = New System.Drawing.Point(106, 24)
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.Size = New System.Drawing.Size(89, 29)
+        Me.TextBox1.TabIndex = 0
+        Me.TextBox1.Text = Global.TimingServer.My.MySettings.Default.IncomingCOMPort
+        '
+        'CheckBox5
+        '
+        Me.CheckBox5.AutoSize = True
+        Me.CheckBox5.Checked = Global.TimingServer.My.MySettings.Default.UDPListenEnabled
+        Me.CheckBox5.DataBindings.Add(New System.Windows.Forms.Binding("Checked", Global.TimingServer.My.MySettings.Default, "UDPListenEnabled", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.CheckBox5.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CheckBox5.ForeColor = System.Drawing.Color.White
+        Me.CheckBox5.Location = New System.Drawing.Point(210, 172)
+        Me.CheckBox5.Name = "CheckBox5"
+        Me.CheckBox5.Size = New System.Drawing.Size(85, 22)
+        Me.CheckBox5.TabIndex = 34
+        Me.CheckBox5.Text = "Enabled"
+        Me.CheckBox5.UseVisualStyleBackColor = True
+        '
+        'CheckBox6
+        '
+        Me.CheckBox6.AutoSize = True
+        Me.CheckBox6.Checked = Global.TimingServer.My.MySettings.Default.COMPortEnabled
+        Me.CheckBox6.DataBindings.Add(New System.Windows.Forms.Binding("Checked", Global.TimingServer.My.MySettings.Default, "COMPortEnabled", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.CheckBox6.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CheckBox6.ForeColor = System.Drawing.Color.White
+        Me.CheckBox6.Location = New System.Drawing.Point(210, 29)
+        Me.CheckBox6.Name = "CheckBox6"
+        Me.CheckBox6.Size = New System.Drawing.Size(85, 22)
+        Me.CheckBox6.TabIndex = 35
+        Me.CheckBox6.Text = "Enabled"
+        Me.CheckBox6.UseVisualStyleBackColor = True
         '
         'lablOmegaError
         '
@@ -467,6 +525,8 @@ Partial Class Form1
         '
         'GroupBox2
         '
+        Me.GroupBox2.Controls.Add(Me.btnReset)
+        Me.GroupBox2.Controls.Add(Me.btnLoadConnections)
         Me.GroupBox2.Controls.Add(Me.lablOK8)
         Me.GroupBox2.Controls.Add(Me.Label23)
         Me.GroupBox2.Controls.Add(Me.TextBox20)
@@ -523,7 +583,7 @@ Partial Class Form1
         Me.GroupBox2.ForeColor = System.Drawing.Color.White
         Me.GroupBox2.Location = New System.Drawing.Point(465, 12)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(655, 323)
+        Me.GroupBox2.Size = New System.Drawing.Size(655, 371)
         Me.GroupBox2.TabIndex = 43
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Outgoing UDP"
@@ -556,6 +616,26 @@ Partial Class Form1
         Me.Label23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.Label23.Visible = False
         '
+        'TextBox20
+        '
+        Me.TextBox20.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.TimingServer.My.MySettings.Default, "UDP8", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.TextBox20.Font = New System.Drawing.Font("Arial", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox20.Location = New System.Drawing.Point(120, 276)
+        Me.TextBox20.Name = "TextBox20"
+        Me.TextBox20.Size = New System.Drawing.Size(176, 29)
+        Me.TextBox20.TabIndex = 69
+        Me.TextBox20.Text = Global.TimingServer.My.MySettings.Default.UDP8
+        '
+        'TextBox21
+        '
+        Me.TextBox21.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.TimingServer.My.MySettings.Default, "UDP8Port", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.TextBox21.Font = New System.Drawing.Font("Arial", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox21.Location = New System.Drawing.Point(302, 276)
+        Me.TextBox21.Name = "TextBox21"
+        Me.TextBox21.Size = New System.Drawing.Size(89, 29)
+        Me.TextBox21.TabIndex = 72
+        Me.TextBox21.Text = Global.TimingServer.My.MySettings.Default.UDP8Port
+        '
         'lablDestination8
         '
         Me.lablDestination8.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.TimingServer.My.MySettings.Default, "Destination8", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
@@ -567,6 +647,20 @@ Partial Class Form1
         Me.lablDestination8.TabIndex = 70
         Me.lablDestination8.Text = Global.TimingServer.My.MySettings.Default.Destination8
         Me.lablDestination8.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'CheckBox10
+        '
+        Me.CheckBox10.AutoSize = True
+        Me.CheckBox10.Checked = Global.TimingServer.My.MySettings.Default.UDP8Enabled
+        Me.CheckBox10.DataBindings.Add(New System.Windows.Forms.Binding("Checked", Global.TimingServer.My.MySettings.Default, "UDP8Enabled", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.CheckBox10.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CheckBox10.ForeColor = System.Drawing.Color.White
+        Me.CheckBox10.Location = New System.Drawing.Point(416, 279)
+        Me.CheckBox10.Name = "CheckBox10"
+        Me.CheckBox10.Size = New System.Drawing.Size(85, 22)
+        Me.CheckBox10.TabIndex = 71
+        Me.CheckBox10.Text = "Enabled"
+        Me.CheckBox10.UseVisualStyleBackColor = True
         '
         'lablOK7
         '
@@ -596,6 +690,26 @@ Partial Class Form1
         Me.Label20.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.Label20.Visible = False
         '
+        'TextBox18
+        '
+        Me.TextBox18.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.TimingServer.My.MySettings.Default, "UDP7", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.TextBox18.Font = New System.Drawing.Font("Arial", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox18.Location = New System.Drawing.Point(120, 240)
+        Me.TextBox18.Name = "TextBox18"
+        Me.TextBox18.Size = New System.Drawing.Size(176, 29)
+        Me.TextBox18.TabIndex = 63
+        Me.TextBox18.Text = Global.TimingServer.My.MySettings.Default.UDP7
+        '
+        'TextBox19
+        '
+        Me.TextBox19.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.TimingServer.My.MySettings.Default, "UDP7Port", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.TextBox19.Font = New System.Drawing.Font("Arial", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox19.Location = New System.Drawing.Point(302, 240)
+        Me.TextBox19.Name = "TextBox19"
+        Me.TextBox19.Size = New System.Drawing.Size(89, 29)
+        Me.TextBox19.TabIndex = 66
+        Me.TextBox19.Text = Global.TimingServer.My.MySettings.Default.UDP7Port
+        '
         'lablDestination7
         '
         Me.lablDestination7.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.TimingServer.My.MySettings.Default, "Destination7", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
@@ -607,6 +721,20 @@ Partial Class Form1
         Me.lablDestination7.TabIndex = 64
         Me.lablDestination7.Text = Global.TimingServer.My.MySettings.Default.Destination7
         Me.lablDestination7.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'CheckBox9
+        '
+        Me.CheckBox9.AutoSize = True
+        Me.CheckBox9.Checked = Global.TimingServer.My.MySettings.Default.UDP7Enabled
+        Me.CheckBox9.DataBindings.Add(New System.Windows.Forms.Binding("Checked", Global.TimingServer.My.MySettings.Default, "UDP7Enabled", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.CheckBox9.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CheckBox9.ForeColor = System.Drawing.Color.White
+        Me.CheckBox9.Location = New System.Drawing.Point(416, 243)
+        Me.CheckBox9.Name = "CheckBox9"
+        Me.CheckBox9.Size = New System.Drawing.Size(85, 22)
+        Me.CheckBox9.TabIndex = 65
+        Me.CheckBox9.Text = "Enabled"
+        Me.CheckBox9.UseVisualStyleBackColor = True
         '
         'lablOK6
         '
@@ -636,6 +764,26 @@ Partial Class Form1
         Me.Label17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.Label17.Visible = False
         '
+        'TextBox16
+        '
+        Me.TextBox16.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.TimingServer.My.MySettings.Default, "UDP6", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.TextBox16.Font = New System.Drawing.Font("Arial", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox16.Location = New System.Drawing.Point(120, 204)
+        Me.TextBox16.Name = "TextBox16"
+        Me.TextBox16.Size = New System.Drawing.Size(176, 29)
+        Me.TextBox16.TabIndex = 57
+        Me.TextBox16.Text = Global.TimingServer.My.MySettings.Default.UDP6
+        '
+        'TextBox17
+        '
+        Me.TextBox17.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.TimingServer.My.MySettings.Default, "UDP6Port", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.TextBox17.Font = New System.Drawing.Font("Arial", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox17.Location = New System.Drawing.Point(302, 204)
+        Me.TextBox17.Name = "TextBox17"
+        Me.TextBox17.Size = New System.Drawing.Size(89, 29)
+        Me.TextBox17.TabIndex = 60
+        Me.TextBox17.Text = Global.TimingServer.My.MySettings.Default.UDP6Port
+        '
         'lablDestination6
         '
         Me.lablDestination6.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.TimingServer.My.MySettings.Default, "Destination6", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
@@ -647,6 +795,20 @@ Partial Class Form1
         Me.lablDestination6.TabIndex = 58
         Me.lablDestination6.Text = Global.TimingServer.My.MySettings.Default.Destination6
         Me.lablDestination6.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'CheckBox8
+        '
+        Me.CheckBox8.AutoSize = True
+        Me.CheckBox8.Checked = Global.TimingServer.My.MySettings.Default.UDP6Enabled
+        Me.CheckBox8.DataBindings.Add(New System.Windows.Forms.Binding("Checked", Global.TimingServer.My.MySettings.Default, "UDP6Enabled", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.CheckBox8.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CheckBox8.ForeColor = System.Drawing.Color.White
+        Me.CheckBox8.Location = New System.Drawing.Point(416, 207)
+        Me.CheckBox8.Name = "CheckBox8"
+        Me.CheckBox8.Size = New System.Drawing.Size(85, 22)
+        Me.CheckBox8.TabIndex = 59
+        Me.CheckBox8.Text = "Enabled"
+        Me.CheckBox8.UseVisualStyleBackColor = True
         '
         'lablOK5
         '
@@ -676,6 +838,26 @@ Partial Class Form1
         Me.Label14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.Label14.Visible = False
         '
+        'TextBox14
+        '
+        Me.TextBox14.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.TimingServer.My.MySettings.Default, "UDP5", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.TextBox14.Font = New System.Drawing.Font("Arial", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox14.Location = New System.Drawing.Point(120, 168)
+        Me.TextBox14.Name = "TextBox14"
+        Me.TextBox14.Size = New System.Drawing.Size(176, 29)
+        Me.TextBox14.TabIndex = 51
+        Me.TextBox14.Text = Global.TimingServer.My.MySettings.Default.UDP5
+        '
+        'TextBox15
+        '
+        Me.TextBox15.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.TimingServer.My.MySettings.Default, "UDP5Port", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.TextBox15.Font = New System.Drawing.Font("Arial", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox15.Location = New System.Drawing.Point(302, 168)
+        Me.TextBox15.Name = "TextBox15"
+        Me.TextBox15.Size = New System.Drawing.Size(89, 29)
+        Me.TextBox15.TabIndex = 54
+        Me.TextBox15.Text = Global.TimingServer.My.MySettings.Default.UDP5Port
+        '
         'lablDestination5
         '
         Me.lablDestination5.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.TimingServer.My.MySettings.Default, "Destination5", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
@@ -687,6 +869,20 @@ Partial Class Form1
         Me.lablDestination5.TabIndex = 52
         Me.lablDestination5.Text = Global.TimingServer.My.MySettings.Default.Destination5
         Me.lablDestination5.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'CheckBox7
+        '
+        Me.CheckBox7.AutoSize = True
+        Me.CheckBox7.Checked = Global.TimingServer.My.MySettings.Default.UDP5Enabled
+        Me.CheckBox7.DataBindings.Add(New System.Windows.Forms.Binding("Checked", Global.TimingServer.My.MySettings.Default, "UDP5Enabled", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.CheckBox7.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CheckBox7.ForeColor = System.Drawing.Color.White
+        Me.CheckBox7.Location = New System.Drawing.Point(416, 171)
+        Me.CheckBox7.Name = "CheckBox7"
+        Me.CheckBox7.Size = New System.Drawing.Size(85, 22)
+        Me.CheckBox7.TabIndex = 53
+        Me.CheckBox7.Text = "Enabled"
+        Me.CheckBox7.UseVisualStyleBackColor = True
         '
         'lablOK4
         '
@@ -716,6 +912,16 @@ Partial Class Form1
         Me.lablOK3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.lablOK3.Visible = False
         '
+        'TextBox2
+        '
+        Me.TextBox2.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.TimingServer.My.MySettings.Default, "UDP1", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.TextBox2.Font = New System.Drawing.Font("Arial", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox2.Location = New System.Drawing.Point(120, 24)
+        Me.TextBox2.Name = "TextBox2"
+        Me.TextBox2.Size = New System.Drawing.Size(176, 29)
+        Me.TextBox2.TabIndex = 1
+        Me.TextBox2.Text = Global.TimingServer.My.MySettings.Default.UDP1
+        '
         'lablOK2
         '
         Me.lablOK2.BackColor = System.Drawing.Color.LimeGreen
@@ -730,6 +936,16 @@ Partial Class Form1
         Me.lablOK2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.lablOK2.Visible = False
         '
+        'TextBox3
+        '
+        Me.TextBox3.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.TimingServer.My.MySettings.Default, "UDP2", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.TextBox3.Font = New System.Drawing.Font("Arial", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox3.Location = New System.Drawing.Point(120, 60)
+        Me.TextBox3.Name = "TextBox3"
+        Me.TextBox3.Size = New System.Drawing.Size(176, 29)
+        Me.TextBox3.TabIndex = 2
+        Me.TextBox3.Text = Global.TimingServer.My.MySettings.Default.UDP2
+        '
         'lablOK1
         '
         Me.lablOK1.BackColor = System.Drawing.Color.LimeGreen
@@ -743,445 +959,6 @@ Partial Class Form1
         Me.lablOK1.Text = "OK"
         Me.lablOK1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.lablOK1.Visible = False
-        '
-        'lablerror5
-        '
-        Me.lablerror5.BackColor = System.Drawing.Color.Red
-        Me.lablerror5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lablerror5.Font = New System.Drawing.Font("Arial", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lablerror5.ForeColor = System.Drawing.Color.White
-        Me.lablerror5.Location = New System.Drawing.Point(522, 168)
-        Me.lablerror5.Name = "lablerror5"
-        Me.lablerror5.Size = New System.Drawing.Size(112, 29)
-        Me.lablerror5.TabIndex = 75
-        Me.lablerror5.Text = "ERROR"
-        Me.lablerror5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.lablerror5.Visible = False
-        '
-        'lablError6
-        '
-        Me.lablError6.BackColor = System.Drawing.Color.Red
-        Me.lablError6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lablError6.Font = New System.Drawing.Font("Arial", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lablError6.ForeColor = System.Drawing.Color.White
-        Me.lablError6.Location = New System.Drawing.Point(522, 204)
-        Me.lablError6.Name = "lablError6"
-        Me.lablError6.Size = New System.Drawing.Size(112, 29)
-        Me.lablError6.TabIndex = 76
-        Me.lablError6.Text = "ERROR"
-        Me.lablError6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.lablError6.Visible = False
-        '
-        'lablError7
-        '
-        Me.lablError7.BackColor = System.Drawing.Color.Red
-        Me.lablError7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lablError7.Font = New System.Drawing.Font("Arial", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lablError7.ForeColor = System.Drawing.Color.White
-        Me.lablError7.Location = New System.Drawing.Point(522, 240)
-        Me.lablError7.Name = "lablError7"
-        Me.lablError7.Size = New System.Drawing.Size(112, 29)
-        Me.lablError7.TabIndex = 77
-        Me.lablError7.Text = "ERROR"
-        Me.lablError7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.lablError7.Visible = False
-        '
-        'lablError8
-        '
-        Me.lablError8.BackColor = System.Drawing.Color.Red
-        Me.lablError8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lablError8.Font = New System.Drawing.Font("Arial", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lablError8.ForeColor = System.Drawing.Color.White
-        Me.lablError8.Location = New System.Drawing.Point(522, 276)
-        Me.lablError8.Name = "lablError8"
-        Me.lablError8.Size = New System.Drawing.Size(112, 29)
-        Me.lablError8.TabIndex = 78
-        Me.lablError8.Text = "ERROR"
-        Me.lablError8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.lablError8.Visible = False
-        '
-        'GroupBox3
-        '
-        Me.GroupBox3.Controls.Add(Me.RadioButton4)
-        Me.GroupBox3.Controls.Add(Me.RadioButton3)
-        Me.GroupBox3.Controls.Add(Me.RadioButton2)
-        Me.GroupBox3.Controls.Add(Me.RadioButton1)
-        Me.GroupBox3.Controls.Add(Me.lablOutgoing)
-        Me.GroupBox3.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GroupBox3.ForeColor = System.Drawing.Color.White
-        Me.GroupBox3.Location = New System.Drawing.Point(465, 344)
-        Me.GroupBox3.Name = "GroupBox3"
-        Me.GroupBox3.Size = New System.Drawing.Size(655, 95)
-        Me.GroupBox3.TabIndex = 44
-        Me.GroupBox3.TabStop = False
-        Me.GroupBox3.Text = "Outgoing data"
-        '
-        'GroupBox4
-        '
-        Me.GroupBox4.Controls.Add(Me.btnTimerStop)
-        Me.GroupBox4.Controls.Add(Me.Button2)
-        Me.GroupBox4.Controls.Add(Me.Button1)
-        Me.GroupBox4.Controls.Add(Me.btnTimerReset)
-        Me.GroupBox4.Controls.Add(Me.btnTimerStart)
-        Me.GroupBox4.Controls.Add(Me.Label13)
-        Me.GroupBox4.Controls.Add(Me.Label12)
-        Me.GroupBox4.Controls.Add(Me.TextBox8)
-        Me.GroupBox4.Controls.Add(Me.TextBox7)
-        Me.GroupBox4.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GroupBox4.ForeColor = System.Drawing.Color.White
-        Me.GroupBox4.Location = New System.Drawing.Point(13, 287)
-        Me.GroupBox4.Name = "GroupBox4"
-        Me.GroupBox4.Size = New System.Drawing.Size(446, 153)
-        Me.GroupBox4.TabIndex = 45
-        Me.GroupBox4.TabStop = False
-        Me.GroupBox4.Text = "Test"
-        '
-        'btnTimerStop
-        '
-        Me.btnTimerStop.BackColor = System.Drawing.Color.DarkRed
-        Me.btnTimerStop.Enabled = False
-        Me.btnTimerStop.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnTimerStop.ForeColor = System.Drawing.Color.White
-        Me.btnTimerStop.Location = New System.Drawing.Point(329, 24)
-        Me.btnTimerStop.Name = "btnTimerStop"
-        Me.btnTimerStop.Size = New System.Drawing.Size(49, 29)
-        Me.btnTimerStop.TabIndex = 48
-        Me.btnTimerStop.Text = "Stop"
-        Me.btnTimerStop.UseVisualStyleBackColor = False
-        '
-        'Button2
-        '
-        Me.Button2.BackColor = System.Drawing.Color.Orange
-        Me.Button2.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.ForeColor = System.Drawing.Color.Black
-        Me.Button2.Location = New System.Drawing.Point(224, 103)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(99, 41)
-        Me.Button2.TabIndex = 47
-        Me.Button2.Text = "Test Omega" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Start"
-        Me.Button2.UseVisualStyleBackColor = False
-        '
-        'Button1
-        '
-        Me.Button1.BackColor = System.Drawing.Color.Orange
-        Me.Button1.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.ForeColor = System.Drawing.Color.Black
-        Me.Button1.Location = New System.Drawing.Point(119, 103)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(99, 41)
-        Me.Button1.TabIndex = 46
-        Me.Button1.Text = "Test Omega" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Stop"
-        Me.Button1.UseVisualStyleBackColor = False
-        '
-        'btnTimerReset
-        '
-        Me.btnTimerReset.BackColor = System.Drawing.Color.DarkRed
-        Me.btnTimerReset.Enabled = False
-        Me.btnTimerReset.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnTimerReset.ForeColor = System.Drawing.Color.White
-        Me.btnTimerReset.Location = New System.Drawing.Point(384, 24)
-        Me.btnTimerReset.Name = "btnTimerReset"
-        Me.btnTimerReset.Size = New System.Drawing.Size(49, 29)
-        Me.btnTimerReset.TabIndex = 40
-        Me.btnTimerReset.Text = "Reset"
-        Me.btnTimerReset.UseVisualStyleBackColor = False
-        '
-        'btnTimerStart
-        '
-        Me.btnTimerStart.BackColor = System.Drawing.Color.DarkGreen
-        Me.btnTimerStart.Enabled = False
-        Me.btnTimerStart.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnTimerStart.ForeColor = System.Drawing.Color.White
-        Me.btnTimerStart.Location = New System.Drawing.Point(274, 24)
-        Me.btnTimerStart.Name = "btnTimerStart"
-        Me.btnTimerStart.Size = New System.Drawing.Size(49, 29)
-        Me.btnTimerStart.TabIndex = 39
-        Me.btnTimerStart.Text = "Start"
-        Me.btnTimerStart.UseVisualStyleBackColor = False
-        '
-        'Label13
-        '
-        Me.Label13.AutoSize = True
-        Me.Label13.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label13.ForeColor = System.Drawing.Color.White
-        Me.Label13.Location = New System.Drawing.Point(10, 66)
-        Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(106, 18)
-        Me.Label13.TabIndex = 38
-        Me.Label13.Text = "Clock Format:"
-        '
-        'Label12
-        '
-        Me.Label12.AutoSize = True
-        Me.Label12.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label12.ForeColor = System.Drawing.Color.White
-        Me.Label12.Location = New System.Drawing.Point(11, 30)
-        Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(105, 18)
-        Me.Label12.TabIndex = 37
-        Me.Label12.Text = "Timer Format:"
-        '
-        'TimerOmega
-        '
-        Me.TimerOmega.Interval = 1000
-        '
-        'TimerHeartbeat
-        '
-        Me.TimerHeartbeat.Interval = 1000
-        '
-        'btnReset
-        '
-        Me.btnReset.BackColor = System.Drawing.Color.Orange
-        Me.btnReset.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnReset.ForeColor = System.Drawing.Color.Black
-        Me.btnReset.Location = New System.Drawing.Point(960, 449)
-        Me.btnReset.Name = "btnReset"
-        Me.btnReset.Size = New System.Drawing.Size(160, 41)
-        Me.btnReset.TabIndex = 48
-        Me.btnReset.Text = "Reset Connections"
-        Me.btnReset.UseVisualStyleBackColor = False
-        '
-        'btnLoadConnections
-        '
-        Me.btnLoadConnections.BackColor = System.Drawing.Color.Orange
-        Me.btnLoadConnections.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnLoadConnections.ForeColor = System.Drawing.Color.Black
-        Me.btnLoadConnections.Location = New System.Drawing.Point(794, 449)
-        Me.btnLoadConnections.Name = "btnLoadConnections"
-        Me.btnLoadConnections.Size = New System.Drawing.Size(160, 41)
-        Me.btnLoadConnections.TabIndex = 49
-        Me.btnLoadConnections.Text = "Load Connections"
-        Me.btnLoadConnections.UseVisualStyleBackColor = False
-        '
-        'TextBox8
-        '
-        Me.TextBox8.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.TimingServer.My.MySettings.Default, "TestClockFormat", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.TextBox8.Font = New System.Drawing.Font("Arial", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox8.Location = New System.Drawing.Point(119, 60)
-        Me.TextBox8.Name = "TextBox8"
-        Me.TextBox8.Size = New System.Drawing.Size(149, 29)
-        Me.TextBox8.TabIndex = 24
-        Me.TextBox8.Text = Global.TimingServer.My.MySettings.Default.TestClockFormat
-        '
-        'TextBox7
-        '
-        Me.TextBox7.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.TimingServer.My.MySettings.Default, "TestTimerFormat", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.TextBox7.Font = New System.Drawing.Font("Arial", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox7.Location = New System.Drawing.Point(119, 24)
-        Me.TextBox7.Name = "TextBox7"
-        Me.TextBox7.Size = New System.Drawing.Size(149, 29)
-        Me.TextBox7.TabIndex = 23
-        Me.TextBox7.Text = Global.TimingServer.My.MySettings.Default.TestTimerFormat
-        '
-        'RadioButton4
-        '
-        Me.RadioButton4.AutoSize = True
-        Me.RadioButton4.Checked = Global.TimingServer.My.MySettings.Default.SourceTestClock
-        Me.RadioButton4.DataBindings.Add(New System.Windows.Forms.Binding("Checked", Global.TimingServer.My.MySettings.Default, "SourceTestClock", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.RadioButton4.Location = New System.Drawing.Point(547, 58)
-        Me.RadioButton4.Name = "RadioButton4"
-        Me.RadioButton4.Size = New System.Drawing.Size(87, 20)
-        Me.RadioButton4.TabIndex = 25
-        Me.RadioButton4.TabStop = True
-        Me.RadioButton4.Text = "Test Clock"
-        Me.RadioButton4.UseVisualStyleBackColor = True
-        '
-        'RadioButton3
-        '
-        Me.RadioButton3.AutoSize = True
-        Me.RadioButton3.Checked = Global.TimingServer.My.MySettings.Default.SourceTestTimer
-        Me.RadioButton3.DataBindings.Add(New System.Windows.Forms.Binding("Checked", Global.TimingServer.My.MySettings.Default, "SourceTestTimer", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.RadioButton3.Location = New System.Drawing.Point(547, 28)
-        Me.RadioButton3.Name = "RadioButton3"
-        Me.RadioButton3.Size = New System.Drawing.Size(86, 20)
-        Me.RadioButton3.TabIndex = 24
-        Me.RadioButton3.TabStop = True
-        Me.RadioButton3.Text = "Test Timer"
-        Me.RadioButton3.UseVisualStyleBackColor = True
-        '
-        'RadioButton2
-        '
-        Me.RadioButton2.AutoSize = True
-        Me.RadioButton2.Checked = Global.TimingServer.My.MySettings.Default.SourceUDP
-        Me.RadioButton2.DataBindings.Add(New System.Windows.Forms.Binding("Checked", Global.TimingServer.My.MySettings.Default, "SourceUDP", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.RadioButton2.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.RadioButton2.Location = New System.Drawing.Point(19, 58)
-        Me.RadioButton2.Name = "RadioButton2"
-        Me.RadioButton2.Size = New System.Drawing.Size(60, 22)
-        Me.RadioButton2.TabIndex = 23
-        Me.RadioButton2.TabStop = True
-        Me.RadioButton2.Text = "UDP"
-        Me.RadioButton2.UseVisualStyleBackColor = True
-        '
-        'RadioButton1
-        '
-        Me.RadioButton1.AutoSize = True
-        Me.RadioButton1.Checked = Global.TimingServer.My.MySettings.Default.SourceCOM
-        Me.RadioButton1.DataBindings.Add(New System.Windows.Forms.Binding("Checked", Global.TimingServer.My.MySettings.Default, "SourceCOM", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.RadioButton1.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.RadioButton1.Location = New System.Drawing.Point(19, 28)
-        Me.RadioButton1.Name = "RadioButton1"
-        Me.RadioButton1.Size = New System.Drawing.Size(122, 22)
-        Me.RadioButton1.TabIndex = 22
-        Me.RadioButton1.TabStop = True
-        Me.RadioButton1.Text = "Omega Clock"
-        Me.RadioButton1.UseVisualStyleBackColor = True
-        '
-        'TextBox20
-        '
-        Me.TextBox20.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.TimingServer.My.MySettings.Default, "UDP8", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.TextBox20.Font = New System.Drawing.Font("Arial", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox20.Location = New System.Drawing.Point(120, 276)
-        Me.TextBox20.Name = "TextBox20"
-        Me.TextBox20.Size = New System.Drawing.Size(176, 29)
-        Me.TextBox20.TabIndex = 69
-        Me.TextBox20.Text = Global.TimingServer.My.MySettings.Default.UDP8
-        '
-        'TextBox21
-        '
-        Me.TextBox21.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.TimingServer.My.MySettings.Default, "UDP8Port", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.TextBox21.Font = New System.Drawing.Font("Arial", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox21.Location = New System.Drawing.Point(302, 276)
-        Me.TextBox21.Name = "TextBox21"
-        Me.TextBox21.Size = New System.Drawing.Size(89, 29)
-        Me.TextBox21.TabIndex = 72
-        Me.TextBox21.Text = Global.TimingServer.My.MySettings.Default.UDP8Port
-        '
-        'CheckBox10
-        '
-        Me.CheckBox10.AutoSize = True
-        Me.CheckBox10.Checked = Global.TimingServer.My.MySettings.Default.UDP8Enabled
-        Me.CheckBox10.DataBindings.Add(New System.Windows.Forms.Binding("Checked", Global.TimingServer.My.MySettings.Default, "UDP8Enabled", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.CheckBox10.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CheckBox10.ForeColor = System.Drawing.Color.White
-        Me.CheckBox10.Location = New System.Drawing.Point(416, 279)
-        Me.CheckBox10.Name = "CheckBox10"
-        Me.CheckBox10.Size = New System.Drawing.Size(85, 22)
-        Me.CheckBox10.TabIndex = 71
-        Me.CheckBox10.Text = "Enabled"
-        Me.CheckBox10.UseVisualStyleBackColor = True
-        '
-        'TextBox18
-        '
-        Me.TextBox18.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.TimingServer.My.MySettings.Default, "UDP7", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.TextBox18.Font = New System.Drawing.Font("Arial", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox18.Location = New System.Drawing.Point(120, 240)
-        Me.TextBox18.Name = "TextBox18"
-        Me.TextBox18.Size = New System.Drawing.Size(176, 29)
-        Me.TextBox18.TabIndex = 63
-        Me.TextBox18.Text = Global.TimingServer.My.MySettings.Default.UDP7
-        '
-        'TextBox19
-        '
-        Me.TextBox19.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.TimingServer.My.MySettings.Default, "UDP7Port", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.TextBox19.Font = New System.Drawing.Font("Arial", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox19.Location = New System.Drawing.Point(302, 240)
-        Me.TextBox19.Name = "TextBox19"
-        Me.TextBox19.Size = New System.Drawing.Size(89, 29)
-        Me.TextBox19.TabIndex = 66
-        Me.TextBox19.Text = Global.TimingServer.My.MySettings.Default.UDP7Port
-        '
-        'CheckBox9
-        '
-        Me.CheckBox9.AutoSize = True
-        Me.CheckBox9.Checked = Global.TimingServer.My.MySettings.Default.UDP7Enabled
-        Me.CheckBox9.DataBindings.Add(New System.Windows.Forms.Binding("Checked", Global.TimingServer.My.MySettings.Default, "UDP7Enabled", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.CheckBox9.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CheckBox9.ForeColor = System.Drawing.Color.White
-        Me.CheckBox9.Location = New System.Drawing.Point(416, 243)
-        Me.CheckBox9.Name = "CheckBox9"
-        Me.CheckBox9.Size = New System.Drawing.Size(85, 22)
-        Me.CheckBox9.TabIndex = 65
-        Me.CheckBox9.Text = "Enabled"
-        Me.CheckBox9.UseVisualStyleBackColor = True
-        '
-        'TextBox16
-        '
-        Me.TextBox16.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.TimingServer.My.MySettings.Default, "UDP6", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.TextBox16.Font = New System.Drawing.Font("Arial", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox16.Location = New System.Drawing.Point(120, 204)
-        Me.TextBox16.Name = "TextBox16"
-        Me.TextBox16.Size = New System.Drawing.Size(176, 29)
-        Me.TextBox16.TabIndex = 57
-        Me.TextBox16.Text = Global.TimingServer.My.MySettings.Default.UDP6
-        '
-        'TextBox17
-        '
-        Me.TextBox17.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.TimingServer.My.MySettings.Default, "UDP6Port", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.TextBox17.Font = New System.Drawing.Font("Arial", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox17.Location = New System.Drawing.Point(302, 204)
-        Me.TextBox17.Name = "TextBox17"
-        Me.TextBox17.Size = New System.Drawing.Size(89, 29)
-        Me.TextBox17.TabIndex = 60
-        Me.TextBox17.Text = Global.TimingServer.My.MySettings.Default.UDP6Port
-        '
-        'CheckBox8
-        '
-        Me.CheckBox8.AutoSize = True
-        Me.CheckBox8.Checked = Global.TimingServer.My.MySettings.Default.UDP6Enabled
-        Me.CheckBox8.DataBindings.Add(New System.Windows.Forms.Binding("Checked", Global.TimingServer.My.MySettings.Default, "UDP6Enabled", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.CheckBox8.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CheckBox8.ForeColor = System.Drawing.Color.White
-        Me.CheckBox8.Location = New System.Drawing.Point(416, 207)
-        Me.CheckBox8.Name = "CheckBox8"
-        Me.CheckBox8.Size = New System.Drawing.Size(85, 22)
-        Me.CheckBox8.TabIndex = 59
-        Me.CheckBox8.Text = "Enabled"
-        Me.CheckBox8.UseVisualStyleBackColor = True
-        '
-        'TextBox14
-        '
-        Me.TextBox14.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.TimingServer.My.MySettings.Default, "UDP5", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.TextBox14.Font = New System.Drawing.Font("Arial", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox14.Location = New System.Drawing.Point(120, 168)
-        Me.TextBox14.Name = "TextBox14"
-        Me.TextBox14.Size = New System.Drawing.Size(176, 29)
-        Me.TextBox14.TabIndex = 51
-        Me.TextBox14.Text = Global.TimingServer.My.MySettings.Default.UDP5
-        '
-        'TextBox15
-        '
-        Me.TextBox15.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.TimingServer.My.MySettings.Default, "UDP5Port", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.TextBox15.Font = New System.Drawing.Font("Arial", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox15.Location = New System.Drawing.Point(302, 168)
-        Me.TextBox15.Name = "TextBox15"
-        Me.TextBox15.Size = New System.Drawing.Size(89, 29)
-        Me.TextBox15.TabIndex = 54
-        Me.TextBox15.Text = Global.TimingServer.My.MySettings.Default.UDP5Port
-        '
-        'CheckBox7
-        '
-        Me.CheckBox7.AutoSize = True
-        Me.CheckBox7.Checked = Global.TimingServer.My.MySettings.Default.UDP5Enabled
-        Me.CheckBox7.DataBindings.Add(New System.Windows.Forms.Binding("Checked", Global.TimingServer.My.MySettings.Default, "UDP5Enabled", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.CheckBox7.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CheckBox7.ForeColor = System.Drawing.Color.White
-        Me.CheckBox7.Location = New System.Drawing.Point(416, 171)
-        Me.CheckBox7.Name = "CheckBox7"
-        Me.CheckBox7.Size = New System.Drawing.Size(85, 22)
-        Me.CheckBox7.TabIndex = 53
-        Me.CheckBox7.Text = "Enabled"
-        Me.CheckBox7.UseVisualStyleBackColor = True
-        '
-        'TextBox2
-        '
-        Me.TextBox2.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.TimingServer.My.MySettings.Default, "UDP1", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.TextBox2.Font = New System.Drawing.Font("Arial", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox2.Location = New System.Drawing.Point(120, 24)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(176, 29)
-        Me.TextBox2.TabIndex = 1
-        Me.TextBox2.Text = Global.TimingServer.My.MySettings.Default.UDP1
-        '
-        'TextBox3
-        '
-        Me.TextBox3.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.TimingServer.My.MySettings.Default, "UDP2", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.TextBox3.Font = New System.Drawing.Font("Arial", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox3.Location = New System.Drawing.Point(120, 60)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(176, 29)
-        Me.TextBox3.TabIndex = 2
-        Me.TextBox3.Text = Global.TimingServer.My.MySettings.Default.UDP2
         '
         'TextBox4
         '
@@ -1299,72 +1076,295 @@ Partial Class Form1
         Me.CheckBox4.Text = "Enabled"
         Me.CheckBox4.UseVisualStyleBackColor = True
         '
-        'TextBox6
+        'lablerror5
         '
-        Me.TextBox6.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.TimingServer.My.MySettings.Default, "LocationCode", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.TextBox6.Font = New System.Drawing.Font("Arial", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox6.Location = New System.Drawing.Point(106, 60)
-        Me.TextBox6.Name = "TextBox6"
-        Me.TextBox6.Size = New System.Drawing.Size(89, 29)
-        Me.TextBox6.TabIndex = 5
-        Me.TextBox6.Text = Global.TimingServer.My.MySettings.Default.LocationCode
+        Me.lablerror5.BackColor = System.Drawing.Color.Red
+        Me.lablerror5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lablerror5.Font = New System.Drawing.Font("Arial", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lablerror5.ForeColor = System.Drawing.Color.White
+        Me.lablerror5.Location = New System.Drawing.Point(522, 168)
+        Me.lablerror5.Name = "lablerror5"
+        Me.lablerror5.Size = New System.Drawing.Size(112, 29)
+        Me.lablerror5.TabIndex = 75
+        Me.lablerror5.Text = "ERROR"
+        Me.lablerror5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.lablerror5.Visible = False
         '
-        'TextBox13
+        'lablError6
         '
-        Me.TextBox13.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.TimingServer.My.MySettings.Default, "UDPListenPort", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.TextBox13.Font = New System.Drawing.Font("Arial", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox13.Location = New System.Drawing.Point(106, 168)
-        Me.TextBox13.Name = "TextBox13"
-        Me.TextBox13.Size = New System.Drawing.Size(89, 29)
-        Me.TextBox13.TabIndex = 33
-        Me.TextBox13.Text = Global.TimingServer.My.MySettings.Default.UDPListenPort
+        Me.lablError6.BackColor = System.Drawing.Color.Red
+        Me.lablError6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lablError6.Font = New System.Drawing.Font("Arial", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lablError6.ForeColor = System.Drawing.Color.White
+        Me.lablError6.Location = New System.Drawing.Point(522, 204)
+        Me.lablError6.Name = "lablError6"
+        Me.lablError6.Size = New System.Drawing.Size(112, 29)
+        Me.lablError6.TabIndex = 76
+        Me.lablError6.Text = "ERROR"
+        Me.lablError6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.lablError6.Visible = False
         '
-        'TextBox1
+        'lablError7
         '
-        Me.TextBox1.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.TimingServer.My.MySettings.Default, "IncomingCOMPort", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.TextBox1.Font = New System.Drawing.Font("Arial", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox1.Location = New System.Drawing.Point(106, 24)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(89, 29)
-        Me.TextBox1.TabIndex = 0
-        Me.TextBox1.Text = Global.TimingServer.My.MySettings.Default.IncomingCOMPort
+        Me.lablError7.BackColor = System.Drawing.Color.Red
+        Me.lablError7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lablError7.Font = New System.Drawing.Font("Arial", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lablError7.ForeColor = System.Drawing.Color.White
+        Me.lablError7.Location = New System.Drawing.Point(522, 240)
+        Me.lablError7.Name = "lablError7"
+        Me.lablError7.Size = New System.Drawing.Size(112, 29)
+        Me.lablError7.TabIndex = 77
+        Me.lablError7.Text = "ERROR"
+        Me.lablError7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.lablError7.Visible = False
         '
-        'CheckBox5
+        'lablError8
         '
-        Me.CheckBox5.AutoSize = True
-        Me.CheckBox5.Checked = Global.TimingServer.My.MySettings.Default.UDPListenEnabled
-        Me.CheckBox5.DataBindings.Add(New System.Windows.Forms.Binding("Checked", Global.TimingServer.My.MySettings.Default, "UDPListenEnabled", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.CheckBox5.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CheckBox5.ForeColor = System.Drawing.Color.White
-        Me.CheckBox5.Location = New System.Drawing.Point(210, 172)
-        Me.CheckBox5.Name = "CheckBox5"
-        Me.CheckBox5.Size = New System.Drawing.Size(85, 22)
-        Me.CheckBox5.TabIndex = 34
-        Me.CheckBox5.Text = "Enabled"
-        Me.CheckBox5.UseVisualStyleBackColor = True
+        Me.lablError8.BackColor = System.Drawing.Color.Red
+        Me.lablError8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lablError8.Font = New System.Drawing.Font("Arial", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lablError8.ForeColor = System.Drawing.Color.White
+        Me.lablError8.Location = New System.Drawing.Point(522, 276)
+        Me.lablError8.Name = "lablError8"
+        Me.lablError8.Size = New System.Drawing.Size(112, 29)
+        Me.lablError8.TabIndex = 78
+        Me.lablError8.Text = "ERROR"
+        Me.lablError8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.lablError8.Visible = False
         '
-        'CheckBox6
+        'GroupBox3
         '
-        Me.CheckBox6.AutoSize = True
-        Me.CheckBox6.Checked = Global.TimingServer.My.MySettings.Default.COMPortEnabled
-        Me.CheckBox6.DataBindings.Add(New System.Windows.Forms.Binding("Checked", Global.TimingServer.My.MySettings.Default, "COMPortEnabled", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.CheckBox6.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CheckBox6.ForeColor = System.Drawing.Color.White
-        Me.CheckBox6.Location = New System.Drawing.Point(210, 29)
-        Me.CheckBox6.Name = "CheckBox6"
-        Me.CheckBox6.Size = New System.Drawing.Size(85, 22)
-        Me.CheckBox6.TabIndex = 35
-        Me.CheckBox6.Text = "Enabled"
-        Me.CheckBox6.UseVisualStyleBackColor = True
+        Me.GroupBox3.Controls.Add(Me.RadioButton4)
+        Me.GroupBox3.Controls.Add(Me.RadioButton3)
+        Me.GroupBox3.Controls.Add(Me.RadioButton2)
+        Me.GroupBox3.Controls.Add(Me.RadioButton1)
+        Me.GroupBox3.Controls.Add(Me.lablOutgoing)
+        Me.GroupBox3.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupBox3.ForeColor = System.Drawing.Color.White
+        Me.GroupBox3.Location = New System.Drawing.Point(465, 386)
+        Me.GroupBox3.Name = "GroupBox3"
+        Me.GroupBox3.Size = New System.Drawing.Size(655, 81)
+        Me.GroupBox3.TabIndex = 44
+        Me.GroupBox3.TabStop = False
+        Me.GroupBox3.Text = "Outgoing data"
+        '
+        'RadioButton4
+        '
+        Me.RadioButton4.AutoSize = True
+        Me.RadioButton4.Checked = Global.TimingServer.My.MySettings.Default.SourceTestClock
+        Me.RadioButton4.DataBindings.Add(New System.Windows.Forms.Binding("Checked", Global.TimingServer.My.MySettings.Default, "SourceTestClock", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.RadioButton4.Location = New System.Drawing.Point(547, 50)
+        Me.RadioButton4.Name = "RadioButton4"
+        Me.RadioButton4.Size = New System.Drawing.Size(87, 20)
+        Me.RadioButton4.TabIndex = 25
+        Me.RadioButton4.TabStop = True
+        Me.RadioButton4.Text = "Test Clock"
+        Me.RadioButton4.UseVisualStyleBackColor = True
+        '
+        'RadioButton3
+        '
+        Me.RadioButton3.AutoSize = True
+        Me.RadioButton3.Checked = Global.TimingServer.My.MySettings.Default.SourceTestTimer
+        Me.RadioButton3.DataBindings.Add(New System.Windows.Forms.Binding("Checked", Global.TimingServer.My.MySettings.Default, "SourceTestTimer", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.RadioButton3.Location = New System.Drawing.Point(547, 24)
+        Me.RadioButton3.Name = "RadioButton3"
+        Me.RadioButton3.Size = New System.Drawing.Size(86, 20)
+        Me.RadioButton3.TabIndex = 24
+        Me.RadioButton3.TabStop = True
+        Me.RadioButton3.Text = "Test Timer"
+        Me.RadioButton3.UseVisualStyleBackColor = True
+        '
+        'RadioButton2
+        '
+        Me.RadioButton2.AutoSize = True
+        Me.RadioButton2.Checked = Global.TimingServer.My.MySettings.Default.SourceUDP
+        Me.RadioButton2.DataBindings.Add(New System.Windows.Forms.Binding("Checked", Global.TimingServer.My.MySettings.Default, "SourceUDP", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.RadioButton2.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.RadioButton2.Location = New System.Drawing.Point(19, 50)
+        Me.RadioButton2.Name = "RadioButton2"
+        Me.RadioButton2.Size = New System.Drawing.Size(60, 22)
+        Me.RadioButton2.TabIndex = 23
+        Me.RadioButton2.TabStop = True
+        Me.RadioButton2.Text = "UDP"
+        Me.RadioButton2.UseVisualStyleBackColor = True
+        '
+        'RadioButton1
+        '
+        Me.RadioButton1.AutoSize = True
+        Me.RadioButton1.Checked = Global.TimingServer.My.MySettings.Default.SourceCOM
+        Me.RadioButton1.DataBindings.Add(New System.Windows.Forms.Binding("Checked", Global.TimingServer.My.MySettings.Default, "SourceCOM", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.RadioButton1.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.RadioButton1.Location = New System.Drawing.Point(19, 24)
+        Me.RadioButton1.Name = "RadioButton1"
+        Me.RadioButton1.Size = New System.Drawing.Size(122, 22)
+        Me.RadioButton1.TabIndex = 22
+        Me.RadioButton1.TabStop = True
+        Me.RadioButton1.Text = "Omega Clock"
+        Me.RadioButton1.UseVisualStyleBackColor = True
+        '
+        'GroupBox4
+        '
+        Me.GroupBox4.Controls.Add(Me.btnTimerStop)
+        Me.GroupBox4.Controls.Add(Me.Button2)
+        Me.GroupBox4.Controls.Add(Me.Button1)
+        Me.GroupBox4.Controls.Add(Me.btnTimerReset)
+        Me.GroupBox4.Controls.Add(Me.btnTimerStart)
+        Me.GroupBox4.Controls.Add(Me.Label13)
+        Me.GroupBox4.Controls.Add(Me.Label12)
+        Me.GroupBox4.Controls.Add(Me.TextBox8)
+        Me.GroupBox4.Controls.Add(Me.TextBox7)
+        Me.GroupBox4.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupBox4.ForeColor = System.Drawing.Color.White
+        Me.GroupBox4.Location = New System.Drawing.Point(13, 287)
+        Me.GroupBox4.Name = "GroupBox4"
+        Me.GroupBox4.Size = New System.Drawing.Size(446, 180)
+        Me.GroupBox4.TabIndex = 45
+        Me.GroupBox4.TabStop = False
+        Me.GroupBox4.Text = "Test"
+        '
+        'btnTimerStop
+        '
+        Me.btnTimerStop.BackColor = System.Drawing.Color.DarkRed
+        Me.btnTimerStop.Enabled = False
+        Me.btnTimerStop.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnTimerStop.ForeColor = System.Drawing.Color.White
+        Me.btnTimerStop.Location = New System.Drawing.Point(329, 24)
+        Me.btnTimerStop.Name = "btnTimerStop"
+        Me.btnTimerStop.Size = New System.Drawing.Size(49, 29)
+        Me.btnTimerStop.TabIndex = 48
+        Me.btnTimerStop.Text = "Stop"
+        Me.btnTimerStop.UseVisualStyleBackColor = False
+        '
+        'Button2
+        '
+        Me.Button2.BackColor = System.Drawing.Color.DarkGreen
+        Me.Button2.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button2.ForeColor = System.Drawing.Color.White
+        Me.Button2.Location = New System.Drawing.Point(123, 126)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(140, 41)
+        Me.Button2.TabIndex = 47
+        Me.Button2.Text = "Test Omega" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Start"
+        Me.Button2.UseVisualStyleBackColor = False
+        '
+        'Button1
+        '
+        Me.Button1.BackColor = System.Drawing.Color.DarkRed
+        Me.Button1.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button1.ForeColor = System.Drawing.Color.White
+        Me.Button1.Location = New System.Drawing.Point(274, 126)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(140, 41)
+        Me.Button1.TabIndex = 46
+        Me.Button1.Text = "Test Omega" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Stop"
+        Me.Button1.UseVisualStyleBackColor = False
+        '
+        'btnTimerReset
+        '
+        Me.btnTimerReset.BackColor = System.Drawing.Color.DarkRed
+        Me.btnTimerReset.Enabled = False
+        Me.btnTimerReset.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnTimerReset.ForeColor = System.Drawing.Color.White
+        Me.btnTimerReset.Location = New System.Drawing.Point(384, 24)
+        Me.btnTimerReset.Name = "btnTimerReset"
+        Me.btnTimerReset.Size = New System.Drawing.Size(49, 29)
+        Me.btnTimerReset.TabIndex = 40
+        Me.btnTimerReset.Text = "Reset"
+        Me.btnTimerReset.UseVisualStyleBackColor = False
+        '
+        'btnTimerStart
+        '
+        Me.btnTimerStart.BackColor = System.Drawing.Color.DarkGreen
+        Me.btnTimerStart.Enabled = False
+        Me.btnTimerStart.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnTimerStart.ForeColor = System.Drawing.Color.White
+        Me.btnTimerStart.Location = New System.Drawing.Point(274, 24)
+        Me.btnTimerStart.Name = "btnTimerStart"
+        Me.btnTimerStart.Size = New System.Drawing.Size(49, 29)
+        Me.btnTimerStart.TabIndex = 39
+        Me.btnTimerStart.Text = "Start"
+        Me.btnTimerStart.UseVisualStyleBackColor = False
+        '
+        'Label13
+        '
+        Me.Label13.AutoSize = True
+        Me.Label13.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label13.ForeColor = System.Drawing.Color.White
+        Me.Label13.Location = New System.Drawing.Point(10, 66)
+        Me.Label13.Name = "Label13"
+        Me.Label13.Size = New System.Drawing.Size(106, 18)
+        Me.Label13.TabIndex = 38
+        Me.Label13.Text = "Clock Format:"
+        '
+        'Label12
+        '
+        Me.Label12.AutoSize = True
+        Me.Label12.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label12.ForeColor = System.Drawing.Color.White
+        Me.Label12.Location = New System.Drawing.Point(11, 30)
+        Me.Label12.Name = "Label12"
+        Me.Label12.Size = New System.Drawing.Size(105, 18)
+        Me.Label12.TabIndex = 37
+        Me.Label12.Text = "Timer Format:"
+        '
+        'TextBox8
+        '
+        Me.TextBox8.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.TimingServer.My.MySettings.Default, "TestClockFormat", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.TextBox8.Font = New System.Drawing.Font("Arial", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox8.Location = New System.Drawing.Point(119, 60)
+        Me.TextBox8.Name = "TextBox8"
+        Me.TextBox8.Size = New System.Drawing.Size(149, 29)
+        Me.TextBox8.TabIndex = 24
+        Me.TextBox8.Text = Global.TimingServer.My.MySettings.Default.TestClockFormat
+        '
+        'TextBox7
+        '
+        Me.TextBox7.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.TimingServer.My.MySettings.Default, "TestTimerFormat", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.TextBox7.Font = New System.Drawing.Font("Arial", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox7.Location = New System.Drawing.Point(119, 24)
+        Me.TextBox7.Name = "TextBox7"
+        Me.TextBox7.Size = New System.Drawing.Size(149, 29)
+        Me.TextBox7.TabIndex = 23
+        Me.TextBox7.Text = Global.TimingServer.My.MySettings.Default.TestTimerFormat
+        '
+        'TimerOmega
+        '
+        Me.TimerOmega.Interval = 1000
+        '
+        'TimerHeartbeat
+        '
+        Me.TimerHeartbeat.Interval = 1000
+        '
+        'btnReset
+        '
+        Me.btnReset.BackColor = System.Drawing.Color.Orange
+        Me.btnReset.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnReset.ForeColor = System.Drawing.Color.Black
+        Me.btnReset.Location = New System.Drawing.Point(474, 318)
+        Me.btnReset.Name = "btnReset"
+        Me.btnReset.Size = New System.Drawing.Size(160, 41)
+        Me.btnReset.TabIndex = 48
+        Me.btnReset.Text = "Reset Connections"
+        Me.btnReset.UseVisualStyleBackColor = False
+        '
+        'btnLoadConnections
+        '
+        Me.btnLoadConnections.BackColor = System.Drawing.Color.Orange
+        Me.btnLoadConnections.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnLoadConnections.ForeColor = System.Drawing.Color.Black
+        Me.btnLoadConnections.Location = New System.Drawing.Point(120, 318)
+        Me.btnLoadConnections.Name = "btnLoadConnections"
+        Me.btnLoadConnections.Size = New System.Drawing.Size(160, 41)
+        Me.btnLoadConnections.TabIndex = 49
+        Me.btnLoadConnections.Text = "Load Connections"
+        Me.btnLoadConnections.UseVisualStyleBackColor = False
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Navy
-        Me.ClientSize = New System.Drawing.Size(1147, 499)
-        Me.Controls.Add(Me.btnLoadConnections)
-        Me.Controls.Add(Me.btnReset)
+        Me.ClientSize = New System.Drawing.Size(1131, 476)
         Me.Controls.Add(Me.GroupBox4)
         Me.Controls.Add(Me.GroupBox3)
         Me.Controls.Add(Me.GroupBox2)
