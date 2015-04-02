@@ -473,6 +473,102 @@ Namespace My
                 Me("UDP8Enabled") = value
             End Set
         End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("RUK:")>  _
+        Public Property Destination1() As String
+            Get
+                Return CType(Me("Destination1"),String)
+            End Get
+            Set
+                Me("Destination1") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
+        Public Property Destination2() As String
+            Get
+                Return CType(Me("Destination2"),String)
+            End Get
+            Set
+                Me("Destination2") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
+        Public Property Destination3() As String
+            Get
+                Return CType(Me("Destination3"),String)
+            End Get
+            Set
+                Me("Destination3") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
+        Public Property Destination4() As String
+            Get
+                Return CType(Me("Destination4"),String)
+            End Get
+            Set
+                Me("Destination4") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
+        Public Property Destination5() As String
+            Get
+                Return CType(Me("Destination5"),String)
+            End Get
+            Set
+                Me("Destination5") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
+        Public Property Destination6() As String
+            Get
+                Return CType(Me("Destination6"),String)
+            End Get
+            Set
+                Me("Destination6") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
+        Public Property Destination7() As String
+            Get
+                Return CType(Me("Destination7"),String)
+            End Get
+            Set
+                Me("Destination7") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
+        Public Property Destination8() As String
+            Get
+                Return CType(Me("Destination8"),String)
+            End Get
+            Set
+                Me("Destination8") = value
+            End Set
+        End Property
     End Class
 End Namespace
 

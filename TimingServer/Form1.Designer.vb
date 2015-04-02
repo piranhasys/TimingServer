@@ -26,10 +26,10 @@ Partial Class Form1
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.Label6 = New System.Windows.Forms.Label()
+        Me.lablDestination1 = New System.Windows.Forms.Label()
+        Me.lablDestination2 = New System.Windows.Forms.Label()
+        Me.lablDestination3 = New System.Windows.Forms.Label()
+        Me.lablDestination4 = New System.Windows.Forms.Label()
         Me.lablOutgoing = New System.Windows.Forms.Label()
         Me.lablOmega = New System.Windows.Forms.Label()
         Me.Label8 = New System.Windows.Forms.Label()
@@ -52,10 +52,26 @@ Partial Class Form1
         Me.lablCOMError = New System.Windows.Forms.Label()
         Me.lablOmegaError = New System.Windows.Forms.Label()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.lablOK8 = New System.Windows.Forms.Label()
+        Me.Label23 = New System.Windows.Forms.Label()
+        Me.lablDestination8 = New System.Windows.Forms.Label()
+        Me.lablOK7 = New System.Windows.Forms.Label()
+        Me.Label20 = New System.Windows.Forms.Label()
+        Me.lablDestination7 = New System.Windows.Forms.Label()
+        Me.lablOK6 = New System.Windows.Forms.Label()
+        Me.Label17 = New System.Windows.Forms.Label()
+        Me.lablDestination6 = New System.Windows.Forms.Label()
+        Me.lablOK5 = New System.Windows.Forms.Label()
+        Me.Label14 = New System.Windows.Forms.Label()
+        Me.lablDestination5 = New System.Windows.Forms.Label()
         Me.lablOK4 = New System.Windows.Forms.Label()
         Me.lablOK3 = New System.Windows.Forms.Label()
         Me.lablOK2 = New System.Windows.Forms.Label()
         Me.lablOK1 = New System.Windows.Forms.Label()
+        Me.lablerror5 = New System.Windows.Forms.Label()
+        Me.lablError6 = New System.Windows.Forms.Label()
+        Me.lablError7 = New System.Windows.Forms.Label()
+        Me.lablError8 = New System.Windows.Forms.Label()
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
         Me.GroupBox4 = New System.Windows.Forms.GroupBox()
         Me.btnTimerStop = New System.Windows.Forms.Button()
@@ -68,18 +84,7 @@ Partial Class Form1
         Me.TimerOmega = New System.Windows.Forms.Timer(Me.components)
         Me.TimerHeartbeat = New System.Windows.Forms.Timer(Me.components)
         Me.btnReset = New System.Windows.Forms.Button()
-        Me.lablOK5 = New System.Windows.Forms.Label()
-        Me.Label14 = New System.Windows.Forms.Label()
-        Me.Label15 = New System.Windows.Forms.Label()
-        Me.lablOK6 = New System.Windows.Forms.Label()
-        Me.Label17 = New System.Windows.Forms.Label()
-        Me.Label18 = New System.Windows.Forms.Label()
-        Me.lablOK7 = New System.Windows.Forms.Label()
-        Me.Label20 = New System.Windows.Forms.Label()
-        Me.Label21 = New System.Windows.Forms.Label()
-        Me.lablOK8 = New System.Windows.Forms.Label()
-        Me.Label23 = New System.Windows.Forms.Label()
-        Me.Label24 = New System.Windows.Forms.Label()
+        Me.btnLoadConnections = New System.Windows.Forms.Button()
         Me.TextBox8 = New System.Windows.Forms.TextBox()
         Me.TextBox7 = New System.Windows.Forms.TextBox()
         Me.RadioButton4 = New System.Windows.Forms.RadioButton()
@@ -115,10 +120,6 @@ Partial Class Form1
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.CheckBox5 = New System.Windows.Forms.CheckBox()
         Me.CheckBox6 = New System.Windows.Forms.CheckBox()
-        Me.lablerror5 = New System.Windows.Forms.Label()
-        Me.lablError6 = New System.Windows.Forms.Label()
-        Me.lablError7 = New System.Windows.Forms.Label()
-        Me.lablError8 = New System.Windows.Forms.Label()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.GroupBox3.SuspendLayout()
@@ -147,49 +148,53 @@ Partial Class Form1
         Me.Label2.TabIndex = 7
         Me.Label2.Text = "ID:"
         '
-        'Label3
+        'lablDestination1
         '
-        Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.ForeColor = System.Drawing.Color.White
-        Me.Label3.Location = New System.Drawing.Point(16, 30)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(101, 18)
-        Me.Label3.TabIndex = 8
-        Me.Label3.Text = "IP Address 1:"
+        Me.lablDestination1.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.TimingServer.My.MySettings.Default, "Destination1", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.lablDestination1.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lablDestination1.ForeColor = System.Drawing.Color.White
+        Me.lablDestination1.Location = New System.Drawing.Point(6, 30)
+        Me.lablDestination1.Name = "lablDestination1"
+        Me.lablDestination1.Size = New System.Drawing.Size(111, 18)
+        Me.lablDestination1.TabIndex = 8
+        Me.lablDestination1.Text = Global.TimingServer.My.MySettings.Default.Destination1
+        Me.lablDestination1.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
-        'Label4
+        'lablDestination2
         '
-        Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.ForeColor = System.Drawing.Color.White
-        Me.Label4.Location = New System.Drawing.Point(16, 66)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(101, 18)
-        Me.Label4.TabIndex = 9
-        Me.Label4.Text = "IP Address 2:"
+        Me.lablDestination2.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.TimingServer.My.MySettings.Default, "Destination2", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.lablDestination2.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lablDestination2.ForeColor = System.Drawing.Color.White
+        Me.lablDestination2.Location = New System.Drawing.Point(6, 66)
+        Me.lablDestination2.Name = "lablDestination2"
+        Me.lablDestination2.Size = New System.Drawing.Size(111, 18)
+        Me.lablDestination2.TabIndex = 9
+        Me.lablDestination2.Text = Global.TimingServer.My.MySettings.Default.Destination2
+        Me.lablDestination2.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
-        'Label5
+        'lablDestination3
         '
-        Me.Label5.AutoSize = True
-        Me.Label5.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.ForeColor = System.Drawing.Color.White
-        Me.Label5.Location = New System.Drawing.Point(16, 102)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(101, 18)
-        Me.Label5.TabIndex = 10
-        Me.Label5.Text = "IP Address 3:"
+        Me.lablDestination3.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.TimingServer.My.MySettings.Default, "Destination3", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.lablDestination3.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lablDestination3.ForeColor = System.Drawing.Color.White
+        Me.lablDestination3.Location = New System.Drawing.Point(6, 102)
+        Me.lablDestination3.Name = "lablDestination3"
+        Me.lablDestination3.Size = New System.Drawing.Size(111, 18)
+        Me.lablDestination3.TabIndex = 10
+        Me.lablDestination3.Text = Global.TimingServer.My.MySettings.Default.Destination3
+        Me.lablDestination3.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
-        'Label6
+        'lablDestination4
         '
-        Me.Label6.AutoSize = True
-        Me.Label6.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.ForeColor = System.Drawing.Color.White
-        Me.Label6.Location = New System.Drawing.Point(16, 138)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(101, 18)
-        Me.Label6.TabIndex = 11
-        Me.Label6.Text = "IP Address 4:"
+        Me.lablDestination4.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.TimingServer.My.MySettings.Default, "Destination4", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.lablDestination4.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lablDestination4.ForeColor = System.Drawing.Color.White
+        Me.lablDestination4.Location = New System.Drawing.Point(6, 138)
+        Me.lablDestination4.Name = "lablDestination4"
+        Me.lablDestination4.Size = New System.Drawing.Size(111, 18)
+        Me.lablDestination4.TabIndex = 11
+        Me.lablDestination4.Text = Global.TimingServer.My.MySettings.Default.Destination4
+        Me.lablDestination4.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
         'lablOutgoing
         '
@@ -466,28 +471,28 @@ Partial Class Form1
         Me.GroupBox2.Controls.Add(Me.Label23)
         Me.GroupBox2.Controls.Add(Me.TextBox20)
         Me.GroupBox2.Controls.Add(Me.TextBox21)
-        Me.GroupBox2.Controls.Add(Me.Label24)
+        Me.GroupBox2.Controls.Add(Me.lablDestination8)
         Me.GroupBox2.Controls.Add(Me.CheckBox10)
         Me.GroupBox2.Controls.Add(Me.lablOK7)
         Me.GroupBox2.Controls.Add(Me.Label20)
         Me.GroupBox2.Controls.Add(Me.TextBox18)
         Me.GroupBox2.Controls.Add(Me.TextBox19)
-        Me.GroupBox2.Controls.Add(Me.Label21)
+        Me.GroupBox2.Controls.Add(Me.lablDestination7)
         Me.GroupBox2.Controls.Add(Me.CheckBox9)
         Me.GroupBox2.Controls.Add(Me.lablOK6)
         Me.GroupBox2.Controls.Add(Me.Label17)
         Me.GroupBox2.Controls.Add(Me.TextBox16)
         Me.GroupBox2.Controls.Add(Me.TextBox17)
-        Me.GroupBox2.Controls.Add(Me.Label18)
+        Me.GroupBox2.Controls.Add(Me.lablDestination6)
         Me.GroupBox2.Controls.Add(Me.CheckBox8)
         Me.GroupBox2.Controls.Add(Me.lablOK5)
         Me.GroupBox2.Controls.Add(Me.Label14)
         Me.GroupBox2.Controls.Add(Me.TextBox14)
         Me.GroupBox2.Controls.Add(Me.TextBox15)
-        Me.GroupBox2.Controls.Add(Me.Label15)
+        Me.GroupBox2.Controls.Add(Me.lablDestination5)
         Me.GroupBox2.Controls.Add(Me.CheckBox7)
         Me.GroupBox2.Controls.Add(Me.lablOK4)
-        Me.GroupBox2.Controls.Add(Me.Label3)
+        Me.GroupBox2.Controls.Add(Me.lablDestination1)
         Me.GroupBox2.Controls.Add(Me.lablOK3)
         Me.GroupBox2.Controls.Add(Me.TextBox2)
         Me.GroupBox2.Controls.Add(Me.lablOK2)
@@ -498,11 +503,11 @@ Partial Class Form1
         Me.GroupBox2.Controls.Add(Me.lablError3)
         Me.GroupBox2.Controls.Add(Me.TextBox5)
         Me.GroupBox2.Controls.Add(Me.lablError2)
-        Me.GroupBox2.Controls.Add(Me.Label4)
+        Me.GroupBox2.Controls.Add(Me.lablDestination2)
         Me.GroupBox2.Controls.Add(Me.lablError1)
-        Me.GroupBox2.Controls.Add(Me.Label5)
+        Me.GroupBox2.Controls.Add(Me.lablDestination3)
         Me.GroupBox2.Controls.Add(Me.TextBox12)
-        Me.GroupBox2.Controls.Add(Me.Label6)
+        Me.GroupBox2.Controls.Add(Me.lablDestination4)
         Me.GroupBox2.Controls.Add(Me.TextBox11)
         Me.GroupBox2.Controls.Add(Me.CheckBox1)
         Me.GroupBox2.Controls.Add(Me.TextBox10)
@@ -522,6 +527,166 @@ Partial Class Form1
         Me.GroupBox2.TabIndex = 43
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Outgoing UDP"
+        '
+        'lablOK8
+        '
+        Me.lablOK8.BackColor = System.Drawing.Color.LimeGreen
+        Me.lablOK8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lablOK8.Font = New System.Drawing.Font("Arial", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lablOK8.ForeColor = System.Drawing.Color.Black
+        Me.lablOK8.Location = New System.Drawing.Point(522, 276)
+        Me.lablOK8.Name = "lablOK8"
+        Me.lablOK8.Size = New System.Drawing.Size(112, 29)
+        Me.lablOK8.TabIndex = 74
+        Me.lablOK8.Text = "OK"
+        Me.lablOK8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.lablOK8.Visible = False
+        '
+        'Label23
+        '
+        Me.Label23.BackColor = System.Drawing.Color.Red
+        Me.Label23.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Label23.Font = New System.Drawing.Font("Arial", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label23.ForeColor = System.Drawing.Color.White
+        Me.Label23.Location = New System.Drawing.Point(522, 276)
+        Me.Label23.Name = "Label23"
+        Me.Label23.Size = New System.Drawing.Size(112, 29)
+        Me.Label23.TabIndex = 73
+        Me.Label23.Text = "ERROR"
+        Me.Label23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Label23.Visible = False
+        '
+        'lablDestination8
+        '
+        Me.lablDestination8.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.TimingServer.My.MySettings.Default, "Destination8", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.lablDestination8.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lablDestination8.ForeColor = System.Drawing.Color.White
+        Me.lablDestination8.Location = New System.Drawing.Point(6, 282)
+        Me.lablDestination8.Name = "lablDestination8"
+        Me.lablDestination8.Size = New System.Drawing.Size(111, 18)
+        Me.lablDestination8.TabIndex = 70
+        Me.lablDestination8.Text = Global.TimingServer.My.MySettings.Default.Destination8
+        Me.lablDestination8.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'lablOK7
+        '
+        Me.lablOK7.BackColor = System.Drawing.Color.LimeGreen
+        Me.lablOK7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lablOK7.Font = New System.Drawing.Font("Arial", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lablOK7.ForeColor = System.Drawing.Color.Black
+        Me.lablOK7.Location = New System.Drawing.Point(522, 240)
+        Me.lablOK7.Name = "lablOK7"
+        Me.lablOK7.Size = New System.Drawing.Size(112, 29)
+        Me.lablOK7.TabIndex = 68
+        Me.lablOK7.Text = "OK"
+        Me.lablOK7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.lablOK7.Visible = False
+        '
+        'Label20
+        '
+        Me.Label20.BackColor = System.Drawing.Color.Red
+        Me.Label20.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Label20.Font = New System.Drawing.Font("Arial", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label20.ForeColor = System.Drawing.Color.White
+        Me.Label20.Location = New System.Drawing.Point(522, 240)
+        Me.Label20.Name = "Label20"
+        Me.Label20.Size = New System.Drawing.Size(112, 29)
+        Me.Label20.TabIndex = 67
+        Me.Label20.Text = "ERROR"
+        Me.Label20.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Label20.Visible = False
+        '
+        'lablDestination7
+        '
+        Me.lablDestination7.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.TimingServer.My.MySettings.Default, "Destination7", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.lablDestination7.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lablDestination7.ForeColor = System.Drawing.Color.White
+        Me.lablDestination7.Location = New System.Drawing.Point(6, 246)
+        Me.lablDestination7.Name = "lablDestination7"
+        Me.lablDestination7.Size = New System.Drawing.Size(111, 18)
+        Me.lablDestination7.TabIndex = 64
+        Me.lablDestination7.Text = Global.TimingServer.My.MySettings.Default.Destination7
+        Me.lablDestination7.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'lablOK6
+        '
+        Me.lablOK6.BackColor = System.Drawing.Color.LimeGreen
+        Me.lablOK6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lablOK6.Font = New System.Drawing.Font("Arial", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lablOK6.ForeColor = System.Drawing.Color.Black
+        Me.lablOK6.Location = New System.Drawing.Point(522, 204)
+        Me.lablOK6.Name = "lablOK6"
+        Me.lablOK6.Size = New System.Drawing.Size(112, 29)
+        Me.lablOK6.TabIndex = 62
+        Me.lablOK6.Text = "OK"
+        Me.lablOK6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.lablOK6.Visible = False
+        '
+        'Label17
+        '
+        Me.Label17.BackColor = System.Drawing.Color.Red
+        Me.Label17.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Label17.Font = New System.Drawing.Font("Arial", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label17.ForeColor = System.Drawing.Color.White
+        Me.Label17.Location = New System.Drawing.Point(522, 204)
+        Me.Label17.Name = "Label17"
+        Me.Label17.Size = New System.Drawing.Size(112, 29)
+        Me.Label17.TabIndex = 61
+        Me.Label17.Text = "ERROR"
+        Me.Label17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Label17.Visible = False
+        '
+        'lablDestination6
+        '
+        Me.lablDestination6.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.TimingServer.My.MySettings.Default, "Destination6", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.lablDestination6.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lablDestination6.ForeColor = System.Drawing.Color.White
+        Me.lablDestination6.Location = New System.Drawing.Point(6, 210)
+        Me.lablDestination6.Name = "lablDestination6"
+        Me.lablDestination6.Size = New System.Drawing.Size(111, 18)
+        Me.lablDestination6.TabIndex = 58
+        Me.lablDestination6.Text = Global.TimingServer.My.MySettings.Default.Destination6
+        Me.lablDestination6.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'lablOK5
+        '
+        Me.lablOK5.BackColor = System.Drawing.Color.LimeGreen
+        Me.lablOK5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lablOK5.Font = New System.Drawing.Font("Arial", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lablOK5.ForeColor = System.Drawing.Color.Black
+        Me.lablOK5.Location = New System.Drawing.Point(522, 168)
+        Me.lablOK5.Name = "lablOK5"
+        Me.lablOK5.Size = New System.Drawing.Size(112, 29)
+        Me.lablOK5.TabIndex = 56
+        Me.lablOK5.Text = "OK"
+        Me.lablOK5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.lablOK5.Visible = False
+        '
+        'Label14
+        '
+        Me.Label14.BackColor = System.Drawing.Color.Red
+        Me.Label14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Label14.Font = New System.Drawing.Font("Arial", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label14.ForeColor = System.Drawing.Color.White
+        Me.Label14.Location = New System.Drawing.Point(522, 168)
+        Me.Label14.Name = "Label14"
+        Me.Label14.Size = New System.Drawing.Size(112, 29)
+        Me.Label14.TabIndex = 55
+        Me.Label14.Text = "ERROR"
+        Me.Label14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Label14.Visible = False
+        '
+        'lablDestination5
+        '
+        Me.lablDestination5.DataBindings.Add(New System.Windows.Forms.Binding("Text", Global.TimingServer.My.MySettings.Default, "Destination5", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.lablDestination5.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lablDestination5.ForeColor = System.Drawing.Color.White
+        Me.lablDestination5.Location = New System.Drawing.Point(6, 174)
+        Me.lablDestination5.Name = "lablDestination5"
+        Me.lablDestination5.Size = New System.Drawing.Size(111, 18)
+        Me.lablDestination5.TabIndex = 52
+        Me.lablDestination5.Text = Global.TimingServer.My.MySettings.Default.Destination5
+        Me.lablDestination5.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
         'lablOK4
         '
@@ -578,6 +743,62 @@ Partial Class Form1
         Me.lablOK1.Text = "OK"
         Me.lablOK1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.lablOK1.Visible = False
+        '
+        'lablerror5
+        '
+        Me.lablerror5.BackColor = System.Drawing.Color.Red
+        Me.lablerror5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lablerror5.Font = New System.Drawing.Font("Arial", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lablerror5.ForeColor = System.Drawing.Color.White
+        Me.lablerror5.Location = New System.Drawing.Point(522, 168)
+        Me.lablerror5.Name = "lablerror5"
+        Me.lablerror5.Size = New System.Drawing.Size(112, 29)
+        Me.lablerror5.TabIndex = 75
+        Me.lablerror5.Text = "ERROR"
+        Me.lablerror5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.lablerror5.Visible = False
+        '
+        'lablError6
+        '
+        Me.lablError6.BackColor = System.Drawing.Color.Red
+        Me.lablError6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lablError6.Font = New System.Drawing.Font("Arial", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lablError6.ForeColor = System.Drawing.Color.White
+        Me.lablError6.Location = New System.Drawing.Point(522, 204)
+        Me.lablError6.Name = "lablError6"
+        Me.lablError6.Size = New System.Drawing.Size(112, 29)
+        Me.lablError6.TabIndex = 76
+        Me.lablError6.Text = "ERROR"
+        Me.lablError6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.lablError6.Visible = False
+        '
+        'lablError7
+        '
+        Me.lablError7.BackColor = System.Drawing.Color.Red
+        Me.lablError7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lablError7.Font = New System.Drawing.Font("Arial", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lablError7.ForeColor = System.Drawing.Color.White
+        Me.lablError7.Location = New System.Drawing.Point(522, 240)
+        Me.lablError7.Name = "lablError7"
+        Me.lablError7.Size = New System.Drawing.Size(112, 29)
+        Me.lablError7.TabIndex = 77
+        Me.lablError7.Text = "ERROR"
+        Me.lablError7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.lablError7.Visible = False
+        '
+        'lablError8
+        '
+        Me.lablError8.BackColor = System.Drawing.Color.Red
+        Me.lablError8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lablError8.Font = New System.Drawing.Font("Arial", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lablError8.ForeColor = System.Drawing.Color.White
+        Me.lablError8.Location = New System.Drawing.Point(522, 276)
+        Me.lablError8.Name = "lablError8"
+        Me.lablError8.Size = New System.Drawing.Size(112, 29)
+        Me.lablError8.TabIndex = 78
+        Me.lablError8.Text = "ERROR"
+        Me.lablError8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.lablError8.Visible = False
         '
         'GroupBox3
         '
@@ -720,161 +941,17 @@ Partial Class Form1
         Me.btnReset.Text = "Reset Connections"
         Me.btnReset.UseVisualStyleBackColor = False
         '
-        'lablOK5
+        'btnLoadConnections
         '
-        Me.lablOK5.BackColor = System.Drawing.Color.LimeGreen
-        Me.lablOK5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lablOK5.Font = New System.Drawing.Font("Arial", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lablOK5.ForeColor = System.Drawing.Color.Black
-        Me.lablOK5.Location = New System.Drawing.Point(522, 168)
-        Me.lablOK5.Name = "lablOK5"
-        Me.lablOK5.Size = New System.Drawing.Size(112, 29)
-        Me.lablOK5.TabIndex = 56
-        Me.lablOK5.Text = "OK"
-        Me.lablOK5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.lablOK5.Visible = False
-        '
-        'Label14
-        '
-        Me.Label14.BackColor = System.Drawing.Color.Red
-        Me.Label14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label14.Font = New System.Drawing.Font("Arial", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label14.ForeColor = System.Drawing.Color.White
-        Me.Label14.Location = New System.Drawing.Point(522, 168)
-        Me.Label14.Name = "Label14"
-        Me.Label14.Size = New System.Drawing.Size(112, 29)
-        Me.Label14.TabIndex = 55
-        Me.Label14.Text = "ERROR"
-        Me.Label14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.Label14.Visible = False
-        '
-        'Label15
-        '
-        Me.Label15.AutoSize = True
-        Me.Label15.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label15.ForeColor = System.Drawing.Color.White
-        Me.Label15.Location = New System.Drawing.Point(16, 174)
-        Me.Label15.Name = "Label15"
-        Me.Label15.Size = New System.Drawing.Size(101, 18)
-        Me.Label15.TabIndex = 52
-        Me.Label15.Text = "IP Address 5:"
-        '
-        'lablOK6
-        '
-        Me.lablOK6.BackColor = System.Drawing.Color.LimeGreen
-        Me.lablOK6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lablOK6.Font = New System.Drawing.Font("Arial", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lablOK6.ForeColor = System.Drawing.Color.Black
-        Me.lablOK6.Location = New System.Drawing.Point(522, 204)
-        Me.lablOK6.Name = "lablOK6"
-        Me.lablOK6.Size = New System.Drawing.Size(112, 29)
-        Me.lablOK6.TabIndex = 62
-        Me.lablOK6.Text = "OK"
-        Me.lablOK6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.lablOK6.Visible = False
-        '
-        'Label17
-        '
-        Me.Label17.BackColor = System.Drawing.Color.Red
-        Me.Label17.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label17.Font = New System.Drawing.Font("Arial", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label17.ForeColor = System.Drawing.Color.White
-        Me.Label17.Location = New System.Drawing.Point(522, 204)
-        Me.Label17.Name = "Label17"
-        Me.Label17.Size = New System.Drawing.Size(112, 29)
-        Me.Label17.TabIndex = 61
-        Me.Label17.Text = "ERROR"
-        Me.Label17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.Label17.Visible = False
-        '
-        'Label18
-        '
-        Me.Label18.AutoSize = True
-        Me.Label18.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label18.ForeColor = System.Drawing.Color.White
-        Me.Label18.Location = New System.Drawing.Point(16, 210)
-        Me.Label18.Name = "Label18"
-        Me.Label18.Size = New System.Drawing.Size(101, 18)
-        Me.Label18.TabIndex = 58
-        Me.Label18.Text = "IP Address 6:"
-        '
-        'lablOK7
-        '
-        Me.lablOK7.BackColor = System.Drawing.Color.LimeGreen
-        Me.lablOK7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lablOK7.Font = New System.Drawing.Font("Arial", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lablOK7.ForeColor = System.Drawing.Color.Black
-        Me.lablOK7.Location = New System.Drawing.Point(522, 240)
-        Me.lablOK7.Name = "lablOK7"
-        Me.lablOK7.Size = New System.Drawing.Size(112, 29)
-        Me.lablOK7.TabIndex = 68
-        Me.lablOK7.Text = "OK"
-        Me.lablOK7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.lablOK7.Visible = False
-        '
-        'Label20
-        '
-        Me.Label20.BackColor = System.Drawing.Color.Red
-        Me.Label20.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label20.Font = New System.Drawing.Font("Arial", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label20.ForeColor = System.Drawing.Color.White
-        Me.Label20.Location = New System.Drawing.Point(522, 240)
-        Me.Label20.Name = "Label20"
-        Me.Label20.Size = New System.Drawing.Size(112, 29)
-        Me.Label20.TabIndex = 67
-        Me.Label20.Text = "ERROR"
-        Me.Label20.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.Label20.Visible = False
-        '
-        'Label21
-        '
-        Me.Label21.AutoSize = True
-        Me.Label21.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label21.ForeColor = System.Drawing.Color.White
-        Me.Label21.Location = New System.Drawing.Point(16, 246)
-        Me.Label21.Name = "Label21"
-        Me.Label21.Size = New System.Drawing.Size(101, 18)
-        Me.Label21.TabIndex = 64
-        Me.Label21.Text = "IP Address 7:"
-        '
-        'lablOK8
-        '
-        Me.lablOK8.BackColor = System.Drawing.Color.LimeGreen
-        Me.lablOK8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lablOK8.Font = New System.Drawing.Font("Arial", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lablOK8.ForeColor = System.Drawing.Color.Black
-        Me.lablOK8.Location = New System.Drawing.Point(522, 276)
-        Me.lablOK8.Name = "lablOK8"
-        Me.lablOK8.Size = New System.Drawing.Size(112, 29)
-        Me.lablOK8.TabIndex = 74
-        Me.lablOK8.Text = "OK"
-        Me.lablOK8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.lablOK8.Visible = False
-        '
-        'Label23
-        '
-        Me.Label23.BackColor = System.Drawing.Color.Red
-        Me.Label23.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label23.Font = New System.Drawing.Font("Arial", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label23.ForeColor = System.Drawing.Color.White
-        Me.Label23.Location = New System.Drawing.Point(522, 276)
-        Me.Label23.Name = "Label23"
-        Me.Label23.Size = New System.Drawing.Size(112, 29)
-        Me.Label23.TabIndex = 73
-        Me.Label23.Text = "ERROR"
-        Me.Label23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.Label23.Visible = False
-        '
-        'Label24
-        '
-        Me.Label24.AutoSize = True
-        Me.Label24.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label24.ForeColor = System.Drawing.Color.White
-        Me.Label24.Location = New System.Drawing.Point(16, 282)
-        Me.Label24.Name = "Label24"
-        Me.Label24.Size = New System.Drawing.Size(101, 18)
-        Me.Label24.TabIndex = 70
-        Me.Label24.Text = "IP Address 8:"
+        Me.btnLoadConnections.BackColor = System.Drawing.Color.Orange
+        Me.btnLoadConnections.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnLoadConnections.ForeColor = System.Drawing.Color.Black
+        Me.btnLoadConnections.Location = New System.Drawing.Point(794, 449)
+        Me.btnLoadConnections.Name = "btnLoadConnections"
+        Me.btnLoadConnections.Size = New System.Drawing.Size(160, 41)
+        Me.btnLoadConnections.TabIndex = 49
+        Me.btnLoadConnections.Text = "Load Connections"
+        Me.btnLoadConnections.UseVisualStyleBackColor = False
         '
         'TextBox8
         '
@@ -1280,68 +1357,13 @@ Partial Class Form1
         Me.CheckBox6.Text = "Enabled"
         Me.CheckBox6.UseVisualStyleBackColor = True
         '
-        'lablerror5
-        '
-        Me.lablerror5.BackColor = System.Drawing.Color.Red
-        Me.lablerror5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lablerror5.Font = New System.Drawing.Font("Arial", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lablerror5.ForeColor = System.Drawing.Color.White
-        Me.lablerror5.Location = New System.Drawing.Point(522, 168)
-        Me.lablerror5.Name = "lablerror5"
-        Me.lablerror5.Size = New System.Drawing.Size(112, 29)
-        Me.lablerror5.TabIndex = 75
-        Me.lablerror5.Text = "ERROR"
-        Me.lablerror5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.lablerror5.Visible = False
-        '
-        'lablError6
-        '
-        Me.lablError6.BackColor = System.Drawing.Color.Red
-        Me.lablError6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lablError6.Font = New System.Drawing.Font("Arial", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lablError6.ForeColor = System.Drawing.Color.White
-        Me.lablError6.Location = New System.Drawing.Point(522, 204)
-        Me.lablError6.Name = "lablError6"
-        Me.lablError6.Size = New System.Drawing.Size(112, 29)
-        Me.lablError6.TabIndex = 76
-        Me.lablError6.Text = "ERROR"
-        Me.lablError6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.lablError6.Visible = False
-        '
-        'lablError7
-        '
-        Me.lablError7.BackColor = System.Drawing.Color.Red
-        Me.lablError7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lablError7.Font = New System.Drawing.Font("Arial", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lablError7.ForeColor = System.Drawing.Color.White
-        Me.lablError7.Location = New System.Drawing.Point(522, 240)
-        Me.lablError7.Name = "lablError7"
-        Me.lablError7.Size = New System.Drawing.Size(112, 29)
-        Me.lablError7.TabIndex = 77
-        Me.lablError7.Text = "ERROR"
-        Me.lablError7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.lablError7.Visible = False
-        '
-        'lablError8
-        '
-        Me.lablError8.BackColor = System.Drawing.Color.Red
-        Me.lablError8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lablError8.Font = New System.Drawing.Font("Arial", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lablError8.ForeColor = System.Drawing.Color.White
-        Me.lablError8.Location = New System.Drawing.Point(522, 276)
-        Me.lablError8.Name = "lablError8"
-        Me.lablError8.Size = New System.Drawing.Size(112, 29)
-        Me.lablError8.TabIndex = 78
-        Me.lablError8.Text = "ERROR"
-        Me.lablError8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.lablError8.Visible = False
-        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Navy
         Me.ClientSize = New System.Drawing.Size(1147, 499)
+        Me.Controls.Add(Me.btnLoadConnections)
         Me.Controls.Add(Me.btnReset)
         Me.Controls.Add(Me.GroupBox4)
         Me.Controls.Add(Me.GroupBox3)
@@ -1369,10 +1391,10 @@ Partial Class Form1
     Friend WithEvents TextBox6 As System.Windows.Forms.TextBox
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents Label2 As System.Windows.Forms.Label
-    Friend WithEvents Label3 As System.Windows.Forms.Label
-    Friend WithEvents Label4 As System.Windows.Forms.Label
-    Friend WithEvents Label5 As System.Windows.Forms.Label
-    Friend WithEvents Label6 As System.Windows.Forms.Label
+    Friend WithEvents lablDestination1 As System.Windows.Forms.Label
+    Friend WithEvents lablDestination2 As System.Windows.Forms.Label
+    Friend WithEvents lablDestination3 As System.Windows.Forms.Label
+    Friend WithEvents lablDestination4 As System.Windows.Forms.Label
     Friend WithEvents CheckBox1 As System.Windows.Forms.CheckBox
     Friend WithEvents CheckBox2 As System.Windows.Forms.CheckBox
     Friend WithEvents CheckBox3 As System.Windows.Forms.CheckBox
@@ -1432,29 +1454,30 @@ Partial Class Form1
     Friend WithEvents Label23 As System.Windows.Forms.Label
     Friend WithEvents TextBox20 As System.Windows.Forms.TextBox
     Friend WithEvents TextBox21 As System.Windows.Forms.TextBox
-    Friend WithEvents Label24 As System.Windows.Forms.Label
+    Friend WithEvents lablDestination8 As System.Windows.Forms.Label
     Friend WithEvents CheckBox10 As System.Windows.Forms.CheckBox
     Friend WithEvents lablOK7 As System.Windows.Forms.Label
     Friend WithEvents Label20 As System.Windows.Forms.Label
     Friend WithEvents TextBox18 As System.Windows.Forms.TextBox
     Friend WithEvents TextBox19 As System.Windows.Forms.TextBox
-    Friend WithEvents Label21 As System.Windows.Forms.Label
+    Friend WithEvents lablDestination7 As System.Windows.Forms.Label
     Friend WithEvents CheckBox9 As System.Windows.Forms.CheckBox
     Friend WithEvents lablOK6 As System.Windows.Forms.Label
     Friend WithEvents Label17 As System.Windows.Forms.Label
     Friend WithEvents TextBox16 As System.Windows.Forms.TextBox
     Friend WithEvents TextBox17 As System.Windows.Forms.TextBox
-    Friend WithEvents Label18 As System.Windows.Forms.Label
+    Friend WithEvents lablDestination6 As System.Windows.Forms.Label
     Friend WithEvents CheckBox8 As System.Windows.Forms.CheckBox
     Friend WithEvents lablOK5 As System.Windows.Forms.Label
     Friend WithEvents Label14 As System.Windows.Forms.Label
     Friend WithEvents TextBox14 As System.Windows.Forms.TextBox
     Friend WithEvents TextBox15 As System.Windows.Forms.TextBox
-    Friend WithEvents Label15 As System.Windows.Forms.Label
+    Friend WithEvents lablDestination5 As System.Windows.Forms.Label
     Friend WithEvents CheckBox7 As System.Windows.Forms.CheckBox
     Friend WithEvents lablerror5 As System.Windows.Forms.Label
     Friend WithEvents lablError6 As System.Windows.Forms.Label
     Friend WithEvents lablError7 As System.Windows.Forms.Label
     Friend WithEvents lablError8 As System.Windows.Forms.Label
+    Friend WithEvents btnLoadConnections As System.Windows.Forms.Button
 
 End Class

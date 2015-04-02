@@ -38,6 +38,10 @@ Public Class Form1
     Private lastTX As Date = Now
     Private lastBroadcastTimestamp As Date = Now
     Private ClockRunning As Boolean = False
+    Private GoogleDriveFilename As String = "ipaddresses.txt"
+    Private GoogleDriveFileID As String = ""
+    Private saveFolder As String = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) & "\TimingServer"
+    Private dataList As List(Of String) = New List(Of String)
 
     Private Sub Form1_FormClosing(sender As Object, e As FormClosingEventArgs) Handles Me.FormClosing
         If UDPConnectedIncoming Then
@@ -51,12 +55,18 @@ Public Class Form1
         If My.Settings.COMPortEnabled Then
             SerialOmega.Disconnect()
         End If
+        CloseUDPConnections()
     End Sub
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Loading = True
         Me.Text = "Piranha Timing Server v." & Application.ProductVersion
-        Setup()
+        If (System.IO.Directory.Exists(saveFolder) = False) Then
+            System.IO.Directory.CreateDirectory(saveFolder)
+        End If
+
+        SetupIncoming()
+        SetupUDP()  'outgoing
         SetupOutput()
         ShowRunningStatus()
         TimerHeartbeat.Start()
@@ -175,13 +185,59 @@ Public Class Form1
         End Try
     End Sub
 
-    Sub CloseConnections()
-        If SerialOmega.Connected Then
-            SerialOmega.Disconnect()
-        End If
-        If UDPConnectedIncoming Then
-            udpClientIncoming.Close()
-        End If
+    'Sub CloseAllConnections()
+    '    If SerialOmega.Connected Then
+    '        SerialOmega.Disconnect()
+    '    End If
+    '    If UDPConnectedIncoming Then
+    '        udpClientIncoming.Close()
+    '    End If
+    '    If UDPConnected1 Then
+    '        udpClient1.Close()
+    '    End If
+    '    If UDPConnected2 Then
+    '        udpClient2.Close()
+    '    End If
+    '    If UDPConnected3 Then
+    '        udpClient3.Close()
+    '    End If
+    '    If UDPConnected4 Then
+    '        udpClient4.Close()
+    '    End If
+    '    If UDPConnected5 Then
+    '        udpClient5.Close()
+    '    End If
+    '    If UDPConnected6 Then
+    '        udpClient6.Close()
+    '    End If
+    '    If UDPConnected7 Then
+    '        udpClient7.Close()
+    '    End If
+    '    If UDPConnected8 Then
+    '        udpClient8.Close()
+    '    End If
+    '    lablCOMError.Visible = False
+    '    lablCOMOK.Visible = False
+    '    lablUDPIncomingError.Visible = False
+    '    lablUDPIncomingOK.Visible = False
+    '    lablError1.Visible = False
+    '    lablOK1.Visible = False
+    '    lablError2.Visible = False
+    '    lablOK2.Visible = False
+    '    lablError3.Visible = False
+    '    lablOK3.Visible = False
+    '    lablError4.Visible = False
+    '    lablOK4.Visible = False
+    '    lablerror5.Visible = False
+    '    lablOK5.Visible = False
+    '    lablError6.Visible = False
+    '    lablOK6.Visible = False
+    '    lablError7.Visible = False
+    '    lablOK7.Visible = False
+    '    lablError8.Visible = False
+    '    lablOK8.Visible = False
+    'End Sub
+    Sub CloseUDPConnections()
         If UDPConnected1 Then
             udpClient1.Close()
         End If
@@ -206,10 +262,6 @@ Public Class Form1
         If UDPConnected8 Then
             udpClient8.Close()
         End If
-        lablCOMError.Visible = False
-        lablCOMOK.Visible = False
-        lablUDPIncomingError.Visible = False
-        lablUDPIncomingOK.Visible = False
         lablError1.Visible = False
         lablOK1.Visible = False
         lablError2.Visible = False
@@ -218,7 +270,7 @@ Public Class Form1
         lablOK3.Visible = False
         lablError4.Visible = False
         lablOK4.Visible = False
-        lablError5.Visible = False
+        lablerror5.Visible = False
         lablOK5.Visible = False
         lablError6.Visible = False
         lablOK6.Visible = False
@@ -226,8 +278,124 @@ Public Class Form1
         lablOK7.Visible = False
         lablError8.Visible = False
         lablOK8.Visible = False
+        UDPConnected1 = False
+        UDPConnected2 = False
+        UDPConnected3 = False
+        UDPConnected4 = False
+        UDPConnected5 = False
+        UDPConnected6 = False
+        UDPConnected7 = False
+        UDPConnected8 = False
     End Sub
-    Sub Setup()
+    Sub SetupUDP()
+        If My.Settings.UDP1Enabled Then
+            Try
+                udpClient1 = New UdpClient
+                udpClient1.Connect(My.Settings.UDP1, My.Settings.UDP1Port)
+                UDPConnected1 = True
+                lablError1.Visible = False
+                lablOK1.Visible = True
+            Catch ex As Exception
+                UDPConnected1 = False
+                lablError1.Visible = True
+                lablOK1.Visible = False
+            End Try
+        End If
+        If My.Settings.UDP2Enabled Then
+            Try
+                udpClient2 = New UdpClient
+                udpClient2.Connect(My.Settings.UDP2, My.Settings.UDP2Port)
+                UDPConnected2 = True
+                lablError2.Visible = False
+                lablOK2.Visible = True
+            Catch ex As Exception
+                UDPConnected2 = False
+                lablError2.Visible = True
+                lablOK2.Visible = False
+            End Try
+        End If
+        If My.Settings.UDP3Enabled Then
+            Try
+                udpClient3 = New UdpClient
+                udpClient3.Connect(My.Settings.UDP3, My.Settings.UDP3Port)
+                UDPConnected3 = True
+                lablError3.Visible = False
+                lablOK3.Visible = True
+            Catch ex As Exception
+                UDPConnected3 = False
+                lablError3.Visible = True
+                lablOK3.Visible = False
+            End Try
+        End If
+        If My.Settings.UDP4Enabled Then
+            Try
+                udpClient4 = New UdpClient
+                udpClient4.Connect(My.Settings.UDP4, My.Settings.UDP4Port)
+                UDPConnected4 = True
+                lablError4.Visible = False
+                lablOK4.Visible = True
+            Catch ex As Exception
+                UDPConnected4 = False
+                lablError4.Visible = True
+                lablOK4.Visible = False
+            End Try
+        End If
+        If My.Settings.UDP5Enabled Then
+            Try
+                udpClient5 = New UdpClient
+                udpClient5.Connect(My.Settings.UDP5, My.Settings.UDP5Port)
+                UDPConnected5 = True
+                lablerror5.Visible = False
+                lablOK5.Visible = True
+            Catch ex As Exception
+                UDPConnected5 = False
+                lablerror5.Visible = True
+                lablOK5.Visible = False
+            End Try
+        End If
+        If My.Settings.UDP6Enabled Then
+            Try
+                udpClient6 = New UdpClient
+                udpClient6.Connect(My.Settings.UDP6, My.Settings.UDP6Port)
+                UDPConnected6 = True
+                lablError6.Visible = False
+                lablOK6.Visible = True
+            Catch ex As Exception
+                UDPConnected6 = False
+                lablError6.Visible = True
+                lablOK6.Visible = False
+            End Try
+        End If
+        If My.Settings.UDP7Enabled Then
+            Try
+                udpClient7 = New UdpClient
+                udpClient7.Connect(My.Settings.UDP7, My.Settings.UDP7Port)
+                UDPConnected7 = True
+                lablError7.Visible = False
+                lablOK7.Visible = True
+            Catch ex As Exception
+                UDPConnected7 = False
+                lablError7.Visible = True
+                lablOK7.Visible = False
+            End Try
+        End If
+        If My.Settings.UDP8Enabled Then
+            Try
+                udpClient8 = New UdpClient
+                udpClient8.Connect(My.Settings.UDP8, My.Settings.UDP8Port)
+                UDPConnected8 = True
+                lablError8.Visible = False
+                lablOK8.Visible = True
+            Catch ex As Exception
+                UDPConnected8 = False
+                lablError8.Visible = True
+                lablOK8.Visible = False
+            End Try
+        End If
+
+
+    End Sub
+    Sub SetupIncoming()
         If My.Settings.COMPortEnabled Then
             Try
                 With SerialOmega
@@ -289,103 +457,6 @@ Public Class Form1
                 lablUDPIncomingOK.Visible = False
             End If
         End If
-        If My.Settings.UDP1Enabled Then
-            Try
-                udpClient1.Connect(My.Settings.UDP1, My.Settings.UDP1Port)
-                UDPConnected1 = True
-                lablError1.Visible = False
-                lablOK1.Visible = True
-            Catch ex As Exception
-                UDPConnected1 = False
-                lablError1.Visible = True
-                lablOK1.Visible = False
-            End Try
-        End If
-        If My.Settings.UDP2Enabled Then
-            Try
-                udpClient2.Connect(My.Settings.UDP2, My.Settings.UDP2Port)
-                UDPConnected2 = True
-                lablError2.Visible = False
-                lablOK2.Visible = True
-            Catch ex As Exception
-                UDPConnected2 = False
-                lablError2.Visible = True
-                lablOK2.Visible = False
-            End Try
-        End If
-        If My.Settings.UDP3Enabled Then
-            Try
-                udpClient3.Connect(My.Settings.UDP3, My.Settings.UDP3Port)
-                UDPConnected3 = True
-                lablError3.Visible = False
-                lablOK3.Visible = True
-            Catch ex As Exception
-                UDPConnected3 = False
-                lablError3.Visible = True
-                lablOK3.Visible = False
-            End Try
-        End If
-        If My.Settings.UDP4Enabled Then
-            Try
-                udpClient4.Connect(My.Settings.UDP4, My.Settings.UDP4Port)
-                UDPConnected4 = True
-                lablError4.Visible = False
-                lablOK4.Visible = True
-            Catch ex As Exception
-                UDPConnected4 = False
-                lablError4.Visible = True
-                lablOK4.Visible = False
-            End Try
-        End If
-        If My.Settings.UDP5Enabled Then
-            Try
-                udpClient5.Connect(My.Settings.UDP5, My.Settings.UDP5Port)
-                UDPConnected5 = True
-                lablerror5.Visible = False
-                lablOK5.Visible = True
-            Catch ex As Exception
-                UDPConnected5 = False
-                lablerror5.Visible = True
-                lablOK5.Visible = False
-            End Try
-        End If
-        If My.Settings.UDP6Enabled Then
-            Try
-                udpClient6.Connect(My.Settings.UDP6, My.Settings.UDP6Port)
-                UDPConnected6 = True
-                lablError6.Visible = False
-                lablOK6.Visible = True
-            Catch ex As Exception
-                UDPConnected6 = False
-                lablError6.Visible = True
-                lablOK6.Visible = False
-            End Try
-        End If
-        If My.Settings.UDP7Enabled Then
-            Try
-                udpClient7.Connect(My.Settings.UDP7, My.Settings.UDP7Port)
-                UDPConnected7 = True
-                lablError7.Visible = False
-                lablOK7.Visible = True
-            Catch ex As Exception
-                UDPConnected7 = False
-                lablError7.Visible = True
-                lablOK7.Visible = False
-            End Try
-        End If
-        If My.Settings.UDP8Enabled Then
-            Try
-                udpClient8.Connect(My.Settings.UDP8, My.Settings.UDP8Port)
-                UDPConnected8 = True
-                lablError8.Visible = False
-                lablOK8.Visible = True
-            Catch ex As Exception
-                UDPConnected8 = False
-                lablError8.Visible = True
-                lablOK8.Visible = False
-            End Try
-        End If
-
     End Sub
 
     Delegate Sub ShowOutgoingCallback()
@@ -556,7 +627,142 @@ Public Class Form1
     End Sub
 
     Private Sub btnReset_Click(sender As Object, e As EventArgs) Handles btnReset.Click
-        CloseConnections()
-        Setup()
+        CloseUDPConnections()
+        SetupUDP()
+    End Sub
+    Private Sub ReadLocalFile()
+        Dim strFileName As String, strTextline As String = ""
+        dataList.Clear()
+
+        Dim inputFile As System.IO.StreamReader
+        strFileName = saveFolder & "\" & GoogleDriveFilename
+        If Not System.IO.File.Exists(strFileName) Then
+            MessageBox.Show("No File")
+            Exit Sub
+        End If
+        inputFile = System.IO.File.OpenText(strFileName)
+        Try
+            Do
+                strTextline = inputFile.ReadLine
+                If strTextline.Trim = "" Then
+                    Exit Do
+                Else
+                    'read empty line, avoid next batch of tests on it
+                    'Date|Name|Ipaddress
+                    If strTextline.Contains("|") Then
+                        Console.WriteLine(strTextline)
+                        dataList.Add(strTextline)
+                    End If
+                    'logger.Debug(CourseLookup(iEntry).SourceName & " > " & CourseLookup(iEntry).OutputName)
+                End If
+            Loop Until strTextline Is Nothing
+        Catch ex As Exception
+            'if no CR at end of last entry, loop fails
+        End Try
+        inputFile.Close()
+
+    End Sub
+
+    Private Sub btnLoadConnections_Click(sender As Object, e As EventArgs) Handles btnLoadConnections.Click
+        ClearIPAddressActives()
+        CloseUDPConnections()
+        Dim strSplit As Char = Convert.ToChar("|")
+        ReadLocalFile()
+        Dim inc As Integer = 1  'inc'd but keep index 1 free for RUK
+        For Each thisString As String In dataList
+            If thisString.Contains("|") Then
+                Dim split() As String = thisString.Split(strSplit)
+                If split.GetUpperBound(0) > 2 Then
+                    If split(0) = Now.ToString("yyyy-MM-dd") Then
+                        If split(1).Contains("*") Then
+                            'readonly system
+                        Else
+                            inc += 1
+                            AssignIPAddress(split(2), split(3), split(1), inc)
+                        End If
+                    End If
+                End If
+            End If
+        Next
+    End Sub
+    Private Sub ClearIPAddressActives()
+        My.Settings.UDP1Enabled = True  'RUK
+        My.Settings.UDP2Enabled = False
+        My.Settings.UDP3Enabled = False
+        My.Settings.UDP4Enabled = False
+        My.Settings.UDP5Enabled = False
+        My.Settings.UDP6Enabled = False
+        My.Settings.UDP7Enabled = False
+        My.Settings.UDP8Enabled = False
+
+        My.Settings.UDP2 = ""
+        My.Settings.UDP3 = ""
+        My.Settings.UDP4 = ""
+        My.Settings.UDP5 = ""
+        My.Settings.UDP6 = ""
+        My.Settings.UDP7 = ""
+        My.Settings.UDP8 = ""
+
+        My.Settings.UDP2Port = ""
+        My.Settings.UDP3Port = ""
+        My.Settings.UDP4Port = ""
+        My.Settings.UDP5Port = ""
+        My.Settings.UDP6Port = ""
+        My.Settings.UDP7Port = ""
+        My.Settings.UDP8Port = ""
+
+        My.Settings.Destination2 = ""
+        My.Settings.Destination3 = ""
+        My.Settings.Destination4 = ""
+        My.Settings.Destination5 = ""
+        My.Settings.Destination6 = ""
+        My.Settings.Destination7 = ""
+        My.Settings.Destination8 = ""
+    End Sub
+    Private Sub AssignIPAddress(addressString As String, portString As String, nameString As String, index As Integer)
+        Select Case index
+            Case 1
+                My.Settings.UDP1 = addressString
+                My.Settings.UDP1Port = portString
+                My.Settings.UDP1Enabled = True
+                My.Settings.Destination1 = nameString & ":"
+            Case 2
+                My.Settings.UDP2 = addressString
+                My.Settings.UDP2Port = portString
+                My.Settings.UDP2Enabled = True
+                My.Settings.Destination2 = nameString & ":"
+            Case 3
+                My.Settings.UDP3 = addressString
+                My.Settings.UDP3Port = portString
+                My.Settings.UDP3Enabled = True
+                My.Settings.Destination3 = nameString & ":"
+            Case 4
+                My.Settings.UDP4 = addressString
+                My.Settings.UDP4Port = portString
+                My.Settings.UDP4Enabled = True
+                My.Settings.Destination4 = nameString & ":"
+            Case 5
+                My.Settings.UDP5 = addressString
+                My.Settings.UDP5Port = portString
+                My.Settings.UDP5Enabled = True
+                My.Settings.Destination5 = nameString & ":"
+            Case 6
+                My.Settings.UDP6 = addressString
+                My.Settings.UDP6Port = portString
+                My.Settings.UDP6Enabled = True
+                My.Settings.Destination6 = nameString & ":"
+            Case 7
+                My.Settings.UDP7 = addressString
+                My.Settings.UDP7Port = portString
+                My.Settings.UDP7Enabled = True
+                My.Settings.Destination7 = nameString & ":"
+            Case 8
+                My.Settings.UDP8 = addressString
+                My.Settings.UDP8Port = portString
+                My.Settings.UDP8Enabled = True
+                My.Settings.Destination8 = nameString & ":"
+            Case Else
+                'not valid
+        End Select
     End Sub
 End Class
