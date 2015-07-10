@@ -57,6 +57,8 @@ Partial Class Form1
         Me.CheckBox6 = New System.Windows.Forms.CheckBox()
         Me.lablOmegaError = New System.Windows.Forms.Label()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.btnReset = New System.Windows.Forms.Button()
+        Me.btnLoadConnections = New System.Windows.Forms.Button()
         Me.lablOK8 = New System.Windows.Forms.Label()
         Me.Label23 = New System.Windows.Forms.Label()
         Me.TextBox20 = New System.Windows.Forms.TextBox()
@@ -118,8 +120,6 @@ Partial Class Form1
         Me.TextBox7 = New System.Windows.Forms.TextBox()
         Me.TimerOmega = New System.Windows.Forms.Timer(Me.components)
         Me.TimerHeartbeat = New System.Windows.Forms.Timer(Me.components)
-        Me.btnReset = New System.Windows.Forms.Button()
-        Me.btnLoadConnections = New System.Windows.Forms.Button()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.GroupBox3.SuspendLayout()
@@ -587,6 +587,30 @@ Partial Class Form1
         Me.GroupBox2.TabIndex = 43
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Outgoing UDP"
+        '
+        'btnReset
+        '
+        Me.btnReset.BackColor = System.Drawing.Color.Orange
+        Me.btnReset.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnReset.ForeColor = System.Drawing.Color.Black
+        Me.btnReset.Location = New System.Drawing.Point(474, 318)
+        Me.btnReset.Name = "btnReset"
+        Me.btnReset.Size = New System.Drawing.Size(160, 41)
+        Me.btnReset.TabIndex = 48
+        Me.btnReset.Text = "Reset Connections"
+        Me.btnReset.UseVisualStyleBackColor = False
+        '
+        'btnLoadConnections
+        '
+        Me.btnLoadConnections.BackColor = System.Drawing.Color.Orange
+        Me.btnLoadConnections.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnLoadConnections.ForeColor = System.Drawing.Color.Black
+        Me.btnLoadConnections.Location = New System.Drawing.Point(120, 318)
+        Me.btnLoadConnections.Name = "btnLoadConnections"
+        Me.btnLoadConnections.Size = New System.Drawing.Size(160, 41)
+        Me.btnLoadConnections.TabIndex = 49
+        Me.btnLoadConnections.Text = "Load Connections"
+        Me.btnLoadConnections.UseVisualStyleBackColor = False
         '
         'lablOK8
         '
@@ -1329,35 +1353,11 @@ Partial Class Form1
         '
         'TimerOmega
         '
-        Me.TimerOmega.Interval = 1000
+        Me.TimerOmega.Interval = 2000
         '
         'TimerHeartbeat
         '
         Me.TimerHeartbeat.Interval = 1000
-        '
-        'btnReset
-        '
-        Me.btnReset.BackColor = System.Drawing.Color.Orange
-        Me.btnReset.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnReset.ForeColor = System.Drawing.Color.Black
-        Me.btnReset.Location = New System.Drawing.Point(474, 318)
-        Me.btnReset.Name = "btnReset"
-        Me.btnReset.Size = New System.Drawing.Size(160, 41)
-        Me.btnReset.TabIndex = 48
-        Me.btnReset.Text = "Reset Connections"
-        Me.btnReset.UseVisualStyleBackColor = False
-        '
-        'btnLoadConnections
-        '
-        Me.btnLoadConnections.BackColor = System.Drawing.Color.Orange
-        Me.btnLoadConnections.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnLoadConnections.ForeColor = System.Drawing.Color.Black
-        Me.btnLoadConnections.Location = New System.Drawing.Point(120, 318)
-        Me.btnLoadConnections.Name = "btnLoadConnections"
-        Me.btnLoadConnections.Size = New System.Drawing.Size(160, 41)
-        Me.btnLoadConnections.TabIndex = 49
-        Me.btnLoadConnections.Text = "Load Connections"
-        Me.btnLoadConnections.UseVisualStyleBackColor = False
         '
         'Form1
         '

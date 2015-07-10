@@ -44,17 +44,26 @@ Public Class clsSerial
         Connected = False
     End Sub
     Private Sub DataReceived(ByVal sender As Object, ByVal e As System.IO.Ports.SerialDataReceivedEventArgs) Handles serialPort.DataReceived
-        'does not end with etx, checksum follows
-        'extract between stx & etx
-
+       
         Dim thisMessage As String = serialPort.ReadExisting
-        Dim stx As String = Chr(2)
-        Dim etx As String = Chr(3)
-        'Console.WriteLine(thisMessage)
+        Dim stx As String = Chr(1) & Chr(20)
+        Dim etx As String = Chr(4)
+        Console.WriteLine("Raw: " & thisMessage.Replace(vbLf, "[LF]").Replace(vbCr, "[CR]").Replace(vbCrLf, "[CRLF]").Replace(Chr(1), "[1]").Replace(Chr(2), "[2]").Replace(Chr(3), "[3]").Replace(Chr(4), "[4]").Replace(Chr(20), "[20]").Replace(Chr(8), "[8]"))
         If thisMessage.Contains(etx) Then
             tempMessage += thisMessage
-            extractMessages(tempMessage)
-            tempMessage = ""    'clear for next time
+            '  Console.WriteLine(tempMessage.Replace(vbLf, "[LF]").Replace(vbCr, "[CR]").Replace(vbCrLf, "[CRLF]"))
+            extractMessages(tempMessage)    'may be part message following EOT - keep
+            If tempMessage.EndsWith(etx) Then
+                'OK
+                tempMessage = "" 'clear for next time
+            Else
+                'find last ETX, keep rest
+                Dim lastETX As Integer = tempMessage.LastIndexOf(etx)
+                'abcdefgh|jklmno
+                'len=15 lastetx=8 start at 9 take 6
+                tempMessage = tempMessage.Substring(lastETX + 1, tempMessage.Length - (lastETX + 1))
+                '  Console.WriteLine("######################################## " + tempMessage)
+            End If
         Else
             'unfinished packet
             tempMessage += thisMessage   'add for future
@@ -62,20 +71,19 @@ Public Class clsSerial
 
     End Sub
     Private Sub extractMessages(ByVal thisBatch As String)
-        'format <STX>D00:01<ETX>CRC><STX>D00:02<ETX><CRC>
-        Dim stx As String = Chr(2)
-        Dim etx As String = Chr(3)
-        Dim convertedBatch As String = thisBatch.Replace(stx, "|").Replace(etx, "|")
+
+        Dim stx As String = Chr(1) & Chr(20)
+        Dim etx As String = Chr(4)
+        Dim convertedBatch As String = thisBatch.Replace(etx, "|")
         Dim messages() As String
         messages = convertedBatch.Split("|")
         For inc = 0 To UBound(messages)
-            'discard any <CRC> messages
-
-            If messages(inc).Length > 4 Then
-                If messages(inc).StartsWith("D") Then
-                    'clock
-                    RaiseEvent DataArrival(messages(inc))
-                End If
+            Dim tidiedData As String = messages(inc).Replace(stx, "").Replace(Chr(8), " ").Replace(Chr(2), " ").Replace(Chr(20), " ").Replace(Chr(3), " ")
+            If tidiedData.Length > 4 Then
+                RaiseEvent DataArrival(tidiedData)
+                'If tidiedData.StartsWith("R") Then
+                '    'clock
+                'End If
             End If
 
         Next

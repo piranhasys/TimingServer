@@ -101,53 +101,70 @@ Public Class Form1
         'should already be filtered by Serial class
         'logger.Debug(thisData)
         Dim sendClock As Boolean = False
-        If thisData.StartsWith("D") Then
-            If thisData.Length > 18 Then
-                Dim extractedTime As String = thisData.Substring(1, 5)
-                'omega use only 1 leading zero for minutes eg ' 0:44'
+        Select Case thisData.Substring(0, 1)
+            Case "R", "S"
+                If thisData.Length > 18 Then
+                    Dim extractedTime As String = thisData.Substring(9, 11)
+                    Console.WriteLine("Decoded: " & thisData)
 
-                If (extractedTime.Substring(0, 1) = " ") Then
-                    extractedTime = extractedTime.Replace(" ", "0")
-                End If
+                    'If (extractedTime.Substring(0, 1) = " ") Then
+                    '    extractedTime = extractedTime.Replace(" ", "0")
+                    'End If
 
-                Dim extractedStatus As String = thisData.Substring(18, 1)
-                If extractedTime <> currentOmegaTime Then
-                    currentOmegaTime = extractedTime
-                    sendClock = True
-                    'AddToLog("Omega Time", currentOmegaTime)
-                ElseIf DateDiff(DateInterval.Second, lastTX, Now) > 0 Then
-                    sendClock = True 'use as heartbeat and sync if any client has gone offline
-                End If
-                If extractedStatus <> currentOmegaStatus Then
-                    'may not have changed time, but started
-                    currentOmegaStatus = extractedStatus
-                    sendClock = True
-                End If
-                If sendClock Then
-                    ShowIncomingOmega(currentOmegaTime)
-                    Select Case currentOmegaStatus
-                        'not sure of status when counting down - 2, 3 don't seem to appear
-                        Case "0", "2"
-                            If ClockRunning Then
-                                '## change of status
-                            End If
-                            ClockRunning = False
-                        Case "1", "3"
-                            If Not (ClockRunning) Then
-                                '## change of status
-                            End If
-                            ClockRunning = True
-                    End Select
-                    ShowRunningStatus()
-                    If My.Settings.SourceCOM Then
-                        OutgoingString = "TS|" & My.Settings.LocationCode & "|" & currentOmegaTime & "|" & currentOmegaStatus & "|"
-                        lastTX = Now
-                        Broadcast(True)
+                    Dim extractedStatus As String = thisData.Substring(0, 3)
+                    If extractedTime <> currentOmegaTime Then
+                        currentOmegaTime = extractedTime
+                        sendClock = True
+                        'AddToLog("Omega Time", currentOmegaTime)
+                    ElseIf DateDiff(DateInterval.Second, lastTX, Now) > 0 Then
+                        sendClock = True 'use as heartbeat and sync if any client has gone offline
                     End If
+                    If extractedStatus <> currentOmegaStatus Then
+                        'may not have changed time, but started
+                        currentOmegaStatus = extractedStatus
+                        sendClock = True
+                    End If
+                    If sendClock Then
+                        ShowIncomingOmega(currentOmegaTime)
+                        Select Case currentOmegaStatus
+                            Case "S02"
+                                If ClockRunning Then
+                                    '## change of status
+                                End If
+                                ClockRunning = False
+                            Case "R02"
+                                If Not (ClockRunning) Then
+                                    '## change of status
+                                End If
+                                ClockRunning = True
+                        End Select
+                        ShowRunningStatus()
+                        Dim TXStatus As String = ""
+                        Select Case currentOmegaStatus
+                            Case "R00"
+                                TXStatus = "T"
+                            Case "R02"
+                                TXStatus = "R"
+                            Case "S02"
+                                Select Case Val(thisData.Substring(7, 1))
+                                    Case Is > 0
+                                        TXStatus = "O"
+                                    Case Else
+                                        TXStatus = "U"
+                                End Select
+                        End Select
+                        If My.Settings.SourceCOM Then
+                            If currentOmegaTime.Trim <> "" Then
+                                OutgoingString = "TS|" & My.Settings.LocationCode & "|" & currentOmegaTime & "|" & TXStatus & "|"
+                                lastTX = Now
+                                Broadcast(True)
+                            End If
+                        End If
 
+                    End If
                 End If
-            End If
-        End If
+
+        End Select
         ShowOmegaOK()
     End Sub
     Delegate Sub ShowRunningStatusCallback()
@@ -557,7 +574,7 @@ Public Class Form1
         If My.Settings.SourceTestTimer Then
             currentTicks = Now.Ticks - startTicks
             elapsedTime = New Date(currentTicks)
-            OutgoingString = "TS|" & My.Settings.LocationCode & "|" & elapsedTime.ToString(My.Settings.TestTimerFormat) & "|1|"
+            OutgoingString = "TS|" & My.Settings.LocationCode & "|" & elapsedTime.ToString(My.Settings.TestTimerFormat) & "|R|"
             Broadcast(False)
         End If
     End Sub
@@ -591,7 +608,7 @@ Public Class Form1
         TimerTimer.Stop()
         If My.Settings.SourceTestTimer Then
             elapsedTime = New Date(currentTicks)
-            OutgoingString = "TS|" & My.Settings.LocationCode & "|" & elapsedTime.ToString(My.Settings.TestTimerFormat) & "|0|"
+            OutgoingString = "TS|" & My.Settings.LocationCode & "|" & elapsedTime.ToString(My.Settings.TestTimerFormat) & "|U|"
             Broadcast(True)
         End If
 
@@ -601,7 +618,7 @@ Public Class Form1
         If My.Settings.SourceTestTimer Then
             currentTicks = 0
             elapsedTime = New Date(currentTicks)
-            OutgoingString = "TS|" & My.Settings.LocationCode & "|" & elapsedTime.ToString(My.Settings.TestTimerFormat) & "|0|"
+            OutgoingString = "TS|" & My.Settings.LocationCode & "|" & elapsedTime.ToString(My.Settings.TestTimerFormat) & "|U|"
             Broadcast(True)
         End If
     End Sub
