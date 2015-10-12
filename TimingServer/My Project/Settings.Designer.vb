@@ -116,7 +116,7 @@ Namespace My
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("ABC")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("99")>  _
         Public Property LocationCode() As String
             Get
                 Return CType(Me("LocationCode"),String)
@@ -567,6 +567,18 @@ Namespace My
             End Get
             Set
                 Me("Destination8") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("3")>  _
+        Public Property RepeatCount() As String
+            Get
+                Return CType(Me("RepeatCount"),String)
+            End Get
+            Set
+                Me("RepeatCount") = value
             End Set
         End Property
     End Class

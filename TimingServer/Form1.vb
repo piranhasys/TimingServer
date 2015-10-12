@@ -101,6 +101,7 @@ Public Class Form1
         'should already be filtered by Serial class
         'logger.Debug(thisData)
         Dim sendClock As Boolean = False
+        Dim sendCount As Integer = 1
         Select Case thisData.Substring(0, 1)
             Case "R", "S"
                 If thisData.Length > 18 Then
@@ -130,11 +131,13 @@ Public Class Form1
                             Case "S02"
                                 If ClockRunning Then
                                     '## change of status
+                                    sendCount = Val(My.Settings.RepeatCount)
                                 End If
                                 ClockRunning = False
                             Case "R02"
                                 If Not (ClockRunning) Then
                                     '## change of status
+                                    sendCount = Val(My.Settings.RepeatCount)
                                 End If
                                 ClockRunning = True
                         End Select
@@ -157,7 +160,9 @@ Public Class Form1
                             If currentOmegaTime.Trim <> "" Then
                                 OutgoingString = "TS|" & My.Settings.LocationCode & "|" & currentOmegaTime & "|" & TXStatus & "|"
                                 lastTX = Now
-                                Broadcast(True)
+                                For inc As Integer = 1 To sendCount
+                                    Broadcast(True)
+                                Next
                             End If
                         End If
 
@@ -492,6 +497,7 @@ Public Class Form1
             Me.Invoke(d, New Object() {textString})
         Else
             lablIncomingUDP.Text = textString
+            Console.WriteLine(textString)
         End If
     End Sub
     Delegate Sub ShowIncomingOmegaCallback(textString As String)
@@ -629,11 +635,13 @@ Public Class Form1
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        ProcessOmegaClock("D 0:00 00000000000000000000000000000000000")
+        '        ProcessOmegaClock("D 0:00 00000000000000000000000000000000000")
+        ProcessOmegaClock("S02      1:23                         00000000000000000000000000000000000")
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
-        ProcessOmegaClock("D 0:19 00000000000100000000000000000000000")
+        '        ProcessOmegaClock("D 0:19 00000000000100000000000000000000000")
+        ProcessOmegaClock("R02      0:00                         00000000000000000000000000000000000")
     End Sub
 
     Private Sub TimerHeartbeat_Tick(sender As Object, e As EventArgs) Handles TimerHeartbeat.Tick

@@ -18,7 +18,7 @@
       <Value Profile="(Default)">192.168.255.255</Value>
     </Setting>
     <Setting Name="LocationCode" Type="System.String" Scope="User">
-      <Value Profile="(Default)">ABC</Value>
+      <Value Profile="(Default)">99</Value>
     </Setting>
     <Setting Name="UDP1Enabled" Type="System.Boolean" Scope="User">
       <Value Profile="(Default)">False</Value>
@@ -130,6 +130,9 @@
     </Setting>
     <Setting Name="Destination8" Type="System.String" Scope="User">
       <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="RepeatCount" Type="System.String" Scope="User">
+      <Value Profile="(Default)">3</Value>
     </Setting>
   </Settings>
 </SettingsFile>
