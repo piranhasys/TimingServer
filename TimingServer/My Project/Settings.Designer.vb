@@ -581,6 +581,18 @@ Namespace My
                 Me("RepeatCount") = value
             End Set
         End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("100")>  _
+        Public Property RepeatInterval() As String
+            Get
+                Return CType(Me("RepeatInterval"),String)
+            End Get
+            Set
+                Me("RepeatInterval") = value
+            End Set
+        End Property
     End Class
 End Namespace
 

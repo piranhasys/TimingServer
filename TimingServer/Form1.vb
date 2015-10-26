@@ -160,8 +160,14 @@ Public Class Form1
                             If currentOmegaTime.Trim <> "" Then
                                 OutgoingString = "TS|" & My.Settings.LocationCode & "|" & currentOmegaTime & "|" & TXStatus & "|"
                                 lastTX = Now
+                                Dim interval As Integer = Val(My.Settings.RepeatInterval)
+                                If interval < 0 Then interval = 0
+                                If interval > 1000 Then interval = 1000 'limit to 1 sec
                                 For inc As Integer = 1 To sendCount
                                     Broadcast(True)
+                                    If (TXStatus = "U") And (interval > 0) Then
+                                        Thread.Sleep(interval)
+                                    End If
                                 Next
                             End If
                         End If
