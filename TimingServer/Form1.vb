@@ -521,36 +521,52 @@ Public Class Form1
             Try
                 bteSendData = Encoding.ASCII.GetBytes(OutgoingString)
                 If UDPConnected1 Then
+                    Dim localString As String = OutgoingString + Now.ToString("HH:mm:ss.ff") + "|"
+                    bteSendData = Encoding.ASCII.GetBytes(localString)
                     udpClient1.Send(bteSendData, bteSendData.Length)
-                    Console.WriteLine("Sent to UDP1: " & OutgoingString)
+                    Console.WriteLine("Sent to UDP1: " & localString)
                 End If
                 If UDPConnected2 Then
+                    Dim localString As String = OutgoingString + Now.ToString("HH:mm:ss.ff") + "|"
+                    bteSendData = Encoding.ASCII.GetBytes(localString)
                     udpClient2.Send(bteSendData, bteSendData.Length)
-                    Console.WriteLine("Sent to UDP2: " & OutgoingString)
+                    Console.WriteLine("Sent to UDP2: " & localString)
                 End If
                 If UDPConnected3 Then
+                    Dim localString As String = OutgoingString + Now.ToString("HH:mm:ss.ff") + "|"
+                    bteSendData = Encoding.ASCII.GetBytes(localString)
                     udpClient3.Send(bteSendData, bteSendData.Length)
-                    Console.WriteLine("Sent to UDP3: " & OutgoingString)
+                    Console.WriteLine("Sent to UDP3: " & localString)
                 End If
                 If UDPConnected4 Then
+                    Dim localString As String = OutgoingString + Now.ToString("HH:mm:ss.ff") + "|"
+                    bteSendData = Encoding.ASCII.GetBytes(localString)
                     udpClient4.Send(bteSendData, bteSendData.Length)
-                    Console.WriteLine("Sent to UDP4: " & OutgoingString)
+                    Console.WriteLine("Sent to UDP4: " & localString)
                 End If
                 If UDPConnected5 Then
+                    Dim localString As String = OutgoingString + Now.ToString("HH:mm:ss.ff") + "|"
+                    bteSendData = Encoding.ASCII.GetBytes(localString)
                     udpClient5.Send(bteSendData, bteSendData.Length)
-                    Console.WriteLine("Sent to UDP5: " & OutgoingString)
+                    Console.WriteLine("Sent to UDP5: " & localString)
                 End If
                 If UDPConnected6 Then
+                    Dim localString As String = OutgoingString + Now.ToString("HH:mm:ss.ff") + "|"
+                    bteSendData = Encoding.ASCII.GetBytes(localString)
                     udpClient6.Send(bteSendData, bteSendData.Length)
-                    Console.WriteLine("Sent to UDP6: " & OutgoingString)
+                    Console.WriteLine("Sent to UDP6: " & localString)
                 End If
                 If UDPConnected7 Then
+                    Dim localString As String = OutgoingString + Now.ToString("HH:mm:ss.ff") + "|"
+                    bteSendData = Encoding.ASCII.GetBytes(localString)
                     udpClient7.Send(bteSendData, bteSendData.Length)
-                    Console.WriteLine("Sent to UDP7: " & OutgoingString)
+                    Console.WriteLine("Sent to UDP7: " & localString)
                 End If
                 If UDPConnected8 Then
+                    Dim localString As String = OutgoingString + Now.ToString("HH:mm:ss.ff") + "|"
+                    bteSendData = Encoding.ASCII.GetBytes(localString)
                     udpClient8.Send(bteSendData, bteSendData.Length)
-                    Console.WriteLine("Sent to UDP8: " & OutgoingString)
+                    Console.WriteLine("Sent to UDP8: " & localString)
                 End If
                 lastOutput = OutgoingString
                 lastBroadcastTimestamp = Now
@@ -652,7 +668,7 @@ Public Class Form1
 
     Private Sub TimerHeartbeat_Tick(sender As Object, e As EventArgs) Handles TimerHeartbeat.Tick
         If DateDiff(DateInterval.Second, lastBroadcastTimestamp, Now) > 9 Then
-            OutgoingString = "TS|" & My.Settings.LocationCode & "|HBT " & Now.ToLongTimeString & "|-1|"
+            OutgoingString = "TS|" & My.Settings.LocationCode & "|HBT " & Now.ToString("HH:mm:ss") & "|-1|"
             Broadcast(False)
         End If
     End Sub
