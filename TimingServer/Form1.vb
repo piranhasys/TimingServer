@@ -42,8 +42,23 @@ Public Class Form1
     Private GoogleDriveFileID As String = ""
     Private saveFolder As String = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) & "\TimingServer"
     Private dataList As List(Of String) = New List(Of String)
+    Private client As TcpClient
+    Const READ_BUFFER_SIZE As Integer = 8192 * 2
+    Dim dtLastData As Date = Now
+    Private readBuffer(READ_BUFFER_SIZE) As Byte
+    Public bConnectedToServer As Boolean = False
+
 
     Private Sub Form1_FormClosing(sender As Object, e As FormClosingEventArgs) Handles Me.FormClosing
+        Try
+            If bConnectedToServer = True Then
+                SendData("DISCONNECT|" & My.Computer.Name & "-TimingServer" & "|Network|")
+                Threading.Thread.Sleep(1000)
+            End If
+
+        Catch ex As Exception
+
+        End Try
         If UDPConnectedIncoming Then
             Try
                 thdUdp.Abort()
@@ -70,6 +85,8 @@ Public Class Form1
         SetupOutput()
         ShowRunningStatus()
         TimerHeartbeat.Start()
+        Me.timerCheckConnections.Enabled = True
+        ResizeForm()
         Loading = False
     End Sub
     Private Sub GetUDPData()
@@ -91,6 +108,47 @@ Public Class Form1
             OutgoingString = incomingString
             Broadcast(True)
         End If
+    End Sub
+    Private Sub ProcessCommands(ByVal strMessage As String)
+        Dim dataArray() As String
+        ' Message parts are divided by "|"  Break the string into an array accordingly.
+        Try
+            dtLastData = Now
+            dataArray = strMessage.Split(Chr(124))
+            ' dataArray(0) is the command.
+            Select Case dataArray(0)
+                'Case "HEARTBEAT"
+                '    ShowIncomingUDP("SS HEARTBEAT")
+                '    'Select Case dataArray(1)
+                '    '    Case "FTP"
+                '    '        dtLastPAHeartbeat = Now
+                '    '        dtLastLocalHeartbeat = Now
+                '    '        dtLastRemoteHeartbeat = Now
+                '    '        ShowHeartbeat(1)
+                '    '        ShowHeartbeat(2)
+                '    '        ShowHeartbeat(3)
+                '    '    Case "REMOTESPORTSERVER"
+                '    '        dtLastRemoteHeartbeat = Now
+                '    '        dtLastLocalHeartbeat = Now
+                '    '        ShowHeartbeat(2)
+                '    '        ShowHeartbeat(3)
+                '    '    Case "SPORTSERVER"
+                '    '        dtLastLocalHeartbeat = Now
+                '    '        ShowHeartbeat(2)
+                '    'End Select
+                Case "TS"
+                    'broadcast data
+                    'show if TX device ??
+                    ShowIncomingUDP(strMessage)
+                    If RadioButtonTCPIncoming.Checked Then
+                        OutgoingString = strMessage
+                        Broadcast(True)   'will not go to TCP outgoing
+                    End If
+            End Select
+        Catch ex As Exception
+            Console.WriteLine(ex.Message)
+        End Try
+
     End Sub
 
     Private Sub SocketM_ClientData(ByVal message As String) Handles SerialOmega.DataArrival
@@ -284,12 +342,12 @@ Public Class Form1
         If UDPConnected6 Then
             udpClient6.Close()
         End If
-        If UDPConnected7 Then
-            udpClient7.Close()
-        End If
-        If UDPConnected8 Then
-            udpClient8.Close()
-        End If
+        'If UDPConnected7 Then
+        '    udpClient7.Close()
+        'End If
+        'If UDPConnected8 Then
+        '    udpClient8.Close()
+        'End If
         lablError1.Visible = False
         lablOK1.Visible = False
         lablError2.Visible = False
@@ -302,18 +360,18 @@ Public Class Form1
         lablOK5.Visible = False
         lablError6.Visible = False
         lablOK6.Visible = False
-        lablError7.Visible = False
-        lablOK7.Visible = False
-        lablError8.Visible = False
-        lablOK8.Visible = False
+        'lablError7.Visible = False
+        'lablOK7.Visible = False
+        'lablError8.Visible = False
+        'lablConnected.Visible = False
         UDPConnected1 = False
         UDPConnected2 = False
         UDPConnected3 = False
         UDPConnected4 = False
         UDPConnected5 = False
         UDPConnected6 = False
-        UDPConnected7 = False
-        UDPConnected8 = False
+        'UDPConnected7 = False
+        'UDPConnected8 = False
     End Sub
     Sub SetupUDP()
         If My.Settings.UDP1Enabled Then
@@ -394,32 +452,32 @@ Public Class Form1
                 lablOK6.Visible = False
             End Try
         End If
-        If My.Settings.UDP7Enabled Then
-            Try
-                udpClient7 = New UdpClient
-                udpClient7.Connect(My.Settings.UDP7, My.Settings.UDP7Port)
-                UDPConnected7 = True
-                lablError7.Visible = False
-                lablOK7.Visible = True
-            Catch ex As Exception
-                UDPConnected7 = False
-                lablError7.Visible = True
-                lablOK7.Visible = False
-            End Try
-        End If
-        If My.Settings.UDP8Enabled Then
-            Try
-                udpClient8 = New UdpClient
-                udpClient8.Connect(My.Settings.UDP8, My.Settings.UDP8Port)
-                UDPConnected8 = True
-                lablError8.Visible = False
-                lablOK8.Visible = True
-            Catch ex As Exception
-                UDPConnected8 = False
-                lablError8.Visible = True
-                lablOK8.Visible = False
-            End Try
-        End If
+        'If My.Settings.UDP7Enabled Then
+        '    Try
+        '        udpClient7 = New UdpClient
+        '        udpClient7.Connect(My.Settings.UDP7, My.Settings.UDP7Port)
+        '        UDPConnected7 = True
+        '        lablError7.Visible = False
+        '        lablOK7.Visible = True
+        '    Catch ex As Exception
+        '        UDPConnected7 = False
+        '        lablError7.Visible = True
+        '        lablOK7.Visible = False
+        '    End Try
+        'End If
+        'If My.Settings.UDP8Enabled Then
+        '    Try
+        '        udpClient8 = New UdpClient
+        '        udpClient8.Connect(My.Settings.UDP8, My.Settings.UDP8Port)
+        '        UDPConnected8 = True
+        '        lablError8.Visible = False
+        '        lablConnected.Visible = True
+        '    Catch ex As Exception
+        '        UDPConnected8 = False
+        '        lablError8.Visible = True
+        '        lablConnected.Visible = False
+        '    End Try
+        'End If
 
 
     End Sub
@@ -520,6 +578,11 @@ Public Class Form1
             ShowOutgoing()
             Try
                 bteSendData = Encoding.ASCII.GetBytes(OutgoingString)
+                If (bConnectedToServer) And (My.Settings.UDP8Enabled) Then
+                    Dim localString As String = OutgoingString + Now.ToString("HH:mm:ss.ff") + "|"
+                    SendData(localString)
+                    Console.WriteLine("Sent to TCP: " & localString)
+                End If
                 If UDPConnected1 Then
                     Dim localString As String = OutgoingString + Now.ToString("HH:mm:ss.ff") + "|"
                     bteSendData = Encoding.ASCII.GetBytes(localString)
@@ -556,18 +619,18 @@ Public Class Form1
                     udpClient6.Send(bteSendData, bteSendData.Length)
                     Console.WriteLine("Sent to UDP6: " & localString)
                 End If
-                If UDPConnected7 Then
-                    Dim localString As String = OutgoingString + Now.ToString("HH:mm:ss.ff") + "|"
-                    bteSendData = Encoding.ASCII.GetBytes(localString)
-                    udpClient7.Send(bteSendData, bteSendData.Length)
-                    Console.WriteLine("Sent to UDP7: " & localString)
-                End If
-                If UDPConnected8 Then
-                    Dim localString As String = OutgoingString + Now.ToString("HH:mm:ss.ff") + "|"
-                    bteSendData = Encoding.ASCII.GetBytes(localString)
-                    udpClient8.Send(bteSendData, bteSendData.Length)
-                    Console.WriteLine("Sent to UDP8: " & localString)
-                End If
+                'If UDPConnected7 Then
+                '    Dim localString As String = OutgoingString + Now.ToString("HH:mm:ss.ff") + "|"
+                '    bteSendData = Encoding.ASCII.GetBytes(localString)
+                '    udpClient7.Send(bteSendData, bteSendData.Length)
+                '    Console.WriteLine("Sent to UDP7: " & localString)
+                'End If
+                'If UDPConnected8 Then
+                '    Dim localString As String = OutgoingString + Now.ToString("HH:mm:ss.ff") + "|"
+                '    bteSendData = Encoding.ASCII.GetBytes(localString)
+                '    udpClient8.Send(bteSendData, bteSendData.Length)
+                '    Console.WriteLine("Sent to UDP8: " & localString)
+                'End If
                 lastOutput = OutgoingString
                 lastBroadcastTimestamp = Now
             Catch ex As Exception
@@ -811,5 +874,148 @@ Public Class Form1
             Case Else
                 'not valid
         End Select
+    End Sub
+
+    Private Sub RadioButton2_CheckedChanged(sender As Object, e As EventArgs) Handles RadioButton2.CheckedChanged
+
+    End Sub
+
+    Private Sub btnConnectTCP_Click(sender As Object, e As EventArgs) Handles btnConnect.Click
+        Connect()
+    End Sub
+    Sub ShowMessage(textString As String)
+
+    End Sub
+    Sub ClearMessage()
+
+    End Sub
+    Sub Connect()
+        If My.Settings.UDP8.Trim <> "" And My.Settings.UDP8Port > 0 Then
+            Try
+                ' The TcpClient is a subclass of Socket, providing higher level 
+                ' functionality like streaming.
+                '            client = New TcpClient("192.168.0.6", 10540)
+                Console.WriteLine("Connecting to " & My.Settings.UDP8 & " Port " & My.Settings.UDP8Port.ToString)
+                ShowMessage("Connecting to Main Server...")
+                client = New TcpClient(My.Settings.UDP8, My.Settings.UDP8Port)
+                ' Start an asynchronous read invoking DoRead to avoid lagging the user
+                ' interface.
+                client.GetStream.BeginRead(readBuffer, 0, READ_BUFFER_SIZE, AddressOf DoRead, Nothing)
+
+                ' Make sure the window is showing before popping up connection dialog.
+                'Me.Show()
+                lablConnected.BackColor = Color.Lime
+                lablConnected.ForeColor = Color.Black
+                lablConnected.Text = "OK"
+                lablConnected.Visible = True
+                btnDisconnect.Enabled = True
+                btnConnect.Enabled = False
+                bConnectedToServer = True
+            Catch Ex As Exception
+                'UnhandledExceptionHandler()
+                lablConnected.BackColor = Color.Red
+                lablConnected.ForeColor = Color.White
+                lablConnected.Text = "ERROR"
+                btnDisconnect.Enabled = False
+                btnConnect.Enabled = True
+                bConnectedToServer = False
+            End Try
+            ClearMessage()
+            If bConnectedToServer = True Then
+                SendData("CONNECT|" & My.Computer.Name & "-TimingServer" & "|Network|")
+            End If
+        End If
+    End Sub
+    Sub Disconnect()
+        Try
+            client.Close()
+            LablConnected.Visible = False
+            btnDisconnect.Enabled = False
+            btnConnect.Enabled = True
+            bConnectedToServer = False
+            'Logger.debug("enabled")
+        Catch Ex As Exception
+            'ShowAction(Ex.ToString)
+        End Try
+    End Sub
+    Public Sub SendData(ByVal data As String)
+        If bConnectedToServer = True Then
+            Try
+                Dim writer As New IO.StreamWriter(client.GetStream)
+                writer.Write(data & vbCr)
+                writer.Flush()
+            Catch ex As Exception
+            End Try
+            'ShowAction(data)
+        End If
+    End Sub
+
+    Private Sub btnDisconnect_Click(sender As Object, e As EventArgs) Handles btnDisconnect.Click
+        SendData("DISCONNECT|Goodbye")
+        Disconnect()
+    End Sub
+    Private Sub DoRead(ByVal ar As IAsyncResult)
+        Dim BytesRead As Integer
+        Dim strMessage As String
+        'Dim dataArray() As String
+        Dim inc As Integer
+        Static strTemp As String
+        Dim strData() As String
+
+        Try
+            ' Finish asynchronous read into readBuffer and return number of bytes read.
+            BytesRead = client.GetStream.EndRead(ar)
+            If BytesRead < 1 Then
+                ' If no bytes were read server has closed.  Disable input window.
+                Exit Sub
+            End If
+
+            strMessage = Encoding.Default.GetString(readBuffer, 0, BytesRead)
+            If Microsoft.VisualBasic.Right(strMessage, 2) = vbCrLf Then
+                strTemp += Microsoft.VisualBasic.Left(strMessage, Len(strMessage) - 2)    'remove CRLF
+                If InStr(strTemp, vbCrLf) > 0 Then
+                    strData = strTemp.Split(vbCrLf)
+                    For inc = 0 To UBound(strData)
+                        ProcessCommands(strData(inc).Replace(vbLf, "").Replace(vbCr, "")) 'tidy, should just be lf left after split
+                    Next
+                Else
+                    ProcessCommands(strTemp)
+                End If
+
+                strTemp = ""    'clear for next time
+            Else
+                strTemp += strMessage   'add for future
+            End If
+
+            ' Start a new asynchronous read into readBuffer.
+            client.GetStream.BeginRead(readBuffer, 0, READ_BUFFER_SIZE, AddressOf DoRead, Nothing)
+        Catch e As Exception
+        End Try
+    End Sub
+
+    Private Sub timerCheckConnections_Tick(sender As Object, e As EventArgs) Handles timerCheckConnections.Tick
+        If DateDiff(DateInterval.Minute, dtLastData, Now) > 1 Then
+            If bConnectedToServer = True Then
+                Disconnect()
+                Connect()
+            End If
+        End If
+        If My.Settings.UDP7Enabled Then
+            If bConnectedToServer = False Then
+                Connect()
+            End If
+        End If
+
+    End Sub
+
+    Private Sub RadioButton3_CheckedChanged(sender As Object, e As EventArgs) Handles RadioButton3.CheckedChanged, RadioButton4.CheckedChanged
+        ResizeForm()
+    End Sub
+    Sub ResizeForm()
+        If RadioButton3.Checked Or RadioButton4.Checked Then
+            Me.Height = 532
+        Else
+            Me.Height = 462
+        End If
     End Sub
 End Class
