@@ -47,6 +47,7 @@ Public Class Form1
     Dim dtLastData As Date = Now
     Private readBuffer(READ_BUFFER_SIZE) As Byte
     Public bConnectedToServer As Boolean = False
+    Private StartTimeStamp As String = ""  '    2020-07-08T15:40:53.500
 
 
     Private Sub Form1_FormClosing(sender As Object, e As FormClosingEventArgs) Handles Me.FormClosing
@@ -196,6 +197,8 @@ Public Class Form1
                                 If Not (ClockRunning) Then
                                     '## change of status
                                     sendCount = Val(My.Settings.RepeatCount)
+                                    '2020 - add timestamp:
+                                    StartTimeStamp = Date.UtcNow.ToString("yyyy-MM-ddTHH:mm:ss.fff")
                                 End If
                                 ClockRunning = True
                         End Select
@@ -204,6 +207,7 @@ Public Class Form1
                         Select Case currentOmegaStatus
                             Case "R00"
                                 TXStatus = "T"
+                                StartTimeStamp = ""
                             Case "R02"
                                 TXStatus = "R"
                             Case "S02"
@@ -217,6 +221,7 @@ Public Class Form1
                         If My.Settings.SourceCOM Then
                             If currentOmegaTime.Trim <> "" Then
                                 OutgoingString = "TS|" & My.Settings.LocationCode & "|" & currentOmegaTime & "|" & TXStatus & "|"
+                                OutgoingString += StartTimeStamp + "|"
                                 lastTX = Now
                                 Dim interval As Integer = Val(My.Settings.RepeatInterval)
                                 If interval < 0 Then interval = 0
@@ -650,6 +655,7 @@ Public Class Form1
         If My.Settings.SourceTestClock Then
             elapsedTime = Date.Now
             OutgoingString = "TS|" & My.Settings.LocationCode & "|" & elapsedTime.ToString(My.Settings.TestClockFormat) & "||"
+            OutgoingString += StartTimeStamp + "|"
             Broadcast(False)
         End If
     End Sub
@@ -666,6 +672,7 @@ Public Class Form1
             currentTicks = Now.Ticks - startTicks
             elapsedTime = New Date(currentTicks)
             OutgoingString = "TS|" & My.Settings.LocationCode & "|" & elapsedTime.ToString(My.Settings.TestTimerFormat) & "|R|"
+            OutgoingString += StartTimeStamp + "|"
             Broadcast(False)
         End If
     End Sub
@@ -692,6 +699,10 @@ Public Class Form1
 
     Private Sub btnTimerStart_Click(sender As Object, e As EventArgs) Handles btnTimerStart.Click
         startTicks = Now.Ticks
+        'Dim utcTime As DateTime = DateTime.UtcNow
+        'String strUtcTime_o = utcTime.ToString("o");
+        'String strUtcTime_s = utcTime.ToString("s");
+        StartTimeStamp = Date.UtcNow.ToString("yyyy-MM-ddTHH:mm:ss.fff")
         TimerTimer.Start()
     End Sub
 
@@ -700,6 +711,7 @@ Public Class Form1
         If My.Settings.SourceTestTimer Then
             elapsedTime = New Date(currentTicks)
             OutgoingString = "TS|" & My.Settings.LocationCode & "|" & elapsedTime.ToString(My.Settings.TestTimerFormat) & "|U|"
+            OutgoingString += StartTimeStamp + "|"
             Broadcast(True)
         End If
 
@@ -708,8 +720,10 @@ Public Class Form1
         TimerTimer.Stop()
         If My.Settings.SourceTestTimer Then
             currentTicks = 0
+            StartTimeStamp = ""
             elapsedTime = New Date(currentTicks)
             OutgoingString = "TS|" & My.Settings.LocationCode & "|" & elapsedTime.ToString(My.Settings.TestTimerFormat) & "|U|"
+            OutgoingString += StartTimeStamp + "|"
             Broadcast(True)
         End If
     End Sub
@@ -732,6 +746,7 @@ Public Class Form1
     Private Sub TimerHeartbeat_Tick(sender As Object, e As EventArgs) Handles TimerHeartbeat.Tick
         If DateDiff(DateInterval.Second, lastBroadcastTimestamp, Now) > 9 Then
             OutgoingString = "TS|" & My.Settings.LocationCode & "|HBT " & Now.ToString("HH:mm:ss") & "|-1|"
+            OutgoingString += StartTimeStamp + "|"
             Broadcast(False)
         End If
     End Sub
@@ -1017,5 +1032,17 @@ Public Class Form1
         Else
             Me.Height = 462
         End If
+    End Sub
+
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+        SendData("LED,Run," + (60 - Now.Second).ToString("00") + ",1")
+    End Sub
+
+    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
+        SendData("LED,Stop,0,1")
+    End Sub
+
+    Private Sub CheckBox1_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox1.CheckedChanged
+
     End Sub
 End Class

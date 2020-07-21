@@ -1,0 +1,4429 @@
+Sent to UDP1: TS|ABC|HBT 14:40:51|-1|
+Sent to UDP1: TS|ABC|HBT 14:41:01|-1|
+Sent to UDP1: TS|ABC|HBT 14:41:11|-1|
+Sent to UDP1: TS|ABC|HBT 14:41:22|-1|
+Raw: [1][2][4][1]
+######################################## 
+Raw: aA[2]0010        
+Raw:     [4][1]aA[2]0010
+######################################## aA0010
+Raw:             [4][1][20]
+######################################## 
+Raw: S02[2][8]   [2]       
+Raw: 0.0  [4][1]aA[2]001
+Decoded: S02             0.0  
+Sent to UDP1: TS|ABC|       0.0 |U|
+######################################## aA001
+Raw: 0TIMING      [4]
+Sent to UDP1: TS|ABC|HBT 14:41:35|-1|
+Raw: [1][20]R02[2][8]
+Raw:    [2]       0.1 
+Raw:  [4]
+Decoded: R02             0.1  
+Sent to UDP1: TS|ABC|       0.1 |R|
+Raw: [1][20]R
+Raw: 02[2][8]   [2]       0
+Raw: .2  [4]
+Decoded: R02             0.2  
+Sent to UDP1: TS|ABC|       0.2 |R|
+Raw: [1][20]R02[2][8]   [2]    
+Raw:    0.3  [4]
+Decoded: R02             0.3  
+Sent to UDP1: TS|ABC|       0.3 |R|
+Raw: [1][20]R02[2][8]   [2]
+Raw:        0.4  [4]
+Decoded: R02             0.4  
+Sent to UDP1: TS|ABC|       0.4 |R|
+Raw: [1][20]R02[2][8]
+Raw:    [2]       0.5 
+Raw:  [4]
+Decoded: R02             0.5  
+Sent to UDP1: TS|ABC|       0.5 |R|
+Raw: [1][20]R
+Raw: 02[2][8]   [2]       
+Raw: 0.6  [4]
+Decoded: R02             0.6  
+Sent to UDP1: TS|ABC|       0.6 |R|
+Raw: [1][20]R02[2][8]   [2]    
+Raw:    0.7  [4]
+Decoded: R02             0.7  
+Sent to UDP1: TS|ABC|       0.7 |R|
+Raw: [1][20]R02[2][8]   [2]
+Raw:        0.8  [4]
+Decoded: R02             0.8  
+Sent to UDP1: TS|ABC|       0.8 |R|
+Raw: [1][20]R02[2][8]
+Raw:    [2]       0.9 
+Raw:  [4]
+Decoded: R02             0.9  
+Sent to UDP1: TS|ABC|       0.9 |R|
+Raw: [1][20]R
+Raw: 02[2][8]   [2]       
+Raw: 1.0  [4]
+Decoded: R02             1.0  
+Sent to UDP1: TS|ABC|       1.0 |R|
+Raw: [1][20]R02[2][8]   [2]    
+Raw:    1.1  [4]
+Decoded: R02             1.1  
+Sent to UDP1: TS|ABC|       1.1 |R|
+Raw: [1][20]R02[2][8]   [2]
+Raw:        1.2  [4]
+Decoded: R02             1.2  
+Sent to UDP1: TS|ABC|       1.2 |R|
+Raw: [1][20]R02[2][8]   [2]  
+Raw:      1.3  [4]
+Decoded: R02             1.3  
+Sent to UDP1: TS|ABC|       1.3 |R|
+Raw: [1][20]R
+Raw: 02[2][8]   [2]       
+Raw: 1.4  [4]
+Decoded: R02             1.4  
+Sent to UDP1: TS|ABC|       1.4 |R|
+Raw: [1][20]R02[2][8]   [2]   
+Raw:     1.5  [4]
+Decoded: R02             1.5  
+Sent to UDP1: TS|ABC|       1.5 |R|
+Raw: [1][20]R02[2][8]   [2]
+Raw:        1.6  [4]
+Decoded: R02             1.6  
+Sent to UDP1: TS|ABC|       1.6 |R|
+Raw: [1][20]R
+Raw: 02[2][8]   [2]       
+Raw: 1.7  [4]
+Decoded: R02             1.7  
+Sent to UDP1: TS|ABC|       1.7 |R|
+Raw: [1][20]R
+Raw: 02[2][8]   [2]       
+Raw: 1.8  [4]
+Decoded: R02             1.8  
+Sent to UDP1: TS|ABC|       1.8 |R|
+Raw: [1][20]R02[2][8]   [2]   
+Raw:     1.9  [4]
+Decoded: R02             1.9  
+Sent to UDP1: TS|ABC|       1.9 |R|
+Raw: [1][20]R02[2][8]   [2]
+Raw:        2.0  [4]
+Decoded: R02             2.0  
+Sent to UDP1: TS|ABC|       2.0 |R|
+Raw: [1][20]R02
+Raw: [2][8]   [2]       2.
+Raw: 1  [4]
+Decoded: R02             2.1  
+Sent to UDP1: TS|ABC|       2.1 |R|
+Raw: [1][20]R
+Raw: 02[2][8]   [2]       
+Raw: 2.2  [4]
+Decoded: R02             2.2  
+Sent to UDP1: TS|ABC|       2.2 |R|
+Raw: [1][20]R02[2][8]   [2]   
+Raw:     2.3  [4]
+Decoded: R02             2.3  
+Sent to UDP1: TS|ABC|       2.3 |R|
+Raw: [1][20]R02[2][8]   
+Raw: [2]       2.4  [4]
+Decoded: R02             2.4  
+Sent to UDP1: TS|ABC|       2.4 |R|
+Raw: [1][20]R0
+Raw: 2[2][8]   [2]       2.
+Raw: 5  [4]
+Decoded: R02             2.5  
+Sent to UDP1: TS|ABC|       2.5 |R|
+Raw: [1][20]R
+Raw: 02[2][8]   [2]       
+Raw: 2.6  [4]
+Decoded: R02             2.6  
+Sent to UDP1: TS|ABC|       2.6 |R|
+Raw: [1][20]R02[2][8]   [2]   
+Raw:     2.7  [4]
+Decoded: R02             2.7  
+Sent to UDP1: TS|ABC|       2.7 |R|
+Raw: [1][20]R02[2][8] 
+Raw:   [2]       2.8  [4]
+Decoded: R02             2.8  
+Sent to UDP1: TS|ABC|       2.8 |R|
+Raw: [1][20]R02[2][8]
+Raw:    [2]       2.9 
+Raw:  [4]
+Decoded: R02             2.9  
+Sent to UDP1: TS|ABC|       2.9 |R|
+Raw: [1][20]R
+Raw: 02[2][8]   [2]       
+Raw: 3.0  [4]
+Decoded: R02             3.0  
+Sent to UDP1: TS|ABC|       3.0 |R|
+Raw: [1][20]R02[2][8]   [2]   
+Raw:     3.1  [4]
+Decoded: R02             3.1  
+Sent to UDP1: TS|ABC|       3.1 |R|
+Raw: [1][20]R02[2][8] 
+Raw:   [2]       3.2  
+Raw: [4]
+Decoded: R02             3.2  
+Sent to UDP1: TS|ABC|       3.2 |R|
+Raw: [1][20]R02
+Raw: [2][8]   [2]       3.
+Raw: 3  [4]
+Decoded: R02             3.3  
+Sent to UDP1: TS|ABC|       3.3 |R|
+Raw: [1][20]R
+Raw: 02[2][8]   [2]       
+Raw: 3.4  [4]
+Decoded: R02             3.4  
+Sent to UDP1: TS|ABC|       3.4 |R|
+Raw: [1][20]R02[2][8]   [2]   
+Raw:     3.5  [4]
+Decoded: R02             3.5  
+Sent to UDP1: TS|ABC|       3.5 |R|
+Raw: [1][20]R02[2]
+Raw: [8]   [2]       3.6 
+Raw:  [4]
+Decoded: R02             3.6  
+Sent to UDP1: TS|ABC|       3.6 |R|
+Raw: [1][20]R02
+Raw: [2][8]   [2]       3.
+Raw: 7  [4]
+Decoded: R02             3.7  
+Sent to UDP1: TS|ABC|       3.7 |R|
+Raw: [1][20]R
+Raw: 02[2][8]   [2]       
+Raw: 3.8  [4]
+Decoded: R02             3.8  
+Sent to UDP1: TS|ABC|       3.8 |R|
+Raw: [1][20]R02[2][8]   [2]   
+Raw:     3.9  [4]
+Decoded: R02             3.9  
+Sent to UDP1: TS|ABC|       3.9 |R|
+Raw: [1][20]R02[2][8]
+Raw:    [2]       4.0  
+Raw: [4]
+Decoded: R02             4.0  
+Sent to UDP1: TS|ABC|       4.0 |R|
+Raw: [1][20]R0
+Raw: 2[2][8]   [2]       4.
+Raw: 1  [4]
+Decoded: R02             4.1  
+Sent to UDP1: TS|ABC|       4.1 |R|
+Raw: [1][20]
+Raw: R02[2][8]   [2]       
+Raw: 4.2  [4]
+Decoded: R02             4.2  
+Sent to UDP1: TS|ABC|       4.2 |R|
+Raw: [1][20]R02[2][8]   [2]   
+Raw:     4.3  [4]
+Decoded: R02             4.3  
+Sent to UDP1: TS|ABC|       4.3 |R|
+Raw: [1][20]R0
+Raw: 2[2][8]   [2]       4.
+Raw: 4  [4]
+Decoded: R02             4.4  
+Sent to UDP1: TS|ABC|       4.4 |R|
+Raw: [1][20]R02[2][8]   [2] 
+Raw:       4.5  [4]
+Decoded: R02             4.5  
+Sent to UDP1: TS|ABC|       4.5 |R|
+Raw: [1][20]R02[2][8]   [2]    
+Raw:    4.6  [4]
+Decoded: R02             4.6  
+Sent to UDP1: TS|ABC|       4.6 |R|
+Raw: [1][20]R02[2][8]   [2]   
+Raw:     4.7  [4]
+Decoded: R02             4.7  
+Sent to UDP1: TS|ABC|       4.7 |R|
+Raw: [1][20]R02[2][8]   
+Raw: [2]       4.8  [4]
+Decoded: R02             4.8  
+Sent to UDP1: TS|ABC|       4.8 |R|
+Raw: [1][20]R0
+Raw: 2[2][8]   [2]       4
+Raw: .9  [4]
+Decoded: R02             4.9  
+Sent to UDP1: TS|ABC|       4.9 |R|
+Raw: [1][20]R02[2][8]   [2]    
+Raw:    5.0  [4]
+Decoded: R02             5.0  
+Sent to UDP1: TS|ABC|       5.0 |R|
+Raw: [1][20]R02[2][8]   
+Raw: [2]       5.1  [4]
+Decoded: R02             5.1  
+Sent to UDP1: TS|ABC|       5.1 |R|
+Raw: [1][20]R02[2][8]   
+Raw: [2]       5.2  [4]
+Decoded: R02             5.2  
+Sent to UDP1: TS|ABC|       5.2 |R|
+Raw: [1][20]
+Raw: R02[2][8]   [2]       
+Raw: 5.3  [4]
+Decoded: R02             5.3  
+Sent to UDP1: TS|ABC|       5.3 |R|
+Raw: [1][20]R02[2][8]   [2]     
+Raw:   5.4  [4]
+Decoded: R02             5.4  
+Sent to UDP1: TS|ABC|       5.4 |R|
+Raw: [1][20]R02[2][8]   [2] 
+Raw:       5.5  [4]
+Decoded: R02             5.5  
+Sent to UDP1: TS|ABC|       5.5 |R|
+Raw: [1][20]R02[2][8]   
+Raw: [2]       5.6  [4]
+Decoded: R02             5.6  
+Sent to UDP1: TS|ABC|       5.6 |R|
+Raw: [1][20]R0
+Raw: 2[2][8]   [2]       5
+Raw: .7  [4]
+Decoded: R02             5.7  
+Sent to UDP1: TS|ABC|       5.7 |R|
+Raw: [1][20]
+Raw: R02[2][8]   [2]       
+Raw: 5.8  [4]
+Decoded: R02             5.8  
+Sent to UDP1: TS|ABC|       5.8 |R|
+Raw: [1][20]R02[2][8]   [2]
+Raw:        5.9  [4]
+Decoded: R02             5.9  
+Sent to UDP1: TS|ABC|       5.9 |R|
+Raw: [1][20]R02[2][8] 
+Raw:   [2]       6.0  
+Raw: [4]
+Decoded: R02             6.0  
+Sent to UDP1: TS|ABC|       6.0 |R|
+Raw: [1][20]R02[2]
+Raw: [8]   [2]       6.1
+Raw:   [4]
+Decoded: R02             6.1  
+Sent to UDP1: TS|ABC|       6.1 |R|
+Raw: [1][20]
+Raw: R02[2][8]   [2]       
+Raw: 6.2  [4]
+Decoded: R02             6.2  
+Sent to UDP1: TS|ABC|       6.2 |R|
+Raw: [1][20]R02[2][8]   
+Raw: [2]       6.3  [4]
+Decoded: R02             6.3  
+Sent to UDP1: TS|ABC|       6.3 |R|
+Raw: [1][20]R02[2][8]   
+Raw: [2]       6.4  [4]
+Decoded: R02             6.4  
+Sent to UDP1: TS|ABC|       6.4 |R|
+Raw: [1][20]R0
+Raw: 2[2][8]   [2]       6
+Raw: .5  [4]
+Decoded: R02             6.5  
+Sent to UDP1: TS|ABC|       6.5 |R|
+Raw: [1][20]
+Raw: R02[2][8]   [2]      
+Raw:  6.6  [4]
+Decoded: R02             6.6  
+Sent to UDP1: TS|ABC|       6.6 |R|
+Raw: [1][20]R02[2][8]   [2] 
+Raw:       6.7  [4]
+Decoded: R02             6.7  
+Sent to UDP1: TS|ABC|       6.7 |R|
+Raw: [1][20]R02[2][8]
+Raw:    [2]       6.8  
+Raw: [4]
+Decoded: R02             6.8  
+Sent to UDP1: TS|ABC|       6.8 |R|
+Raw: [1][20]R02[2]
+Raw: [8]   [2]       6.9
+Raw:   [4]
+Decoded: R02             6.9  
+Sent to UDP1: TS|ABC|       6.9 |R|
+Raw: [1][20]
+Raw: R02[2][8]   [2]      
+Raw:  7.0  [4]
+Decoded: R02             7.0  
+Sent to UDP1: TS|ABC|       7.0 |R|
+Raw: [1][20]R02[2][8]   
+Raw: [2]       7.1  [4]
+Decoded: R02             7.1  
+Sent to UDP1: TS|ABC|       7.1 |R|
+Raw: [1][20]R02[2][8]
+Raw:    [2]       7.2 
+Raw:  [4]
+Decoded: R02             7.2  
+Sent to UDP1: TS|ABC|       7.2 |R|
+Raw: [1][20]
+Raw: R02[2][8]   [2]      
+Raw:  7.3  [4]
+Decoded: R02             7.3  
+Sent to UDP1: TS|ABC|       7.3 |R|
+Raw: [1][20]R02[2][8]   [2]    
+Raw:    7.4  [4]
+Decoded: R02             7.4  
+Sent to UDP1: TS|ABC|       7.4 |R|
+Raw: [1][20]R02[2][8]   [2] 
+Raw:       7.5  [4]
+Decoded: R02             7.5  
+Sent to UDP1: TS|ABC|       7.5 |R|
+Raw: [1][20]R02[2]
+Raw: [8]   [2]       7.6
+Raw:   [4]
+Decoded: R02             7.6  
+Sent to UDP1: TS|ABC|       7.6 |R|
+Raw: [1][20]R0
+Raw: 2[2][8]   [2]       7.
+Raw: 7  [4]
+Decoded: R02             7.7  
+Sent to UDP1: TS|ABC|       7.7 |R|
+Raw: [1][20]R02[2][8]   [2]    
+Raw:    7.8  [4]
+Decoded: R02             7.8  
+Sent to UDP1: TS|ABC|       7.8 |R|
+Raw: [1][20]R02[2][8]   [2]  
+Raw:      7.9  [4]
+Decoded: R02             7.9  
+Sent to UDP1: TS|ABC|       7.9 |R|
+Raw: [1][20]R02[2][8]   
+Raw: [2]       8.0  [4]
+Decoded: R02             8.0  
+Sent to UDP1: TS|ABC|       8.0 |R|
+Raw: [1][20]R
+Raw: 02[2][8]   [2]       
+Raw: 8.1  [4]
+Decoded: R02             8.1  
+Sent to UDP1: TS|ABC|       8.1 |R|
+Raw: [1][20]R02[2][8]   [2]    
+Raw:    8.2  [4]
+Decoded: R02             8.2  
+Sent to UDP1: TS|ABC|       8.2 |R|
+Raw: [1][20]R02[2][8]   [2]  
+Raw:      8.3  [4]
+Decoded: R02             8.3  
+Sent to UDP1: TS|ABC|       8.3 |R|
+Raw: [1][20]R02[2][8] 
+Raw:   [2]       8.4  
+Raw: [4]
+Decoded: R02             8.4  
+Sent to UDP1: TS|ABC|       8.4 |R|
+Raw: [1][20]R02[2]
+Raw: [8]   [2]       8.5
+Raw:   [4]
+Decoded: R02             8.5  
+Sent to UDP1: TS|ABC|       8.5 |R|
+Raw: [1][20]R02[2][8]   [2]  
+Raw:      8.6  [4]
+Decoded: R02             8.6  
+Sent to UDP1: TS|ABC|       8.6 |R|
+Raw: [1][20]R02[2][8]   [2]  
+Raw:      8.7  [4]
+Decoded: R02             8.7  
+Sent to UDP1: TS|ABC|       8.7 |R|
+Raw: [1][20]R02[2][8]  
+Raw:  [2]       8.8  [4]
+Decoded: R02             8.8  
+Sent to UDP1: TS|ABC|       8.8 |R|
+Raw: [1][20]R0
+Raw: 2[2][8]   [2]       8
+Raw: .9  [4]
+Decoded: R02             8.9  
+Sent to UDP1: TS|ABC|       8.9 |R|
+Raw: [1][20]R02[2][8]   [2]  
+Raw:      9.0  [4]
+Decoded: R02             9.0  
+Sent to UDP1: TS|ABC|       9.0 |R|
+Raw: [1][20]R02[2][8]   [2]  
+Raw:      9.1  [4]
+Decoded: R02             9.1  
+Sent to UDP1: TS|ABC|       9.1 |R|
+Raw: [1][20]R02[2][8]
+Raw:    [2]       9.2  
+Raw: [4]
+Decoded: R02             9.2  
+Sent to UDP1: TS|ABC|       9.2 |R|
+Raw: [1][20]R02
+Raw: [2][8]   [2]       9.3
+Raw:   [4]
+Decoded: R02             9.3  
+Sent to UDP1: TS|ABC|       9.3 |R|
+Raw: [1][20]R02[2][8]   [2]    
+Raw:    9.4  [4]
+Decoded: R02             9.4  
+Sent to UDP1: TS|ABC|       9.4 |R|
+Raw: [1][20]R02[2][8]   [2] 
+Raw:       9.5  [4]
+Decoded: R02             9.5  
+Sent to UDP1: TS|ABC|       9.5 |R|
+Raw: [1][20]R02[2][8]  
+Raw:  [2]       9.6  [4]
+Decoded: R02             9.6  
+Sent to UDP1: TS|ABC|       9.6 |R|
+Raw: [1][20]R
+Raw: 02[2][8]   [2]       9
+Raw: .7  [4]
+Decoded: R02             9.7  
+Sent to UDP1: TS|ABC|       9.7 |R|
+Raw: [1][20]
+Raw: R02[2][8]   [2]      
+Raw:  9.8  [4]
+Decoded: R02             9.8  
+Sent to UDP1: TS|ABC|       9.8 |R|
+Raw: [1][20]R02[2][8]   [2]  
+Raw:      9.9  [4]
+Decoded: R02             9.9  
+Sent to UDP1: TS|ABC|       9.9 |R|
+Raw: [1][20]R02[2][8]
+Raw:    [2]      10.0 
+Raw:  [4]
+Decoded: R02            10.0  
+Sent to UDP1: TS|ABC|      10.0 |R|
+Raw: [1][20]R
+Raw: 02[2][8]   [2]      1
+Raw: 0.1  [4]
+Decoded: R02            10.1  
+Sent to UDP1: TS|ABC|      10.1 |R|
+Raw: [1]
+Raw: [20]R02[2][8]   [2]      
+Raw: 10.2  [4]
+Decoded: R02            10.2  
+Sent to UDP1: TS|ABC|      10.2 |R|
+Raw: [1][20]R02[2][8]   [2]  
+Raw:     10.3  [4]
+Decoded: R02            10.3  
+Sent to UDP1: TS|ABC|      10.3 |R|
+Raw: [1][20]R02[2][8]  
+Raw:  [2]      10.4  [4]
+Decoded: R02            10.4  
+Sent to UDP1: TS|ABC|      10.4 |R|
+Raw: [1][20]R
+Raw: 02[2][8]   [2]      1
+Raw: 0.5  [4]
+Decoded: R02            10.5  
+Sent to UDP1: TS|ABC|      10.5 |R|
+Raw: [1]
+Raw: [20]R02[2][8]   [2]      
+Raw: 10.6  [4]
+Decoded: R02            10.6  
+Sent to UDP1: TS|ABC|      10.6 |R|
+Raw: [1][20]R02[2][8]   [2]  
+Raw:     10.7  [4]
+Decoded: R02            10.7  
+Sent to UDP1: TS|ABC|      10.7 |R|
+Raw: [1][20]R02[2][8]
+Raw:    [2]      10.8  
+Raw: [4]
+Decoded: R02            10.8  
+Sent to UDP1: TS|ABC|      10.8 |R|
+Raw: [1][20]R02
+Raw: [2][8]   [2]      10.9
+Raw:   [4]
+Decoded: R02            10.9  
+Sent to UDP1: TS|ABC|      10.9 |R|
+Raw: [1][20]R02[2][8]   [2]    
+Raw:   11.0  [4]
+Decoded: R02            11.0  
+Sent to UDP1: TS|ABC|      11.0 |R|
+Raw: [1][20]R02[2][8]   [2]  
+Raw:     11.1  [4]
+Decoded: R02            11.1  
+Sent to UDP1: TS|ABC|      11.1 |R|
+Raw: [1][20]R02[2][8]  
+Raw:  [2]      11.2  [4]
+Decoded: R02            11.2  
+Sent to UDP1: TS|ABC|      11.2 |R|
+Raw: [1][20]R
+Raw: 02[2][8]   [2]      1
+Raw: 1.3  [4]
+Decoded: R02            11.3  
+Sent to UDP1: TS|ABC|      11.3 |R|
+Raw: [1]
+Raw: [20]R02[2][8]   [2]      
+Raw: 11.4  [4]
+Decoded: R02            11.4  
+Sent to UDP1: TS|ABC|      11.4 |R|
+Raw: [1][20]R02[2][8]   [2]  
+Raw:     11.5  [4]
+Decoded: R02            11.5  
+Sent to UDP1: TS|ABC|      11.5 |R|
+Raw: [1][20]R02[2][8]
+Raw:    [2]      11.6 
+Raw:  [4]
+Decoded: R02            11.6  
+Sent to UDP1: TS|ABC|      11.6 |R|
+Raw: [1][20]R02
+Raw: [2][8]   [2]      11.
+Raw: 7  [4]
+Decoded: R02            11.7  
+Sent to UDP1: TS|ABC|      11.7 |R|
+Raw: [1]
+Raw: [20]R02[2][8]   [2]      
+Raw: 11.8  [4]
+Decoded: R02            11.8  
+Sent to UDP1: TS|ABC|      11.8 |R|
+Raw: [1][20]R02[2][8]   
+Raw: [2]      11.9  [4]
+Decoded: R02            11.9  
+Sent to UDP1: TS|ABC|      11.9 |R|
+Raw: [1][20]R02[2][8]  
+Raw:  [2]      12.0  [4]
+Decoded: R02            12.0  
+Sent to UDP1: TS|ABC|      12.0 |R|
+Raw: [1][20]R
+Raw: 02[2][8]   [2]      1
+Raw: 2.1  [4]
+Decoded: R02            12.1  
+Sent to UDP1: TS|ABC|      12.1 |R|
+Raw: [1]
+Raw: [20]R02[2][8]   [2]      
+Raw: 12.2  [4]
+Decoded: R02            12.2  
+Sent to UDP1: TS|ABC|      12.2 |R|
+Raw: [1][20]R02[2][8]   [2]  
+Raw:     12.3  [4]
+Decoded: R02            12.3  
+Sent to UDP1: TS|ABC|      12.3 |R|
+Raw: [1][20]R02[2][8]
+Raw:    [2]      12.4 
+Raw:  [4]
+Decoded: R02            12.4  
+Sent to UDP1: TS|ABC|      12.4 |R|
+Raw: [1][20]R02
+Raw: [2][8]   [2]      12.
+Raw: 5  [4]
+Decoded: R02            12.5  
+Sent to UDP1: TS|ABC|      12.5 |R|
+Raw: [1]
+Raw: [20]R02[2][8]   [2]     
+Raw:  12.6  [4]
+Decoded: R02            12.6  
+Sent to UDP1: TS|ABC|      12.6 |R|
+Raw: [1][20]R02[2][8]   [2]  
+Raw:     12.7  [4]
+Decoded: R02            12.7  
+Sent to UDP1: TS|ABC|      12.7 |R|
+Raw: [1][20]R02[2][8]  
+Raw:  [2]      12.8  [4]
+Decoded: R02            12.8  
+Sent to UDP1: TS|ABC|      12.8 |R|
+Raw: [1][20]
+Raw: R02[2][8]   [2]      1
+Raw: 2.9  [4]
+Decoded: R02            12.9  
+Sent to UDP1: TS|ABC|      12.9 |R|
+Raw: [1]
+Raw: [20]R02[2][8]   [2]     
+Raw:  13.0  [4]
+Decoded: R02            13.0  
+Sent to UDP1: TS|ABC|      13.0 |R|
+Raw: [1][20]R02[2][8]   [2]  
+Raw:     13.1  [4]
+Decoded: R02            13.1  
+Sent to UDP1: TS|ABC|      13.1 |R|
+Raw: [1][20]R02[2][8]  
+Raw:  [2]      13.2  [4]
+Decoded: R02            13.2  
+Sent to UDP1: TS|ABC|      13.2 |R|
+Raw: [1][20]R
+Raw: 02[2][8]   [2]      1
+Raw: 3.3  [4]
+Decoded: R02            13.3  
+Sent to UDP1: TS|ABC|      13.3 |R|
+Raw: [1]
+Raw: [20]R02[2][8]   [2]     
+Raw:  13.4  [4]
+Decoded: R02            13.4  
+Sent to UDP1: TS|ABC|      13.4 |R|
+Raw: [1][20]R02[2][8]
+Raw:    [2]      13.5 
+Raw:  [4]
+Decoded: R02            13.5  
+Sent to UDP1: TS|ABC|      13.5 |R|
+Raw: [1][20]R02[2]
+Raw: [8]   [2]      13.6 
+Raw:  [4]
+Decoded: R02            13.6  
+Sent to UDP1: TS|ABC|      13.6 |R|
+Raw: [1][20]
+Raw: R02[2][8]   [2]      
+Raw: 13.7  [4]
+Decoded: R02            13.7  
+Sent to UDP1: TS|ABC|      13.7 |R|
+Raw: [1]
+Raw: [20]R02[2][8]   [2]     
+Raw:  13.8  [4]
+Decoded: R02            13.8  
+Sent to UDP1: TS|ABC|      13.8 |R|
+Raw: [1][20]R02[2][8]   [2] 
+Raw:      13.9  [4]
+Decoded: R02            13.9  
+Sent to UDP1: TS|ABC|      13.9 |R|
+Raw: [1][20]R02[2]
+Raw: [8]   [2]      14.0
+Raw:   [4]
+Decoded: R02            14.0  
+Sent to UDP1: TS|ABC|      14.0 |R|
+Raw: [1][20]R02
+Raw: [2][8]   [2]      14.
+Raw: 1  [4]
+Decoded: R02            14.1  
+Sent to UDP1: TS|ABC|      14.1 |R|
+Raw: [1]
+Raw: [20]R02[2][8]   [2]     
+Raw:  14.2  [4]
+Decoded: R02            14.2  
+Sent to UDP1: TS|ABC|      14.2 |R|
+Raw: [1][20]R02[2][8]   [2] 
+Raw:      14.3  [4]
+Decoded: R02            14.3  
+Sent to UDP1: TS|ABC|      14.3 |R|
+Raw: [1][20]R02[2][8] 
+Raw:   [2]      14.4  [4]
+Decoded: R02            14.4  
+Sent to UDP1: TS|ABC|      14.4 |R|
+Raw: [1][20]R
+Raw: 02[2][8]   [2]      1
+Raw: 4.5  [4]
+Decoded: R02            14.5  
+Sent to UDP1: TS|ABC|      14.5 |R|
+Raw: [1]
+Raw: [20]R02[2][8]   [2]     
+Raw:  14.6  [4]
+Decoded: R02            14.6  
+Sent to UDP1: TS|ABC|      14.6 |R|
+Raw: [1][20]R02[2][8]   [2] 
+Raw:      14.7  [4]
+Decoded: R02            14.7  
+Sent to UDP1: TS|ABC|      14.7 |R|
+Raw: [1][20]R02[2][8] 
+Raw:   [2]      14.8  [4]
+Decoded: R02            14.8  
+Sent to UDP1: TS|ABC|      14.8 |R|
+Raw: [1][20]R02
+Raw: [2][8]   [2]      14.
+Raw: 9  [4]
+Decoded: R02            14.9  
+Sent to UDP1: TS|ABC|      14.9 |R|
+Raw: [1]
+Raw: [20]R02[2][8]   [2]     
+Raw:  15.0  [4]
+Decoded: R02            15.0  
+Sent to UDP1: TS|ABC|      15.0 |R|
+Raw: [1][20]R02[2][8]  
+Raw:  [2]      15.1  [4]
+Decoded: R02            15.1  
+Sent to UDP1: TS|ABC|      15.1 |R|
+Raw: [1][20]R02[2][8] 
+Raw:   [2]      15.2  [4]
+Decoded: R02            15.2  
+Sent to UDP1: TS|ABC|      15.2 |R|
+Raw: [1]
+Raw: [20]R02[2][8]   [2]     
+Raw:  15.3  [4]
+Decoded: R02            15.3  
+Sent to UDP1: TS|ABC|      15.3 |R|
+Raw: [1]
+Raw: [20]R02[2][8]   [2]     
+Raw:  15.4  [4]
+Decoded: R02            15.4  
+Sent to UDP1: TS|ABC|      15.4 |R|
+Raw: [1][20]R02[2][8]   [2] 
+Raw:      15.5  [4]
+Decoded: R02            15.5  
+Sent to UDP1: TS|ABC|      15.5 |R|
+Raw: [1][20]R02[2]
+Raw: [8]   [2]      15.6
+Raw:   [4]
+Decoded: R02            15.6  
+Sent to UDP1: TS|ABC|      15.6 |R|
+Raw: [1][20]R0
+Raw: 2[2][8]   [2]      15.
+Raw: 7  [4]
+Decoded: R02            15.7  
+Sent to UDP1: TS|ABC|      15.7 |R|
+Raw: [1]
+Raw: [20]R02[2][8]   [2]     
+Raw:  15.8  [4]
+Decoded: R02            15.8  
+Sent to UDP1: TS|ABC|      15.8 |R|
+Raw: [1][20]R02[2][8]   [2] 
+Raw:      15.9  [4]
+Decoded: R02            15.9  
+Sent to UDP1: TS|ABC|      15.9 |R|
+Raw: [1][20]R02[2][8] 
+Raw:   [2]      16.0  [4]
+Decoded: R02            16.0  
+Sent to UDP1: TS|ABC|      16.0 |R|
+Raw: [1]
+Raw: [20]R02[2][8]   [2]      
+Raw: 16.1  [4]
+Decoded: R02            16.1  
+Sent to UDP1: TS|ABC|      16.1 |R|
+Raw: [1]
+Raw: [20]R02[2][8]   [2]     
+Raw:  16.2  [4]
+Decoded: R02            16.2  
+Sent to UDP1: TS|ABC|      16.2 |R|
+Raw: [1][20]R02[2][8]   [2] 
+Raw:      16.3  [4]
+Decoded: R02            16.3  
+Sent to UDP1: TS|ABC|      16.3 |R|
+Raw: [1][20]R02[2]
+Raw: [8]   [2]      16.4
+Raw:   [4]
+Decoded: R02            16.4  
+Sent to UDP1: TS|ABC|      16.4 |R|
+Raw: [1][20]R0
+Raw: 2[2][8]   [2]      16.
+Raw: 5  [4]
+Decoded: R02            16.5  
+Sent to UDP1: TS|ABC|      16.5 |R|
+Raw: [1][20]R02[2][8]   [2]     
+Raw:  16.6  [4]
+Decoded: R02            16.6  
+Sent to UDP1: TS|ABC|      16.6 |R|
+Raw: [1][20]R02[2][8]   [2] 
+Raw:      16.7  [4]
+Decoded: R02            16.7  
+Sent to UDP1: TS|ABC|      16.7 |R|
+Raw: [1][20]R02[2][8] 
+Raw:   [2]      16.8  
+Raw: [4]
+Decoded: R02            16.8  
+Sent to UDP1: TS|ABC|      16.8 |R|
+Raw: [1][20]R0
+Raw: 2[2][8]   [2]      16
+Raw: .9  [4]
+Decoded: R02            16.9  
+Sent to UDP1: TS|ABC|      16.9 |R|
+Raw: [1][20]R02[2][8]   [2]   
+Raw:    17.0  [4]
+Decoded: R02            17.0  
+Sent to UDP1: TS|ABC|      17.0 |R|
+Raw: [1][20]R02[2][8]   
+Raw: [2]      17.1  [4]
+Decoded: R02            17.1  
+Sent to UDP1: TS|ABC|      17.1 |R|
+Raw: [1][20]R02[2][8]   [2]     
+Raw:  17.2  [4]
+Decoded: R02            17.2  
+Sent to UDP1: TS|ABC|      17.2 |R|
+Raw: [1]
+Raw: [20]R02[2][8]   [2]      
+Raw: 17.3  [4]
+Decoded: R02            17.3  
+Sent to UDP1: TS|ABC|      17.3 |R|
+Raw: [1][20]R02[2][8]   [2]     
+Raw:  17.4  [4]
+Decoded: R02            17.4  
+Sent to UDP1: TS|ABC|      17.4 |R|
+Raw: [1][20]R02[2][8]   [2] 
+Raw:      17.5  [4]
+Decoded: R02            17.5  
+Sent to UDP1: TS|ABC|      17.5 |R|
+Raw: [1][20]R02[2][8] 
+Raw:   [2]      17.6  
+Raw: [4]
+Decoded: R02            17.6  
+Sent to UDP1: TS|ABC|      17.6 |R|
+Raw: [1][20]R
+Raw: 02[2][8]   [2]      17
+Raw: .7  [4]
+Decoded: R02            17.7  
+Sent to UDP1: TS|ABC|      17.7 |R|
+Raw: [1][20]R02[2][8]   [2]     
+Raw:  17.8  [4]
+Decoded: R02            17.8  
+Sent to UDP1: TS|ABC|      17.8 |R|
+Raw: [1][20]R02[2][8]   [2] 
+Raw:      17.9  [4]
+Decoded: R02            17.9  
+Sent to UDP1: TS|ABC|      17.9 |R|
+Raw: [1][20]R02[2][8] 
+Raw:   [2]      18.0  
+Raw: [4]
+Decoded: R02            18.0  
+Sent to UDP1: TS|ABC|      18.0 |R|
+Raw: [1][20]R0
+Raw: 2[2][8]   [2]      18
+Raw: .1  [4]
+Decoded: R02            18.1  
+Sent to UDP1: TS|ABC|      18.1 |R|
+Raw: [1][20]R02[2][8]   [2] 
+Raw:      18.2  [4]
+Decoded: R02            18.2  
+Sent to UDP1: TS|ABC|      18.2 |R|
+Raw: [1][20]R02[2][8]   [2] 
+Raw:      18.3  [4]
+Decoded: R02            18.3  
+Sent to UDP1: TS|ABC|      18.3 |R|
+Raw: [1][20]R02[2][8] 
+Raw:   [2]      18.4  
+Raw: [4]
+Decoded: R02            18.4  
+Sent to UDP1: TS|ABC|      18.4 |R|
+Raw: [1]
+Raw: [20]R02[2][8]   [2]      
+Raw: 18.5  [4]
+Decoded: R02            18.5  
+Sent to UDP1: TS|ABC|      18.5 |R|
+Raw: [1][20]R02[2][8]   [2]    
+Raw:   18.6  [4]
+Decoded: R02            18.6  
+Sent to UDP1: TS|ABC|      18.6 |R|
+Raw: [1][20]R02[2][8]   [2] 
+Raw:      18.7  [4]
+Decoded: R02            18.7  
+Sent to UDP1: TS|ABC|      18.7 |R|
+Raw: [1][20]R02[2]
+Raw: [8]   [2]      18.8
+Raw:   [4]
+Decoded: R02            18.8  
+Sent to UDP1: TS|ABC|      18.8 |R|
+Raw: [1][20]R0
+Raw: 2[2][8]   [2]      18
+Raw: .9  [4]
+Decoded: R02            18.9  
+Sent to UDP1: TS|ABC|      18.9 |R|
+Raw: [1][20]R02[2][8]   [2]    
+Raw:   19.0  [4]
+Decoded: R02            19.0  
+Sent to UDP1: TS|ABC|      19.0 |R|
+Raw: [1][20]R02[2][8]   [2] 
+Raw:      19.1  [4]
+Decoded: R02            19.1  
+Sent to UDP1: TS|ABC|      19.1 |R|
+Raw: [1][20]R02[2][8] 
+Raw:   [2]      19.2  
+Raw: [4]
+Decoded: R02            19.2  
+Sent to UDP1: TS|ABC|      19.2 |R|
+Raw: [1][20]R02[2][8]   [2]     
+Raw:  19.3  [4]
+Decoded: R02            19.3  
+Sent to UDP1: TS|ABC|      19.3 |R|
+Raw: [1][20]R02[2][8]   [2]    
+Raw:   19.4  [4]
+Decoded: R02            19.4  
+Sent to UDP1: TS|ABC|      19.4 |R|
+Raw: [1][20]R02[2][8]   
+Raw: [2]      19.5  [4]
+Decoded: R02            19.5  
+Sent to UDP1: TS|ABC|      19.5 |R|
+Raw: [1][20]R0
+Raw: 2[2][8]   [2]      19.
+Raw: 6  [4]
+Decoded: R02            19.6  
+Sent to UDP1: TS|ABC|      19.6 |R|
+Raw: [1]
+Raw: [20]R02[2][8]   [2]     
+Raw:  19.7  [4]
+Decoded: R02            19.7  
+Sent to UDP1: TS|ABC|      19.7 |R|
+Raw: [1][20]R02[2][8]   [2]  
+Raw:     19.8  [4]
+Decoded: R02            19.8  
+Sent to UDP1: TS|ABC|      19.8 |R|
+Raw: [1][20]R02[2][8]   
+Raw: [2]      19.9  [4]
+Decoded: R02            19.9  
+Sent to UDP1: TS|ABC|      19.9 |R|
+Raw: [1][20]R02[2][8]
+Raw:    [2]      20.0 
+Raw:  [4]
+Decoded: R02            20.0  
+Sent to UDP1: TS|ABC|      20.0 |R|
+Raw: [1][20]R0
+Raw: 2[2][8]   [2]      20
+Raw: .1  [4]
+Decoded: R02            20.1  
+Sent to UDP1: TS|ABC|      20.1 |R|
+Raw: [1][20]R02[2][8]   [2]  
+Raw:     20.2  [4]
+Decoded: R02            20.2  
+Sent to UDP1: TS|ABC|      20.2 |R|
+Raw: [1][20]R02[2][8]  
+Raw:  [2]      20.3  [4]
+Decoded: R02            20.3  
+Sent to UDP1: TS|ABC|      20.3 |R|
+Raw: [1][20]R02
+Raw: [2][8]   [2]      20.
+Raw: 4  [4]
+Decoded: R02            20.4  
+Sent to UDP1: TS|ABC|      20.4 |R|
+Raw: [1]
+Raw: [20]R02[2][8]   [2]     
+Raw:  20.5  [4]
+Decoded: R02            20.5  
+Sent to UDP1: TS|ABC|      20.5 |R|
+Raw: [1][20]R02[2][8]  
+Raw:  [2]      20.6  [4]
+Decoded: R02            20.6  
+Sent to UDP1: TS|ABC|      20.6 |R|
+Raw: [1][20]R02[2][8]   [2]
+Raw:       20.7  [4]
+Decoded: R02            20.7  
+Sent to UDP1: TS|ABC|      20.7 |R|
+Raw: [1][20]R02
+Raw: [2][8]   [2]      20.8
+Raw:   [4]
+Decoded: R02            20.8  
+Sent to UDP1: TS|ABC|      20.8 |R|
+Raw: [1][20]R02[2][8]   [2]     
+Raw:  20.9  [4]
+Decoded: R02            20.9  
+Sent to UDP1: TS|ABC|      20.9 |R|
+Raw: [1][20]R02[2][8]   [2]
+Raw:       21.0  [4]
+Decoded: R02            21.0  
+Sent to UDP1: TS|ABC|      21.0 |R|
+Raw: [1][20]R02[2][8] 
+Raw:   [2]      21.1  
+Raw: [4]
+Decoded: R02            21.1  
+Sent to UDP1: TS|ABC|      21.1 |R|
+Raw: [1][20]R02
+Raw: [2][8]   [2]      21.2
+Raw:   [4]
+Decoded: R02            21.2  
+Sent to UDP1: TS|ABC|      21.2 |R|
+Raw: [1][20]
+Raw: R02[2][8]   [2]      
+Raw: 21.3  [4]
+Decoded: R02            21.3  
+Sent to UDP1: TS|ABC|      21.3 |R|
+Raw: [1][20]R02[2][8]   [2]  
+Raw:     21.4  [4]
+Decoded: R02            21.4  
+Sent to UDP1: TS|ABC|      21.4 |R|
+Raw: [1][20]R02[2][8] 
+Raw:   [2]      21.5  
+Raw: [4]
+Decoded: R02            21.5  
+Sent to UDP1: TS|ABC|      21.5 |R|
+Raw: [1][20]R02
+Raw: [2][8]   [2]      21.6
+Raw:   [4]
+Decoded: R02            21.6  
+Sent to UDP1: TS|ABC|      21.6 |R|
+Raw: [1]
+Raw: [20]R02[2][8]   [2]     
+Raw:  21.7  [4]
+Decoded: R02            21.7  
+Sent to UDP1: TS|ABC|      21.7 |R|
+Raw: [1][20]R02[2][8]   [2]
+Raw:       21.8  [4]
+Decoded: R02            21.8  
+Sent to UDP1: TS|ABC|      21.8 |R|
+Raw: [1][20]R02[2][8] 
+Raw:   [2]      21.9  
+Raw: [4]
+Decoded: R02            21.9  
+Sent to UDP1: TS|ABC|      21.9 |R|
+Raw: [1][20]R02
+Raw: [2][8]   [2]      22.
+Raw: 0  [4]
+Decoded: R02            22.0  
+Sent to UDP1: TS|ABC|      22.0 |R|
+Raw: [1][20]R
+Raw: 02[2][8]   [2]      22
+Raw: .1  [4]
+Decoded: R02            22.1  
+Sent to UDP1: TS|ABC|      22.1 |R|
+Raw: [1][20]R02[2][8]   [2]
+Raw:       22.2  [4]
+Decoded: R02            22.2  
+Sent to UDP1: TS|ABC|      22.2 |R|
+Raw: [1][20]R02[2][8] 
+Raw:   [2]      22.3  
+Raw: [4]
+Decoded: R02            22.3  
+Sent to UDP1: TS|ABC|      22.3 |R|
+Raw: [1][20]R0
+Raw: 2[2][8]   [2]      22
+Raw: .4  [4]
+Decoded: R02            22.4  
+Sent to UDP1: TS|ABC|      22.4 |R|
+Raw: [1][20]R02[2][8]   [2]    
+Raw:   22.5  [4]
+Decoded: R02            22.5  
+Sent to UDP1: TS|ABC|      22.5 |R|
+Raw: [1][20]R02[2][8]   [2]    
+Raw:   22.6  [4]
+Decoded: R02            22.6  
+Sent to UDP1: TS|ABC|      22.6 |R|
+Raw: [1][20]R02[2][8]  
+Raw:  [2]      22.7  [4]
+Decoded: R02            22.7  
+Sent to UDP1: TS|ABC|      22.7 |R|
+Raw: [1][20]R0
+Raw: 2[2][8]   [2]      22.
+Raw: 8  [4]
+Decoded: R02            22.8  
+Sent to UDP1: TS|ABC|      22.8 |R|
+Raw: [1][20]R02[2][8]   [2]    
+Raw:   22.9  [4]
+Decoded: R02            22.9  
+Sent to UDP1: TS|ABC|      22.9 |R|
+Raw: [1][20]R02[2][8]   [2]    
+Raw:   23.0  [4]
+Decoded: R02            23.0  
+Sent to UDP1: TS|ABC|      23.0 |R|
+Raw: [1][20]R02[2][8]  
+Raw:  [2]      23.1  [4]
+Decoded: R02            23.1  
+Sent to UDP1: TS|ABC|      23.1 |R|
+Raw: [1][20]R02
+Raw: [2][8]   [2]      23.2
+Raw:   [4]
+Decoded: R02            23.2  
+Sent to UDP1: TS|ABC|      23.2 |R|
+Raw: [1][20]R02[2][8]   [2]    
+Raw:   23.3  [4]
+Decoded: R02            23.3  
+Sent to UDP1: TS|ABC|      23.3 |R|
+Raw: [1][20]R02[2][8]   [2] 
+Raw:      23.4  [4]
+Decoded: R02            23.4  
+Sent to UDP1: TS|ABC|      23.4 |R|
+Raw: [1][20]R02[2][8]  
+Raw:  [2]      23.5  [4]
+Decoded: R02            23.5  
+Sent to UDP1: TS|ABC|      23.5 |R|
+Raw: [1][20]R02
+Raw: [2][8]   [2]      23.
+Raw: 6  [4]
+Decoded: R02            23.6  
+Sent to UDP1: TS|ABC|      23.6 |R|
+Raw: [1][20]R02[2][8]   [2]     
+Raw:  23.7  [4]
+Decoded: R02            23.7  
+Sent to UDP1: TS|ABC|      23.7 |R|
+Raw: [1][20]R02[2][8]   [2] 
+Raw:      23.8  [4]
+Decoded: R02            23.8  
+Sent to UDP1: TS|ABC|      23.8 |R|
+Raw: [1][20]R02[2][8]   [2]
+Raw:       23.9  [4]
+Decoded: R02            23.9  
+Sent to UDP1: TS|ABC|      23.9 |R|
+Raw: [1][20]R
+Raw: 02[2][8]   [2]      24
+Raw: .0  [4]
+Decoded: R02            24.0  
+Sent to UDP1: TS|ABC|      24.0 |R|
+Raw: [1][20]R
+Raw: 02[2][8]   [2]      2
+Raw: 4.1  [4]
+Decoded: R02            24.1  
+Sent to UDP1: TS|ABC|      24.1 |R|
+Raw: [1][20]R02[2][8]   [2]
+Raw:       24.2  [4]
+Decoded: R02            24.2  
+Sent to UDP1: TS|ABC|      24.2 |R|
+Raw: [1][20]R02[2][8]  
+Raw:  [2]      24.3  [4]
+Decoded: R02            24.3  
+Sent to UDP1: TS|ABC|      24.3 |R|
+Raw: [1][20]R02[2][8]
+Raw:    [2]      24.4 
+Raw:  [4]
+Decoded: R02            24.4  
+Sent to UDP1: TS|ABC|      24.4 |R|
+Raw: [1]
+Raw: [20]R02[2][8]   [2]     
+Raw:  24.5  [4]
+Decoded: R02            24.5  
+Sent to UDP1: TS|ABC|      24.5 |R|
+Raw: [1][20]R02[2][8]   [2]
+Raw:       24.6  [4]
+Decoded: R02            24.6  
+Sent to UDP1: TS|ABC|      24.6 |R|
+Raw: [1][20]R02[2][8] 
+Raw:   [2]      24.7  [4]
+Decoded: R02            24.7  
+Sent to UDP1: TS|ABC|      24.7 |R|
+Raw: [1][20]R02
+Raw: [2][8]   [2]      24.
+Raw: 8  [4]
+Decoded: R02            24.8  
+Sent to UDP1: TS|ABC|      24.8 |R|
+Raw: [1]
+Raw: [20]R02[2][8]   [2]     
+Raw:  24.9  [4]
+Decoded: R02            24.9  
+Sent to UDP1: TS|ABC|      24.9 |R|
+Raw: [1][20]R02[2][8]   [2]   
+Raw:    25.0  [4]
+Decoded: R02            25.0  
+Sent to UDP1: TS|ABC|      25.0 |R|
+Raw: [1][20]R02[2][8]  
+Raw:  [2]      25.1  [4]
+Decoded: R02            25.1  
+Sent to UDP1: TS|ABC|      25.1 |R|
+Raw: [1][20]R0
+Raw: 2[2][8]   [2]      25.
+Raw: 2  [4]
+Decoded: R02            25.2  
+Sent to UDP1: TS|ABC|      25.2 |R|
+Raw: [1]
+Raw: [20]R02[2][8]   [2]     
+Raw:  25.3  [4]
+Decoded: R02            25.3  
+Sent to UDP1: TS|ABC|      25.3 |R|
+Raw: [1][20]R02[2][8]   [2] 
+Raw:      25.4  [4]
+Decoded: R02            25.4  
+Sent to UDP1: TS|ABC|      25.4 |R|
+Raw: [1][20]R02[2][8] 
+Raw:   [2]      25.5  
+Raw: [4]
+Decoded: R02            25.5  
+Sent to UDP1: TS|ABC|      25.5 |R|
+Raw: [1][20]R02
+Raw: [2][8]   [2]      25.
+Raw: 6  [4]
+Decoded: R02            25.6  
+Sent to UDP1: TS|ABC|      25.6 |R|
+Raw: [1][20]R02[2][8]   [2]    
+Raw:   25.7  [4]
+Decoded: R02            25.7  
+Sent to UDP1: TS|ABC|      25.7 |R|
+Raw: [1][20]R02[2][8]   [2] 
+Raw:      25.8  [4]
+Decoded: R02            25.8  
+Sent to UDP1: TS|ABC|      25.8 |R|
+Raw: [1][20]R02[2][8]
+Raw:    [2]      25.9  
+Raw: [4]
+Decoded: R02            25.9  
+Sent to UDP1: TS|ABC|      25.9 |R|
+Raw: [1][20]R0
+Raw: 2[2][8]   [2]      26
+Raw: .0  [4]
+Decoded: R02            26.0  
+Sent to UDP1: TS|ABC|      26.0 |R|
+Raw: [1][20]R02[2][8]   [2]   
+Raw:    26.1  [4]
+Decoded: R02            26.1  
+Sent to UDP1: TS|ABC|      26.1 |R|
+Raw: [1][20]R02[2][8]   [2] 
+Raw:      26.2  [4]
+Decoded: R02            26.2  
+Sent to UDP1: TS|ABC|      26.2 |R|
+Raw: [1][20]R02[2][8]  
+Raw:  [2]      26.3  [4]
+Decoded: R02            26.3  
+Sent to UDP1: TS|ABC|      26.3 |R|
+Raw: [1][20]R02
+Raw: [2][8]   [2]      26.
+Raw: 4  [4]
+Decoded: R02            26.4  
+Sent to UDP1: TS|ABC|      26.4 |R|
+Raw: [1]
+Raw: [20]R02[2][8]   [2]     
+Raw:  26.5  [4]
+Decoded: R02            26.5  
+Sent to UDP1: TS|ABC|      26.5 |R|
+Raw: [1][20]R02[2][8]   [2] 
+Raw:      26.6  [4]
+Decoded: R02            26.6  
+Sent to UDP1: TS|ABC|      26.6 |R|
+Raw: [1][20]R02[2][8] 
+Raw:   [2]      26.7  [4]
+Decoded: R02            26.7  
+Sent to UDP1: TS|ABC|      26.7 |R|
+Raw: [1][20]R02
+Raw: [2][8]   [2]      26.
+Raw: 8  [4]
+Decoded: R02            26.8  
+Sent to UDP1: TS|ABC|      26.8 |R|
+Raw: [1][20]R
+Raw: 02[2][8]   [2]      2
+Raw: 6.9  [4]
+Decoded: R02            26.9  
+Sent to UDP1: TS|ABC|      26.9 |R|
+Raw: [1][20]R02[2][8]   [2] 
+Raw:      27.0  [4]
+Decoded: R02            27.0  
+Sent to UDP1: TS|ABC|      27.0 |R|
+Raw: [1][20]R02[2][8]   
+Raw: [2]      27.1  [4]
+Decoded: R02            27.1  
+Sent to UDP1: TS|ABC|      27.1 |R|
+Raw: [1][20]R02[2]
+Raw: [8]   [2]      27.2 
+Raw:  [4]
+Decoded: R02            27.2  
+Sent to UDP1: TS|ABC|      27.2 |R|
+Raw: [1]
+Raw: [20]R02[2][8]   [2]     
+Raw:  27.3  [4]
+Decoded: R02            27.3  
+Sent to UDP1: TS|ABC|      27.3 |R|
+Raw: [1]a
+Raw: A[2]0010        
+Raw:     [4][1][20]S02[2][8]   
+######################################## S02   
+Raw: [2]       0.0  [4][1]
+Decoded: S02             0.0  
+Sent to UDP1: TS|ABC|       0.0 |U|
+######################################## 
+Raw: aA[2]0010TIMING 
+Raw:      [4]
+Sent to UDP1: TS|ABC|HBT 14:42:19|-1|
+Raw: [1][20]R02[2][8]   [2]     
+Raw:   0.1  [4]
+Decoded: R02             0.1  
+Sent to UDP1: TS|ABC|       0.1 |R|
+Raw: [1][20]R02[2][8]   [2] 
+Raw:       0.2  [4]
+Decoded: R02             0.2  
+Sent to UDP1: TS|ABC|       0.2 |R|
+Raw: [1][20]R02[2]
+Raw: [8]   [2]       0.3
+Raw:   [4]
+Decoded: R02             0.3  
+Sent to UDP1: TS|ABC|       0.3 |R|
+Raw: [1][20]R0
+Raw: 2[2][8]   [2]       0
+Raw: .4  [4]
+Decoded: R02             0.4  
+Sent to UDP1: TS|ABC|       0.4 |R|
+Raw: [1][20]R02[2][8]   [2]   
+Raw:     0.5  [4]
+Decoded: R02             0.5  
+Sent to UDP1: TS|ABC|       0.5 |R|
+Raw: [1][20]R02[2][8]   
+Raw: [2]       0.6  [4]
+Decoded: R02             0.6  
+Sent to UDP1: TS|ABC|       0.6 |R|
+Raw: [1][20]R02[2][8] 
+Raw:   [2]       0.7  
+Raw: [4]
+Decoded: R02             0.7  
+Sent to UDP1: TS|ABC|       0.7 |R|
+Raw: [1][20]R02[2][8]   [2]    
+Raw:    0.8  [4]
+Decoded: R02             0.8  
+Sent to UDP1: TS|ABC|       0.8 |R|
+Raw: [1][20]R02[2][8]   [2] 
+Raw:       0.9  [4]
+Decoded: R02             0.9  
+Sent to UDP1: TS|ABC|       0.9 |R|
+Raw: [1][20]R02[2][8]   
+Raw: [2]       1.0  [4]
+Decoded: R02             1.0  
+Sent to UDP1: TS|ABC|       1.0 |R|
+Raw: [1][20]R0
+Raw: 2[2][8]   [2]       1
+Raw: .1  [4]
+Decoded: R02             1.1  
+Sent to UDP1: TS|ABC|       1.1 |R|
+Raw: [1][20]
+Raw: R02[2][8]   [2]      
+Raw:  1.2  [4]
+Decoded: R02             1.2  
+Sent to UDP1: TS|ABC|       1.2 |R|
+Raw: [1][20]R02[2][8]   [2]   
+Raw:     1.3  [4]
+Decoded: R02             1.3  
+Sent to UDP1: TS|ABC|       1.3 |R|
+Raw: [1][20]R02[2][8]   
+Raw: [2]       1.4  [4]
+Decoded: R02             1.4  
+Sent to UDP1: TS|ABC|       1.4 |R|
+Raw: [1][20]R02[2]
+Raw: [8]   [2]       1.5
+Raw:   [4]
+Decoded: R02             1.5  
+Sent to UDP1: TS|ABC|       1.5 |R|
+Raw: [1][20]R02[2][8]   [2]    
+Raw:    1.6  [4]
+Decoded: R02             1.6  
+Sent to UDP1: TS|ABC|       1.6 |R|
+Raw: [1][20]R02[2][8]   [2]    
+Raw:    1.7  [4]
+Decoded: R02             1.7  
+Sent to UDP1: TS|ABC|       1.7 |R|
+Raw: [1][20]R02[2][8] 
+Raw:   [2]       1.8  
+Raw: [4]
+Decoded: R02             1.8  
+Sent to UDP1: TS|ABC|       1.8 |R|
+Raw: [1][20]R02[2][8] 
+Raw:   [2]       1.9  
+Raw: [4]
+Decoded: R02             1.9  
+Sent to UDP1: TS|ABC|       1.9 |R|
+Raw: [1][20]R0
+Raw: 2[2][8]   [2]       2
+Raw: .0  [4]
+Decoded: R02             2.0  
+Sent to UDP1: TS|ABC|       2.0 |R|
+Raw: [1][20]R02[2][8]   [2]  
+Raw:      2.1  [4]
+Decoded: R02             2.1  
+Sent to UDP1: TS|ABC|       2.1 |R|
+Raw: [1][20]R02[2][8]   
+Raw: [2]       2.2  [4]
+Decoded: R02             2.2  
+Sent to UDP1: TS|ABC|       2.2 |R|
+Raw: [1][20]R02[2]
+Raw: [8]   [2]       2.3
+Raw:   [4]
+Decoded: R02             2.3  
+Sent to UDP1: TS|ABC|       2.3 |R|
+Raw: [1][20]
+Raw: R02[2][8]   [2]      
+Raw:  2.4  [4]
+Decoded: R02             2.4  
+Sent to UDP1: TS|ABC|       2.4 |R|
+Raw: [1][20]R02[2][8]   [2]    
+Raw:    2.5  [4]
+Decoded: R02             2.5  
+Sent to UDP1: TS|ABC|       2.5 |R|
+Raw: [1][20]R02[2][8] 
+Raw:   [2]       2.6  
+Raw: [4]
+Decoded: R02             2.6  
+Sent to UDP1: TS|ABC|       2.6 |R|
+Raw: [1][20]R02[2]
+Raw: [8]   [2]       2.7
+Raw:   [4]
+Decoded: R02             2.7  
+Sent to UDP1: TS|ABC|       2.7 |R|
+Raw: [1][20]
+Raw: R02[2][8]   [2]      
+Raw:  2.8  [4]
+Decoded: R02             2.8  
+Sent to UDP1: TS|ABC|       2.8 |R|
+Raw: [1][20]R02[2][8]   [2]    
+Raw:    2.9  [4]
+Decoded: R02             2.9  
+Sent to UDP1: TS|ABC|       2.9 |R|
+Raw: [1][20]R02[2][8]  
+Raw:  [2]       3.0  [4]
+Decoded: R02             3.0  
+Sent to UDP1: TS|ABC|       3.0 |R|
+Raw: [1][20]R02
+Raw: [2][8]   [2]       3.1
+Raw:   [4]
+Decoded: R02             3.1  
+Sent to UDP1: TS|ABC|       3.1 |R|
+Raw: [1]
+Raw: [20]R02[2][8]   [2]      
+Raw:  3.2  [4]
+Decoded: R02             3.2  
+Sent to UDP1: TS|ABC|       3.2 |R|
+Raw: [1][20]R02[2][8]   [2]  
+Raw:      3.3  [4]
+Decoded: R02             3.3  
+Sent to UDP1: TS|ABC|       3.3 |R|
+Raw: [1][20]R02[2][8]  
+Raw:  [2]       3.4  [4]
+Decoded: R02             3.4  
+Sent to UDP1: TS|ABC|       3.4 |R|
+Raw: [1][20]R02
+Raw: [2][8]   [2]       3.5
+Raw:   [4]
+Decoded: R02             3.5  
+Sent to UDP1: TS|ABC|       3.5 |R|
+Raw: [1]
+Raw: [20]R02[2][8]   [2]     
+Raw:   3.6  [4]
+Decoded: R02             3.6  
+Sent to UDP1: TS|ABC|       3.6 |R|
+Raw: [1][20]R02[2][8]   [2]
+Raw:        3.7  [4]
+Decoded: R02             3.7  
+Sent to UDP1: TS|ABC|       3.7 |R|
+Raw: [1][20]R02[2][8]  
+Raw:  [2]       3.8  [4]
+Decoded: R02             3.8  
+Sent to UDP1: TS|ABC|       3.8 |R|
+Raw: [1][20]R02[2]
+Raw: [8]   [2]       3.9
+Raw:   [4]
+Decoded: R02             3.9  
+Sent to UDP1: TS|ABC|       3.9 |R|
+Raw: [1]
+Raw: [20]R02[2][8]   [2]     
+Raw:   4.0  [4]
+Decoded: R02             4.0  
+Sent to UDP1: TS|ABC|       4.0 |R|
+Raw: [1][20]R02[2][8]   [2]
+Raw:        4.1  [4]
+Decoded: R02             4.1  
+Sent to UDP1: TS|ABC|       4.1 |R|
+Raw: [1][20]R02[2][8]  
+Raw:  [2]       4.2  [4]
+Decoded: R02             4.2  
+Sent to UDP1: TS|ABC|       4.2 |R|
+Raw: [1][20]R02
+Raw: [2][8]   [2]       4.
+Raw: 3  [4]
+Decoded: R02             4.3  
+Sent to UDP1: TS|ABC|       4.3 |R|
+Raw: [1]
+Raw: [20]R02[2][8]   [2]     
+Raw:   4.4  [4]
+Decoded: R02             4.4  
+Sent to UDP1: TS|ABC|       4.4 |R|
+Raw: [1][20]R02[2][8]   [2]  
+Raw:      4.5  [4]
+Decoded: R02             4.5  
+Sent to UDP1: TS|ABC|       4.5 |R|
+Raw: [1][20]R02[2][8]  
+Raw:  [2]       4.6  [4]
+Decoded: R02             4.6  
+Sent to UDP1: TS|ABC|       4.6 |R|
+Raw: [1][20]R02[2][8]
+Raw:    [2]       4.7  
+Raw: [4]
+Decoded: R02             4.7  
+Sent to UDP1: TS|ABC|       4.7 |R|
+Raw: [1]
+Raw: [20]R02[2][8]   [2]      
+Raw:  4.8  [4]
+Decoded: R02             4.8  
+Sent to UDP1: TS|ABC|       4.8 |R|
+Raw: [1][20]R02[2][8]   [2] 
+Raw:       4.9  [4]
+Decoded: R02             4.9  
+Sent to UDP1: TS|ABC|       4.9 |R|
+Raw: [1][20]R02[2][8]  
+Raw:  [2]       5.0  [4]
+Decoded: R02             5.0  
+Sent to UDP1: TS|ABC|       5.0 |R|
+Raw: [1][20]R02[2][8]
+Raw:    [2]       5.1 
+Raw:  [4]
+Decoded: R02             5.1  
+Sent to UDP1: TS|ABC|       5.1 |R|
+Raw: [1]
+Raw: [20]R02[2][8]   [2]      
+Raw:  5.2  [4]
+Decoded: R02             5.2  
+Sent to UDP1: TS|ABC|       5.2 |R|
+Raw: [1][20]R02[2][8]   [2] 
+Raw:       5.3  [4]
+Decoded: R02             5.3  
+Sent to UDP1: TS|ABC|       5.3 |R|
+Raw: [1][20]R02[2][8]  
+Raw:  [2]       5.4  [4]
+Decoded: R02             5.4  
+Sent to UDP1: TS|ABC|       5.4 |R|
+Raw: [1][20]R02
+Raw: [2][8]   [2]       5.
+Raw: 5  [4]
+Decoded: R02             5.5  
+Sent to UDP1: TS|ABC|       5.5 |R|
+Raw: [1]
+Raw: [20]R02[2][8]   [2]      
+Raw:  5.6  [4]
+Decoded: R02             5.6  
+Sent to UDP1: TS|ABC|       5.6 |R|
+Raw: [1][20]R02[2][8]   [2] 
+Raw:       5.7  [4]
+Decoded: R02             5.7  
+Sent to UDP1: TS|ABC|       5.7 |R|
+Raw: [1][20]R02[2][8]   [2]
+Raw:        5.8  [4]
+Decoded: R02             5.8  
+Sent to UDP1: TS|ABC|       5.8 |R|
+Raw: [1][20]R0
+Raw: 2[2][8]   [2]       5.
+Raw: 9  [4]
+Decoded: R02             5.9  
+Sent to UDP1: TS|ABC|       5.9 |R|
+Raw: [1]
+Raw: [20]R02[2][8]   [2]      
+Raw:  6.0  [4]
+Decoded: R02             6.0  
+Sent to UDP1: TS|ABC|       6.0 |R|
+Raw: [1][20]R02[2][8]   [2]  
+Raw:      6.1  [4]
+Decoded: R02             6.1  
+Sent to UDP1: TS|ABC|       6.1 |R|
+Raw: [1][20]R02[2][8] 
+Raw:   [2]       6.2  [4]
+Decoded: R02             6.2  
+Sent to UDP1: TS|ABC|       6.2 |R|
+Raw: [1][20]R0
+Raw: 2[2][8]   [2]       6
+Raw: .3  [4]
+Decoded: R02             6.3  
+Sent to UDP1: TS|ABC|       6.3 |R|
+Raw: [1][20]R02[2][8]   [2]     
+Raw:   6.4  [4]
+Decoded: R02             6.4  
+Sent to UDP1: TS|ABC|       6.4 |R|
+Raw: [1][20]R02[2][8]   [2]  
+Raw:      6.5  [4]
+Decoded: R02             6.5  
+Sent to UDP1: TS|ABC|       6.5 |R|
+Raw: [1][20]R02[2][8]
+Raw:    [2]       6.6 
+Raw:  [4]
+Decoded: R02             6.6  
+Sent to UDP1: TS|ABC|       6.6 |R|
+Raw: [1][20]R02
+Raw: [2][8]   [2]       6.
+Raw: 7  [4]
+Decoded: R02             6.7  
+Sent to UDP1: TS|ABC|       6.7 |R|
+Raw: [1]
+Raw: [20]R02[2][8]   [2]     
+Raw:   6.8  [4]
+Decoded: R02             6.8  
+Sent to UDP1: TS|ABC|       6.8 |R|
+Raw: [1][20]R02[2][8]   [2] 
+Raw:       6.9  [4]
+Decoded: R02             6.9  
+Sent to UDP1: TS|ABC|       6.9 |R|
+Raw: [1][20]R02[2][8]  
+Raw:  [2]       7.0  [4]
+Decoded: R02             7.0  
+Sent to UDP1: TS|ABC|       7.0 |R|
+Raw: [1][20]R02
+Raw: [2][8]   [2]       7.
+Raw: 1  [4]
+Decoded: R02             7.1  
+Sent to UDP1: TS|ABC|       7.1 |R|
+Raw: [1][20]R02[2][8]   [2]     
+Raw:   7.2  [4]
+Decoded: R02             7.2  
+Sent to UDP1: TS|ABC|       7.2 |R|
+Raw: [1][20]R02[2][8]   [2]  
+Raw:      7.3  [4]
+Decoded: R02             7.3  
+Sent to UDP1: TS|ABC|       7.3 |R|
+Raw: [1][20]R02[2][8]   [2]
+Raw:        7.4  [4]
+Decoded: R02             7.4  
+Sent to UDP1: TS|ABC|       7.4 |R|
+Raw: [1][20]R02
+Raw: [2][8]   [2]       7.
+Raw: 5  [4]
+Decoded: R02             7.5  
+Sent to UDP1: TS|ABC|       7.5 |R|
+Raw: [1]
+Raw: [20]R02[2][8]   [2]     
+Raw:   7.6  [4]
+Decoded: R02             7.6  
+Sent to UDP1: TS|ABC|       7.6 |R|
+Raw: [1][20]R02[2][8]   [2] 
+Raw:       7.7  [4]
+Decoded: R02             7.7  
+Sent to UDP1: TS|ABC|       7.7 |R|
+Raw: [1][20]R02[2][8]
+Raw:    [2]       7.8  
+Raw: [4]
+Decoded: R02             7.8  
+Sent to UDP1: TS|ABC|       7.8 |R|
+Raw: [1]
+Raw: [20]R02[2][8]   [2]     
+Raw:   7.9  [4]
+Decoded: R02             7.9  
+Sent to UDP1: TS|ABC|       7.9 |R|
+Raw: [1][20]R02[2][8]   [2]     
+Raw:   8.0  [4]
+Decoded: R02             8.0  
+Sent to UDP1: TS|ABC|       8.0 |R|
+Raw: [1][20]R02[2][8]   
+Raw: [2]       8.1  [4]
+Decoded: R02             8.1  
+Sent to UDP1: TS|ABC|       8.1 |R|
+Raw: [1][20]R02[2][8] 
+Raw:   [2]       8.2  
+Raw: [4]
+Decoded: R02             8.2  
+Sent to UDP1: TS|ABC|       8.2 |R|
+Raw: [1][20]R02
+Raw: [2][8]   [2]       8.
+Raw: 3  [4]
+Decoded: R02             8.3  
+Sent to UDP1: TS|ABC|       8.3 |R|
+Raw: [1][20]R02[2][8]   [2]    
+Raw:    8.4  [4]
+Decoded: R02             8.4  
+Sent to UDP1: TS|ABC|       8.4 |R|
+Raw: [1][20]R02[2][8]   [2] 
+Raw:       8.5  [4]
+Decoded: R02             8.5  
+Sent to UDP1: TS|ABC|       8.5 |R|
+Raw: [1][20]R02[2][8] 
+Raw:   [2]       8.6  [4]
+Decoded: R02             8.6  
+Sent to UDP1: TS|ABC|       8.6 |R|
+Raw: [1][20]R02[2]
+Raw: [8]   [2]       8.7
+Raw:   [4]
+Decoded: R02             8.7  
+Sent to UDP1: TS|ABC|       8.7 |R|
+Raw: [1][20]R
+Raw: 02[2][8]   [2]       
+Raw: 8.8  [4]
+Decoded: R02             8.8  
+Sent to UDP1: TS|ABC|       8.8 |R|
+Raw: [1][20]R02[2][8]   [2] 
+Raw:       8.9  [4]
+Decoded: R02             8.9  
+Sent to UDP1: TS|ABC|       8.9 |R|
+Raw: [1][20]R02[2][8] 
+Raw:   [2]       9.0  [4]
+Decoded: R02             9.0  
+Sent to UDP1: TS|ABC|       9.0 |R|
+Raw: [1][20]R0
+Raw: 2[2][8]   [2]       9
+Raw: .1  [4]
+Decoded: R02             9.1  
+Sent to UDP1: TS|ABC|       9.1 |R|
+Raw: [1]
+Raw: [20]R02[2][8]   [2]     
+Raw:   9.2  [4]
+Decoded: R02             9.2  
+Sent to UDP1: TS|ABC|       9.2 |R|
+Raw: [1][20]R02[2][8]   [2]
+Raw:        9.3  [4]
+Decoded: R02             9.3  
+Sent to UDP1: TS|ABC|       9.3 |R|
+Raw: [1][20]R02[2]
+Raw: [8]   [2]       9.4 
+Raw:  [4]
+Decoded: R02             9.4  
+Sent to UDP1: TS|ABC|       9.4 |R|
+Raw: [1][20]R0
+Raw: 2[2][8]   [2]       9.
+Raw: 5  [4]
+Decoded: R02             9.5  
+Sent to UDP1: TS|ABC|       9.5 |R|
+Raw: [1][20]R02[2][8]   [2]    
+Raw:    9.6  [4]
+Decoded: R02             9.6  
+Sent to UDP1: TS|ABC|       9.6 |R|
+Raw: [1][20]R02[2][8]   [2] 
+Raw:       9.7  [4]
+Decoded: R02             9.7  
+Sent to UDP1: TS|ABC|       9.7 |R|
+Raw: [1][20]R02[2][8] 
+Raw:   [2]       9.8  
+Raw: [4]
+Decoded: R02             9.8  
+Sent to UDP1: TS|ABC|       9.8 |R|
+Raw: [1][20]R0
+Raw: 2[2][8]   [2]       9.
+Raw: 9  [4]
+Decoded: R02             9.9  
+Sent to UDP1: TS|ABC|       9.9 |R|
+Raw: [1][20]R02[2][8]   [2]   
+Raw:    10.0  [4]
+Decoded: R02            10.0  
+Sent to UDP1: TS|ABC|      10.0 |R|
+Raw: [1][20]R02[2][8]   [2]   
+Raw:    10.1  [4]
+Decoded: R02            10.1  
+Sent to UDP1: TS|ABC|      10.1 |R|
+Raw: [1][20]R02[2][8] 
+Raw:   [2]      10.2  [4]
+Decoded: R02            10.2  
+Sent to UDP1: TS|ABC|      10.2 |R|
+Raw: [1][20]R0
+Raw: 2[2][8]   [2]      10
+Raw: .3  [4]
+Decoded: R02            10.3  
+Sent to UDP1: TS|ABC|      10.3 |R|
+Raw: [1][20]R02[2][8]   [2]     
+Raw:  10.4  [4]
+Decoded: R02            10.4  
+Sent to UDP1: TS|ABC|      10.4 |R|
+Raw: [1][20]R02[2][8]   
+Raw: [2]      10.5  [4]
+Decoded: R02            10.5  
+Sent to UDP1: TS|ABC|      10.5 |R|
+Raw: [1][20]R02[2][8] 
+Raw:   [2]      10.6  [4]
+Decoded: R02            10.6  
+Sent to UDP1: TS|ABC|      10.6 |R|
+Raw: [1][20]R02
+Raw: [2][8]   [2]      10.7
+Raw:   [4]
+Decoded: R02            10.7  
+Sent to UDP1: TS|ABC|      10.7 |R|
+Raw: [1][20]R02[2][8]   [2]    
+Raw:   10.8  [4]
+Decoded: R02            10.8  
+Sent to UDP1: TS|ABC|      10.8 |R|
+Raw: [1][20]R02[2][8]   
+Raw: [2]      10.9  [4]
+Decoded: R02            10.9  
+Sent to UDP1: TS|ABC|      10.9 |R|
+Raw: [1][20]R02[2][8] 
+Raw:   [2]      11.0  
+Raw: [4]
+Decoded: R02            11.0  
+Sent to UDP1: TS|ABC|      11.0 |R|
+Raw: [1][20]R02[2][8]   [2]     
+Raw:  11.1  [4]
+Decoded: R02            11.1  
+Sent to UDP1: TS|ABC|      11.1 |R|
+Raw: [1][20]R02[2][8]   [2]    
+Raw:   11.2  [4]
+Decoded: R02            11.2  
+Sent to UDP1: TS|ABC|      11.2 |R|
+Raw: [1][20]R02[2][8]   [2] 
+Raw:      11.3  [4]
+Decoded: R02            11.3  
+Sent to UDP1: TS|ABC|      11.3 |R|
+Raw: [1][20]R02[2][8] 
+Raw:   [2]      11.4  
+Raw: [4]
+Decoded: R02            11.4  
+Sent to UDP1: TS|ABC|      11.4 |R|
+Raw: [1][20]R0
+Raw: 2[2][8]   [2]      11.
+Raw: 5  [4]
+Decoded: R02            11.5  
+Sent to UDP1: TS|ABC|      11.5 |R|
+Raw: [1][20]R02[2][8]   [2]   
+Raw:    11.6  [4]
+Decoded: R02            11.6  
+Sent to UDP1: TS|ABC|      11.6 |R|
+Raw: [1][20]R02[2][8]   [2]
+Raw:       11.7  [4]
+Decoded: R02            11.7  
+Sent to UDP1: TS|ABC|      11.7 |R|
+Raw: [1][20]R02[2][8] 
+Raw:   [2]      11.8  
+Raw: [4]
+Decoded: R02            11.8  
+Sent to UDP1: TS|ABC|      11.8 |R|
+Raw: [1][20]R
+Raw: 02[2][8]   [2]      11
+Raw: .9  [4]
+Decoded: R02            11.9  
+Sent to UDP1: TS|ABC|      11.9 |R|
+Raw: [1][20]R02[2][8]   [2]     
+Raw:  12.0  [4]
+Decoded: R02            12.0  
+Sent to UDP1: TS|ABC|      12.0 |R|
+Raw: [1][20]R02[2][8]   [2] 
+Raw:      12.1  [4]
+Decoded: R02            12.1  
+Sent to UDP1: TS|ABC|      12.1 |R|
+Raw: [1][20]R02[2][8]
+Raw:    [2]      12.2  
+Raw: [4]
+Decoded: R02            12.2  
+Sent to UDP1: TS|ABC|      12.2 |R|
+Raw: [1][20]R0
+Raw: 2[2][8]   [2]      12
+Raw: .3  [4]
+Decoded: R02            12.3  
+Sent to UDP1: TS|ABC|      12.3 |R|
+Raw: [1][20]R02[2][8]   [2]     
+Raw:  12.4  [4]
+Decoded: R02            12.4  
+Sent to UDP1: TS|ABC|      12.4 |R|
+Raw: [1][20]R02[2][8]   [2]
+Raw:       12.5  [4]
+Decoded: R02            12.5  
+Sent to UDP1: TS|ABC|      12.5 |R|
+Raw: [1][20]R02[2][8]
+Raw:    [2]      12.6 
+Raw:  [4]
+Decoded: R02            12.6  
+Sent to UDP1: TS|ABC|      12.6 |R|
+Raw: [1][20]R0
+Raw: 2[2][8]   [2]      12
+Raw: .7  [4]
+Decoded: R02            12.7  
+Sent to UDP1: TS|ABC|      12.7 |R|
+Raw: [1][20]R02[2][8]   [2]    
+Raw:   12.8  [4]
+Decoded: R02            12.8  
+Sent to UDP1: TS|ABC|      12.8 |R|
+Raw: [1][20]R02[2][8]   [2] 
+Raw:      12.9  [4]
+Decoded: R02            12.9  
+Sent to UDP1: TS|ABC|      12.9 |R|
+Raw: [1][20]R02[2][8]
+Raw:    [2]      13.0 
+Raw:  [4]
+Decoded: R02            13.0  
+Sent to UDP1: TS|ABC|      13.0 |R|
+Raw: [1][20]R0
+Raw: 2[2][8]   [2]      13
+Raw: .1  [4]
+Decoded: R02            13.1  
+Sent to UDP1: TS|ABC|      13.1 |R|
+Raw: [1][20]R02[2][8]   [2]    
+Raw:   13.2  [4]
+Decoded: R02            13.2  
+Sent to UDP1: TS|ABC|      13.2 |R|
+Raw: [1][20]R02[2][8]   [2]
+Raw:       13.3  [4]
+Decoded: R02            13.3  
+Sent to UDP1: TS|ABC|      13.3 |R|
+Raw: [1][20]R02[2][8] 
+Raw:   [2]      13.4  
+Raw: [4]
+Decoded: R02            13.4  
+Sent to UDP1: TS|ABC|      13.4 |R|
+Raw: [1][20]R
+Raw: 02[2][8]   [2]      1
+Raw: 3.5  [4]
+Decoded: R02            13.5  
+Sent to UDP1: TS|ABC|      13.5 |R|
+Raw: [1][20]R02[2][8]   [2]    
+Raw:   13.6  [4]
+Decoded: R02            13.6  
+Sent to UDP1: TS|ABC|      13.6 |R|
+Raw: [1][20]R02[2][8]   
+Raw: [2]      13.7  [4]
+Decoded: R02            13.7  
+Sent to UDP1: TS|ABC|      13.7 |R|
+Raw: [1][20]R02[2][8] 
+Raw:   [2]      13.8  
+Raw: [4]
+Decoded: R02            13.8  
+Sent to UDP1: TS|ABC|      13.8 |R|
+Raw: [1][20]
+Raw: R02[2][8]   [2]      1
+Raw: 3.9  [4]
+Decoded: R02            13.9  
+Sent to UDP1: TS|ABC|      13.9 |R|
+Raw: [1][20]R02[2][8]   [2]    
+Raw:   14.0  [4]
+Decoded: R02            14.0  
+Sent to UDP1: TS|ABC|      14.0 |R|
+Raw: [1][20]R02[2][8]   
+Raw: [2]      14.1  [4]
+Decoded: R02            14.1  
+Sent to UDP1: TS|ABC|      14.1 |R|
+Raw: [1][20]R02[2][8]
+Raw:    [2]      14.2  
+Raw: [4]
+Decoded: R02            14.2  
+Sent to UDP1: TS|ABC|      14.2 |R|
+Raw: [1][20]R02[2][8]   [2]    
+Raw:   14.3  [4]
+Decoded: R02            14.3  
+Sent to UDP1: TS|ABC|      14.3 |R|
+Raw: [1][20]R02[2][8]   [2]    
+Raw:   14.4  [4]
+Decoded: R02            14.4  
+Sent to UDP1: TS|ABC|      14.4 |R|
+Raw: [1][20]R02[2][8]   [2]
+Raw:       14.5  [4]
+Decoded: R02            14.5  
+Sent to UDP1: TS|ABC|      14.5 |R|
+Raw: [1][20]R02[2][8]
+Raw:    [2]      14.6 
+Raw:  [4]
+Decoded: R02            14.6  
+Sent to UDP1: TS|ABC|      14.6 |R|
+Raw: [1][20]R0
+Raw: 2[2][8]   [2]      14
+Raw: .7  [4]
+Decoded: R02            14.7  
+Sent to UDP1: TS|ABC|      14.7 |R|
+Raw: [1][20]R02[2][8]   [2]    
+Raw:   14.8  [4]
+Decoded: R02            14.8  
+Sent to UDP1: TS|ABC|      14.8 |R|
+Raw: [1][20]R02[2][8]  
+Raw:  [2]      14.9  [4]
+Decoded: R02            14.9  
+Sent to UDP1: TS|ABC|      14.9 |R|
+Raw: [1][20]R02[2][8]
+Raw:    [2]      15.0  
+Raw: [4]
+Decoded: R02            15.0  
+Sent to UDP1: TS|ABC|      15.0 |R|
+Raw: [1][20]
+Raw: R02[2][8]   [2]      
+Raw: 15.1  [4]
+Decoded: R02            15.1  
+Sent to UDP1: TS|ABC|      15.1 |R|
+Raw: [1][20]R02[2][8]   [2]    
+Raw:   15.2  [4]
+Decoded: R02            15.2  
+Sent to UDP1: TS|ABC|      15.2 |R|
+Raw: [1][20]R02[2][8]   
+Raw: [2]      15.3  [4]
+Decoded: R02            15.3  
+Sent to UDP1: TS|ABC|      15.3 |R|
+Raw: [1][20]R02[2][8]
+Raw:    [2]      15.4  
+Raw: [4]
+Decoded: R02            15.4  
+Sent to UDP1: TS|ABC|      15.4 |R|
+Raw: [1][20]R
+Raw: 02[2][8]   [2]      15
+Raw: .5  [4]
+Decoded: R02            15.5  
+Sent to UDP1: TS|ABC|      15.5 |R|
+Raw: [1][20]R02[2][8]   [2]    
+Raw:   15.6  [4]
+Decoded: R02            15.6  
+Sent to UDP1: TS|ABC|      15.6 |R|
+Raw: [1][20]R02[2][8]   [2]
+Raw:       15.7  [4]
+Decoded: R02            15.7  
+Sent to UDP1: TS|ABC|      15.7 |R|
+Raw: [1][20]R02[2][8]
+Raw:    [2]      15.8  
+Raw: [4]
+Decoded: R02            15.8  
+Sent to UDP1: TS|ABC|      15.8 |R|
+Raw: [1][20]
+Raw: R02[2][8]   [2]      1
+Raw: 5.9  [4]
+Decoded: R02            15.9  
+Sent to UDP1: TS|ABC|      15.9 |R|
+Raw: [1][20]R02[2][8]   [2]    
+Raw:   16.0  [4]
+Decoded: R02            16.0  
+Sent to UDP1: TS|ABC|      16.0 |R|
+Raw: [1][20]R02[2][8]   [2]
+Raw:       16.1  [4]
+Decoded: R02            16.1  
+Sent to UDP1: TS|ABC|      16.1 |R|
+Raw: [1][20]R02[2][8]
+Raw:    [2]      16.2  
+Raw: [4]
+Decoded: R02            16.2  
+Sent to UDP1: TS|ABC|      16.2 |R|
+Raw: [1][20]R
+Raw: 02[2][8]   [2]      1
+Raw: 6.3  [4]
+Decoded: R02            16.3  
+Sent to UDP1: TS|ABC|      16.3 |R|
+Raw: [1][20]R02[2][8]   [2]   
+Raw:    16.4  [4]
+Decoded: R02            16.4  
+Sent to UDP1: TS|ABC|      16.4 |R|
+Raw: [1][20]R02[2][8]   
+Raw: [2]      16.5  [4]
+Decoded: R02            16.5  
+Sent to UDP1: TS|ABC|      16.5 |R|
+Raw: [1][20]R02[2][8]
+Raw:    [2]      16.6  
+Raw: [4]
+Decoded: R02            16.6  
+Sent to UDP1: TS|ABC|      16.6 |R|
+Raw: [1][20]R
+Raw: 02[2][8]   [2]      1
+Raw: 6.7  [4]
+Decoded: R02            16.7  
+Sent to UDP1: TS|ABC|      16.7 |R|
+Raw: [1][20]R02[2][8]   [2]   
+Raw:    16.8  [4]
+Decoded: R02            16.8  
+Sent to UDP1: TS|ABC|      16.8 |R|
+Raw: [1][20]R02[2][8]   
+Raw: [2]      16.9  [4]
+Decoded: R02            16.9  
+Sent to UDP1: TS|ABC|      16.9 |R|
+Raw: [1][20]R02[2][8]
+Raw:    [2]      17.0 
+Raw:  [4]
+Decoded: R02            17.0  
+Sent to UDP1: TS|ABC|      17.0 |R|
+Raw: [1][20]R
+Raw: 02[2][8]   [2]      17
+Raw: .1  [4]
+Decoded: R02            17.1  
+Sent to UDP1: TS|ABC|      17.1 |R|
+Raw: [1][20]R02[2][8]   [2]   
+Raw:    17.2  [4]
+Decoded: R02            17.2  
+Sent to UDP1: TS|ABC|      17.2 |R|
+Raw: [1][20]R02[2][8]  
+Raw:  [2]      17.3  [4]
+Decoded: R02            17.3  
+Sent to UDP1: TS|ABC|      17.3 |R|
+Raw: [1][20]R02[2]
+Raw: [8]   [2]      17.4
+Raw:   [4]
+Decoded: R02            17.4  
+Sent to UDP1: TS|ABC|      17.4 |R|
+Raw: [1][20]R
+Raw: 02[2][8]   [2]      17
+Raw: .5  [4]
+Decoded: R02            17.5  
+Sent to UDP1: TS|ABC|      17.5 |R|
+Raw: [1][20]R02[2][8]   [2]  
+Raw:     17.6  [4]
+Decoded: R02            17.6  
+Sent to UDP1: TS|ABC|      17.6 |R|
+Raw: [1][20]R02[2][8]   [2]
+Raw:       17.7  [4]
+Decoded: R02            17.7  
+Sent to UDP1: TS|ABC|      17.7 |R|
+Raw: [1][20]R02[2][8]
+Raw:    [2]      17.8 
+Raw:  [4]
+Decoded: R02            17.8  
+Sent to UDP1: TS|ABC|      17.8 |R|
+Raw: [1][20]R
+Raw: 02[2][8]   [2]      1
+Raw: 7.9  [4]
+Decoded: R02            17.9  
+Sent to UDP1: TS|ABC|      17.9 |R|
+Raw: [1][20]R02[2][8]   [2]    
+Raw:   18.0  [4]
+Decoded: R02            18.0  
+Sent to UDP1: TS|ABC|      18.0 |R|
+Raw: [1][20]R02[2][8]   [2] 
+Raw:      18.1  [4]
+Decoded: R02            18.1  
+Sent to UDP1: TS|ABC|      18.1 |R|
+Raw: [1][20]R02
+Raw: [2][8]   [2]      18.2
+Raw:   [4]
+Decoded: R02            18.2  
+Sent to UDP1: TS|ABC|      18.2 |R|
+Raw: [1][20]R
+Raw: 02[2][8]   [2]      1
+Raw: 8.3  [4]
+Decoded: R02            18.3  
+Sent to UDP1: TS|ABC|      18.3 |R|
+Raw: [1][20]R02[2][8]   [2]    
+Raw:   18.4  [4]
+Decoded: R02            18.4  
+Sent to UDP1: TS|ABC|      18.4 |R|
+Raw: [1][20]R02[2][8]   
+Raw: [2]      18.5  [4]
+Decoded: R02            18.5  
+Sent to UDP1: TS|ABC|      18.5 |R|
+Raw: [1][20]R02[2]
+Raw: [8]   [2]      18.6
+Raw:   [4]
+Decoded: R02            18.6  
+Sent to UDP1: TS|ABC|      18.6 |R|
+Raw: [1][20]
+Raw: R02[2][8]   [2]      
+Raw: 18.7  [4]
+Decoded: R02            18.7  
+Sent to UDP1: TS|ABC|      18.7 |R|
+Raw: [1][20]R02[2][8]   [2]    
+Raw:   18.8  [4]
+Decoded: R02            18.8  
+Sent to UDP1: TS|ABC|      18.8 |R|
+Raw: [1][20]R02[2][8]  
+Raw:  [2]      18.9  [4]
+Decoded: R02            18.9  
+Sent to UDP1: TS|ABC|      18.9 |R|
+Raw: [1][20]R02[2]
+Raw: [8]   [2]      19.0 
+Raw:  [4]
+Decoded: R02            19.0  
+Sent to UDP1: TS|ABC|      19.0 |R|
+Raw: [1][20]
+Raw: R02[2][8]   [2]      1
+Raw: 9.1  [4]
+Decoded: R02            19.1  
+Sent to UDP1: TS|ABC|      19.1 |R|
+Raw: [1][20]R02[2][8]   [2]  
+Raw:     19.2  [4]
+Decoded: R02            19.2  
+Sent to UDP1: TS|ABC|      19.2 |R|
+Raw: [1][20]R02[2][8]   [2]
+Raw:       19.3  [4]
+Decoded: R02            19.3  
+Sent to UDP1: TS|ABC|      19.3 |R|
+Raw: [1][20]R02[2][8]   [2]   
+Raw:    19.4  [4]
+Decoded: R02            19.4  
+Sent to UDP1: TS|ABC|      19.4 |R|
+Raw: [1]
+Raw: [20]R02[2][8]   [2]     
+Raw:  19.5  [4]
+Decoded: R02            19.5  
+Sent to UDP1: TS|ABC|      19.5 |R|
+Raw: [1][20]R02[2][8]   [2] 
+Raw:      19.6  [4]
+Decoded: R02            19.6  
+Sent to UDP1: TS|ABC|      19.6 |R|
+Raw: [1][20]R02[2][8]   
+Raw: [2]      19.7  [4]
+Decoded: R02            19.7  
+Sent to UDP1: TS|ABC|      19.7 |R|
+Raw: [1][20]R02[2][8]
+Raw:    [2]      19.8 
+Raw:  [4]
+Decoded: R02            19.8  
+Sent to UDP1: TS|ABC|      19.8 |R|
+Raw: [1][20]R
+Raw: 02[2][8]   [2]      1
+Raw: 9.9  [4]
+Decoded: R02            19.9  
+Sent to UDP1: TS|ABC|      19.9 |R|
+Raw: [1][20]R02[2][8]   [2]   
+Raw:    20.0  [4]
+Decoded: R02            20.0  
+Sent to UDP1: TS|ABC|      20.0 |R|
+Raw: [1][20]R02[2][8]   
+Raw: [2]      20.1  [4]
+Decoded: R02            20.1  
+Sent to UDP1: TS|ABC|      20.1 |R|
+Raw: [1][20]R02[2][8]
+Raw:    [2]      20.2 
+Raw:  [4]
+Decoded: R02            20.2  
+Sent to UDP1: TS|ABC|      20.2 |R|
+Raw: [1][20]R
+Raw: 02[2][8]   [2]      2
+Raw: 0.3  [4]
+Decoded: R02            20.3  
+Sent to UDP1: TS|ABC|      20.3 |R|
+Raw: [1][20]R02[2][8]   [2]   
+Raw:    20.4  [4]
+Decoded: R02            20.4  
+Sent to UDP1: TS|ABC|      20.4 |R|
+Raw: [1][20]R02[2][8]  
+Raw:  [2]      20.5  [4]
+Decoded: R02            20.5  
+Sent to UDP1: TS|ABC|      20.5 |R|
+Raw: [1][20]R02[2][8]   [2] 
+Raw:      20.6  [4]
+Decoded: R02            20.6  
+Sent to UDP1: TS|ABC|      20.6 |R|
+Raw: [1][20]R02
+Raw: [2][8]   [2]      20.
+Raw: 7  [4]
+Decoded: R02            20.7  
+Sent to UDP1: TS|ABC|      20.7 |R|
+Raw: [1][20]R02[2][8]   [2]     
+Raw:  20.8  [4]
+Decoded: R02            20.8  
+Sent to UDP1: TS|ABC|      20.8 |R|
+Raw: [1][20]R02[2][8]  
+Raw:  [2]      20.9  [4]
+Decoded: R02            20.9  
+Sent to UDP1: TS|ABC|      20.9 |R|
+Raw: [1][20]R02[2]
+Raw: [8]   [2]      21.0
+Raw:   [4]
+Decoded: R02            21.0  
+Sent to UDP1: TS|ABC|      21.0 |R|
+Raw: [1][20]R02
+Raw: [2][8]   [2]      21.
+Raw: 1  [4]
+Decoded: R02            21.1  
+Sent to UDP1: TS|ABC|      21.1 |R|
+Raw: [1][20]R02[2][8]   [2] 
+Raw:      21.2  [4]
+Decoded: R02            21.2  
+Sent to UDP1: TS|ABC|      21.2 |R|
+Raw: [1][20]R02[2][8] 
+Raw:   [2]      21.3  [4]
+Decoded: R02            21.3  
+Sent to UDP1: TS|ABC|      21.3 |R|
+Raw: [1][20]R02[2]
+Raw: [8]   [2]      21.4
+Raw:   [4]
+Decoded: R02            21.4  
+Sent to UDP1: TS|ABC|      21.4 |R|
+Raw: [1][20]R
+Raw: 02[2][8]   [2]      2
+Raw: 1.5  [4]
+Decoded: R02            21.5  
+Sent to UDP1: TS|ABC|      21.5 |R|
+Raw: [1][20]R02[2][8]   [2]   
+Raw:    21.6  [4]
+Decoded: R02            21.6  
+Sent to UDP1: TS|ABC|      21.6 |R|
+Raw: [1][20]R02[2][8]  
+Raw:  [2]      21.7  [4]
+Decoded: R02            21.7  
+Sent to UDP1: TS|ABC|      21.7 |R|
+Raw: [1][20]R0
+Raw: 2[2][8]   [2]      21.
+Raw: 8  [4]
+Decoded: R02            21.8  
+Sent to UDP1: TS|ABC|      21.8 |R|
+Raw: [1]
+Raw: [20]R02[2][8]   [2]      
+Raw: 21.9  [4]
+Decoded: R02            21.9  
+Sent to UDP1: TS|ABC|      21.9 |R|
+Raw: [1][20]R02[2][8]   
+Raw: [2]      22.0  [4]
+Decoded: R02            22.0  
+Sent to UDP1: TS|ABC|      22.0 |R|
+Raw: [1][20]R02[2][8]   
+Raw: [2]      22.1  [4]
+Decoded: R02            22.1  
+Sent to UDP1: TS|ABC|      22.1 |R|
+Raw: [1][20]R02[2]
+Raw: [8]   [2]      22.2 
+Raw:  [4]
+Decoded: R02            22.2  
+Sent to UDP1: TS|ABC|      22.2 |R|
+Raw: [1][20]
+Raw: R02[2][8]   [2]      2
+Raw: 2.3  [4]
+Decoded: R02            22.3  
+Sent to UDP1: TS|ABC|      22.3 |R|
+Raw: [1][20]R02[2][8]   [2]   
+Raw:    22.4  [4]
+Decoded: R02            22.4  
+Sent to UDP1: TS|ABC|      22.4 |R|
+Raw: [1][20]R02[2][8]   
+Raw: [2]      22.5  [4]
+Decoded: R02            22.5  
+Sent to UDP1: TS|ABC|      22.5 |R|
+Raw: [1][20]R02
+Raw: [2][8]   [2]      22.6
+Raw:   [4]
+Decoded: R02            22.6  
+Sent to UDP1: TS|ABC|      22.6 |R|
+Raw: [1][20]R0
+Raw: 2[2][8]   [2]      22.
+Raw: 7  [4]
+Decoded: R02            22.7  
+Sent to UDP1: TS|ABC|      22.7 |R|
+Raw: [1][20]R02[2][8]   [2] 
+Raw:      22.8  [4]
+Decoded: R02            22.8  
+Sent to UDP1: TS|ABC|      22.8 |R|
+Raw: [1][20]R02[2][8]   
+Raw: [2]      22.9  [4]
+Decoded: R02            22.9  
+Sent to UDP1: TS|ABC|      22.9 |R|
+Raw: [1][20]R02[2]
+Raw: [8]   [2]      23.0
+Raw:   [4]
+Decoded: R02            23.0  
+Sent to UDP1: TS|ABC|      23.0 |R|
+Raw: [1][20]
+Raw: R02[2][8]   [2]      
+Raw: 23.1  [4]
+Decoded: R02            23.1  
+Sent to UDP1: TS|ABC|      23.1 |R|
+Raw: [1][20]R02[2][8]   [2] 
+Raw:      23.2  [4]
+Decoded: R02            23.2  
+Sent to UDP1: TS|ABC|      23.2 |R|
+Raw: [1][20]R02[2][8]  
+Raw:  [2]      23.3  [4]
+Decoded: R02            23.3  
+Sent to UDP1: TS|ABC|      23.3 |R|
+Raw: [1][20]R02[2]
+Raw: [8]   [2]      23.4
+Raw:   [4]
+Decoded: R02            23.4  
+Sent to UDP1: TS|ABC|      23.4 |R|
+Raw: [1][20]
+Raw: R02[2][8]   [2]      
+Raw: 23.5  [4]
+Decoded: R02            23.5  
+Sent to UDP1: TS|ABC|      23.5 |R|
+Raw: [1][20]R02[2][8]   [2] 
+Raw:      23.6  [4]
+Decoded: R02            23.6  
+Sent to UDP1: TS|ABC|      23.6 |R|
+Raw: [1][20]R02[2][8] 
+Raw:   [2]      23.7  
+Raw: [4]
+Decoded: R02            23.7  
+Sent to UDP1: TS|ABC|      23.7 |R|
+Raw: [1][20]R02
+Raw: [2][8]   [2]      23.8
+Raw:   [4]
+Decoded: R02            23.8  
+Sent to UDP1: TS|ABC|      23.8 |R|
+Raw: [1][20]
+Raw: R02[2][8]   [2]      
+Raw: 23.9  [4]
+Decoded: R02            23.9  
+Sent to UDP1: TS|ABC|      23.9 |R|
+Raw: [1][20]R02[2][8]   
+Raw: [2]      24.0  [4]
+Decoded: R02            24.0  
+Sent to UDP1: TS|ABC|      24.0 |R|
+Raw: [1][20]R02[2][8] 
+Raw:   [2]      24.1  
+Raw: [4]
+Decoded: R02            24.1  
+Sent to UDP1: TS|ABC|      24.1 |R|
+Raw: [1][20]R0
+Raw: 2[2][8]   [2]      24
+Raw: .2  [4]
+Decoded: R02            24.2  
+Sent to UDP1: TS|ABC|      24.2 |R|
+Raw: [1][20]
+Raw: R02[2][8]   [2]      
+Raw: 24.3  [4]
+Decoded: R02            24.3  
+Sent to UDP1: TS|ABC|      24.3 |R|
+Raw: [1][20]R02[2][8]   [2] 
+Raw:      24.4  [4]
+Decoded: R02            24.4  
+Sent to UDP1: TS|ABC|      24.4 |R|
+Raw: [1][20]R02[2][8]  
+Raw:  [2]      24.5  [4]
+Decoded: R02            24.5  
+Sent to UDP1: TS|ABC|      24.5 |R|
+Raw: [1][20]R02[2]
+Raw: [8]   [2]      24.6
+Raw:   [4]
+Decoded: R02            24.6  
+Sent to UDP1: TS|ABC|      24.6 |R|
+Raw: [1]
+Raw: [20]R02[2][8]   [2]      
+Raw: 24.7  [4]
+Decoded: R02            24.7  
+Sent to UDP1: TS|ABC|      24.7 |R|
+Raw: [1][20]R02[2][8]   [2]   
+Raw:    24.8  [4]
+Decoded: R02            24.8  
+Sent to UDP1: TS|ABC|      24.8 |R|
+Raw: [1][20]R02[2][8]  
+Raw:  [2]      24.9  [4]
+Decoded: R02            24.9  
+Sent to UDP1: TS|ABC|      24.9 |R|
+Raw: [1][20]R02
+Raw: [2][8]   [2]      25.0
+Raw:   [4]
+Decoded: R02            25.0  
+Sent to UDP1: TS|ABC|      25.0 |R|
+Raw: [1][20]
+Raw: R02[2][8]   [2]      
+Raw: 25.1  [4]
+Decoded: R02            25.1  
+Sent to UDP1: TS|ABC|      25.1 |R|
+Raw: [1][20]R02[2][8]   [2]  
+Raw:     25.2  [4]
+Decoded: R02            25.2  
+Sent to UDP1: TS|ABC|      25.2 |R|
+Raw: [1][20]R02[2][8] 
+Raw:   [2]      25.3  [4]
+Decoded: R02            25.3  
+Sent to UDP1: TS|ABC|      25.3 |R|
+Raw: [1][20]R02
+Raw: [2][8]   [2]      25.
+Raw: 4  [4]
+Decoded: R02            25.4  
+Sent to UDP1: TS|ABC|      25.4 |R|
+Raw: [1]
+Raw: [20]R02[2][8]   [2]      
+Raw: 25.5  [4]
+Decoded: R02            25.5  
+Sent to UDP1: TS|ABC|      25.5 |R|
+Raw: [1][20]R02[2][8]   [2]
+Raw:       25.6  [4]
+Decoded: R02            25.6  
+Sent to UDP1: TS|ABC|      25.6 |R|
+Raw: [1][20]R02[2][8]   
+Raw: [2]      25.7  [4]
+Decoded: R02            25.7  
+Sent to UDP1: TS|ABC|      25.7 |R|
+Raw: [1][20]R0
+Raw: 2[2][8]   [2]      25
+Raw: .8  [4]
+Decoded: R02            25.8  
+Sent to UDP1: TS|ABC|      25.8 |R|
+Raw: [1][20]R02[2][8]   [2]    
+Raw:   25.9  [4]
+Decoded: R02            25.9  
+Sent to UDP1: TS|ABC|      25.9 |R|
+Raw: [1][20]R02[2][8]   
+Raw: [2]      26.0  [4]
+Decoded: R02            26.0  
+Sent to UDP1: TS|ABC|      26.0 |R|
+Raw: [1][20]R02[2][8]  
+Raw:  [2]      26.1  [4]
+Decoded: R02            26.1  
+Sent to UDP1: TS|ABC|      26.1 |R|
+Raw: [1][20]R02[2]
+Raw: [8]   [2]      26.2
+Raw:   [4]
+Decoded: R02            26.2  
+Sent to UDP1: TS|ABC|      26.2 |R|
+Raw: [1][20]R02[2][8]   [2]    
+Raw:   26.3  [4]
+Decoded: R02            26.3  
+Sent to UDP1: TS|ABC|      26.3 |R|
+Raw: [1][20]R02[2][8]   [2]  
+Raw:     26.4  [4]
+Decoded: R02            26.4  
+Sent to UDP1: TS|ABC|      26.4 |R|
+Raw: [1][20]R02[2][8]  
+Raw:  [2]      26.5  [4]
+Decoded: R02            26.5  
+Sent to UDP1: TS|ABC|      26.5 |R|
+Raw: [1][20]R02[2]
+Raw: [8]   [2]      26.6
+Raw:   [4]
+Decoded: R02            26.6  
+Sent to UDP1: TS|ABC|      26.6 |R|
+Raw: [1]
+Raw: [20]R02[2][8]   [2]     
+Raw:  26.7  [4]
+Decoded: R02            26.7  
+Sent to UDP1: TS|ABC|      26.7 |R|
+Raw: [1][20]R02[2][8]   [2]  
+Raw:     26.8  [4]
+Decoded: R02            26.8  
+Sent to UDP1: TS|ABC|      26.8 |R|
+Raw: [1][20]R02[2][8]  
+Raw:  [2]      26.9  [4]
+Decoded: R02            26.9  
+Sent to UDP1: TS|ABC|      26.9 |R|
+Raw: [1][20]R02
+Raw: [2][8]   [2]      27.0
+Raw:   [4]
+Decoded: R02            27.0  
+Sent to UDP1: TS|ABC|      27.0 |R|
+Raw: [1][20]
+Raw: R02[2][8]   [2]      
+Raw: 27.1  [4]
+Decoded: R02            27.1  
+Sent to UDP1: TS|ABC|      27.1 |R|
+Raw: [1][20]R02[2][8]   [2]
+Raw:       27.2  [4]
+Decoded: R02            27.2  
+Sent to UDP1: TS|ABC|      27.2 |R|
+Raw: [1][20]R02[2][8] 
+Raw:   [2]      27.3  
+Raw: [4]
+Decoded: R02            27.3  
+Sent to UDP1: TS|ABC|      27.3 |R|
+Raw: [1][20]R02
+Raw: [2][8]   [2]      27.4
+Raw:   [4]
+Decoded: R02            27.4  
+Sent to UDP1: TS|ABC|      27.4 |R|
+Raw: [1][20]
+Raw: R02[2][8]   [2]      
+Raw: 27.5  [4]
+Decoded: R02            27.5  
+Sent to UDP1: TS|ABC|      27.5 |R|
+Raw: [1][20]R02[2][8]   [2]
+Raw:       27.6  [4]
+Decoded: R02            27.6  
+Sent to UDP1: TS|ABC|      27.6 |R|
+Raw: [1][20]R02[2][8]
+Raw:    [2]      27.7  
+Raw: [4]
+Decoded: R02            27.7  
+Sent to UDP1: TS|ABC|      27.7 |R|
+Raw: [1][20]R02
+Raw: [2][8]   [2]      27.
+Raw: 8  [4]
+Decoded: R02            27.8  
+Sent to UDP1: TS|ABC|      27.8 |R|
+Raw: [1][20]R02[2][8]   [2]    
+Raw:   27.9  [4]
+Decoded: R02            27.9  
+Sent to UDP1: TS|ABC|      27.9 |R|
+Raw: [1][20]R02[2][8]   [2]  
+Raw:     28.0  [4]
+Decoded: R02            28.0  
+Sent to UDP1: TS|ABC|      28.0 |R|
+Raw: [1][20]R02[2][8]  
+Raw:  [2]      28.1  [4]
+Decoded: R02            28.1  
+Sent to UDP1: TS|ABC|      28.1 |R|
+Raw: [1][20]R
+Raw: 02[2][8]   [2]      28
+Raw: .2  [4]
+Decoded: R02            28.2  
+Sent to UDP1: TS|ABC|      28.2 |R|
+Raw: [1][20]R02[2][8]   [2]    
+Raw:   28.3  [4]
+Decoded: R02            28.3  
+Sent to UDP1: TS|ABC|      28.3 |R|
+Raw: [1][20]R02[2][8]   [2]  
+Raw:     28.4  [4]
+Decoded: R02            28.4  
+Sent to UDP1: TS|ABC|      28.4 |R|
+Raw: [1][20]R02[2][8]
+Raw:    [2]      28.5  
+Raw: [4]
+Decoded: R02            28.5  
+Sent to UDP1: TS|ABC|      28.5 |R|
+Raw: [1][20]R02
+Raw: [2][8]   [2]      28.
+Raw: 6  [4]
+Decoded: R02            28.6  
+Sent to UDP1: TS|ABC|      28.6 |R|
+Raw: [1]
+Raw: [20]R02[2][8]   [2]      
+Raw: 28.7  [4]
+Decoded: R02            28.7  
+Sent to UDP1: TS|ABC|      28.7 |R|
+Raw: [1][20]R02[2][8]   [2]
+Raw:       28.8  [4]
+Decoded: R02            28.8  
+Sent to UDP1: TS|ABC|      28.8 |R|
+Raw: [1][20]R02[2][8]  
+Raw:  [2]      28.9  [4]
+Decoded: R02            28.9  
+Sent to UDP1: TS|ABC|      28.9 |R|
+Raw: [1][20]R
+Raw: 02[2][8]   [2]      29
+Raw: .0  [4]
+Decoded: R02            29.0  
+Sent to UDP1: TS|ABC|      29.0 |R|
+Raw: [1][20]R02[2][8]   [2]    
+Raw:   29.0  [4][1][20]S02[2][8]
+Decoded: R02            29.0  
+######################################## S02
+Raw:    [2]      28.98
+Raw:  [4]
+Decoded: S02            28.98 
+Sent to UDP1: TS|ABC|      28.98|U|
+Sent to UDP1: TS|ABC|HBT 14:43:02|-1|
+Sent to UDP1: TS|ABC|HBT 14:43:12|-1|
+Raw: [1][2][4][1][20]S02
+######################################## S02
+Raw: [2][8]   [2]         
+Raw:     [4][1]aA[2]0010 
+Decoded: S02                   
+######################################## aA0010 
+Raw:            [4]
+Sent to UDP1: TS|ABC|HBT 14:43:22|-1|
+Sent to UDP1: TS|ABC|HBT 14:43:32|-1|
+Sent to UDP1: TS|ABC|HBT 14:43:42|-1|
+Sent to UDP1: TS|ABC|HBT 14:43:52|-1|
+Raw: [1][2][4][1]aA[2]
+######################################## aA
+Raw: 0010           
+Raw:  [4][1]aA[2]0010    
+######################################## aA0010    
+Raw:         [4][1][20]S02[2]
+######################################## S02
+Raw: [8]   [2]       0.0
+Raw:   [4][1]aA[2]0010TIM
+Decoded: S02             0.0  
+Sent to UDP1: TS|ABC|       0.0 |U|
+######################################## aA0010TIM
+Raw: ING      [4]
+Raw: [1][20]R0
+Raw: 2[2][8]   [2]       0.
+Raw: 0  [4]
+Decoded: R02             0.0  
+Sent to UDP1: TS|ABC|       0.0 |R|
+Raw: [1]
+Raw: [20]R02[2][8]   [2]     
+Raw:   0.1  [4]
+Decoded: R02             0.1  
+Sent to UDP1: TS|ABC|       0.1 |R|
+Raw: [1][20]R02[2][8]   [2] 
+Raw:       0.2  [4]
+Decoded: R02             0.2  
+Sent to UDP1: TS|ABC|       0.2 |R|
+Raw: [1][20]R02[2][8] 
+Raw:   [2]       0.3  [4]
+Decoded: R02             0.3  
+Sent to UDP1: TS|ABC|       0.3 |R|
+Raw: [1][20]R0
+Raw: 2[2][8]   [2]       0.
+Raw: 4  [4]
+Decoded: R02             0.4  
+Sent to UDP1: TS|ABC|       0.4 |R|
+Raw: [1][20]R02[2][8]   [2]     
+Raw:   0.5  [4]
+Decoded: R02             0.5  
+Sent to UDP1: TS|ABC|       0.5 |R|
+Raw: [1][20]R02[2][8] 
+Raw:   [2]       0.6  [4]
+Decoded: R02             0.6  
+Sent to UDP1: TS|ABC|       0.6 |R|
+Raw: [1][20]R02[2]
+Raw: [8]   [2]       0.7 
+Raw:  [4]
+Decoded: R02             0.7  
+Sent to UDP1: TS|ABC|       0.7 |R|
+Raw: [1][20]R0
+Raw: 2[2][8]   [2]       0.
+Raw: 8  [4]
+Decoded: R02             0.8  
+Sent to UDP1: TS|ABC|       0.8 |R|
+Raw: [1][20]R02[2][8]   [2]   
+Raw:     0.9  [4]
+Decoded: R02             0.9  
+Sent to UDP1: TS|ABC|       0.9 |R|
+Raw: [1][20]R02[2][8]   [2] 
+Raw:       1.0  [4]
+Decoded: R02             1.0  
+Sent to UDP1: TS|ABC|       1.0 |R|
+Raw: [1][20]R02[2][8] 
+Raw:   [2]       1.1  
+Raw: [4]
+Decoded: R02             1.1  
+Sent to UDP1: TS|ABC|       1.1 |R|
+Raw: [1][20]
+Raw: R02[2][8]   [2]       
+Raw: 1.2  [4]
+Decoded: R02             1.2  
+Sent to UDP1: TS|ABC|       1.2 |R|
+Raw: [1][20]R02[2][8]   [2]   
+Raw:     1.3  [4]
+Decoded: R02             1.3  
+Sent to UDP1: TS|ABC|       1.3 |R|
+Raw: [1][20]R02[2][8]   [2] 
+Raw:       1.4  [4]
+Decoded: R02             1.4  
+Sent to UDP1: TS|ABC|       1.4 |R|
+Raw: [1][20]R02[2]
+Raw: [8]   [2]       1.5
+Raw:   [4]
+Decoded: R02             1.5  
+Sent to UDP1: TS|ABC|       1.5 |R|
+Raw: [1][20]
+Raw: R02[2][8]   [2]       
+Raw: 1.6  [4]
+Decoded: R02             1.6  
+Sent to UDP1: TS|ABC|       1.6 |R|
+Raw: [1][20]R02[2][8]   [2]   
+Raw:     1.7  [4]
+Decoded: R02             1.7  
+Sent to UDP1: TS|ABC|       1.7 |R|
+Raw: [1][20]R02[2][8]   
+Raw: [2]       1.8  [4]
+Decoded: R02             1.8  
+Sent to UDP1: TS|ABC|       1.8 |R|
+Raw: [1][20]R02[2][8] 
+Raw:   [2]       1.9  
+Raw: [4]
+Decoded: R02             1.9  
+Sent to UDP1: TS|ABC|       1.9 |R|
+Raw: [1][20]R0
+Raw: 2[2][8]   [2]       2
+Raw: .0  [4]
+Decoded: R02             2.0  
+Sent to UDP1: TS|ABC|       2.0 |R|
+Raw: [1][20]R02[2][8]   [2]   
+Raw:     2.1  [4]
+Decoded: R02             2.1  
+Sent to UDP1: TS|ABC|       2.1 |R|
+Raw: [1][20]R02[2][8]   
+Raw: [2]       2.2  [4]
+Decoded: R02             2.2  
+Sent to UDP1: TS|ABC|       2.2 |R|
+Raw: [1][20]R02[2][8] 
+Raw:   [2]       2.3  
+Raw: [4]
+Decoded: R02             2.3  
+Sent to UDP1: TS|ABC|       2.3 |R|
+Raw: [1][20]R0
+Raw: 2[2][8]   [2]       2
+Raw: .4  [4]
+Decoded: R02             2.4  
+Sent to UDP1: TS|ABC|       2.4 |R|
+Raw: [1][20]R02[2][8]   [2]     
+Raw:   2.5  [4]
+Decoded: R02             2.5  
+Sent to UDP1: TS|ABC|       2.5 |R|
+Raw: [1][20]R02[2][8]   [2] 
+Raw:       2.6  [4]
+Decoded: R02             2.6  
+Sent to UDP1: TS|ABC|       2.6 |R|
+Raw: [1][20]R02[2]
+Raw: [8]   [2]       2.7
+Raw:   [4]
+Decoded: R02             2.7  
+Sent to UDP1: TS|ABC|       2.7 |R|
+Raw: [1][20]R0
+Raw: 2[2][8]   [2]       2
+Raw: .8  [4]
+Decoded: R02             2.8  
+Sent to UDP1: TS|ABC|       2.8 |R|
+Raw: [1][20]R02[2][8]   [2]     
+Raw:   2.9  [4]
+Decoded: R02             2.9  
+Sent to UDP1: TS|ABC|       2.9 |R|
+Raw: [1][20]R02[2][8] 
+Raw:   [2]       3.0  
+Raw: [4]
+Decoded: R02             3.0  
+Sent to UDP1: TS|ABC|       3.0 |R|
+Raw: [1][20]R02[2]
+Raw: [8]   [2]       3.1
+Raw:   [4]
+Decoded: R02             3.1  
+Sent to UDP1: TS|ABC|       3.1 |R|
+Raw: [1][20]
+Raw: R02[2][8]   [2]      
+Raw:  3.2  [4]
+Decoded: R02             3.2  
+Sent to UDP1: TS|ABC|       3.2 |R|
+Raw: [1][20]R02[2][8]   [2]    
+Raw:    3.3  [4]
+Decoded: R02             3.3  
+Sent to UDP1: TS|ABC|       3.3 |R|
+Raw: [1][20]R02[2][8]   
+Raw: [2]       3.4  [4]
+Decoded: R02             3.4  
+Sent to UDP1: TS|ABC|       3.4 |R|
+Raw: [1][20]R02[2]
+Raw: [8]   [2]       3.5
+Raw:   [4]
+Decoded: R02             3.5  
+Sent to UDP1: TS|ABC|       3.5 |R|
+Raw: [1][20]
+Raw: R02[2][8]   [2]      
+Raw:  3.6  [4]
+Decoded: R02             3.6  
+Sent to UDP1: TS|ABC|       3.6 |R|
+Raw: [1][20]R02[2][8]   [2]    
+Raw:    3.7  [4]
+Decoded: R02             3.7  
+Sent to UDP1: TS|ABC|       3.7 |R|
+Raw: [1][20]R02[2][8]   
+Raw: [2]       3.8  [4]
+Decoded: R02             3.8  
+Sent to UDP1: TS|ABC|       3.8 |R|
+Raw: [1][20]R02[2][8] 
+Raw:   [2]       3.9  
+Raw: [4]
+Decoded: R02             3.9  
+Sent to UDP1: TS|ABC|       3.9 |R|
+Raw: [1][20]
+Raw: R02[2][8]   [2]      
+Raw:  4.0  [4]
+Decoded: R02             4.0  
+Sent to UDP1: TS|ABC|       4.0 |R|
+Raw: [1][20]R02[2][8]   [2]  
+Raw:      4.1  [4]
+Decoded: R02             4.1  
+Sent to UDP1: TS|ABC|       4.1 |R|
+Raw: [1][20]R02[2][8]   [2]
+Raw:        4.2  [4]
+Decoded: R02             4.2  
+Sent to UDP1: TS|ABC|       4.2 |R|
+Raw: [1][20]R02[2]
+Raw: [8]   [2]       4.3
+Raw:   [4]
+Decoded: R02             4.3  
+Sent to UDP1: TS|ABC|       4.3 |R|
+Raw: [1][20]R02[2][8]   [2]    
+Raw:    4.4  [4]
+Decoded: R02             4.4  
+Sent to UDP1: TS|ABC|       4.4 |R|
+Raw: [1][20]R02[2][8]   [2]  
+Raw:      4.5  [4]
+Decoded: R02             4.5  
+Sent to UDP1: TS|ABC|       4.5 |R|
+Raw: [1][20]R02[2][8]   [2]
+Raw:        4.6  [4]
+Decoded: R02             4.6  
+Sent to UDP1: TS|ABC|       4.6 |R|
+Raw: [1][20]R02[2]
+Raw: [8]   [2]       4.7
+Raw:   [4]
+Decoded: R02             4.7  
+Sent to UDP1: TS|ABC|       4.7 |R|
+Raw: [1][20]
+Raw: R02[2][8]   [2]      
+Raw:  4.8  [4]
+Decoded: R02             4.8  
+Sent to UDP1: TS|ABC|       4.8 |R|
+Raw: [1][20]R02[2][8]   [2]  
+Raw:      4.9  [4]
+Decoded: R02             4.9  
+Sent to UDP1: TS|ABC|       4.9 |R|
+Raw: [1][20]R02[2][8]   [2]
+Raw:        5.0  [4]
+Decoded: R02             5.0  
+Sent to UDP1: TS|ABC|       5.0 |R|
+Raw: [1][20]R02[2][8]
+Raw:    [2]       5.1  
+Raw: [4]
+Decoded: R02             5.1  
+Sent to UDP1: TS|ABC|       5.1 |R|
+Raw: [1][20]R02[2][8]   [2]    
+Raw:    5.2  [4]
+Decoded: R02             5.2  
+Sent to UDP1: TS|ABC|       5.2 |R|
+Raw: [1][20]R02[2][8]   [2]    
+Raw:    5.3  [4]
+Decoded: R02             5.3  
+Sent to UDP1: TS|ABC|       5.3 |R|
+Raw: [1][20]R02[2][8]  
+Raw:  [2]       5.4  [4]
+Decoded: R02             5.4  
+Sent to UDP1: TS|ABC|       5.4 |R|
+Raw: [1][20]R02
+Raw: [2][8]   [2]       5.5
+Raw:   [4]
+Decoded: R02             5.5  
+Sent to UDP1: TS|ABC|       5.5 |R|
+Raw: [1][20]R0
+Raw: 2[2][8]   [2]       5
+Raw: .6  [4]
+Decoded: R02             5.6  
+Sent to UDP1: TS|ABC|       5.6 |R|
+Raw: [1][20]R02[2][8]   [2]  
+Raw:      5.7  [4]
+Decoded: R02             5.7  
+Sent to UDP1: TS|ABC|       5.7 |R|
+Raw: [1][20]R02[2][8]  
+Raw:  [2]       5.8  [4]
+Decoded: R02             5.8  
+Sent to UDP1: TS|ABC|       5.8 |R|
+Raw: [1][20]R02
+Raw: [2][8]   [2]       5.
+Raw: 9  [4]
+Decoded: R02             5.9  
+Sent to UDP1: TS|ABC|       5.9 |R|
+Raw: [1][20]R
+Raw: 02[2][8]   [2]       6
+Raw: .0  [4]
+Decoded: R02             6.0  
+Sent to UDP1: TS|ABC|       6.0 |R|
+Raw: [1][20]R02[2][8]   [2]  
+Raw:      6.1  [4]
+Decoded: R02             6.1  
+Sent to UDP1: TS|ABC|       6.1 |R|
+Raw: [1][20]R02[2][8]
+Raw:    [2]       6.2  
+Raw: [4]
+Decoded: R02             6.2  
+Sent to UDP1: TS|ABC|       6.2 |R|
+Raw: [1][20]R
+Raw: 02[2][8]   [2]       6
+Raw: .3  [4]
+Decoded: R02             6.3  
+Sent to UDP1: TS|ABC|       6.3 |R|
+Raw: [1][20]R
+Raw: 02[2][8]   [2]       6
+Raw: .4  [4]
+Decoded: R02             6.4  
+Sent to UDP1: TS|ABC|       6.4 |R|
+Raw: [1][20]R02[2][8]   [2]    
+Raw:    6.5  [4]
+Decoded: R02             6.5  
+Sent to UDP1: TS|ABC|       6.5 |R|
+Raw: [1][20]R02[2][8]   [2]
+Raw:        6.6  [4]
+Decoded: R02             6.6  
+Sent to UDP1: TS|ABC|       6.6 |R|
+Raw: [1][20]R02[2][8]
+Raw:    [2]       6.7 
+Raw:  [4]
+Decoded: R02             6.7  
+Sent to UDP1: TS|ABC|       6.7 |R|
+Raw: [1][20]R02[2][8]   [2]    
+Raw:    6.8  [4]
+Decoded: R02             6.8  
+Sent to UDP1: TS|ABC|       6.8 |R|
+Raw: [1][20]R02[2][8]   [2]    
+Raw:    6.9  [4]
+Decoded: R02             6.9  
+Sent to UDP1: TS|ABC|       6.9 |R|
+Raw: [1][20]R02[2][8]  
+Raw:  [2]       7.0  [4]
+Decoded: R02             7.0  
+Sent to UDP1: TS|ABC|       7.0 |R|
+Raw: [1][20]R02
+Raw: [2][8]   [2]       7.1
+Raw:   [4]
+Decoded: R02             7.1  
+Sent to UDP1: TS|ABC|       7.1 |R|
+Raw: [1]
+Raw: [20]R02[2][8]   [2]      
+Raw:  7.2  [4]
+Decoded: R02             7.2  
+Sent to UDP1: TS|ABC|       7.2 |R|
+Raw: [1][20]R02[2][8]   [2]
+Raw:        7.3  [4]
+Decoded: R02             7.3  
+Sent to UDP1: TS|ABC|       7.3 |R|
+Raw: [1][20]R02[2][8]   [2]
+Raw:        7.4  [4]
+Decoded: R02             7.4  
+Sent to UDP1: TS|ABC|       7.4 |R|
+Raw: [1][20]R02
+Raw: [2][8]   [2]       7.
+Raw: 5  [4]
+Decoded: R02             7.5  
+Sent to UDP1: TS|ABC|       7.5 |R|
+Raw: [1][20]R
+Raw: 02[2][8]   [2]       7
+Raw: .6  [4]
+Decoded: R02             7.6  
+Sent to UDP1: TS|ABC|       7.6 |R|
+Raw: [1][20]R02[2][8]   [2]  
+Raw:      7.7  [4]
+Decoded: R02             7.7  
+Sent to UDP1: TS|ABC|       7.7 |R|
+Raw: [1][20]R02[2][8]   [2]
+Raw:        7.8  [4]
+Decoded: R02             7.8  
+Sent to UDP1: TS|ABC|       7.8 |R|
+Raw: [1][20]R02[2]
+Raw: [8]   [2]       7.9 
+Raw:  [4]
+Decoded: R02             7.9  
+Sent to UDP1: TS|ABC|       7.9 |R|
+Raw: [1][20]R02[2][8]   [2]    
+Raw:    8.0  [4]
+Decoded: R02             8.0  
+Sent to UDP1: TS|ABC|       8.0 |R|
+Raw: [1][20]R02[2][8]   [2]  
+Raw:      8.1  [4]
+Decoded: R02             8.1  
+Sent to UDP1: TS|ABC|       8.1 |R|
+Raw: [1][20]R02[2][8]  
+Raw:  [2]       8.2  [4]
+Decoded: R02             8.2  
+Sent to UDP1: TS|ABC|       8.2 |R|
+Raw: [1][20]R02[2][8]
+Raw:    [2]       8.3 
+Raw:  [4]
+Decoded: R02             8.3  
+Sent to UDP1: TS|ABC|       8.3 |R|
+Raw: [1]
+Raw: [20]R02[2][8]   [2]      
+Raw:  8.4  [4]
+Decoded: R02             8.4  
+Sent to UDP1: TS|ABC|       8.4 |R|
+Raw: [1][20]R02[2][8]   [2]    
+Raw:    8.5  [4]
+Decoded: R02             8.5  
+Sent to UDP1: TS|ABC|       8.5 |R|
+Raw: [1][20]R02[2][8]   [2]
+Raw:        8.6  [4]
+Decoded: R02             8.6  
+Sent to UDP1: TS|ABC|       8.6 |R|
+Raw: [1][20]R02
+Raw: [2][8]   [2]       8.
+Raw: 7  [4]
+Decoded: R02             8.7  
+Sent to UDP1: TS|ABC|       8.7 |R|
+Raw: [1]
+Raw: [20]R02[2][8]   [2]     
+Raw:   8.8  [4]
+Decoded: R02             8.8  
+Sent to UDP1: TS|ABC|       8.8 |R|
+Raw: [1][20]R02[2][8]   [2] 
+Raw:       8.9  [4]
+Decoded: R02             8.9  
+Sent to UDP1: TS|ABC|       8.9 |R|
+Raw: [1][20]R02[2][8]
+Raw:    [2]       9.0 
+Raw:  [4]
+Decoded: R02             9.0  
+Sent to UDP1: TS|ABC|       9.0 |R|
+Raw: [1][20]R02
+Raw: [2][8]   [2]       9.
+Raw: 1  [4]
+Decoded: R02             9.1  
+Sent to UDP1: TS|ABC|       9.1 |R|
+Raw: [1][20]R
+Raw: 02[2][8]   [2]       
+Raw: 9.2  [4]
+Decoded: R02             9.2  
+Sent to UDP1: TS|ABC|       9.2 |R|
+Raw: [1][20]R02[2][8]   [2]  
+Raw:      9.3  [4]
+Decoded: R02             9.3  
+Sent to UDP1: TS|ABC|       9.3 |R|
+Raw: [1][20]R02[2][8]   
+Raw: [2]       9.4  [4]
+Decoded: R02             9.4  
+Sent to UDP1: TS|ABC|       9.4 |R|
+Raw: [1][20]R02[2]
+Raw: [8]   [2]       9.5
+Raw:   [4]
+Decoded: R02             9.5  
+Sent to UDP1: TS|ABC|       9.5 |R|
+Raw: [1][20]
+Raw: R02[2][8]   [2]       
+Raw: 9.6  [4]
+Decoded: R02             9.6  
+Sent to UDP1: TS|ABC|       9.6 |R|
+Raw: [1][20]R02[2][8]   [2]   
+Raw:     9.7  [4]
+Decoded: R02             9.7  
+Sent to UDP1: TS|ABC|       9.7 |R|
+Raw: [1][20]R02[2][8]
+Raw:    [2]       9.8 
+Raw:  [4]
+Decoded: R02             9.8  
+Sent to UDP1: TS|ABC|       9.8 |R|
+Raw: [1][20]R02[2]
+Raw: [8]   [2]       9.9
+Raw:   [4]
+Decoded: R02             9.9  
+Sent to UDP1: TS|ABC|       9.9 |R|
+Raw: [1]
+Raw: [20]R02[2][8]   [2]     
+Raw:  10.0  [4]
+Decoded: R02            10.0  
+Sent to UDP1: TS|ABC|      10.0 |R|
+Raw: [1][20]R02[2][8]   [2]   
+Raw:    10.1  [4][1]
+Decoded: R02            10.1  
+Sent to UDP1: TS|ABC|      10.1 |R|
+######################################## 
+Raw: [20]S02[2][8]   [2]     
+Raw:  10.16 [4]
+Decoded: S02            10.16 
+Sent to UDP1: TS|ABC|      10.16|U|
+Raw: [1][2][4][1]
+######################################## 
+Raw: [20]S02[2][8]   [2]      
+Raw:        [4][1]aA[2]0
+Decoded: S02                   
+######################################## aA0
+Raw: 010            
+Raw: [4]
+Sent to UDP1: TS|ABC|HBT 14:44:27|-1|
+Sent to UDP1: TS|ABC|HBT 14:44:37|-1|
+Sent to UDP1: TS|ABC|HBT 14:44:47|-1|
+Sent to UDP1: TS|ABC|HBT 14:44:57|-1|
+Sent to UDP1: TS|ABC|HBT 14:45:07|-1|
+Sent to UDP1: TS|ABC|HBT 14:45:17|-1|
+Raw: [1][2][4][1]aA[2]0010
+######################################## aA0010
+Raw:             [4][1]
+######################################## 
+Raw: aA[2]0010        
+Raw:     [4][1][20]S02[2][8]   
+######################################## S02   
+Raw: [2]       0.0  [4][1]
+Decoded: S02             0.0  
+Sent to UDP1: TS|ABC|       0.0 |U|
+######################################## 
+Raw: aA[2]0010TIMING 
+Raw:      [4]
+Raw: [1][20]R0
+Raw: 2[2][8]   [2]       0
+Raw: .1  [4]
+Decoded: R02             0.1  
+Sent to UDP1: TS|ABC|       0.1 |R|
+Raw: [1][20]R02[2][8]   [2]    
+Raw:    0.2  [4]
+Decoded: R02             0.2  
+Sent to UDP1: TS|ABC|       0.2 |R|
+Raw: [1][20]R02[2][8]   [2]
+Raw:        0.3  [4]
+Decoded: R02             0.3  
+Sent to UDP1: TS|ABC|       0.3 |R|
+Raw: [1][20]R02[2][8]
+Raw:    [2]       0.4  
+Raw: [4]
+Decoded: R02             0.4  
+Sent to UDP1: TS|ABC|       0.4 |R|
+Raw: [1][20]R0
+Raw: 2[2][8]   [2]       0
+Raw: .5  [4]
+Decoded: R02             0.5  
+Sent to UDP1: TS|ABC|       0.5 |R|
+Raw: [1][20]R02[2][8]   [2]  
+Raw:      0.6  [4]
+Decoded: R02             0.6  
+Sent to UDP1: TS|ABC|       0.6 |R|
+Raw: [1][20]R02[2][8]
+Raw:    [2]       0.7  
+Raw: [4]
+Decoded: R02             0.7  
+Sent to UDP1: TS|ABC|       0.7 |R|
+Raw: [1][20]R02[2][8]
+Raw:    [2]       0.8  
+Raw: [4]
+Decoded: R02             0.8  
+Sent to UDP1: TS|ABC|       0.8 |R|
+Raw: [1][20]R
+Raw: 02[2][8]   [2]       0
+Raw: .9  [4]
+Decoded: R02             0.9  
+Sent to UDP1: TS|ABC|       0.9 |R|
+Raw: [1][20]R02[2][8]   [2]    
+Raw:    1.0  [4]
+Decoded: R02             1.0  
+Sent to UDP1: TS|ABC|       1.0 |R|
+Raw: [1][20]R02[2][8]   [2]
+Raw:        1.1  [4]
+Decoded: R02             1.1  
+Sent to UDP1: TS|ABC|       1.1 |R|
+Raw: [1][20]R02[2][8]   [2]   
+Raw:     1.4  [4]
+Decoded: R02             1.4  
+Sent to UDP1: TS|ABC|       1.4 |R|
+Raw: [1][20]R02[2][8]   [2]
+Raw:        1.5  [4]
+Decoded: R02             1.5  
+Sent to UDP1: TS|ABC|       1.5 |R|
+Raw: [1][20]R02[2][8]
+Raw:    [2]       1.6  
+Raw: [4]
+Decoded: R02             1.6  
+Sent to UDP1: TS|ABC|       1.6 |R|
+Raw: [1][20]R
+Raw: 02[2][8]   [2]       1
+Raw: .7  [4]
+Decoded: R02             1.7  
+Sent to UDP1: TS|ABC|       1.7 |R|
+Raw: [1][20]R02[2][8]   [2]    
+Raw:    1.8  [4]
+Decoded: R02             1.8  
+Sent to UDP1: TS|ABC|       1.8 |R|
+Raw: [1][20]R02[2][8]   [2]
+Raw:        1.9  [4]
+Decoded: R02             1.9  
+Sent to UDP1: TS|ABC|       1.9 |R|
+Raw: [1][20]R
+Raw: 02[2][8]   [2]       2
+Raw: .0  [4]
+Decoded: R02             2.0  
+Sent to UDP1: TS|ABC|       2.0 |R|
+Raw: [1][20]R
+Raw: 02[2][8]   [2]       2
+Raw: .1  [4]
+Decoded: R02             2.1  
+Sent to UDP1: TS|ABC|       2.1 |R|
+Raw: [1][20]R02[2][8]   [2]    
+Raw:    2.2  [4]
+Decoded: R02             2.2  
+Sent to UDP1: TS|ABC|       2.2 |R|
+Raw: [1][20]R02[2][8]   [2]
+Raw:        2.3  [4]
+Decoded: R02             2.3  
+Sent to UDP1: TS|ABC|       2.3 |R|
+Raw: [1][20]R02[2][8]
+Raw:    [2]       2.4 
+Raw:  [4]
+Decoded: R02             2.4  
+Sent to UDP1: TS|ABC|       2.4 |R|
+Raw: [1][20]R
+Raw: 02[2][8]   [2]       2
+Raw: .5  [4]
+Decoded: R02             2.5  
+Sent to UDP1: TS|ABC|       2.5 |R|
+Raw: [1][20]R02[2][8]   [2]   
+Raw:     2.6  [4]
+Decoded: R02             2.6  
+Sent to UDP1: TS|ABC|       2.6 |R|
+Raw: [1][20]R02[2][8]   [2]
+Raw:        2.7  [4]
+Decoded: R02             2.7  
+Sent to UDP1: TS|ABC|       2.7 |R|
+Raw: [1][20]R02
+Raw: [2][8]   [2]       2.
+Raw: 8  [4]
+Decoded: R02             2.8  
+Sent to UDP1: TS|ABC|       2.8 |R|
+Raw: [1][20]R02[2][8]   [2]  
+Raw:      2.9  [4]
+Decoded: R02             2.9  
+Sent to UDP1: TS|ABC|       2.9 |R|
+Raw: [1][20]R02[2][8]   [2]   
+Raw:     3.0  [4]
+Decoded: R02             3.0  
+Sent to UDP1: TS|ABC|       3.0 |R|
+Raw: [1][20]R02[2][8]   [2]
+Raw:        3.1  [4]
+Decoded: R02             3.1  
+Sent to UDP1: TS|ABC|       3.1 |R|
+Raw: [1][20]R02[2][8]
+Raw:    [2]       3.2 
+Raw:  [4]
+Decoded: R02             3.2  
+Sent to UDP1: TS|ABC|       3.2 |R|
+Raw: [1][20]R02[2][8]   [2]    
+Raw:    3.3  [4]
+Decoded: R02             3.3  
+Sent to UDP1: TS|ABC|       3.3 |R|
+Raw: [1][20]R02[2][8]   [2]   
+Raw:     3.4  [4]
+Decoded: R02             3.4  
+Sent to UDP1: TS|ABC|       3.4 |R|
+Raw: [1][20]R02[2][8]   [2]
+Raw:        3.5  [4]
+Decoded: R02             3.5  
+Sent to UDP1: TS|ABC|       3.5 |R|
+Raw: [1][20]R
+Raw: 02[2][8]   [2]       
+Raw: 3.6  [4]
+Decoded: R02             3.6  
+Sent to UDP1: TS|ABC|       3.6 |R|
+Raw: [1][20]R02[2][8]   [2]    
+Raw:    3.7  [4]
+Decoded: R02             3.7  
+Sent to UDP1: TS|ABC|       3.7 |R|
+Raw: [1][20]R02[2][8]   [2]    
+Raw:    3.8  [4]
+Decoded: R02             3.8  
+Sent to UDP1: TS|ABC|       3.8 |R|
+Raw: [1][20]R02[2][8]   [2]
+Raw:        3.9  [4]
+Decoded: R02             3.9  
+Sent to UDP1: TS|ABC|       3.9 |R|
+Raw: [1][20]R02[2][8]
+Raw:    [2]       4.0 
+Raw:  [4]
+Decoded: R02             4.0  
+Sent to UDP1: TS|ABC|       4.0 |R|
+Raw: [1][20]R
+Raw: 02[2][8]   [2]       
+Raw: 4.1  [4]
+Decoded: R02             4.1  
+Sent to UDP1: TS|ABC|       4.1 |R|
+Raw: [1][20]R02[2][8]   [2]   
+Raw:     4.2  [4]
+Decoded: R02             4.2  
+Sent to UDP1: TS|ABC|       4.2 |R|
+Raw: [1][20]R02[2][8]   [2]
+Raw:        4.3  [4]
+Decoded: R02             4.3  
+Sent to UDP1: TS|ABC|       4.3 |R|
+Raw: [1][20]R02[2][8]
+Raw:    [2]       4.4 
+Raw:  [4]
+Decoded: R02             4.4  
+Sent to UDP1: TS|ABC|       4.4 |R|
+Raw: [1][20]R
+Raw: 02[2][8]   [2]       
+Raw: 4.5  [4]
+Decoded: R02             4.5  
+Sent to UDP1: TS|ABC|       4.5 |R|
+Raw: [1][20]R02[2][8]   [2]
+Raw:        4.6  [4]
+Decoded: R02             4.6  
+Sent to UDP1: TS|ABC|       4.6 |R|
+Raw: [1][20]R02[2][8]   [2]
+Raw:        4.7  [4]
+Decoded: R02             4.7  
+Sent to UDP1: TS|ABC|       4.7 |R|
+Raw: [1][20]R02[2][8]
+Raw:    [2]       4.8 
+Raw:  [4]
+Decoded: R02             4.8  
+Sent to UDP1: TS|ABC|       4.8 |R|
+Raw: [1][20]R
+Raw: 02[2][8]   [2]       
+Raw: 4.9  [4]
+Decoded: R02             4.9  
+Sent to UDP1: TS|ABC|       4.9 |R|
+Raw: [1][20]R02[2][8]   [2]   
+Raw:     5.0  [4]
+Decoded: R02             5.0  
+Sent to UDP1: TS|ABC|       5.0 |R|
+Raw: [1][20]R02[2][8]
+Raw:    [2]       5.1 
+Raw:  [4]
+Decoded: R02             5.1  
+Sent to UDP1: TS|ABC|       5.1 |R|
+Raw: [1][20]R
+Raw: 02[2][8]   [2]       
+Raw: 5.2  [4]
+Decoded: R02             5.2  
+Sent to UDP1: TS|ABC|       5.2 |R|
+Raw: [1][20]R
+Raw: 02[2][8]   [2]       
+Raw: 5.3  [4]
+Decoded: R02             5.3  
+Sent to UDP1: TS|ABC|       5.3 |R|
+Raw: [1][20]R02[2][8]   [2]   
+Raw:     5.4  [4]
+Decoded: R02             5.4  
+Sent to UDP1: TS|ABC|       5.4 |R|
+Raw: [1][20]R02[2]
+Raw: [8]   [2]       5.5
+Raw:   [4]
+Decoded: R02             5.5  
+Sent to UDP1: TS|ABC|       5.5 |R|
+Raw: [1][20]R
+Raw: 02[2][8]   [2]       
+Raw: 5.6  [4]
+Decoded: R02             5.6  
+Sent to UDP1: TS|ABC|       5.6 |R|
+Raw: [1][20]R02[2][8]   [2]    
+Raw:    5.7  [4]
+Decoded: R02             5.7  
+Sent to UDP1: TS|ABC|       5.7 |R|
+Raw: [1][20]R02[2][8]   [2]   
+Raw:     5.8  [4]
+Decoded: R02             5.8  
+Sent to UDP1: TS|ABC|       5.8 |R|
+Raw: [1][20]R02[2][8]   
+Raw: [2]       5.9  [4]
+Decoded: R02             5.9  
+Sent to UDP1: TS|ABC|       5.9 |R|
+Raw: [1][20]R
+Raw: 02[2][8]   [2]       
+Raw: 6.0  [4]
+Decoded: R02             6.0  
+Sent to UDP1: TS|ABC|       6.0 |R|
+Raw: [1][20]R02[2][8]   [2]  
+Raw:      6.1  [4]
+Decoded: R02             6.1  
+Sent to UDP1: TS|ABC|       6.1 |R|
+Raw: [1][20]R02[2][8]   
+Raw: [2]       6.2  [4]
+Decoded: R02             6.2  
+Sent to UDP1: TS|ABC|       6.2 |R|
+Raw: [1][20]R02[2][8]   
+Raw: [2]       6.3  [4]
+Decoded: R02             6.3  
+Sent to UDP1: TS|ABC|       6.3 |R|
+Raw: [1][20]R02[2]
+Raw: [8]   [2]       6.4 
+Raw:  [4]
+Decoded: R02             6.4  
+Sent to UDP1: TS|ABC|       6.4 |R|
+Raw: [1][20]R02[2][8]   [2]     
+Raw:   6.5  [4]
+Decoded: R02             6.5  
+Sent to UDP1: TS|ABC|       6.5 |R|
+Raw: [1][20]R02[2][8]   [2]   
+Raw:     6.6  [4]
+Decoded: R02             6.6  
+Sent to UDP1: TS|ABC|       6.6 |R|
+Raw: [1][20]R02[2][8] 
+Raw:   [2]       6.7  
+Raw: [4]
+Decoded: R02             6.7  
+Sent to UDP1: TS|ABC|       6.7 |R|
+Raw: [1][20]R02[2]
+Raw: [8]   [2]       6.8 
+Raw:  [4]
+Decoded: R02             6.8  
+Sent to UDP1: TS|ABC|       6.8 |R|
+Raw: [1][20]R02[2][8]   [2]   
+Raw:     6.9  [4]
+Decoded: R02             6.9  
+Sent to UDP1: TS|ABC|       6.9 |R|
+Raw: [1][20]R02[2][8]   [2] 
+Raw:       6.9  [4]
+Decoded: R02             6.9  
+Raw: [1][20]R02[2][8]   
+Raw: [2]       7.0  [4]
+Decoded: R02             7.0  
+Sent to UDP1: TS|ABC|       7.0 |R|
+Raw: [1][20]R02[2]
+Raw: [8]   [2]       7.1
+Raw:   [4]
+Decoded: R02             7.1  
+Sent to UDP1: TS|ABC|       7.1 |R|
+Raw: [1][20]
+Raw: R02[2][8]   [2]       
+Raw: 7.2  [4]
+Decoded: R02             7.2  
+Sent to UDP1: TS|ABC|       7.2 |R|
+Raw: [1][20]R02[2][8]   
+Raw: [2]       7.3  [4]
+Decoded: R02             7.3  
+Sent to UDP1: TS|ABC|       7.3 |R|
+Raw: [1][20]R02[2]
+Raw: [8]   [2]       7.4 
+Raw:  [4]
+Decoded: R02             7.4  
+Sent to UDP1: TS|ABC|       7.4 |R|
+Raw: [1][20]
+Raw: R02[2][8]   [2]       
+Raw: 7.5  [4]
+Decoded: R02             7.5  
+Sent to UDP1: TS|ABC|       7.5 |R|
+Raw: [1][20]
+Raw: R02[2][8]   [2]       
+Raw: 7.6  [4]
+Decoded: R02             7.6  
+Sent to UDP1: TS|ABC|       7.6 |R|
+Raw: [1][20]R02[2][8]   [2] 
+Raw:       7.7  [4]
+Decoded: R02             7.7  
+Sent to UDP1: TS|ABC|       7.7 |R|
+Raw: [1][20]R02[2][8] 
+Raw:   [2]       7.8  [4]
+Decoded: R02             7.8  
+Sent to UDP1: TS|ABC|       7.8 |R|
+Raw: [1][20]
+Raw: R02[2][8]   [2]       
+Raw: 7.9  [4]
+Decoded: R02             7.9  
+Sent to UDP1: TS|ABC|       7.9 |R|
+Raw: [1][20]R02[2][8]   [2]   
+Raw:     8.0  [4]
+Decoded: R02             8.0  
+Sent to UDP1: TS|ABC|       8.0 |R|
+Raw: [1][20]R02[2][8]   [2]   
+Raw:     8.1  [4]
+Decoded: R02             8.1  
+Sent to UDP1: TS|ABC|       8.1 |R|
+Raw: [1][20]R02[2][8] 
+Raw:   [2]       8.2  [4]
+Decoded: R02             8.2  
+Sent to UDP1: TS|ABC|       8.2 |R|
+Raw: [1][20]R02[2]
+Raw: [8]   [2]       8.3
+Raw:   [4]
+Decoded: R02             8.3  
+Sent to UDP1: TS|ABC|       8.3 |R|
+Raw: [1][20]
+Raw: R02[2][8]   [2]       
+Raw: 8.4  [4]
+Decoded: R02             8.4  
+Sent to UDP1: TS|ABC|       8.4 |R|
+Raw: [1][20]R02[2][8]   [2]   
+Raw:     8.5  [4]
+Decoded: R02             8.5  
+Sent to UDP1: TS|ABC|       8.5 |R|
+Raw: [1][20]R02[2][8]
+Raw:    [2]       8.6  
+Raw: [4]
+Decoded: R02             8.6  
+Sent to UDP1: TS|ABC|       8.6 |R|
+Raw: [1][20]R02[2]
+Raw: [8]   [2]       8.7
+Raw:   [4]
+Decoded: R02             8.7  
+Sent to UDP1: TS|ABC|       8.7 |R|
+Raw: [1][20]
+Raw: R02[2][8]   [2]       
+Raw: 8.8  [4]
+Decoded: R02             8.8  
+Sent to UDP1: TS|ABC|       8.8 |R|
+Raw: [1][20]R02[2][8]   [2]   
+Raw:     8.9  [4]
+Decoded: R02             8.9  
+Sent to UDP1: TS|ABC|       8.9 |R|
+Raw: [1][20]R02[2][8]   
+Raw: [2]       9.0  [4]
+Decoded: R02             9.0  
+Sent to UDP1: TS|ABC|       9.0 |R|
+Raw: [1][20]R02[2]
+Raw: [8]   [2]       9.1
+Raw:   [4]
+Decoded: R02             9.1  
+Sent to UDP1: TS|ABC|       9.1 |R|
+Raw: [1][20]R02[2][8]   [2]    
+Raw:    9.2  [4]
+Decoded: R02             9.2  
+Sent to UDP1: TS|ABC|       9.2 |R|
+Raw: [1][20]R02[2][8]   
+Raw: [2]       9.3  [4]
+Decoded: R02             9.3  
+Sent to UDP1: TS|ABC|       9.3 |R|
+Raw: [1][20]R02[2]
+Raw: [8]   [2]       9.4
+Raw:   [4]
+Decoded: R02             9.4  
+Sent to UDP1: TS|ABC|       9.4 |R|
+Raw: [1][20]R0
+Raw: 2[2][8]   [2]       9.
+Raw: 5  [4]
+Decoded: R02             9.5  
+Sent to UDP1: TS|ABC|       9.5 |R|
+Raw: [1][20]R02[2][8]   [2]    
+Raw:    9.6  [4]
+Decoded: R02             9.6  
+Sent to UDP1: TS|ABC|       9.6 |R|
+Raw: [1][20]R02[2][8]   [2]   
+Raw:     9.7  [4]
+Decoded: R02             9.7  
+Sent to UDP1: TS|ABC|       9.7 |R|
+Raw: [1][20]R02[2][8] 
+Raw:   [2]       9.8  
+Raw: [4]
+Decoded: R02             9.8  
+Sent to UDP1: TS|ABC|       9.8 |R|
+Raw: [1][20]R02[2]
+Raw: [8]   [2]       9.9
+Raw:   [4]
+Decoded: R02             9.9  
+Sent to UDP1: TS|ABC|       9.9 |R|
+Raw: [1][20]
+Raw: R02[2][8]   [2]      
+Raw: 10.0  [4][1][20]S02[2][8]  
+Decoded: R02            10.0  
+Sent to UDP1: TS|ABC|      10.0 |R|
+######################################## S02  
+Raw:  [2]      10.09 [4]
+Decoded: S02            10.09 
+Sent to UDP1: TS|ABC|      10.09|U|
+Raw: [1][2][4][1][20]S02[2][8] 
+######################################## S02 
+Raw:   [2]             
+Raw: [4][1]aA[2]0010    
+Decoded: S02                   
+######################################## aA0010    
+Raw:         [4]
+Sent to UDP1: TS|ABC|HBT 14:45:42|-1|
+Sent to UDP1: TS|ABC|HBT 14:45:53|-1|
+Raw: [1][2][4]
+Raw: [1]aA[2]0010    
+Raw:         [4][1]aA[2]0
+######################################## aA0
+Raw: 010            
+Raw: [4][1][20]S02[2][8]   [2]   
+######################################## S02      
+Raw:     0.0  [4][1]aA[2]
+Decoded: S02             0.0  
+Sent to UDP1: TS|ABC|       0.0 |U|
+######################################## aA
+Raw: 0010TIMING     
+Raw:  [4]
+Raw: [1][20]R02[2][8] 
+Raw:   [2]       0.0  
+Raw: [4]
+Decoded: R02             0.0  
+Sent to UDP1: TS|ABC|       0.0 |R|
+Raw: [1][20]R0
+Raw: 2[2][8]   [2]       0
+Raw: .1  [4]
+Decoded: R02             0.1  
+Sent to UDP1: TS|ABC|       0.1 |R|
+Raw: [1][20]R02[2][8]   [2]    
+Raw:    0.2  [4]
+Decoded: R02             0.2  
+Sent to UDP1: TS|ABC|       0.2 |R|
+Raw: [1][20]R02[2][8]   [2]
+Raw:        0.3  [4]
+Decoded: R02             0.3  
+Sent to UDP1: TS|ABC|       0.3 |R|
+Raw: [1][20]R02[2][8] 
+Raw:   [2]       0.4  
+Raw: [4]
+Decoded: R02             0.4  
+Sent to UDP1: TS|ABC|       0.4 |R|
+Raw: [1][20]R0
+Raw: 2[2][8]   [2]       0
+Raw: .5  [4]
+Decoded: R02             0.5  
+Sent to UDP1: TS|ABC|       0.5 |R|
+Raw: [1][20]R02[2][8]   [2]    
+Raw:    0.6  [4]
+Decoded: R02             0.6  
+Sent to UDP1: TS|ABC|       0.6 |R|
+Raw: [1][20]R02[2][8]   [2]
+Raw:        0.7  [4]
+Decoded: R02             0.7  
+Sent to UDP1: TS|ABC|       0.7 |R|
+Raw: [1][20]R02[2][8] 
+Raw:   [2]       0.8  
+Raw: [4]
+Decoded: R02             0.8  
+Sent to UDP1: TS|ABC|       0.8 |R|
+Raw: [1][20]R0
+Raw: 2[2][8]   [2]       0
+Raw: .9  [4]
+Decoded: R02             0.9  
+Sent to UDP1: TS|ABC|       0.9 |R|
+Raw: [1][20]R02[2][8]   [2]    
+Raw:    1.0  [4]
+Decoded: R02             1.0  
+Sent to UDP1: TS|ABC|       1.0 |R|
+Raw: [1][20]R02[2][8]   [2]
+Raw:        1.1  [4]
+Decoded: R02             1.1  
+Sent to UDP1: TS|ABC|       1.1 |R|
+Raw: [1][20]R02[2][8] 
+Raw:   [2]       1.2  
+Raw: [4]
+Decoded: R02             1.2  
+Sent to UDP1: TS|ABC|       1.2 |R|
+Raw: [1][20]R0
+Raw: 2[2][8]   [2]       1
+Raw: .3  [4]
+Decoded: R02             1.3  
+Sent to UDP1: TS|ABC|       1.3 |R|
+Raw: [1][20]R02[2][8]   [2]    
+Raw:    1.4  [4]
+Decoded: R02             1.4  
+Sent to UDP1: TS|ABC|       1.4 |R|
+Raw: [1][20]R02[2][8]   [2]
+Raw:        1.5  [4]
+Decoded: R02             1.5  
+Sent to UDP1: TS|ABC|       1.5 |R|
+Raw: [1][20]R02[2][8]
+Raw:    [2]       1.6  
+Raw: [4]
+Decoded: R02             1.6  
+Sent to UDP1: TS|ABC|       1.6 |R|
+Raw: [1][20]R0
+Raw: 2[2][8]   [2]       1
+Raw: .7  [4]
+Decoded: R02             1.7  
+Sent to UDP1: TS|ABC|       1.7 |R|
+Raw: [1][20]R02[2][8]   [2]    
+Raw:    1.8  [4]
+Decoded: R02             1.8  
+Sent to UDP1: TS|ABC|       1.8 |R|
+Raw: [1][20]R02[2][8]   [2]
+Raw:        1.9  [4]
+Decoded: R02             1.9  
+Sent to UDP1: TS|ABC|       1.9 |R|
+Raw: [1][20]R02[2][8]
+Raw:    [2]       2.0  
+Raw: [4]
+Decoded: R02             2.0  
+Sent to UDP1: TS|ABC|       2.0 |R|
+Raw: [1][20]R0
+Raw: 2[2][8]   [2]       2
+Raw: .1  [4]
+Decoded: R02             2.1  
+Sent to UDP1: TS|ABC|       2.1 |R|
+Raw: [1][20]R02[2][8]   [2]    
+Raw:    2.2  [4]
+Decoded: R02             2.2  
+Sent to UDP1: TS|ABC|       2.2 |R|
+Raw: [1][20]R02[2][8]   [2]
+Raw:        2.3  [4]
+Decoded: R02             2.3  
+Sent to UDP1: TS|ABC|       2.3 |R|
+Raw: [1][20]R02[2][8]
+Raw:    [2]       2.4  
+Raw: [4]
+Decoded: R02             2.4  
+Sent to UDP1: TS|ABC|       2.4 |R|
+Raw: [1][20]R
+Raw: 02[2][8]   [2]       2
+Raw: .5  [4]
+Decoded: R02             2.5  
+Sent to UDP1: TS|ABC|       2.5 |R|
+Raw: [1][20]R02[2][8]   [2]    
+Raw:    2.6  [4]
+Decoded: R02             2.6  
+Sent to UDP1: TS|ABC|       2.6 |R|
+Raw: [1][20]R02[2][8]   [2]
+Raw:        2.7  [4]
+Decoded: R02             2.7  
+Sent to UDP1: TS|ABC|       2.7 |R|
+Raw: [1][20]R02[2][8]
+Raw:    [2]       2.8  
+Raw: [4]
+Decoded: R02             2.8  
+Sent to UDP1: TS|ABC|       2.8 |R|
+Raw: [1][20]R
+Raw: 02[2][8]   [2]       2
+Raw: .9  [4]
+Decoded: R02             2.9  
+Sent to UDP1: TS|ABC|       2.9 |R|
+Raw: [1][20]R02[2][8]   [2]    
+Raw:    3.0  [4]
+Decoded: R02             3.0  
+Sent to UDP1: TS|ABC|       3.0 |R|
+Raw: [1][20]R02[2][8]   [2]
+Raw:        3.1  [4]
+Decoded: R02             3.1  
+Sent to UDP1: TS|ABC|       3.1 |R|
+Raw: [1][20]R02[2][8]
+Raw:    [2]       3.2  
+Raw: [4]
+Decoded: R02             3.2  
+Sent to UDP1: TS|ABC|       3.2 |R|
+Raw: [1][20]R
+Raw: 02[2][8]   [2]       3
+Raw: .3  [4]
+Decoded: R02             3.3  
+Sent to UDP1: TS|ABC|       3.3 |R|
+Raw: [1][20]R02[2][8]   [2]    
+Raw:    3.4  [4]
+Decoded: R02             3.4  
+Sent to UDP1: TS|ABC|       3.4 |R|
+Raw: [1]
+Raw: [20]R02[2][8]   [2]     
+Raw:   3.7  [4]
+Decoded: R02             3.7  
+Sent to UDP1: TS|ABC|       3.7 |R|
+Raw: [1][20]R02[2][8]   [2]    
+Raw:    3.8  [4]
+Decoded: R02             3.8  
+Sent to UDP1: TS|ABC|       3.8 |R|
+Raw: [1][20]R02[2][8]   [2]
+Raw:        3.9  [4]
+Decoded: R02             3.9  
+Sent to UDP1: TS|ABC|       3.9 |R|
+Raw: [1][20]R0
+Raw: 2[2][8]   [2]       4.
+Raw: 0  [4]
+Decoded: R02             4.0  
+Sent to UDP1: TS|ABC|       4.0 |R|
+Raw: [1]
+Raw: [20]R02[2][8]   [2]     
+Raw:   4.1  [4]
+Decoded: R02             4.1  
+Sent to UDP1: TS|ABC|       4.1 |R|
+Raw: [1][20]R02[2][8]   [2]
+Raw:        4.2  [4]
+Decoded: R02             4.2  
+Sent to UDP1: TS|ABC|       4.2 |R|
+Raw: [1][20]R02[2][8] 
+Raw:   [2]       4.3  
+Raw: [4]
+Decoded: R02             4.3  
+Sent to UDP1: TS|ABC|       4.3 |R|
+Raw: [1][20]R02
+Raw: [2][8]   [2]       4.4
+Raw:   [4]
+Decoded: R02             4.4  
+Sent to UDP1: TS|ABC|       4.4 |R|
+Raw: [1][20]R
+Raw: 02[2][8]   [2]       4
+Raw: .5  [4]
+Decoded: R02             4.5  
+Sent to UDP1: TS|ABC|       4.5 |R|
+Raw: [1][20]R02[2][8]   [2]    
+Raw:    4.6  [4]
+Decoded: R02             4.6  
+Sent to UDP1: TS|ABC|       4.6 |R|
+Raw: [1][20]R02[2][8]   [2]
+Raw:        4.7  [4]
+Decoded: R02             4.7  
+Sent to UDP1: TS|ABC|       4.7 |R|
+Raw: [1][20]R02[2][8]
+Raw:    [2]       4.8 
+Raw:  [4]
+Decoded: R02             4.8  
+Sent to UDP1: TS|ABC|       4.8 |R|
+Raw: [1][20]R
+Raw: 02[2][8]   [2]       
+Raw: 4.9  [4]
+Decoded: R02             4.9  
+Sent to UDP1: TS|ABC|       4.9 |R|
+Raw: [1][20]R02[2][8]   [2]    
+Raw:    5.0  [4]
+Decoded: R02             5.0  
+Sent to UDP1: TS|ABC|       5.0 |R|
+Raw: [1][20]R02[2][8]   [2]
+Raw:        5.1  [4]
+Decoded: R02             5.1  
+Sent to UDP1: TS|ABC|       5.1 |R|
+Raw: [1][20]R02[2][8]
+Raw:    [2]       5.2 
+Raw:  [4]
+Decoded: R02             5.2  
+Sent to UDP1: TS|ABC|       5.2 |R|
+Raw: [1][20]R
+Raw: 02[2][8]   [2]       
+Raw: 5.3  [4]
+Decoded: R02             5.3  
+Sent to UDP1: TS|ABC|       5.3 |R|
+Raw: [1][20]R02[2][8]   [2]    
+Raw:    5.4  [4]
+Decoded: R02             5.4  
+Sent to UDP1: TS|ABC|       5.4 |R|
+Raw: [1][20]R02[2][8]   [2]
+Raw:        5.5  [4]
+Decoded: R02             5.5  
+Sent to UDP1: TS|ABC|       5.5 |R|
+Raw: [1][20]R02[2][8]
+Raw:    [2]       5.6 
+Raw:  [4]
+Decoded: R02             5.6  
+Sent to UDP1: TS|ABC|       5.6 |R|
+Raw: [1][20]R
+Raw: 02[2][8]   [2]       
+Raw: 5.7  [4]
+Decoded: R02             5.7  
+Sent to UDP1: TS|ABC|       5.7 |R|
+Raw: [1][20]R02[2][8]   [2]   
+Raw:     5.8  [4]
+Decoded: R02             5.8  
+Sent to UDP1: TS|ABC|       5.8 |R|
+Raw: [1][20]R02[2][8]   
+Raw: [2]       5.9  [4]
+Decoded: R02             5.9  
+Sent to UDP1: TS|ABC|       5.9 |R|
+Raw: [1][20]R02[2][8]
+Raw:    [2]       6.0 
+Raw:  [4]
+Decoded: R02             6.0  
+Sent to UDP1: TS|ABC|       6.0 |R|
+Raw: [1][20]R
+Raw: 02[2][8]   [2]       
+Raw: 6.1  [4]
+Decoded: R02             6.1  
+Sent to UDP1: TS|ABC|       6.1 |R|
+Raw: [1][20]R02[2][8]   [2]
+Raw:        6.2  [4]
+Decoded: R02             6.2  
+Sent to UDP1: TS|ABC|       6.2 |R|
+Raw: [1][20]R02[2][8] 
+Raw:   [2]       6.3  
+Raw: [4]
+Decoded: R02             6.3  
+Sent to UDP1: TS|ABC|       6.3 |R|
+Raw: [1][20]R0
+Raw: 2[2][8]   [2]       6.
+Raw: 4  [4]
+Decoded: R02             6.4  
+Sent to UDP1: TS|ABC|       6.4 |R|
+Raw: [1]
+Raw: [20]R02[2][8]   [2]     
+Raw:   6.5  [4]
+Decoded: R02             6.5  
+Sent to UDP1: TS|ABC|       6.5 |R|
+Raw: [1][20]R02[2][8]   [2]   
+Raw:     6.6  [4]
+Decoded: R02             6.6  
+Sent to UDP1: TS|ABC|       6.6 |R|
+Raw: [1][20]R02[2][8]  
+Raw:  [2]       6.7  [4]
+Decoded: R02             6.7  
+Sent to UDP1: TS|ABC|       6.7 |R|
+Raw: [1][20]R0
+Raw: 2[2][8]   [2]       6.
+Raw: 8  [4]
+Decoded: R02             6.8  
+Sent to UDP1: TS|ABC|       6.8 |R|
+Raw: [1][20]R02[2][8]   [2]     
+Raw:   6.9  [4]
+Decoded: R02             6.9  
+Sent to UDP1: TS|ABC|       6.9 |R|
+Raw: [1][20]R02[2][8]   [2]   
+Raw:     7.0  [4]
+Decoded: R02             7.0  
+Sent to UDP1: TS|ABC|       7.0 |R|
+Raw: [1][20]R02[2][8] 
+Raw:   [2]       7.1  
+Raw: [4]
+Decoded: R02             7.1  
+Sent to UDP1: TS|ABC|       7.1 |R|
+Raw: [1][20]R02[2][8]
+Raw:    [2]       7.2 
+Raw:  [4]
+Decoded: R02             7.2  
+Sent to UDP1: TS|ABC|       7.2 |R|
+Raw: [1][20]R02[2][8]   [2]    
+Raw:    7.3  [4]
+Decoded: R02             7.3  
+Sent to UDP1: TS|ABC|       7.3 |R|
+Raw: [1][20]R02[2][8]   [2]   
+Raw:     7.4  [4]
+Decoded: R02             7.4  
+Sent to UDP1: TS|ABC|       7.4 |R|
+Raw: [1][20]R02[2][8] 
+Raw:   [2]       7.5  [4]
+Decoded: R02             7.5  
+Sent to UDP1: TS|ABC|       7.5 |R|
+Raw: [1][20]R02[2]
+Raw: [8]   [2]       7.6 
+Raw:  [4]
+Decoded: R02             7.6  
+Sent to UDP1: TS|ABC|       7.6 |R|
+Raw: [1][20]R
+Raw: 02[2][8]   [2]       
+Raw: 7.7  [4]
+Decoded: R02             7.7  
+Sent to UDP1: TS|ABC|       7.7 |R|
+Raw: [1][20]R02[2][8]   [2]   
+Raw:     7.8  [4]
+Decoded: R02             7.8  
+Sent to UDP1: TS|ABC|       7.8 |R|
+Raw: [1][20]R02[2][8]   
+Raw: [2]       7.9  [4]
+Decoded: R02             7.9  
+Sent to UDP1: TS|ABC|       7.9 |R|
+Raw: [1][20]R0
+Raw: 2[2][8]   [2]       8
+Raw: .0  [4]
+Decoded: R02             8.0  
+Sent to UDP1: TS|ABC|       8.0 |R|
+Raw: [1][20]R02[2][8]   [2]    
+Raw:    8.1  [4]
+Decoded: R02             8.1  
+Sent to UDP1: TS|ABC|       8.1 |R|
+Raw: [1][20]R02[2][8]   [2] 
+Raw:       8.2  [4]
+Decoded: R02             8.2  
+Sent to UDP1: TS|ABC|       8.2 |R|
+Raw: [1][20]R02[2][8]
+Raw:    [2]       8.3  
+Raw: [4]
+Decoded: R02             8.3  
+Sent to UDP1: TS|ABC|       8.3 |R|
+Raw: [1][20]R02[2]
+Raw: [8]   [2]       8.4
+Raw:   [4]
+Decoded: R02             8.4  
+Sent to UDP1: TS|ABC|       8.4 |R|
+Raw: [1][20]R
+Raw: 02[2][8]   [2]       
+Raw: 8.5  [4]
+Decoded: R02             8.5  
+Sent to UDP1: TS|ABC|       8.5 |R|
+Raw: [1][20]R02[2][8]   [2]   
+Raw:     8.6  [4]
+Decoded: R02             8.6  
+Sent to UDP1: TS|ABC|       8.6 |R|
+Raw: [1][20]R02[2][8]   
+Raw: [2]       8.7  [4]
+Decoded: R02             8.7  
+Sent to UDP1: TS|ABC|       8.7 |R|
+Raw: [1][20]R02[2]
+Raw: [8]   [2]       8.8 
+Raw:  [4]
+Decoded: R02             8.8  
+Sent to UDP1: TS|ABC|       8.8 |R|
+Raw: [1][20]
+Raw: R02[2][8]   [2]       
+Raw: 8.9  [4]
+Decoded: R02             8.9  
+Sent to UDP1: TS|ABC|       8.9 |R|
+Raw: [1][20]R02[2][8]   [2] 
+Raw:       9.0  [4]
+Decoded: R02             9.0  
+Sent to UDP1: TS|ABC|       9.0 |R|
+Raw: [1][20]R02[2][8]   
+Raw: [2]       9.1  [4]
+Decoded: R02             9.1  
+Sent to UDP1: TS|ABC|       9.1 |R|
+Raw: [1][20]R02[2]
+Raw: [8]   [2]       9.2 
+Raw:  [4]
+Decoded: R02             9.2  
+Sent to UDP1: TS|ABC|       9.2 |R|
+Raw: [1][20]
+Raw: R02[2][8]   [2]       
+Raw: 9.3  [4]
+Decoded: R02             9.3  
+Sent to UDP1: TS|ABC|       9.3 |R|
+Raw: [1][20]R02[2][8]   [2]   
+Raw:     9.4  [4]
+Decoded: R02             9.4  
+Sent to UDP1: TS|ABC|       9.4 |R|
+Raw: [1][20]R02[2][8]   
+Raw: [2]       9.5  [4]
+Decoded: R02             9.5  
+Sent to UDP1: TS|ABC|       9.5 |R|
+Raw: [1][20]R02[2]
+Raw: [8]   [2]       9.6 
+Raw:  [4]
+Decoded: R02             9.6  
+Sent to UDP1: TS|ABC|       9.6 |R|
+Raw: [1][20]
+Raw: R02[2][8]   [2]       
+Raw: 9.7  [4]
+Decoded: R02             9.7  
+Sent to UDP1: TS|ABC|       9.7 |R|
+Raw: [1][20]R02[2][8]   [2]   
+Raw:     9.8  [4]
+Decoded: R02             9.8  
+Sent to UDP1: TS|ABC|       9.8 |R|
+Raw: [1][20]R02[2][8]   
+Raw: [2]       9.9  [4]
+Decoded: R02             9.9  
+Sent to UDP1: TS|ABC|       9.9 |R|
+Raw: [1][20]R02[2]
+Raw: [8]   [2]      10.0 
+Raw:  [4]
+Decoded: R02            10.0  
+Sent to UDP1: TS|ABC|      10.0 |R|
+Raw: [1][20]
+Raw: R02[2][8]   [2]      1
+Raw: 0.1  [4]
+Decoded: R02            10.1  
+Sent to UDP1: TS|ABC|      10.1 |R|
+Raw: [1][20]R02[2][8]   
+Raw: [2]      10.2  [4]
+Decoded: R02            10.2  
+Sent to UDP1: TS|ABC|      10.2 |R|
+Raw: [1][20]R02[2][8]   
+Raw: [2]      10.3  [4]
+Decoded: R02            10.3  
+Sent to UDP1: TS|ABC|      10.3 |R|
+Raw: [1][20]R02[2]
+Raw: [8]   [2]      10.4
+Raw:   [4][1][20]S02[2][8]   [2]  
+Decoded: R02            10.4  
+Sent to UDP1: TS|ABC|      10.4 |R|
+######################################## S02     
+Raw:     10.45 [4]
+Decoded: S02            10.45 
+Sent to UDP1: TS|ABC|      10.45|U|
+
+
+	Sent to UDP1: TS|ABC|HBT 14:46:28|-1|
+	Sent to UDP1: TS|ABC|HBT 14:46:38|-1|
+
+
+	Raw:  [4]
+	[1]aA[2]0010TIMING      [4]
+	[1][20]R02[2][8]   [2]  0.0  [4]
+
+Raw: [1][2][4][1][20]S02[2]
+######################################## S02
+Raw: [8]   [2]          
+Raw:    [4][1]aA[2]0010  
+Decoded: S02                   
+######################################## aA0010  
+Raw:           [4]
+Raw: [1][2][4][1]aA[2]0
+######################################## aA0
+Raw: 010            
+Raw: [4][1]aA[2]0010     
+######################################## aA0010     
+Raw:        [4][1][20]S02[2][8]
+######################################## S02
+Raw:    [2]       0.0 
+Raw:  [4][1]aA[2]0010TIMI
+Decoded: S02             0.0  
+Sent to UDP1: TS|ABC|       0.0 |U|
+######################################## aA0010TIMI
+Raw: NG      [4]
+Raw: [1][20]R02[2][8]   [2]     
+Raw:   0.0  [4]
+Decoded: R02             0.0  
+Sent to UDP1: TS|ABC|       0.0 |R|
+Raw: [1][20]R02[2][8]   [2] 
+Raw:       0.1  [4]
+Decoded: R02             0.1  
+Sent to UDP1: TS|ABC|       0.1 |R|
+Raw: [1][20]R02[2][8] 
+Raw:   [2]       0.2  
+Raw: [4]
+Decoded: R02             0.2  
+Sent to UDP1: TS|ABC|       0.2 |R|
+Raw: [1][20]R0
+Raw: 2[2][8]   [2]       0
+Raw: .3  [4]
+Decoded: R02             0.3  
+Sent to UDP1: TS|ABC|       0.3 |R|
+Raw: [1][20]R02[2][8]   [2]     
+Raw:   0.4  [4]
+Decoded: R02             0.4  
+Sent to UDP1: TS|ABC|       0.4 |R|
+Raw: [1][20]R02[2][8]   [2] 
+Raw:       0.5  [4]
+Decoded: R02             0.5  
+Sent to UDP1: TS|ABC|       0.5 |R|
+Raw: [1][20]R02[2][8] 
+Raw:   [2]       0.6  
+Raw: [4]
+Decoded: R02             0.6  
+Sent to UDP1: TS|ABC|       0.6 |R|
+Raw: [1][20]R0
+Raw: 2[2][8]   [2]       0
+Raw: .7  [4]
+Decoded: R02             0.7  
+Sent to UDP1: TS|ABC|       0.7 |R|
+Raw: [1][20]R02[2][8]   [2]    
+Raw:    0.8  [4]
+Decoded: R02             0.8  
+Sent to UDP1: TS|ABC|       0.8 |R|
+Raw: [1][20]R02[2][8]   [2] 
+Raw:       0.9  [4]
+Decoded: R02             0.9  
+Sent to UDP1: TS|ABC|       0.9 |R|
+Raw: [1][20]R02[2]
+Raw: [8]   [2]       1.0
+Raw:   [4]
+Decoded: R02             1.0  
+Sent to UDP1: TS|ABC|       1.0 |R|
+Raw: [1][20]R0
+Raw: 2[2][8]   [2]       1
+Raw: .1  [4]
+Decoded: R02             1.1  
+Sent to UDP1: TS|ABC|       1.1 |R|
+Raw: [1][20]R02[2][8]   [2]    
+Raw:    1.2  [4]
+Decoded: R02             1.2  
+Sent to UDP1: TS|ABC|       1.2 |R|
+Sent to UDP1: TS|ABC|       1.4 |R|
+Raw: [1][20]R0
+Raw: 2[2][8]   [2]       1
+Raw: .5  [4]
+Decoded: R02             1.5  
+Sent to UDP1: TS|ABC|       1.5 |R|
+Raw: [1][20]R02[2][8]   [2]    
+Raw:    1.6  [4]
+Decoded: R02             1.6  
+Sent to UDP1: TS|ABC|       1.6 |R|
+Raw: [1][20]R02[2][8]   [2]
+Raw:        1.7  [4]
+Decoded: R02             1.7  
+Sent to UDP1: TS|ABC|       1.7 |R|
+Raw: [1][20]R02[2][8] 
+Raw:   [2]       1.8  
+Raw: [4]
+Decoded: R02             1.8  
+Sent to UDP1: TS|ABC|       1.8 |R|
+Raw: [1][20]R0
+Raw: 2[2][8]   [2]       1
+Raw: .9  [4]
+Decoded: R02             1.9  
+Sent to UDP1: TS|ABC|       1.9 |R|
+Raw: [1][20]R02[2][8]   [2]    
+Raw:    2.0  [4]
+Decoded: R02             2.0  
+Sent to UDP1: TS|ABC|       2.0 |R|
+Raw: [1][20]R02[2][8]   [2]
+Raw:        2.1  [4]
+Decoded: R02             2.1  
+Sent to UDP1: TS|ABC|       2.1 |R|
+Raw: [1][20]R02[2][8] 
+Raw:   [2]       2.2  
+Raw: [4]
+Decoded: R02             2.2  
+Sent to UDP1: TS|ABC|       2.2 |R|
+Raw: [1][20]R0
+Raw: 2[2][8]   [2]       2
+Raw: .3  [4]
+Decoded: R02             2.3  
+Sent to UDP1: TS|ABC|       2.3 |R|
+Raw: [1][20]R02[2][8]   [2]    
+Raw:    2.4  [4]
+Decoded: R02             2.4  
+Sent to UDP1: TS|ABC|       2.4 |R|
+Raw: [1][20]R02[2][8]   [2]
+Raw:        2.5  [4]
+Decoded: R02             2.5  
+Sent to UDP1: TS|ABC|       2.5 |R|
+Raw: [1][20]R02[2][8] 
+Raw:   [2]       2.6  
+Raw: [4]
+Decoded: R02             2.6  
+Sent to UDP1: TS|ABC|       2.6 |R|
+Raw: [1][20]R0
+Raw: 2[2][8]   [2]       2
+Raw: .7  [4]
+Decoded: R02             2.7  
+Sent to UDP1: TS|ABC|       2.7 |R|
+Raw: [1][20]R02[2][8]   [2]    
+Raw:    2.8  [4]
+Decoded: R02             2.8  
+Sent to UDP1: TS|ABC|       2.8 |R|
+Raw: [1][20]R02[2][8]   [2]
+Raw:        2.9  [4]
+Decoded: R02             2.9  
+Sent to UDP1: TS|ABC|       2.9 |R|
+Raw: [1][20]R0
+Raw: 2[2][8]   [2]       3
+Raw: .0  [4]
+Decoded: R02             3.0  
+Sent to UDP1: TS|ABC|       3.0 |R|
+Raw: [1][20]R0
+Raw: 2[2][8]   [2]       3
+Raw: .1  [4]
+Decoded: R02             3.1  
+Sent to UDP1: TS|ABC|       3.1 |R|
+Raw: [1][20]R02[2][8]   [2]  
+Raw:      3.2  [4]
+Decoded: R02             3.2  
+Sent to UDP1: TS|ABC|       3.2 |R|
+Raw: [1][20]R02[2][8]
+Raw:    [2]       3.3  
+Raw: [4]
+Decoded: R02             3.3  
+Sent to UDP1: TS|ABC|       3.3 |R|
+Raw: [1][20]R02
+Raw: [2][8]   [2]       3.
+Raw: 4  [4]
+Decoded: R02             3.4  
+Sent to UDP1: TS|ABC|       3.4 |R|
+Raw: [1][20]R0
+Raw: 2[2][8]   [2]       3
+Raw: .5  [4]
+Decoded: R02             3.5  
+Sent to UDP1: TS|ABC|       3.5 |R|
+Raw: [1][20]R02[2][8]   [2]    
+Raw:    3.6  [4]
+Decoded: R02             3.6  
+Sent to UDP1: TS|ABC|       3.6 |R|
+Raw: [1][20]R02[2][8]   [2]
+Raw:        3.7  [4]
+Decoded: R02             3.7  
+Sent to UDP1: TS|ABC|       3.7 |R|
+Raw: [1][20]R02[2][8]
+Raw:    [2]       3.8  
+Raw: [4]
+Decoded: R02             3.8  
+Sent to UDP1: TS|ABC|       3.8 |R|
+Raw: [1][20]R
+Raw: 02[2][8]   [2]       3
+Raw: .9  [4]
+Decoded: R02             3.9  
+Sent to UDP1: TS|ABC|       3.9 |R|
+Raw: [1][20]R02[2][8]   [2]    
+Raw:    4.0  [4]
+Decoded: R02             4.0  
+Sent to UDP1: TS|ABC|       4.0 |R|
+Raw: [1][20]R02[2][8]   [2]
+Raw:        4.1  [4]
+Decoded: R02             4.1  
+Sent to UDP1: TS|ABC|       4.1 |R|
+Raw: [1][20]R
+Raw: 02[2][8]   [2]       4
+Raw: .2  [4]
+Decoded: R02             4.2  
+Sent to UDP1: TS|ABC|       4.2 |R|
+Raw: [1][20]
+Raw: R02[2][8]   [2]       
+Raw: 4.3  [4]
+Decoded: R02             4.3  
+Sent to UDP1: TS|ABC|       4.3 |R|
+Raw: [1][20]R02[2][8]   [2]  
+Raw:      4.4  [4]
+Decoded: R02             4.4  
+Sent to UDP1: TS|ABC|       4.4 |R|
+Raw: [1][20]R02[2][8]   
+Raw: [2]       4.5  [4]
+Decoded: R02             4.5  
+Sent to UDP1: TS|ABC|       4.5 |R|
+Raw: [1][20]R02[2][8]
+Raw:    [2]       4.6 
+Raw:  [4]
+Decoded: R02             4.6  
+Sent to UDP1: TS|ABC|       4.6 |R|
+Raw: [1][20]R
+Raw: 02[2][8]   [2]       
+Raw: 4.7  [4]
+Decoded: R02             4.7  
+Sent to UDP1: TS|ABC|       4.7 |R|
+Raw: [1][20]R02[2][8]   [2]  
+Raw:      4.8  [4]
+Decoded: R02             4.8  
+Sent to UDP1: TS|ABC|       4.8 |R|
+Raw: [1][20]R02[2][8]   
+Raw: [2]       4.9  [4]
+Decoded: R02             4.9  
+Sent to UDP1: TS|ABC|       4.9 |R|
+Raw: [1][20]R02[2][8]
+Raw:    [2]       5.0 
+Raw:  [4]
+Decoded: R02             5.0  
+Sent to UDP1: TS|ABC|       5.0 |R|
+Raw: [1][20]R
+Raw: 02[2][8]   [2]       
+Raw: 5.1  [4]
+Decoded: R02             5.1  
+Sent to UDP1: TS|ABC|       5.1 |R|
+Raw: [1][20]R02[2][8]   [2]    
+Raw:    5.2  [4]
+Decoded: R02             5.2  
+Sent to UDP1: TS|ABC|       5.2 |R|
+Raw: [1][20]R02[2][8]   [2]
+Raw:        5.3  [4]
+Decoded: R02             5.3  
+Sent to UDP1: TS|ABC|       5.3 |R|
+Raw: [1][20]R02[2][8]
+Raw:    [2]       5.4 
+Raw:  [4]
+Decoded: R02             5.4  
+Sent to UDP1: TS|ABC|       5.4 |R|
+Raw: [1][20]R
+Raw: 02[2][8]   [2]       5
+Raw: .5  [4]
+Decoded: R02             5.5  
+Sent to UDP1: TS|ABC|       5.5 |R|
+Raw: [1][20]R02[2][8]   [2]    
+Raw:    5.6  [4]
+Decoded: R02             5.6  
+Sent to UDP1: TS|ABC|       5.6 |R|
+Raw: [1][20]R02[2][8]   [2]
+Raw:        5.7  [4]
+Decoded: R02             5.7  
+Sent to UDP1: TS|ABC|       5.7 |R|
+Raw: [1][20]R02[2][8]
+Raw:    [2]       5.8 
+Raw:  [4]
+Decoded: R02             5.8  
+Sent to UDP1: TS|ABC|       5.8 |R|
+Raw: [1][20]R
+Raw: 02[2][8]   [2]       
+Raw: 5.9  [4]
+Decoded: R02             5.9  
+Sent to UDP1: TS|ABC|       5.9 |R|
+Raw: [1][20]R02[2][8]   [2]    
+Raw:    6.0  [4]
+Decoded: R02             6.0  
+Sent to UDP1: TS|ABC|       6.0 |R|
+Raw: [1][20]R02[2][8]   [2]
+Raw:        6.1  [4]
+Decoded: R02             6.1  
+Sent to UDP1: TS|ABC|       6.1 |R|
+Raw: [1][20]R02[2][8]
+Raw:    [2]       6.2 
+Raw:  [4]
+Decoded: R02             6.2  
+Sent to UDP1: TS|ABC|       6.2 |R|
+Raw: [1][20]R
+Raw: 02[2][8]   [2]       
+Raw: 6.3  [4]
+Decoded: R02             6.3  
+Sent to UDP1: TS|ABC|       6.3 |R|
+Raw: [1][20]R02[2][8]   [2]    
+Raw:    6.4  [4]
+Decoded: R02             6.4  
+Sent to UDP1: TS|ABC|       6.4 |R|
+Raw: [1][20]R02[2][8]   [2]
+Raw:        6.5  [4]
+Decoded: R02             6.5  
+Sent to UDP1: TS|ABC|       6.5 |R|
+Raw: [1][20]R02[2][8]
+Raw:    [2]       6.6 
+Raw:  [4]
+Decoded: R02             6.6  
+Sent to UDP1: TS|ABC|       6.6 |R|
+Raw: [1][20]R
+Raw: 02[2][8]   [2]       
+Raw: 6.7  [4]
+Decoded: R02             6.7  
+Sent to UDP1: TS|ABC|       6.7 |R|
+Raw: [1][20]R02[2][8]   [2]   
+Raw:     6.8  [4]
+Decoded: R02             6.8  
+Sent to UDP1: TS|ABC|       6.8 |R|
+Raw: [1][20]R02[2][8]   [2]
+Raw:        6.9  [4]
+Decoded: R02             6.9  
+Sent to UDP1: TS|ABC|       6.9 |R|
+Raw: [1][20]R02[2][8]
+Raw:    [2]       7.0 
+Raw:  [4]
+Decoded: R02             7.0  
+Sent to UDP1: TS|ABC|       7.0 |R|
+Raw: [1][20]R
+Raw: 02[2][8]   [2]       
+Raw: 7.1  [4]
+Decoded: R02             7.1  
+Sent to UDP1: TS|ABC|       7.1 |R|
+Raw: [1][20]R02[2][8]   [2]   
+Raw:     7.2  [4]
+Decoded: R02             7.2  
+Sent to UDP1: TS|ABC|       7.2 |R|
+Raw: [1][20]R02[2][8]   [2]
+Raw:        7.3  [4]
+Decoded: R02             7.3  
+Sent to UDP1: TS|ABC|       7.3 |R|
+Raw: [1][20]R02[2][8]
+Raw:    [2]       7.4 
+Raw:  [4]
+Decoded: R02             7.4  
+Sent to UDP1: TS|ABC|       7.4 |R|
+Raw: [1][20]R
+Raw: 02[2][8]   [2]       
+Raw: 7.5  [4]
+Decoded: R02             7.5  
+Sent to UDP1: TS|ABC|       7.5 |R|
+Raw: [1][20]R02[2][8]   [2]   
+Raw:     7.6  [4]
+Decoded: R02             7.6  
+Sent to UDP1: TS|ABC|       7.6 |R|
+Raw: [1][20]R02[2][8]   
+Raw: [2]       7.7  [4]
+Decoded: R02             7.7  
+Sent to UDP1: TS|ABC|       7.7 |R|
+Raw: [1][20]R0
+Raw: 2[2][8]   [2]       7.
+Raw: 8  [4][1][20]S
+Decoded: R02             7.8  
+Sent to UDP1: TS|ABC|       7.8 |R|
+######################################## S
+Raw: 02[2][8]   [2]       
+Raw: 7.70 [4]
+Decoded: S02             7.70 
+Sent to UDP1: TS|ABC|       7.70|U|
+Sent to UDP1: TS|ABC|HBT 14:47:11|-1|
+Raw: [1][2][4][1][20]S02[2][8]   
+######################################## S02   
+Raw: [2]             [4][1]
+Decoded: S02                   
+######################################## 
+Raw: aA[2]0010      
+Raw:       [4]
+Sent to UDP1: TS|ABC|HBT 14:47:21|-1|
+Sent to UDP1: TS|ABC|HBT 14:47:32|-1|
+Sent to UDP1: TS|ABC|HBT 14:47:42|-1|
+Sent to UDP1: TS|ABC|HBT 14:47:52|-1|
+Sent to UDP1: TS|ABC|HBT 14:48:02|-1|
+Sent to UDP1: TS|ABC|HBT 14:48:12|-1|
+Sent to UDP1: TS|ABC|HBT 14:48:22|-1|
+Sent to UDP1: TS|ABC|HBT 14:48:32|-1|
+Sent to UDP1: TS|ABC|HBT 14:48:42|-1|
+Sent to UDP1: TS|ABC|HBT 14:48:52|-1|
+Sent to UDP1: TS|ABC|HBT 14:49:02|-1|
+Sent to UDP1: TS|ABC|HBT 14:49:12|-1|
+Sent to UDP1: TS|ABC|HBT 14:49:22|-1|
+Sent to UDP1: TS|ABC|HBT 14:49:32|-1|
+Sent to UDP1: TS|ABC|HBT 14:49:42|-1|
